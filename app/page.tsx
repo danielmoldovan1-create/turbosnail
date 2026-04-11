@@ -133,18 +133,13 @@ export default function Home() {
   const go = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 async function handleSubmit() {
   if (!email || !name) return;
-  try {
-    const res = await fetch("https://formspree.io/f/xpqovkag", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name, email, phone, message: msg }) });
-    console.log("Status:", res.status);
-    if (res.ok) setSent(true);
-    else setSent(true);
-  } catch(e) {
-    console.log("Error:", e);
-    setSent(true);
-  }
+const res = await fetch("https://formspree.io/f/xpqovkag", {
+  method: "POST",
+  headers: { "Content-Type": "application/json", "Accept": "application/json" },
+  body: JSON.stringify({ name, email, phone, message: msg }),
+});
+if (res.ok) setSent(true);
 }
-
-
   return (
     <main style={{ fontFamily: "'Instrument Sans', sans-serif", background: "#0a0c14", color: "#eae8e3", minHeight: "100vh", overflowX: "hidden" }}>
       <style>{`
@@ -558,4 +553,4 @@ async function handleSubmit() {
       <div style={{ height: 72 }} />
     </main>
   );
-}
+}cgc
