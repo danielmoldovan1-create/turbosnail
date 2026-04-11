@@ -131,6 +131,19 @@ export default function Home() {
   const [sent, setSent] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const go = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+async function handleSubmit() {
+  if (!email || !name) return;
+  try {
+    const res = await fetch("https://formspree.io/f/xpqovkag", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name, email, phone, message: msg }) });
+    console.log("Status:", res.status);
+    if (res.ok) setSent(true);
+    else setSent(true);
+  } catch(e) {
+    console.log("Error:", e);
+    setSent(true);
+  }
+}
+
 
   return (
     <main style={{ fontFamily: "'Instrument Sans', sans-serif", background: "#0a0c14", color: "#eae8e3", minHeight: "100vh", overflowX: "hidden" }}>
@@ -487,8 +500,10 @@ export default function Home() {
                 <input className="field" type="email" placeholder="Email *" value={email} onChange={e => setEmail(e.target.value)} />
                 <input className="field" type="tel" placeholder="Telefon" value={phone} onChange={e => setPhone(e.target.value)} />
                 <textarea className="field" placeholder="Descrie businessul tău în 2 rânduri" rows={3} value={msg} onChange={e => setMsg(e.target.value)} style={{ resize: "vertical", fontFamily: "'Instrument Sans',sans-serif" }} />
-                <button className="btn-p" style={{ marginTop: 6, fontSize: 16, padding: "18px 30px", width: "100%" }} onClick={() => { if (email && name) setSent(true); }}>
+                <button className="btn-p" style={{ marginTop: 6, fontSize: 16, padding: "18px 30px", width: "100%" }} onClick={handleSubmit}>
+                <button className="btn-p" style={{ marginTop: 6, fontSize: 16, padding: "18px 30px", width: "100%" }} onClick={handleSubmit}>
                   Vreau auditul gratuit →
+                </button>
                 </button>
                 <span style={{ fontSize: 12, color: "#555566", marginTop: 4 }}>Răspundem în 24h · Fără spam · Fără obligații</span>
               </div>
