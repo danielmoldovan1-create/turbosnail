@@ -133,12 +133,12 @@ export default function Home() {
   const go = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 async function handleSubmit() {
   if (!email || !name) return;
-const res = await fetch("https://formspree.io/f/xpqovkag", {
-  method: "POST",
-  headers: { "Content-Type": "application/json", "Accept": "application/json" },
-  body: JSON.stringify({ name, email, phone, message: msg }),
-});
-if (res.ok) setSent(true);
+  const res = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "Accept": "application/json" },
+    body: JSON.stringify({ access_key: "f2d92ef1-727d-47b9-bbe2-f30548f4c010", name, email, phone, message: msg }),
+  });
+  if (res.ok) setSent(true);
 }
   return (
     <main style={{ fontFamily: "'Instrument Sans', sans-serif", background: "#0a0c14", color: "#eae8e3", minHeight: "100vh", overflowX: "hidden" }}>
@@ -552,5 +552,3 @@ if (res.ok) setSent(true);
       </div>
       <div style={{ height: 72 }} />
     </main>
-  );
-}cgc
