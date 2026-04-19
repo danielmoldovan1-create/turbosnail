@@ -131,6 +131,7 @@ export default function HomeClient() {
   const [sent, setSent] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
   const go = (id: string) => { setMobileMenu(false); document.getElementById(id)?.scrollIntoView({ behavior: "smooth" }); };
 
   async function handleSubmit() {
@@ -168,6 +169,10 @@ export default function HomeClient() {
         .sk { position: fixed; bottom: 0; left: 0; right: 0; z-index: 90; background: rgba(10,12,20,0.95); backdrop-filter: blur(20px); border-top: 1px solid rgba(255,106,0,0.15); padding: 12px 20px; }
         .dv { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,106,0,0.15), transparent); max-width: 600px; margin: 0 auto; }
         .nav-lnk { display: none; }
+        .nav-drop { position: relative; }
+        .nav-drop-menu { position: absolute; top: calc(100% + 12px); left: 50%; transform: translateX(-50%); background: #0f1119; border: 1px solid #1a1d2a; border-radius: 14px; padding: 8px; min-width: 240px; z-index: 200; box-shadow: 0 24px 60px rgba(0,0,0,0.5); }
+        .nav-drop-item { display: block; padding: 10px 14px; font-size: 13px; color: #888899; text-decoration: none; border-radius: 8px; transition: all 0.15s; white-space: nowrap; }
+        .nav-drop-item:hover { background: rgba(255,106,0,0.08); color: #eae8e3; }
         .hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
         .hamburger span { display: block; width: 22px; height: 2px; background: #eae8e3; border-radius: 2px; transition: all 0.3s; }
         .mob-menu { display: flex; flex-direction: column; gap: 0; background: rgba(10,12,20,0.98); border-bottom: 1px solid rgba(26,29,42,0.7); }
@@ -199,7 +204,22 @@ export default function HomeClient() {
               <img src="/Turbosnail logo.PNG" alt="TurboSnail - Automatizări AI" width={150} height={50} style={{ height: 50, width: "auto" }} />
             </div>
             <div className="nav-lnk" style={{ display: "none" }}>
-              {[["servicii","Servicii"],["proces","Cum funcționează"],["despre","Despre"],["faq","Întrebări"]].map(([id, label], i) => (
+              <div className="nav-drop" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
+                <span style={{ fontSize: 14, color: "#888899", cursor: "pointer", transition: "color 0.2s", display: "flex", alignItems: "center", gap: 4 }}
+                  onMouseEnter={e => (e.currentTarget.style.color = "#eae8e3")}
+                  onMouseLeave={e => (e.currentTarget.style.color = "#888899")}>
+                  Servicii <span style={{ fontSize: 10, opacity: 0.6 }}>▾</span>
+                </span>
+                {servicesOpen && (
+                  <div className="nav-drop-menu">
+                    <a href="/servicii" className="nav-drop-item" style={{ borderBottom: "1px solid #1a1d2a", marginBottom: 4, color: "#ff6a00" }}>Toate serviciile →</a>
+                    {SERVICES.map((s) => (
+                      <a key={s.slug} href={`/servicii/${s.slug}`} className="nav-drop-item">{s.name}</a>
+                    ))}
+                  </div>
+                )}
+              </div>
+              {[["proces","Cum funcționează"],["despre","Despre"],["faq","Întrebări"]].map(([id, label], i) => (
                 <span key={i} style={{ fontSize: 14, color: "#888899", cursor: "pointer", transition: "color 0.2s" }}
                   onClick={() => go(id)}
                   onMouseEnter={e => (e.currentTarget.style.color = "#eae8e3")}
@@ -207,11 +227,6 @@ export default function HomeClient() {
                   {label}
                 </span>
               ))}
-              <a href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none", transition: "color 0.2s" }}
-                onMouseEnter={e => (e.currentTarget.style.color = "#eae8e3")}
-                onMouseLeave={e => (e.currentTarget.style.color = "#888899")}>
-                Servicii
-              </a>
               <a href="/blog" style={{ fontSize: 14, color: "#888899", textDecoration: "none", transition: "color 0.2s" }}
                 onMouseEnter={e => (e.currentTarget.style.color = "#eae8e3")}
                 onMouseLeave={e => (e.currentTarget.style.color = "#888899")}>
@@ -230,10 +245,13 @@ export default function HomeClient() {
         </div>
         {mobileMenu && (
           <div className="mob-menu">
-            {[["servicii","Servicii"],["proces","Cum funcționează"],["despre","Despre"],["faq","Întrebări"]].map(([id, label], i) => (
+            <a href="/servicii" style={{ color: "#ff6a00", fontWeight: 700 }}>Servicii</a>
+            {SERVICES.map((s) => (
+              <a key={s.slug} href={`/servicii/${s.slug}`} style={{ paddingLeft: 32, fontSize: 14 }}>{s.name}</a>
+            ))}
+            {[["proces","Cum funcționează"],["despre","Despre"],["faq","Întrebări"]].map(([id, label], i) => (
               <span key={i} onClick={() => go(id)}>{label}</span>
             ))}
-            <a href="/servicii">Servicii</a>
             <a href="/blog">Blog</a>
             <span onClick={() => go("contact")} style={{ color: "#ff6a00", fontWeight: 600 }}>Audit Gratuit →</span>
           </div>
@@ -271,7 +289,7 @@ export default function HomeClient() {
               <Fade delay={0.15}>
                 <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
                   <button className="btn-p" onClick={() => go("contact")}>Vreau o consultanță gratuită →</button>
-                  <button className="btn-s" onClick={() => go("servicii")}>Vezi serviciile</button>
+                  <a href="/servicii" className="btn-s" style={{ textDecoration: "none" }}>Vezi serviciile</a>
                 </div>
               </Fade>
               <Fade delay={0.22}>
