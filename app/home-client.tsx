@@ -170,7 +170,8 @@ export default function HomeClient() {
         .dv { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,106,0,0.15), transparent); max-width: 600px; margin: 0 auto; }
         .nav-lnk { display: none; }
         .nav-drop { position: relative; }
-        .nav-drop-menu { position: absolute; top: calc(100% + 12px); left: 50%; transform: translateX(-50%); background: #0f1119; border: 1px solid #1a1d2a; border-radius: 14px; padding: 8px; min-width: 240px; z-index: 200; box-shadow: 0 24px 60px rgba(0,0,0,0.5); }
+        .nav-drop-menu { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); padding-top: 12px; min-width: 240px; z-index: 200; }
+        .nav-drop-inner { background: #0f1119; border: 1px solid #1a1d2a; border-radius: 14px; padding: 8px; box-shadow: 0 24px 60px rgba(0,0,0,0.5); }
         .nav-drop-item { display: block; padding: 10px 14px; font-size: 13px; color: #888899; text-decoration: none; border-radius: 8px; transition: all 0.15s; white-space: nowrap; }
         .nav-drop-item:hover { background: rgba(255,106,0,0.08); color: #eae8e3; }
         .hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
@@ -212,10 +213,12 @@ export default function HomeClient() {
                 </span>
                 {servicesOpen && (
                   <div className="nav-drop-menu">
-                    <a href="/servicii" className="nav-drop-item" style={{ borderBottom: "1px solid #1a1d2a", marginBottom: 4, color: "#ff6a00" }}>Toate serviciile →</a>
-                    {SERVICES.map((s) => (
-                      <a key={s.slug} href={`/servicii/${s.slug}`} className="nav-drop-item">{s.name}</a>
-                    ))}
+                    <div className="nav-drop-inner">
+                      <a href="/servicii" className="nav-drop-item" style={{ borderBottom: "1px solid #1a1d2a", marginBottom: 4, color: "#ff6a00" }}>Toate serviciile →</a>
+                      {SERVICES.map((s) => (
+                        <a key={s.slug} href={`/servicii/${s.slug}`} className="nav-drop-item">{s.name}</a>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
