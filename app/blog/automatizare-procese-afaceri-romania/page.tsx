@@ -13,9 +13,37 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Automatizare Procese Afaceri Romania: Ghid Practic pentru Firme in 2026",
+  "description": "Cum automatizezi procesele repetitive din firma ta in Romania. Exemple concrete, instrumente folosite si cat timp economisesti efectiv.",
+  "url": "https://turbosnail.ro/blog/automatizare-procese-afaceri-romania",
+  "datePublished": "2026-04-19",
+  "dateModified": "2026-04-19",
+  "publisher": {
+    "@type": "Organization",
+    "name": "TurboSnail",
+    "url": "https://turbosnail.ro",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://turbosnail.ro/Turbosnail logo.PNG"
+    }
+  },
+  "inLanguage": "ro-RO",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://turbosnail.ro/blog/automatizare-procese-afaceri-romania"
+  }
+};
+
 export default function AutomatizareProcese() {
   return (
     <main style={{ fontFamily: "'Instrument Sans', sans-serif", background: "#0a0c14", color: "#eae8e3", minHeight: "100vh" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -85,12 +113,12 @@ export default function AutomatizareProcese() {
           In urma auditurilor facute cu firme din Romania, am identificat constant aceleasi categorii de procese manuale care consuma cel mai mult timp:
         </p>
         <ul>
-          <li><strong>Administrarea emailurilor</strong> — sortare, raspunsuri repetitive, forwarding catre departamente</li>
-          <li><strong>Raportarea</strong> — colectare date din mai multe surse, construire tabel, trimitere catre management</li>
-          <li><strong>Facturarea si urmarirea platilor</strong> — generare facturi, trimitere, reminder-uri</li>
-          <li><strong>Managementul leadurilor</strong> — preluare din formulare, introducere in CRM, asignare catre agenti</li>
-          <li><strong>Programarile</strong> — confirmari, reminder-uri, reprogramari</li>
-          <li><strong>Onboarding clienti noi</strong> — trimitere documente, colectare date, creare cont</li>
+          <li><strong>Administrarea emailurilor:</strong> sortare, raspunsuri repetitive, forwarding catre departamente</li>
+          <li><strong>Raportarea:</strong> colectare date din mai multe surse, construire tabel, trimitere catre management</li>
+          <li><strong>Facturarea si urmarirea platilor:</strong> generare facturi, trimitere, reminder-uri</li>
+          <li><strong>Managementul leadurilor:</strong> preluare din formulare, introducere in CRM, asignare catre agenti</li>
+          <li><strong>Programarile:</strong> confirmari, reminder-uri, reprogramari</li>
+          <li><strong>Onboarding clienti noi:</strong> trimitere documente, colectare date, creare cont</li>
         </ul>
         <p>
           Fiecare dintre acestea poate fi partial sau total automatizat cu instrumente disponibile azi, fara sa scrii o singura linie de cod.
@@ -98,9 +126,9 @@ export default function AutomatizareProcese() {
 
         <blockquote>
           <p>
-            "Companiile care automatizeaza procesele administrative economisesc in medie 3,2 ore per angajat pe zi in primele 12 luni de implementare. Problema nu e tehnologia — e identificarea corecta a proceselor care merita automatizate."
+            "Aproximativ 60% din toate ocupatiile au cel putin 30% din activitati care sunt automatizabile din punct de vedere tehnic cu tehnologiile disponibile astazi."
           </p>
-          <cite>McKinsey Global Institute, raport Automatizare si Viitorul Muncii, 2024</cite>
+          <cite>McKinsey Global Institute, "A future that works: Automation, employment, and productivity", ianuarie 2017</cite>
         </blockquote>
 
         <h2>Instrumentele care functioneaza efectiv pentru automatizare procese afaceri Romania</h2>
@@ -133,7 +161,7 @@ export default function AutomatizareProcese() {
 
         <h2>Ce nu se poate (inca) automatiza</h2>
         <p>
-          Automatizarea nu rezolva tot. Deciziile strategice, negocierile, relatiile cu clientii cheie, creatia — acestea ramane in zona umana. Automatizarea proceselor nu inseamna sa inlocuiesti oamenii, ci sa ii eliberezi de sarcinile care nu necesita judecata, empatie sau creativitate.
+          Automatizarea nu rezolva tot. Deciziile strategice, negocierile, relatiile cu clientii cheie, creatia raman in zona umana. Automatizarea proceselor nu inseamna sa inlocuiesti oamenii, ci sa ii eliberezi de sarcinile care nu necesita judecata, empatie sau creativitate.
         </p>
         <p>
           O regula simpla: daca poti descrie procesul pas cu pas, intr-o lista, fara ambiguitati, poate fi automatizat. Daca raspunsul depinde de context, situatie si relatii, nu poate.

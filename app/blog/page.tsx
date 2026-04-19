@@ -24,7 +24,7 @@ const ARTICLES = [
   },
   {
     slug: "automatizari-ai-pentru-afaceri-romania",
-    title: "Automatizări AI pentru Afaceri — Ghid Complet România 2026",
+    title: "Automatizări AI pentru Afaceri: Ghid Complet România 2026",
     date: "15 aprilie 2026",
     excerpt: "Aflați cum automatizările AI pot recupera 10+ ore pe săptămână în firma ta. Ghid practic cu exemple reale, costuri și pași de implementare pentru afaceri din România.",
     tag: "AI",
@@ -74,7 +74,7 @@ export default function BlogIndex() {
         <div style={{ maxWidth: 760, margin: "0 auto", padding: "0 20px", textAlign: "center", position: "relative", zIndex: 2 }}>
           <span className="tag">Resurse gratuite</span>
           <h1 className="hd" style={{ fontSize: 44, fontWeight: 900, marginTop: 20, marginBottom: 16, letterSpacing: "-1.5px", lineHeight: 1.1 }}>
-            Blog — <span className="ac">Automatizări AI</span><br />pentru Afaceri
+            Blog: <span className="ac">Automatizări AI</span><br />pentru Afaceri
           </h1>
           <p style={{ fontSize: 17, lineHeight: 1.65, color: "#888899", maxWidth: 520, marginLeft: "auto", marginRight: "auto" }}>
             Articole practice despre automatizare, AI și digitalizare pentru antreprenori din Romania. Fara jargon, cu exemple concrete.
