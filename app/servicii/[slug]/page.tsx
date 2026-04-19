@@ -51,7 +51,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
         .hd { font-family: 'Outfit', sans-serif; }
-        .ac { background: linear-gradient(135deg, #ff8c33, #ff6a00, #ff5500); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .mx { max-width: 760px; margin: 0 auto; padding: 0 20px; }
         .prose h2 { font-family: 'Outfit', sans-serif; font-size: 26px; font-weight: 800; margin: 48px 0 16px; color: #eae8e3; letter-spacing: -0.5px; }
         .prose p { font-size: 17px; line-height: 1.75; color: #a8a6a1; margin-bottom: 20px; }
@@ -63,8 +62,14 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         .faq-item:last-child { border-bottom: none; }
         .faq-q { font-family: 'Outfit', sans-serif; font-size: 17px; font-weight: 700; color: #eae8e3; margin-bottom: 10px; }
         .faq-a { font-size: 15px; line-height: 1.7; color: #a8a6a1; }
-        .btn-p { background: linear-gradient(135deg, #ff8c33, #ff6a00); color: #fff; border: none; border-radius: 10px; font-family: 'Outfit', sans-serif; font-weight: 700; cursor: pointer; padding: 15px 32px; font-size: 15px; letter-spacing: 0.2px; transition: opacity 0.2s; }
-        .btn-p:hover { opacity: 0.88; }
+        .card-list { display: flex; flex-direction: column; gap: 16px; margin: 24px 0; }
+        .card-item { background: #0f1119; border: 1px solid #1a1d2a; border-radius: 12px; padding: 20px 24px; }
+        .card-item-title { font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 700; color: #eae8e3; margin-bottom: 6px; }
+        .card-item-detail { font-size: 14px; line-height: 1.65; color: #888899; }
+        .steps-list { list-style: none; display: flex; flex-direction: column; gap: 12px; margin: 24px 0; counter-reset: steps; }
+        .steps-list li { display: flex; align-items: flex-start; gap: 14px; font-size: 15px; line-height: 1.6; color: #a8a6a1; }
+        .step-num { flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: rgba(255,106,0,0.1); border: 1px solid rgba(255,106,0,0.25); display: flex; align-items: center; justify-content: center; font-family: 'Outfit', sans-serif; font-size: 12px; font-weight: 700; color: #ff6a00; margin-top: 1px; }
+        .divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,106,0,0.12), transparent); max-width: 760px; margin: 0 auto; }
       `}</style>
 
       {/* NAV */}
@@ -73,9 +78,13 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <a href="/" style={{ textDecoration: "none" }}>
             <img src="/Turbosnail logo.PNG" alt="TurboSnail" style={{ height: 46, width: "auto" }} />
           </a>
-          <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", border: "none", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, cursor: "pointer", padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
-            Audit Gratuit →
-          </a>
+          <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+            <a href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</a>
+            <a href="/blog" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Blog</a>
+            <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
+              Audit Gratuit →
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -88,20 +97,69 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <h1 className="hd" style={{ fontSize: 44, fontWeight: 900, lineHeight: 1.1, letterSpacing: -1, marginBottom: 24 }}>
             {service.h1}
           </h1>
-          <p style={{ fontSize: 19, color: "#a8a6a1", lineHeight: 1.65, maxWidth: 620 }}>
+          <p style={{ fontSize: 19, color: "#a8a6a1", lineHeight: 1.65, maxWidth: 620, marginBottom: 36 }}>
             {service.intro}
           </p>
-          <div style={{ marginTop: 36 }}>
-            <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", border: "none", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, cursor: "pointer", padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
-              Solicită un audit gratuit →
-            </a>
+          <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
+            Solicită un audit gratuit →
+          </a>
+        </div>
+      </section>
+
+      <div className="divider" />
+
+      {/* FOR WHO */}
+      <section style={{ paddingTop: 56, paddingBottom: 48 }}>
+        <div className="mx">
+          <h2 className="hd" style={{ fontSize: 26, fontWeight: 800, marginBottom: 24, letterSpacing: -0.5 }}>{service.forWho.title}</h2>
+          <div className="card-list">
+            {service.forWho.items.map((item, i) => (
+              <div key={i} className="card-item">
+                <div className="card-item-title">{item.type}</div>
+                <div className="card-item-detail">{item.detail}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <div style={{ height: 1, background: "linear-gradient(90deg, transparent, rgba(255,106,0,0.12), transparent)", maxWidth: 760, margin: "0 auto" }} />
+      <div className="divider" />
 
-      {/* CONTENT */}
+      {/* PROBLEMS */}
+      <section style={{ paddingTop: 56, paddingBottom: 48 }}>
+        <div className="mx">
+          <h2 className="hd" style={{ fontSize: 26, fontWeight: 800, marginBottom: 24, letterSpacing: -0.5 }}>{service.problems.title}</h2>
+          <div className="card-list">
+            {service.problems.items.map((item, i) => (
+              <div key={i} className="card-item">
+                <div className="card-item-title">{item.problem}</div>
+                <div className="card-item-detail">{item.detail}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="divider" />
+
+      {/* INCLUDES */}
+      <section style={{ paddingTop: 56, paddingBottom: 48 }}>
+        <div className="mx">
+          <h2 className="hd" style={{ fontSize: 26, fontWeight: 800, marginBottom: 24, letterSpacing: -0.5 }}>{service.includes.title}</h2>
+          <ol className="steps-list">
+            {service.includes.steps.map((step, i) => (
+              <li key={i}>
+                <span className="step-num">{i + 1}</span>
+                <span>{step}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <div className="divider" />
+
+      {/* CONTENT SECTIONS */}
       <article className="prose mx" style={{ paddingTop: 56, paddingBottom: 24 }}>
         {service.sections.map((section, i) => (
           <div key={i}>
@@ -122,7 +180,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         </p>
       </article>
 
-      <div style={{ height: 1, background: "linear-gradient(90deg, transparent, rgba(255,106,0,0.12), transparent)", maxWidth: 760, margin: "0 auto" }} />
+      <div className="divider" />
 
       {/* FAQ */}
       <section style={{ paddingTop: 56, paddingBottom: 56 }}>
@@ -139,18 +197,16 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
 
-      <div style={{ height: 1, background: "linear-gradient(90deg, transparent, rgba(255,106,0,0.12), transparent)", maxWidth: 760, margin: "0 auto" }} />
+      <div className="divider" />
 
       {/* CTA */}
       <section style={{ paddingTop: 72, paddingBottom: 96, textAlign: "center" }}>
         <div className="mx">
-          <h2 className="hd" style={{ fontSize: 34, fontWeight: 900, letterSpacing: -0.8, marginBottom: 16 }}>
-            Gata să începi?
-          </h2>
+          <h2 className="hd" style={{ fontSize: 34, fontWeight: 900, letterSpacing: -0.8, marginBottom: 16 }}>Gata să începi?</h2>
           <p style={{ fontSize: 17, color: "#a8a6a1", marginBottom: 36, lineHeight: 1.65 }}>
             Completează formularul de contact și te contactăm în 24 de ore pentru un audit gratuit, fără obligații.
           </p>
-          <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", border: "none", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, cursor: "pointer", padding: "17px 40px", fontSize: 16, textDecoration: "none", display: "inline-block" }}>
+          <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "17px 40px", fontSize: 16, textDecoration: "none", display: "inline-block" }}>
             Vreau un audit gratuit →
           </a>
         </div>
