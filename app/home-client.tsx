@@ -91,12 +91,12 @@ function AbstractOrbs() {
 }
 
 const SERVICES = [
-  { tag: "AUTOMATIZĂRI", name: "Automatizări AI", desc: "Identificăm procesele repetitive din businessul tău și le automatizăm. Date mutate automat, emailuri trimise la momentul potrivit, rapoarte generate fără intervenție umană. Rezultatul: ore recuperate în fiecare săptămână.", cta: "Vezi cum funcționează", icon: "⬡" },
-  { tag: "CONSULTANȚĂ", name: "Consultanță AI", desc: "Nu știi de unde să începi cu AI? Facem un audit al businessului tău și îți spunem exact ce merită automatizat, în ce ordine și cu ce costuri reale. Fără jargon, fără promisiuni exagerate.", cta: "Programează un audit gratuit", icon: "◈" },
-  { tag: "OUTBOUND", name: "Cold Email & Outbound", desc: "Construim infrastructura de cold email, scriem secvențele, sourcem leadurile și livrăm meetinguri în calendarul tău. Tu te prezinți la call și închizi. De restul ne ocupăm noi.", cta: "Vreau mai multe meetinguri", icon: "◇" },
-  { tag: "PAID ADS", name: "Paid Ads cu AI", desc: "Campanii Google și Meta optimizate cu AI. Targeting precis, costuri reduse, rezultate măsurabile. Fără buget irosit pe audiențe greșite.", cta: "Optimizează campaniile mele", icon: "△" },
-  { tag: "SEO", name: "SEO bazat pe AI", desc: "Conținut optimizat, audit tehnic și strategie de keywords bazată pe date reale din Search Console și Semrush. Rankăm pentru căutările care aduc clienți, nu trafic inutil.", cta: "Vreau să fiu găsit pe Google", icon: "◎" },
-  { tag: "ANALYTICS", name: "Raportare & Analytics", desc: "Toate datele tale într-un singur dashboard. Vânzări, trafic, campanii, performanță. Vizibil în timp real, fără să deschizi 5 tool-uri diferite.", cta: "Vreau un dashboard unificat", icon: "▦" },
+  { tag: "AUTOMATIZĂRI", name: "Automatizări AI", desc: "Identificăm procesele repetitive din businessul tău și le automatizăm. Date mutate automat, emailuri trimise la momentul potrivit, rapoarte generate fără intervenție umană. Rezultatul: ore recuperate în fiecare săptămână.", cta: "Vezi cum funcționează", icon: "⬡", slug: "automatizari-ai" },
+  { tag: "CONSULTANȚĂ", name: "Consultanță AI", desc: "Nu știi de unde să începi cu AI? Facem un audit al businessului tău și îți spunem exact ce merită automatizat, în ce ordine și cu ce costuri reale. Fără jargon, fără promisiuni exagerate.", cta: "Programează un audit gratuit", icon: "◈", slug: "consultanta-ai" },
+  { tag: "OUTBOUND", name: "Cold Email & Outbound", desc: "Construim infrastructura de cold email, scriem secvențele, sourcem leadurile și livrăm meetinguri în calendarul tău. Tu te prezinți la call și închizi. De restul ne ocupăm noi.", cta: "Vreau mai multe meetinguri", icon: "◇", slug: "cold-email-outbound" },
+  { tag: "PAID ADS", name: "Paid Ads cu AI", desc: "Campanii Google și Meta optimizate cu AI. Targeting precis, costuri reduse, rezultate măsurabile. Fără buget irosit pe audiențe greșite.", cta: "Optimizează campaniile mele", icon: "△", slug: "paid-ads-ai" },
+  { tag: "SEO", name: "SEO bazat pe AI", desc: "Conținut optimizat, audit tehnic și strategie de keywords bazată pe date reale din Search Console și Semrush. Rankăm pentru căutările care aduc clienți, nu trafic inutil.", cta: "Vreau să fiu găsit pe Google", icon: "◎", slug: "seo-ai" },
+  { tag: "ANALYTICS", name: "Raportare & Analytics", desc: "Toate datele tale într-un singur dashboard. Vânzări, trafic, campanii, performanță. Vizibil în timp real, fără să deschizi 5 tool-uri diferite.", cta: "Vreau un dashboard unificat", icon: "▦", slug: "raportare-analytics" },
 ];
 
 const STEPS = [
@@ -207,6 +207,11 @@ export default function HomeClient() {
                   {label}
                 </span>
               ))}
+              <a href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none", transition: "color 0.2s" }}
+                onMouseEnter={e => (e.currentTarget.style.color = "#eae8e3")}
+                onMouseLeave={e => (e.currentTarget.style.color = "#888899")}>
+                Servicii
+              </a>
               <a href="/blog" style={{ fontSize: 14, color: "#888899", textDecoration: "none", transition: "color 0.2s" }}
                 onMouseEnter={e => (e.currentTarget.style.color = "#eae8e3")}
                 onMouseLeave={e => (e.currentTarget.style.color = "#888899")}>
@@ -228,6 +233,7 @@ export default function HomeClient() {
             {[["servicii","Servicii"],["proces","Cum funcționează"],["despre","Despre"],["faq","Întrebări"]].map(([id, label], i) => (
               <span key={i} onClick={() => go(id)}>{label}</span>
             ))}
+            <a href="/servicii">Servicii</a>
             <a href="/blog">Blog</a>
             <span onClick={() => go("contact")} style={{ color: "#ff6a00", fontWeight: 600 }}>Audit Gratuit →</span>
           </div>
@@ -350,8 +356,9 @@ export default function HomeClient() {
                   <span className="tag" style={{ marginBottom: 14, alignSelf: "flex-start" }}>{s.tag}</span>
                   <h3 className="hd" style={{ fontSize: 20, fontWeight: 800, marginBottom: 10, letterSpacing: "-0.4px" }}>{s.name}</h3>
                   <p style={{ fontSize: 14, lineHeight: 1.65, color: "#888899", marginBottom: 20, flex: 1 }}>{s.desc}</p>
-                  <div style={{ paddingTop: 16, borderTop: "1px solid #1a1d2a" }}>
+                  <div style={{ paddingTop: 16, borderTop: "1px solid #1a1d2a", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <span style={{ fontSize: 13, color: "#ff6a00", fontFamily: "'Outfit',sans-serif", fontWeight: 600, cursor: "pointer" }} onClick={() => go("contact")}>→ {s.cta}</span>
+                    <a href={`/servicii/${s.slug}`} style={{ fontSize: 12, color: "#555566", fontFamily: "'Outfit',sans-serif", fontWeight: 500, textDecoration: "none" }} onMouseEnter={e => (e.currentTarget.style.color = "#888899")} onMouseLeave={e => (e.currentTarget.style.color = "#555566")}>Detalii</a>
                   </div>
                 </div>
               </Fade>
@@ -557,7 +564,7 @@ export default function HomeClient() {
             <div>
               <p className="hd" style={{ fontSize: 11, fontWeight: 700, color: "#666677", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 14 }}>Servicii</p>
               <div style={{ display: "flex", flexDirection: "column", gap: 8, fontSize: 13, color: "#888899" }}>
-                {SERVICES.map((s, i) => <span key={i} style={{ cursor: "pointer" }} onClick={() => go("servicii")}>{s.name}</span>)}
+                {SERVICES.map((s, i) => <a key={i} href={`/servicii/${s.slug}`} style={{ color: "#888899", textDecoration: "none", cursor: "pointer" }}>{s.name}</a>)}
               </div>
             </div>
           </div>
