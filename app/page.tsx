@@ -197,6 +197,11 @@ async function handleSubmit() {
                   {label}
                 </span>
               ))}
+              <a href="/blog" style={{ fontSize: 14, color: "#888899", textDecoration: "none", transition: "color 0.2s" }}
+                onMouseEnter={e => (e.currentTarget.style.color = "#eae8e3")}
+                onMouseLeave={e => (e.currentTarget.style.color = "#888899")}>
+                Blog
+              </a>
             </div>
           </div>
           <button className="btn-p" style={{ padding: "11px 24px", fontSize: 13 }} onClick={() => go("contact")}>Audit Gratuit →</button>
