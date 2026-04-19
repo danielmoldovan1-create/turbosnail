@@ -52,6 +52,8 @@ export default function Image() {
         {/* Title */}
         <div
           style={{
+            display: "flex",
+            flexWrap: "wrap",
             fontSize: 64,
             fontWeight: 900,
             color: "#eae8e3",
@@ -60,7 +62,7 @@ export default function Image() {
             maxWidth: 900,
           }}
         >
-          Automatizări AI pentru{" "}
+          <span>Automatizări AI pentru&nbsp;</span>
           <span style={{ color: "#ff6a00" }}>afaceri din România</span>
         </div>
 
