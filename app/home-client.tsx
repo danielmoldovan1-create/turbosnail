@@ -130,7 +130,8 @@ export default function HomeClient() {
   const [msg, setMsg] = useState("");
   const [sent, setSent] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const go = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const go = (id: string) => { setMobileMenu(false); document.getElementById(id)?.scrollIntoView({ behavior: "smooth" }); };
 
   async function handleSubmit() {
     if (!email || !name) return;
@@ -167,6 +168,11 @@ export default function HomeClient() {
         .sk { position: fixed; bottom: 0; left: 0; right: 0; z-index: 90; background: rgba(10,12,20,0.95); backdrop-filter: blur(20px); border-top: 1px solid rgba(255,106,0,0.15); padding: 12px 20px; }
         .dv { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,106,0,0.15), transparent); max-width: 600px; margin: 0 auto; }
         .nav-lnk { display: none; }
+        .hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+        .hamburger span { display: block; width: 22px; height: 2px; background: #eae8e3; border-radius: 2px; transition: all 0.3s; }
+        .mob-menu { display: flex; flex-direction: column; gap: 0; background: rgba(10,12,20,0.98); border-bottom: 1px solid rgba(26,29,42,0.7); }
+        .mob-menu a, .mob-menu span { display: block; padding: 16px 20px; font-size: 15px; color: #888899; cursor: pointer; border-bottom: 1px solid rgba(26,29,42,0.5); text-decoration: none; }
+        .mob-menu a:last-child, .mob-menu span:last-child { border-bottom: none; }
         .svc-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 24px; background: rgba(255,106,0,0.08); border: 1px solid rgba(255,106,0,0.15); margin-bottom: 18px; transition: all 0.3s; }
         .card:hover .svc-icon { background: rgba(255,106,0,0.14); border-color: rgba(255,106,0,0.3); }
         @media (min-width: 768px) {
@@ -178,6 +184,8 @@ export default function HomeClient() {
           .hero-l { flex: 1.2; }
           .hero-r { flex: 0.8; }
           .nav-lnk { display: flex !important; gap: 26px; }
+          .hamburger { display: none !important; }
+          .mob-menu { display: none !important; }
           .about-lay { flex-direction: row !important; gap: 80px !important; align-items: center; }
         }
         @media (min-width: 1024px) { .hero-t { font-size: 68px !important; } }
@@ -206,8 +214,24 @@ export default function HomeClient() {
               </a>
             </div>
           </div>
-          <button className="btn-p" style={{ padding: "11px 24px", fontSize: 13 }} onClick={() => go("contact")}>Audit Gratuit →</button>
+          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <button className="btn-p nav-lnk" style={{ padding: "11px 24px", fontSize: 13 }} onClick={() => go("contact")}>Audit Gratuit →</button>
+            <button className="hamburger" style={{ display: "flex" }} aria-label="Meniu" onClick={() => setMobileMenu(m => !m)}>
+              <span style={{ transform: mobileMenu ? "rotate(45deg) translate(5px, 5px)" : "none" }} />
+              <span style={{ opacity: mobileMenu ? 0 : 1 }} />
+              <span style={{ transform: mobileMenu ? "rotate(-45deg) translate(5px, -5px)" : "none" }} />
+            </button>
+          </div>
         </div>
+        {mobileMenu && (
+          <div className="mob-menu">
+            {[["servicii","Servicii"],["proces","Cum funcționează"],["despre","Despre"],["faq","Întrebări"]].map(([id, label], i) => (
+              <span key={i} onClick={() => go(id)}>{label}</span>
+            ))}
+            <a href="/blog">Blog</a>
+            <span onClick={() => go("contact")} style={{ color: "#ff6a00", fontWeight: 600 }}>Audit Gratuit →</span>
+          </div>
+        )}
       </nav>
 
       {/* HERO */}
