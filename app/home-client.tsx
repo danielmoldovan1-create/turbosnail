@@ -539,8 +539,6 @@ export default function HomeClient() {
             <div>
               <p className="hd" style={{ fontSize: 11, fontWeight: 700, color: "#666677", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 14 }}>Contact</p>
               <div style={{ display: "flex", flexDirection: "column", gap: 8, fontSize: 13, color: "#888899" }}>
-                <span>hello@turbosnail.ro</span>
-                <span>LinkedIn</span>
                 <span>Timișoara, România</span>
               </div>
             </div>
