@@ -536,12 +536,6 @@ export default function HomeClient() {
                 {SERVICES.map((s, i) => <span key={i} style={{ cursor: "pointer" }} onClick={() => go("servicii")}>{s.name}</span>)}
               </div>
             </div>
-            <div>
-              <p className="hd" style={{ fontSize: 11, fontWeight: 700, color: "#666677", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 14 }}>Contact</p>
-              <div style={{ display: "flex", flexDirection: "column", gap: 8, fontSize: 13, color: "#888899" }}>
-                <span>Timișoara, România</span>
-              </div>
-            </div>
           </div>
         </div>
         <div className="mx" style={{ marginTop: 40, paddingTop: 24, borderTop: "1px solid #1a1d2a", fontSize: 11, color: "#555566", display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
