@@ -479,4 +479,85 @@ export const SERVICES: ServiceData[] = [
       },
     ],
   },
+  {
+    slug: "chatbot-ai-romania",
+    keyword: "chatbot AI Romania",
+    title: "Chatbot AI în Română",
+    metaTitle: "Chatbot AI în Limba Română — Asistent Virtual pentru Website | TurboSnail",
+    metaDescription: "Chatbot AI în limba română pentru website-ul firmei tale: răspunde automat la întrebări, califică leaduri și programează întâlniri non-stop, fără intervenție umană.",
+    h1: "Chatbot AI în Limba Română — Asistent Virtual pentru Website",
+    tag: "CHATBOT AI",
+    intro: "Un chatbot AI în limba română înseamnă că vizitatorul site-ului tău primește răspuns imediat, indiferent de ora la care accesează pagina. Nu un meniu de răspunsuri predefinite cu butoane, ci o conversație reală: înțelege întrebările formulate liber, răspunde în context și colectează informații relevante despre prospect. Rezultatul: leads calificate în CRM fără intervenție umană, 24 de ore din 24.",
+    forWho: {
+      title: "Pentru cine este chatbot-ul AI în română",
+      items: [
+        { type: "Firme de servicii cu volum mare de întrebări repetitive", detail: "Clinici, cabinete de avocatură, firme de contabilitate, agenții imobiliare — orice business unde potențialii clienți întreabă în mod repetat aceleași lucruri: program, locație, prețuri orientative, documente necesare. Chatbot-ul răspunde corect și consistent, fără să obosească." },
+        { type: "Magazine online care vor suport 24/7 fără costuri suplimentare", detail: "E-commerce-uri unde clienții întreabă despre disponibilitate produse, timp de livrare, politică de retur sau specificații tehnice. Chatbot-ul AI răspunde instantaneu din baza de date a magazinului, fără să implice un agent de suport." },
+        { type: "Companii B2B cu ciclu de vânzare lung", detail: "Firme care primesc cereri de ofertă sau demonstrații prin site. Chatbot-ul califică prospecții înainte ca un om din echipa de vânzări să intervină: extrage bugetul, dimensiunea companiei, urgența și programează automat o întâlnire în calendar." },
+        { type: "Firme cu personal de suport suprasolicitat", detail: "Dacă echipa de suport petrece jumătate din zi răspunzând la aceleași întrebări prin email sau telefon, un chatbot AI preia aceste cazuri standard și lasă oamenii să se ocupe de situațiile complexe care necesită judecată." },
+        { type: "Antreprenori care vor să capteze leads în afara orelor de program", detail: "O parte semnificativă din traficul de pe site are loc seara sau în weekend. Un chatbot activ non-stop captează aceste vizite și le transformă în contacte calificate, nu în vizite pierdute." },
+      ],
+    },
+    problems: {
+      title: "Ce rezolvă chatbot-ul AI în limba română",
+      items: [
+        { problem: "Întrebări fără răspuns în afara orelor de program", detail: "Un vizitator care nu primește răspuns imediat pleacă la concurență. Chatbot-ul AI răspunde în secunde la orice oră, menține vizitatorul pe site și colectează datele de contact pentru follow-up din partea echipei tale." },
+        { problem: "Leads necalificate care consumă timp echipei de vânzări", detail: "Fără un filtru inițial, echipa de vânzări pierde timp cu prospecți care nu se potrivesc profilului de client ideal. Chatbot-ul pune întrebările de calificare, evaluează potrivirea și transmite în CRM doar leadurile cu potențial real." },
+        { problem: "Aceleași întrebări răspunse de zeci de ori pe zi", detail: "Program de funcționare, adresă, metode de plată, timp de livrare, documente necesare pentru o programare — întrebări la care un angajat răspunde de zeci de ori pe zi. Automatizarea acestor răspunsuri eliberează ore întregi din agenda echipei." },
+        { problem: "Formulare de contact ignorate de vizitatori", detail: "Formularele statice au rate de completare scăzute. O conversație interactivă cu un chatbot AI are rate de engagement mult mai mari și colectează mai multe informații relevante decât un formular simplu." },
+      ],
+    },
+    includes: {
+      title: "Ce include implementarea chatbot-ului AI în română",
+      steps: [
+        "Audit nevoi și cazuri de utilizare — identificăm întrebările frecvente, fluxurile de calificare și acțiunile pe care chatbot-ul trebuie să le execute",
+        "Construirea bazei de cunoștințe — documentăm răspunsurile corecte pentru toate scenariile identificate, în tonul și stilul brandului tău",
+        "Configurare model AI și flux conversațional — antrenăm chatbot-ul cu datele tale și construim logica de conversație, inclusiv escaladarea către un om când e nevoie",
+        "Integrare în site și sisteme — embed pe website, conectare la CRM pentru transferul automat al leadurilor, integrare cu Google Calendar pentru programări",
+        "Testare completă — simulăm zeci de scenarii reale, inclusiv întrebări ambigue sau situații excepționale, înainte de lansare",
+        "Monitorizare și optimizare post-lansare — urmărim conversațiile din primele săptămâni, identificăm lacune în baza de cunoștințe și ajustăm răspunsurile",
+      ],
+    },
+    sections: [
+      {
+        heading: "Chatbot AI Romania: ce este diferit față de chatboții clasici",
+        body: "Chatboții clasici funcționează pe baza unor arbori de decizie rigizi: dacă utilizatorul scrie exact cuvântul cheie X, apare răspunsul Y. Dacă formulează altfel, chatbotul nu înțelege. Chatboții AI moderni înțeleg intenția din spatele mesajului, indiferent de cum este formulat. Un vizitator poate scrie 'cand sunteti deschisi', 'program', 'la ce ora pot veni' sau 'sunteti deschisi sambata' și va primi același răspuns corect. Această flexibilitate face diferența între un chatbot util și unul frustrant. Construim chatboți AI în limba română care înțeleg specificul limbii și al contextului local, nu adaptări din engleză cu erori de înțelegere.",
+      },
+      {
+        heading: "Chatbot AI în română: integrarea cu CRM și calendarul tău",
+        body: "Un chatbot care doar răspunde la întrebări este util, dar unul care transferă automat datele în sistemele tale este valoros. Integrăm chatbot-ul cu CRM-ul tău astfel încât fiecare conversație care generează un lead creează automat un contact cu toate informațiile colectate: nume, email, telefon, nevoia exprimată și scorul de calificare. Pentru firme care programează întâlniri sau consultații, chatbot-ul se conectează la Google Calendar sau Calendly și oferă vizitatorului sloturi disponibile direct în conversație, fără intervenție umană. Echipa de vânzări găsește dimineața un CRM populat cu leads calificate, nu o căsuță de email plină de mesaje nesortate. Aflați mai multe despre cum pot aceste integrări sa transforme operatiunile pe pagina noastra de automatizari AI.",
+      },
+      {
+        heading: "Rezultate concrete ale unui chatbot AI bine implementat",
+        body: "Firmele care au implementat chatboți AI raportează în mod constant trei tipuri de rezultate: reducerea volumului de emailuri și apeluri cu întrebări standard cu 30-50%, creșterea ratei de captare a leadurilor din traficul de pe site și reducerea timpului de răspuns la zero pentru întrebările frecvente. Cel mai important indicator este calitatea leadurilor transmise echipei de vânzări: un chatbot care califică corect livrează contacte care au exprimat deja nevoia, au indicat bugetul și sunt disponibile pentru o discuție. Echipa de vânzări nu mai prospectează, ci închide. Acest lucru se combina natural cu alte servicii de automatizari AI pentru un ecosistem complet.",
+      },
+    ],
+    quote: {
+      text: "Companiile care răspund la un lead în primele 5 minute au de 9 ori mai multe șanse să îl convertească față de cele care răspund după o oră. Un chatbot AI elimină complet această problemă.",
+      author: "James Oldroyd",
+      role: "Cercetător, MIT Sloan School of Management, studiu privind viteza de răspuns la leaduri",
+    },
+    externalLink: {
+      url: "https://hbr.org/2011/03/the-short-life-of-online-sales-leads",
+      anchor: "studiul Harvard Business Review privind viteza de răspuns la leadurile online",
+    },
+    faq: [
+      {
+        q: "Chatbot-ul AI înțelege cu adevărat limba română sau face traduceri?",
+        a: "Chatboții AI moderni pe care îi implementăm sunt antrenați nativ pe limba română, nu pe traduceri din engleză. Înțeleg diacriticele, expresiile locale și contextul specific pieței românești. Baza de cunoștințe este construită în română, în stilul brandului tău.",
+      },
+      {
+        q: "Ce se întâmplă când chatbot-ul nu știe răspunsul la o întrebare?",
+        a: "Configurăm un mecanism de escaladare: când chatbot-ul întâlnește o întrebare fără răspuns clar, informează vizitatorul că va fi contactat de un om și colectează datele de contact. Nici o conversație nu se termină cu un utilizator frustrat.",
+      },
+      {
+        q: "Pot actualiza răspunsurile chatbot-ului după lansare?",
+        a: "Da, baza de cunoștințe este editabilă oricând. Dacă programul se schimbă, dacă adaugi servicii noi sau dacă observi că vizitatorii pun întrebări noi, le poți adăuga direct, fără suport tehnic.",
+      },
+      {
+        q: "Funcționează chatbot-ul pe orice tip de website?",
+        a: "Da. Chatbot-ul se integrează ca un widget pe orice site, indiferent de platformă: WordPress, Wix, Webflow, Next.js sau altele. Integrarea necesită adăugarea unui script de câteva linii și nu afectează performanța sau viteza site-ului.",
+      },
+    ],
+  },
 ];
