@@ -1,6 +1,6 @@
 [
-  {"keyword": "automatizare procese afaceri Romania", "priority": 1, "published": false},
-  {"keyword": "chatbot AI pentru site Romania", "priority": 2, "published": false},
+  {"keyword": "automatizare procese afaceri Romania", "priority": 1, "published": true},
+  {"keyword": "chatbot AI pentru site Romania", "priority": 2, "published": true},
   {"keyword": "cum sa automatizezi emailurile firmei", "priority": 3, "published": false},
   {"keyword": "consultanta AI pentru firme mici Romania", "priority": 4, "published": false},
   {"keyword": "automatizare facturi si rapoarte Excel", "priority": 5, "published": false},

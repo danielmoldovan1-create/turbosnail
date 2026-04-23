@@ -36,6 +36,39 @@ export const metadata: Metadata = {
   },
 };
 
+const siteJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://turbosnail.ro/#organization",
+      name: "TurboSnail",
+      url: "https://turbosnail.ro",
+      logo: { "@type": "ImageObject", url: "https://turbosnail.ro/Turbosnail logo.PNG" },
+      email: "hello@turbosnail.ro",
+      contactPoint: { "@type": "ContactPoint", email: "hello@turbosnail.ro", contactType: "customer service", availableLanguage: "Romanian" },
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://turbosnail.ro/#localbusiness",
+      name: "TurboSnail",
+      description: "Agenție de automatizări AI și consultanță pentru afaceri din România.",
+      url: "https://turbosnail.ro",
+      email: "hello@turbosnail.ro",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Timișoara",
+        addressRegion: "Timiș",
+        addressCountry: "RO",
+      },
+      geo: { "@type": "GeoCoordinates", latitude: 45.7489, longitude: 21.2087 },
+      openingHours: "Mo-Fr 09:00-18:00",
+      serviceArea: { "@type": "Country", name: "Romania" },
+      priceRange: "$$",
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{

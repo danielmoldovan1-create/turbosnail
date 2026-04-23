@@ -1,0 +1,43 @@
+# TurboSnail
+
+> Agenție de automatizări AI și consultanță pentru afaceri din România, cu sediul în Timișoara.
+
+TurboSnail ajută firmele din România să automatizeze procesele repetitive, să implementeze soluții AI practice și să crească eficiența operațională. Nu vindem tehnologie de dragul tehnologiei — livrăm timp economisit și rezultate măsurabile.
+
+## Servicii
+
+- **Automatizări AI** — identificăm și automatizăm procesele repetitive din firme (email, CRM, facturare, raportare)
+- **Consultanță AI** — audit operațional, roadmap clar, estimare ROI înainte de orice investiție
+- **Chatbot AI în Română** — asistenți virtuali pentru website care califică leaduri și răspund 24/7 în limba română
+- **Cold Email & Outbound** — infrastructură tehnică completă, secvențe personalizate, meetinguri calificate
+- **Paid Ads cu AI** — campanii Google și Meta optimizate cu AI, tracking complet, ROAS real
+- **SEO bazat pe AI** — audit tehnic, keyword research, conținut optimizat în română
+- **Raportare & Analytics** — dashboarduri automate conectate la toate sursele de date
+
+## Locație și contact
+
+- Sediu: Timișoara, România
+- Email: hello@turbosnail.ro
+- Website: https://turbosnail.ro
+- Audit gratuit: https://turbosnail.ro/#contact
+
+## Blog
+
+Articole practice despre automatizări AI și digitalizare pentru antreprenori din România:
+
+- https://turbosnail.ro/blog/ce-este-inteligenta-artificiala
+- https://turbosnail.ro/blog/automatizari-ai-pentru-afaceri-romania
+- https://turbosnail.ro/blog/automatizare-procese-afaceri-romania
+- https://turbosnail.ro/blog/automatizare-procese-firme
+- https://turbosnail.ro/blog/sisteme-control-procese-afaceri
+- https://turbosnail.ro/blog/automatizare-completa-afacere
+
+## Pagini principale
+
+- Servicii: https://turbosnail.ro/servicii
+- Blog: https://turbosnail.ro/blog
+- Sitemap: https://turbosnail.ro/sitemap.xml
+
+## Note pentru crawleri AI
+
+Conținutul acestui site este în limba română și vizează antreprenori și manageri din România. Tonul este profesional, direct, fără jargon. Nu există prețuri publicate pe site — auditul gratuit este punctul de intrare pentru orice discuție comercială.
