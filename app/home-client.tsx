@@ -202,7 +202,7 @@ export default function HomeClient() {
         <div className="mx" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
             <div style={{ cursor: "pointer" }} onClick={() => go("top")}>
-              <img src="/Turbosnail logo.PNG" alt="TurboSnail - Automatizări AI" width={150} height={50} style={{ height: 50, width: "auto" }} />
+              <img src="/turbosnail-logo.png" alt="TurboSnail - Automatizări AI" width={150} height={50} style={{ height: 50, width: "auto" }} />
             </div>
             <div className="nav-lnk" style={{ display: "none" }}>
               <div className="nav-drop" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
@@ -569,32 +569,6 @@ export default function HomeClient() {
           </Fade>
         </div>
       </section>
-
-      {/* FOOTER */}
-      <footer style={{ borderTop: "1px solid #1a1d2a", padding: "50px 20px 30px" }}>
-        <div className="mx" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 36 }}>
-          <div style={{ maxWidth: 320 }}>
-            <div style={{ marginBottom: 16 }}>
-              <img src="/Turbosnail logo.PNG" alt="TurboSnail" width={150} height={50} style={{ height: 56, width: "auto" }} />
-            </div>
-            <p style={{ fontSize: 13, color: "#666677", lineHeight: 1.6 }}>
-              Automatizări AI pentru afaceri din România. Recuperezi timp, nu pierzi bani pe tehnologie inutilă. Bazați în Timișoara, livrăm în toată țara.
-            </p>
-          </div>
-          <div style={{ display: "flex", gap: 56 }}>
-            <div>
-              <p className="hd" style={{ fontSize: 11, fontWeight: 700, color: "#666677", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 14 }}>Servicii</p>
-              <div style={{ display: "flex", flexDirection: "column", gap: 8, fontSize: 13, color: "#888899" }}>
-                {SERVICES.map((s, i) => <a key={i} href={`/servicii/${s.slug}`} style={{ color: "#888899", textDecoration: "none", cursor: "pointer" }}>{s.name}</a>)}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="mx" style={{ marginTop: 40, paddingTop: 24, borderTop: "1px solid #1a1d2a", fontSize: 11, color: "#555566", display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
-          <span>© 2026 TurboSnail. Toate drepturile rezervate.</span>
-          <span>PFA · Timișoara, România</span>
-        </div>
-      </footer>
 
       <div className="sk">
         <button className="btn-p" style={{ width: "100%" }} onClick={() => go("contact")}>Vreau audit gratuit →</button>

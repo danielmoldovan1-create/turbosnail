@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: "Ghid practic pentru antreprenori: cum implementezi automatizare completa afacere pas cu pas, ce sisteme conectezi si cum masori impactul real. Fara teorie, fara hype.",
   openGraph: {
     title: "Automatizarea Completă a Unei Afaceri: De Unde Începi | TurboSnail",
-    description: "Ghid practic pentru antreprenori: cum implementezi automatizare completa afacere pas cu pas, ce sisteme conectezi si cum masori impactul real. Fara teorie, fara hype.",
+    description: "Ghid practic pentru antreprenori: cum implementezi automatizare completă afacere pas cu pas, ce sisteme conectezi și cum măsori impactul real. Fără teorie, fără hype.",
     url: "https://turbosnail.ro/blog/automatizare-completa-afacere",
     siteName: "TurboSnail",
     locale: "ro_RO",
@@ -17,7 +17,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Automatizarea Completă a Unei Afaceri: De Unde Începi",
-  "description": "Ghid practic pentru antreprenori: cum implementezi automatizare completa afacere pas cu pas, ce sisteme conectezi si cum masori impactul real.",
+  "description": "Ghid practic pentru antreprenori: cum implementezi automatizare completă afacere pas cu pas, ce sisteme conectezi și cum măsori impactul real.",
   "url": "https://turbosnail.ro/blog/automatizare-completa-afacere",
   "datePublished": "2026-04-22",
   "dateModified": "2026-04-22",
@@ -27,7 +27,7 @@ const jsonLd = {
     "url": "https://turbosnail.ro",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://turbosnail.ro/Turbosnail logo.PNG"
+      "url": "https://turbosnail.ro/turbosnail-logo.png"
     }
   },
   "inLanguage": "ro-RO",
@@ -70,7 +70,7 @@ export default function AutomatizareCompletaAfacere() {
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.88)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
           <a href="/" style={{ textDecoration: "none" }}>
-            <img src="/Turbosnail logo.PNG" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
+            <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
           </a>
           <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
             Audit Gratuit →
@@ -224,7 +224,7 @@ export default function AutomatizareCompletaAfacere() {
             Construieste primul flux automatizat in firma ta
           </h3>
           <p style={{ fontSize: 15, color: "#888899", lineHeight: 1.65, marginBottom: 28, maxWidth: 420, marginLeft: "auto", marginRight: "auto" }}>
-            Audit gratuit de 30 de minute. Iti aratam cu ce proces sa incepi, ce impact ai in primele 30 de zile si ce urmeaza dupa.
+            Audit gratuit de 30 de minute. Îți arătăm cu ce proces să începi, ce impact ai în primele 30 de zile și ce urmează după.
           </p>
           <a href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
             Vreau auditul gratuit →
@@ -233,15 +233,6 @@ export default function AutomatizareCompletaAfacere() {
 
       </article>
 
-      <footer style={{ borderTop: "1px solid #1a1d2a", padding: "40px 20px 30px", textAlign: "center" }}>
-        <div style={{ maxWidth: 1180, margin: "0 auto", fontSize: 12, color: "#555566" }}>
-          <span>© 2026 TurboSnail. Toate drepturile rezervate.</span>
-          <span style={{ margin: "0 16px" }}>·</span>
-          <a href="/" style={{ color: "#555566", textDecoration: "none" }}>Acasa</a>
-          <span style={{ margin: "0 16px" }}>·</span>
-          <a href="/blog" style={{ color: "#555566", textDecoration: "none" }}>Blog</a>
-        </div>
-      </footer>
     </main>
   );
 }

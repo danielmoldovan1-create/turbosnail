@@ -44,17 +44,15 @@ const siteJsonLd = {
       "@id": "https://turbosnail.ro/#organization",
       name: "TurboSnail",
       url: "https://turbosnail.ro",
-      logo: { "@type": "ImageObject", url: "https://turbosnail.ro/Turbosnail logo.PNG" },
-      email: "hello@turbosnail.ro",
-      contactPoint: { "@type": "ContactPoint", email: "hello@turbosnail.ro", contactType: "customer service", availableLanguage: "Romanian" },
+      logo: { "@type": "ImageObject", url: "https://turbosnail.ro/turbosnail-logo.png" },
+      description: "Agenție de automatizări AI și consultanță pentru afaceri din România.",
     },
     {
-      "@type": "LocalBusiness",
+      "@type": "ProfessionalService",
       "@id": "https://turbosnail.ro/#localbusiness",
       name: "TurboSnail",
       description: "Agenție de automatizări AI și consultanță pentru afaceri din România.",
       url: "https://turbosnail.ro",
-      email: "hello@turbosnail.ro",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Timișoara",
@@ -62,9 +60,7 @@ const siteJsonLd = {
         addressCountry: "RO",
       },
       geo: { "@type": "GeoCoordinates", latitude: 45.7489, longitude: 21.2087 },
-      openingHours: "Mo-Fr 09:00-18:00",
-      serviceArea: { "@type": "Country", name: "Romania" },
-      priceRange: "$$",
+      areaServed: { "@type": "Country", name: "România" },
     },
   ],
 };
@@ -77,13 +73,17 @@ export default function RootLayout({
   return (
     <html lang="ro">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd).replace(/</g, "\\u003c") }}
+        />
         {children}
         <footer style={{ background: "#070910", borderTop: "1px solid #12141f", padding: "56px 20px 32px", fontFamily: "'Instrument Sans', sans-serif" }}>
           <div style={{ maxWidth: 1100, margin: "0 auto" }}>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: "40px 32px", marginBottom: 48 }}>
               <div>
                 <a href="/" style={{ textDecoration: "none", display: "inline-block", marginBottom: 16 }}>
-                  <img src="/Turbosnail logo.PNG" alt="TurboSnail" style={{ height: 40, width: "auto" }} />
+                  <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 40, width: "auto" }} />
                 </a>
                 <p style={{ fontSize: 13, color: "#555566", lineHeight: 1.6, maxWidth: 200 }}>
                   Agenție de automatizări AI din Timișoara.
@@ -94,7 +94,6 @@ export default function RootLayout({
                 <nav style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   <a href="/servicii/automatizari-ai" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Automatizări AI</a>
                   <a href="/servicii/consultanta-ai" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Consultanță AI</a>
-                  <a href="/servicii/chatbot-ai-romania" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Chatbot AI în Română</a>
                   <a href="/servicii/cold-email-outbound" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Cold Email & Outbound</a>
                   <a href="/servicii/paid-ads-ai" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Paid Ads cu AI</a>
                   <a href="/servicii/seo-ai" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>SEO bazat pe AI</a>

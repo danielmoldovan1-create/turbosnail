@@ -104,7 +104,7 @@ export const SERVICES: ServiceData[] = [
     tag: "CONSULTANȚĂ",
     intro: "Consultanța AI nu înseamnă să îți vindem tehnologie de dragul tehnologiei. Înseamnă să analizăm businessul tău, să identificăm unde pierzi timp și bani pe procese repetitive și să îți spunem concret ce merită automatizat, în ce ordine și cu ce investiție reală. Fără jargon, fără promisiuni exagerate.",
     forWho: {
-      title: "Pentru cine este consultanta AI",
+      title: "Pentru cine este consultanța AI",
       items: [
         { type: "Antreprenori care nu știu de unde să înceapă", detail: "Ai auzit de AI, vrei să implementezi ceva, dar nu știi ce anume are sens pentru businessul tău și ce e doar hype. Consultanța îți dă claritate fără să cheltuiești pe trial and error." },
         { type: "Firme care au încercat AI fără rezultate", detail: "Ai cumpărat abonamente la tool-uri, ai testat câteva lucruri, dar nu ai văzut impact real. Un audit identifică de ce nu a funcționat și ce ar funcționa în contextul tău specific." },
@@ -114,7 +114,7 @@ export const SERVICES: ServiceData[] = [
       ],
     },
     problems: {
-      title: "Probleme pe care le rezolva consultanta AI",
+      title: "Probleme pe care le rezolvă consultanța AI",
       items: [
         { problem: "Bani investiți în tool-uri AI neutilizate", detail: "Abonamente la ChatGPT, Notion AI, diverse platforme — plătite lunar, folosite ocazional. Un audit identifică ce tool-uri aduc valoare reală și ce subscripții pot fi eliminate." },
         { problem: "Nu știi ce procese merită automatizate", detail: "Nu toate procesele repetitive sunt la fel de valoroase de automatizat. Unele sunt simple dar cu impact mic, altele complexe dar cu ROI uriaș. Consultanța prioritizează corect, bazat pe timp pierdut și frecvență." },
@@ -123,7 +123,7 @@ export const SERVICES: ServiceData[] = [
       ],
     },
     includes: {
-      title: "Ce include un audit de consultanta AI",
+      title: "Ce include un audit de consultanță AI",
       steps: [
         "Interviu inițial (60-90 minute) — înțelegem businessul, fluxurile actuale și prioritățile tale",
         "Audit operațional — analizăm fiecare departament și identificăm procesele repetitive cu cel mai mare cost în timp",
@@ -135,15 +135,15 @@ export const SERVICES: ServiceData[] = [
     },
     sections: [
       {
-        heading: "Ce include consultanta AI pentru afaceri",
+        heading: "Ce include consultanța AI pentru afaceri",
         body: "Auditul de consultanță AI durează de obicei 2-3 ore și acoperă toate zonele operaționale ale businessului tău: vânzări, marketing, operațiuni, financiar, customer support. Identificăm procesele care consumă cel mai mult timp, le cuantificăm costul real (ore/săptămână × tarif orar) și estimăm economiile posibile prin automatizare. La final primești un raport cu priorități clare și un roadmap de implementare.",
       },
       {
-        heading: "Consultanta AI pentru firme mici si medii: ce este diferit",
+        heading: "Consultanță AI pentru firme mici și medii: ce este diferit",
         body: "Firmele mici și medii din România au nevoie de soluții care funcționează de la prima zi, nu de proiecte de 6 luni. Consultanța noastră este practică: recomandăm instrumente pe care le poți folosi singur după implementare, nu sisteme care creează dependență față de un furnizor. Prioritizăm automatizările cu cel mai rapid return on investment, nu pe cele mai impresionante din punct de vedere tehnic.",
       },
       {
-        heading: "De la consultanta la implementare",
+        heading: "De la consultanță la implementare",
         body: "Auditul poate rămâne un document de strategie pe care îl implementezi singur sau cu echipa ta internă. Sau putem prelua implementarea noi, de la configurarea primelor fluxuri până la livrarea unui sistem complet de automatizare. Alegerea îți aparține — nu există obligații după audit.",
       },
     ],
@@ -191,7 +191,7 @@ export const SERVICES: ServiceData[] = [
       ],
     },
     problems: {
-      title: "Probleme pe care le rezolva un sistem de cold email bine construit",
+      title: "Probleme pe care le rezolvă un sistem de cold email bine construit",
       items: [
         { problem: "Lipsa unui flux predictibil de leads noi", detail: "Businessul depinde de referințe și recomandări — când acestea se opresc, nu mai intră leads noi. Cold email-ul creează un canal de vânzare pe care îl controlezi tu, independent de rețeaua existentă." },
         { problem: "Emailurile ajung la spam și nu primești răspunsuri", detail: "Ai încercat să trimiți emailuri de prospectare, dar rata de deschidere e sub 10% sau primești bounce-uri. Fără infrastructură corectă (domenii secundare, warming, autentificare SPF/DKIM/DMARC), emailurile nu ajung în inbox." },
@@ -216,11 +216,11 @@ export const SERVICES: ServiceData[] = [
         body: "Diferența dintre cold email-ul care funcționează și cel care ajunge la spam este infrastructura tehnică: domenii secundare configurate corect (SPF, DKIM, DMARC), cutii poștale încălzite treptat, liste de leaduri verificate și curățate, mesaje cu personalizare reală — nu template-uri generice. Noi ne ocupăm de tot: configurare, scriere, testare, optimizare bazată pe date.",
       },
       {
-        heading: "Outbound Romania: cum sourcem leadurile",
+        heading: "Outbound România: cum sourcem leadurile",
         body: "Nu cumpărăm liste. Construim liste din surse verificate (LinkedIn Sales Navigator, baze de date de companii, surse publice) filtrate după criteriile tale exacte: industrie, dimensiune companie, funcție decident, locație. Fiecare lead este verificat înainte de a intra în secvență. Rata de bounced sub 2% este standardul nostru.",
       },
       {
-        heading: "Ce primesti la final: meetinguri, nu rapoarte",
+        heading: "Ce primești la final: meetinguri, nu rapoarte",
         body: "KPI-ul nostru principal sunt meetingurile livrate în calendarul tău — nu ratele de deschidere sau alte metrici intermediare. Tu te prezinți la call, închizi dealul. De prospectat, scris, urmărit și calificat ne ocupăm noi. Raportăm săptămânal: emailuri trimise, răspunsuri, meetinguri programate, motive de refuz.",
       },
     ],
@@ -268,7 +268,7 @@ export const SERVICES: ServiceData[] = [
       ],
     },
     problems: {
-      title: "Probleme pe care le rezolvam in campaniile paid ads",
+      title: "Probleme pe care le rezolvăm în campaniile paid ads",
       items: [
         { problem: "Buget consumat pe clicuri fără conversii", detail: "Campania rulează, banii se duc, dar nu se transformă în clienți. De obicei problema este în targeting (audiențe prea largi), în pagina de destinație (care nu convinge) sau în structura campaniei (obiectiv greșit ales)." },
         { problem: "Creative-uri oboseite care nu mai performează", detail: "Același anunț văzut de prea multe ori de aceeași audiență își pierde eficiența. AI-ul testează automat variante de texte, imagini și formate și identifică ce combinație performează cel mai bine pentru fiecare segment." },
@@ -293,11 +293,11 @@ export const SERVICES: ServiceData[] = [
         body: "Managementul clasic al campaniilor se bazează pe ajustări manuale periodice. Managementul bazat pe AI analizează continuu performanța, testează automat variante de anunțuri, ajustează licitația în timp real și identifică segmentele de audiență cu cel mai bun cost per conversie. Rezultatul: același buget livrează mai multe conversii.",
       },
       {
-        heading: "Google Ads si Meta Ads optimizate cu AI",
+        heading: "Google Ads și Meta Ads optimizate cu AI",
         body: "Pe Google Ads folosim Performance Max cu asset-uri bine structurate, audiences personalizate și excluderi precise. Pe Meta Ads construim funnel-uri complete: awareness, retargeting și conversie cu creative-uri testate A/B automat. Raportăm transparent: cost per lead, cost per vânzare, ROAS. Fără metrici de vanitate.",
       },
       {
-        heading: "Cand are sens sa investesti in paid ads cu AI",
+        heading: "Când are sens să investești în paid ads cu AI",
         body: "Paid ads cu AI funcționează cel mai bine când ai un produs sau serviciu cu marjă suficientă, o ofertă clară și o pagină de destinație care convertește. Dacă acestea lipsesc, le construim înainte de a cheltui primul leu pe publicitate. Nu recomandăm campanii când condițiile de bază nu sunt îndeplinite.",
       },
     ],
@@ -345,7 +345,7 @@ export const SERVICES: ServiceData[] = [
       ],
     },
     problems: {
-      title: "Probleme pe care le rezolva SEO bazat pe AI",
+      title: "Probleme pe care le rezolvă SEO bazat pe AI",
       items: [
         { problem: "Site-ul nu apare pe Google pentru nicio căutare relevantă", detail: "Dacă cauți pe Google serviciul tău + orașul tău și nu apari în primele 3 pagini, pierzi clienți în fiecare zi în favoarea concurenților. Problemele pot fi tehnice (site nevizibil pentru Google), de conținut (lipsă de pagini relevante) sau de autoritate (lipsa linkurilor)." },
         { problem: "Trafic organic există, dar nu convertește", detail: "Ai vizitatori din Google, dar aceștia nu contactează, nu cumpără, nu completează formulare. De obicei problema este că traficul vine de pe keywords cu intenție greșită (informaționale în loc de comerciale) sau că paginile de destinație nu sunt construite pentru conversie." },
@@ -366,20 +366,20 @@ export const SERVICES: ServiceData[] = [
     },
     sections: [
       {
-        heading: "Ce include SEO bazat pe AI pentru site-ul tau",
+        heading: "Ce include SEO bazat pe AI pentru site-ul tău",
         body: "Auditul SEO analizează sănătatea tehnică (viteze de încărcare, erori de crawl, structura URL-urilor, date structurate), profilul de linkuri și acoperirea de keywords față de concurenți. Pe baza auditului construim o strategie de conținut bazată pe keywords cu intenție comercială clară și volum de căutare verificat în Search Console și Semrush.",
       },
       {
-        heading: "Continut SEO produs cu AI si editat de oameni",
+        heading: "Conținut SEO produs cu AI și editat de oameni",
         body: "Producem conținut în română care rankează: articole de blog targetate pe keywords long-tail, pagini de servicii optimizate, pagini de locație pentru firme cu acoperire geografică. Conținutul este generat cu ajutorul AI și editat de specialiști pentru acuratețe, ton consistent și conformitate cu ghidurile Google privind calitatea (EEAT).",
       },
       {
-        heading: "SEO Romania: cat dureaza pana apar rezultatele",
+        heading: "SEO România: cât durează până apar rezultatele",
         body: "SEO este un canal pe termen mediu și lung. Primele îmbunătățiri tehnice pot fi vizibile în 4-8 săptămâni. Creșteri semnificative de trafic organic apar de obicei la 3-6 luni pentru un site nou și 6-12 luni pentru keywords competitive. Raportăm lunar cu date din Search Console: impresii, clicuri, poziție medie pe fiecare keyword targetat.",
       },
     ],
     quote: {
-      text: "Diferența dintre SEO care funcționează și SEO care iroseste bugetul este simpla: unul porneste de la ce cauta clientul, celalalt de la ce crede firma despre sine.",
+      text: "Diferența dintre SEO care funcționează și SEO care irosește bugetul este simplă: unul pornește de la ce caută clientul, celălalt de la ce crede firma despre sine.",
       author: "Bogdan Nedelcu",
       role: "Head of SEO, Romanian Digital Marketing Association",
     },
@@ -408,11 +408,11 @@ export const SERVICES: ServiceData[] = [
     title: "Raportare & Analytics",
     metaTitle: "Raportare Automată & Analytics pentru Firme România | TurboSnail",
     metaDescription: "Raportare automată și analytics pentru firme din România: toate datele tale într-un singur dashboard, actualizat în timp real, trimis automat echipei.",
-    h1: "Raportare automata si analytics pentru firme din România",
+    h1: "Raportare automată și analytics pentru firme din România",
     tag: "ANALYTICS",
     intro: "Raportarea manuală consumă ore întregi în fiecare săptămână. Cineva deschide Google Analytics, Meta Ads, Google Ads, CRM-ul și foaia de calcul, copiază datele, construiește un tabel și trimite un email. Acest proces se poate automatiza complet: un dashboard care se actualizează singur și un raport trimis automat în fiecare luni dimineață.",
     forWho: {
-      title: "Pentru cine este raportarea automata si analytics",
+      title: "Pentru cine este raportarea automată și analytics",
       items: [
         { type: "Antreprenori cu mai multe canale de marketing", detail: "Dacă rulezi simultan Google Ads, Meta Ads, email marketing și SEO, ai nevoie de o viziune unificată a performanței, nu de date disparate din 4 tool-uri diferite care nu se potrivesc." },
         { type: "Manageri care raportează periodic board-ului sau investitorilor", detail: "Dacă prezinți lunar sau trimestrial rezultate conducerii, un dashboard automat elimină orele de asamblare manuală și reduce riscul de erori în date." },
@@ -422,7 +422,7 @@ export const SERVICES: ServiceData[] = [
       ],
     },
     problems: {
-      title: "Probleme pe care le rezolva raportarea automata",
+      title: "Probleme pe care le rezolvă raportarea automată",
       items: [
         { problem: "Ore pierdute lunar cu asamblarea manuală a rapoartelor", detail: "Un manager sau un angajat petrece 4-8 ore pe lună doar colectând, formatând și trimițând rapoarte. Multiplicat pe 12 luni, înseamnă o săptămână întreagă de muncă pe an investită în copy-paste." },
         { problem: "Date contradictorii din surse diferite", detail: "Google Analytics arată 500 de conversii, Meta Ads raportează 300, CRM-ul are 200 de clienți noi. Care cifră este corectă? Fără un model de atribuire unificat și o sursă unică de adevăr, deciziile se iau pe date incorecte." },
@@ -431,7 +431,7 @@ export const SERVICES: ServiceData[] = [
       ],
     },
     includes: {
-      title: "Ce include implementarea raportarii automate si a analytics",
+      title: "Ce include implementarea raportării automate și a analytics",
       steps: [
         "Audit surse de date — identificăm toate sistemele care generează date relevante (ads, CRM, e-commerce, financiar)",
         "Configurare conexiuni API — conectăm sursele de date la platforma de raportare (Looker Studio, Power BI sau custom)",
@@ -447,7 +447,7 @@ export const SERVICES: ServiceData[] = [
         body: "Construim dashboarduri care agregă date din toate sursele relevante: Google Analytics, Meta Ads, Google Ads, CRM, platforme e-commerce, sisteme ERP. Datele sunt vizualizate într-un singur loc, actualizate automat și accesibile de pe orice dispozitiv. Nu mai deschizi 5 tool-uri ca să înțelegi cum a mers săptămâna.",
       },
       {
-        heading: "Raportare automata: cum functioneaza tehnic",
+        heading: "Raportare automată: cum funcționează tehnic",
         body: "Folosim Looker Studio, Power BI sau dashboarduri custom conectate direct la sursele de date prin API-uri. Rapoartele se generează automat la intervalele stabilite (zilnic, săptămânal, lunar) și se trimit pe email echipei sau stakeholderilor. Fără intervenție manuală, fără greșeli de copiere a datelor.",
       },
       {
@@ -456,7 +456,7 @@ export const SERVICES: ServiceData[] = [
       },
     ],
     quote: {
-      text: "O companie care ia decizii bazate pe date reale, nu pe impresii, ia decizii mai bune. Raportarea automata este primul pas spre aceasta cultura.",
+      text: "O companie care ia decizii bazate pe date reale, nu pe impresii, ia decizii mai bune. Raportarea automată este primul pas spre această cultură.",
       author: "Cristian Stoica",
       role: "Director Analytics, Romanian E-commerce Association",
     },
@@ -520,7 +520,7 @@ export const SERVICES: ServiceData[] = [
     },
     sections: [
       {
-        heading: "Chatbot AI Romania: ce este diferit față de chatboții clasici",
+        heading: "Chatbot AI România: ce este diferit față de chatboții clasici",
         body: "Chatboții clasici funcționează pe baza unor arbori de decizie rigizi: dacă utilizatorul scrie exact cuvântul cheie X, apare răspunsul Y. Dacă formulează altfel, chatbotul nu înțelege. Chatboții AI moderni înțeleg intenția din spatele mesajului, indiferent de cum este formulat. Un vizitator poate scrie 'cand sunteti deschisi', 'program', 'la ce ora pot veni' sau 'sunteti deschisi sambata' și va primi același răspuns corect. Această flexibilitate face diferența între un chatbot util și unul frustrant. Construim chatboți AI în limba română care înțeleg specificul limbii și al contextului local, nu adaptări din engleză cu erori de înțelegere.",
       },
       {
@@ -529,7 +529,7 @@ export const SERVICES: ServiceData[] = [
       },
       {
         heading: "Rezultate concrete ale unui chatbot AI bine implementat",
-        body: "Firmele care au implementat chatboți AI raportează în mod constant trei tipuri de rezultate: reducerea volumului de emailuri și apeluri cu întrebări standard cu 30-50%, creșterea ratei de captare a leadurilor din traficul de pe site și reducerea timpului de răspuns la zero pentru întrebările frecvente. Cel mai important indicator este calitatea leadurilor transmise echipei de vânzări: un chatbot care califică corect livrează contacte care au exprimat deja nevoia, au indicat bugetul și sunt disponibile pentru o discuție. Echipa de vânzări nu mai prospectează, ci închide. Acest lucru se combina natural cu alte servicii de automatizari AI pentru un ecosistem complet.",
+        body: "Firmele care au implementat chatboți AI raportează în mod constant trei tipuri de rezultate: reducerea volumului de emailuri și apeluri cu întrebări standard cu 30-50%, creșterea ratei de captare a leadurilor din traficul de pe site și reducerea timpului de răspuns la zero pentru întrebările frecvente. Cel mai important indicator este calitatea leadurilor transmise echipei de vânzări: un chatbot care califică corect livrează contacte care au exprimat deja nevoia, au indicat bugetul și sunt disponibile pentru o discuție. Echipa de vânzări nu mai prospectează, ci închide. Acest lucru se combină natural cu alte servicii de automatizări AI pentru un ecosistem complet.",
       },
     ],
     quote: {

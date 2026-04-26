@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Chatbot AI pentru Site Romania: Ce Face, Cat Economiseste si Cum Alegi | TurboSnail",
-  description: "Ghid practic despre chatbot AI pentru site Romania: cum functioneaza, ce procese automatizeaza, ce intrebari sa pui unui furnizor si cum masori rezultatele reale.",
+  title: "Chatbot AI pentru Site România: Ce Face, Cât Economisești și Cum Alegi | TurboSnail",
+  description: "Ghid practic despre chatbot AI pentru site România: cum funcționează, ce procese automatizează, ce întrebări să pui unui furnizor și cum măsori rezultatele reale.",
   openGraph: {
     title: "Chatbot AI pentru Site Romania: Ce Face, Cat Economiseste si Cum Alegi | TurboSnail",
     description: "Ghid practic despre chatbot AI pentru site Romania: cum functioneaza, ce procese automatizeaza, ce intrebari sa pui unui furnizor si cum masori rezultatele reale.",

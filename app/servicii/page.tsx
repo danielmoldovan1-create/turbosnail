@@ -32,7 +32,7 @@ export default function ServicesIndex() {
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.92)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 64 }}>
           <a href="/" style={{ textDecoration: "none" }}>
-            <img src="/Turbosnail logo.PNG" alt="TurboSnail" style={{ height: 46, width: "auto" }} />
+            <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 46, width: "auto" }} />
           </a>
           <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", border: "none", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, cursor: "pointer", padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
             Audit Gratuit →

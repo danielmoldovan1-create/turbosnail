@@ -19,59 +19,12 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://turbosnail.ro/#organization",
-      "name": "TurboSnail",
-      "url": "https://turbosnail.ro",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://turbosnail.ro/Turbosnail logo.PNG"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "hello@turbosnail.ro",
-        "contactType": "customer service",
-        "availableLanguage": "Romanian"
-      },
-      "sameAs": []
-    },
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://turbosnail.ro/#localbusiness",
-      "name": "TurboSnail",
-      "description": "Agenție de automatizări AI și consultanță pentru afaceri din România. Automatizăm procese repetitive, implementăm soluții AI și creștem eficiența operațională.",
-      "url": "https://turbosnail.ro",
-      "telephone": "",
-      "email": "hello@turbosnail.ro",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Timișoara",
-        "addressRegion": "Timiș",
-        "addressCountry": "RO"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 45.7489,
-        "longitude": 21.2087
-      },
-      "priceRange": "$$",
-      "openingHours": "Mo-Fr 09:00-18:00",
-      "serviceArea": {
-        "@type": "Country",
-        "name": "Romania"
-      }
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://turbosnail.ro/#website",
-      "url": "https://turbosnail.ro",
-      "name": "TurboSnail",
-      "publisher": { "@id": "https://turbosnail.ro/#organization" },
-      "inLanguage": "ro-RO"
-    }
-  ]
+  "@type": "WebSite",
+  "@id": "https://turbosnail.ro/#website",
+  "url": "https://turbosnail.ro",
+  "name": "TurboSnail",
+  "description": "Agenție de automatizări AI și consultanță pentru afaceri din România.",
+  "inLanguage": "ro-RO"
 };
 
 export default function Page() {

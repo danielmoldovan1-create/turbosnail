@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const ARTICLES = [
   {
     slug: "automatizare-procese-afaceri-romania",
-    title: "Automatizare Procese Afaceri Romania: Ghid Practic pentru Firme în 2026",
+    title: "Automatizare Procese Afaceri România: Ghid Practic pentru Firme în 2026",
     date: "19 aprilie 2026",
     excerpt: "Cum identifici procesele repetitive din firma ta, ce instrumente funcționează cu adevărat și cât timp economisești concret prin automatizare. Fără teorie, fără promisiuni.",
     tag: "Automatizare",
@@ -60,7 +60,7 @@ export default function BlogIndex() {
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.88)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
           <a href="/" style={{ textDecoration: "none" }}>
-            <img src="/Turbosnail logo.PNG" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
+            <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
           </a>
           <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
             Audit Gratuit →
@@ -77,7 +77,7 @@ export default function BlogIndex() {
             Blog: <span className="ac">Automatizări AI</span><br />pentru Afaceri
           </h1>
           <p style={{ fontSize: 17, lineHeight: 1.65, color: "#888899", maxWidth: 520, marginLeft: "auto", marginRight: "auto" }}>
-            Articole practice despre automatizare, AI și digitalizare pentru antreprenori din Romania. Fara jargon, cu exemple concrete.
+            Articole practice despre automatizare, AI și digitalizare pentru antreprenori din România. Fără jargon, cu exemple concrete.
           </p>
         </div>
       </section>
@@ -93,7 +93,7 @@ export default function BlogIndex() {
               <div className="card-title">{article.title}</div>
               <div className="card-excerpt">{article.excerpt}</div>
               <div className="card-date">{article.date}</div>
-              <span className="read-more">Citeste articolul →</span>
+              <span className="read-more">Citește articolul →</span>
             </Link>
           ))}
         </div>
@@ -103,12 +103,12 @@ export default function BlogIndex() {
       <section style={{ paddingBottom: 100, textAlign: "center" }}>
         <div style={{ maxWidth: 560, margin: "0 auto", padding: "0 20px" }}>
           <div style={{ background: "linear-gradient(160deg, #0f1119, #0c0e15)", border: "1px solid #1a1d2a", borderRadius: 20, padding: "44px 36px" }}>
-            <p className="hd" style={{ fontSize: 12, fontWeight: 700, color: "#ff6a00", letterSpacing: 2, textTransform: "uppercase", marginBottom: 16 }}>Gata sa automatizezi?</p>
+            <p className="hd" style={{ fontSize: 12, fontWeight: 700, color: "#ff6a00", letterSpacing: 2, textTransform: "uppercase", marginBottom: 16 }}>Gata să automatizezi?</p>
             <h2 className="hd" style={{ fontSize: 28, fontWeight: 800, marginBottom: 14, letterSpacing: "-0.5px", lineHeight: 1.2, color: "#eae8e3" }}>
-              Vorbeste cu echipa TurboSnail
+              Vorbește cu echipa TurboSnail
             </h2>
             <p style={{ fontSize: 15, color: "#888899", lineHeight: 1.65, marginBottom: 28 }}>
-              Audit gratuit, 30 de minute. Iti aratam ce procese din firma ta pot fi automatizate si cu ce impact real.
+              Audit gratuit, 30 de minute. Îți arătăm ce procese din firma ta pot fi automatizate și cu ce impact real.
             </p>
             <a href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 30px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
               Vreau auditul gratuit →
@@ -117,16 +117,6 @@ export default function BlogIndex() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer style={{ borderTop: "1px solid #1a1d2a", padding: "40px 20px 30px", textAlign: "center" }}>
-        <div style={{ maxWidth: 1180, margin: "0 auto", fontSize: 12, color: "#555566" }}>
-          <span>© 2026 TurboSnail. Toate drepturile rezervate.</span>
-          <span style={{ margin: "0 16px" }}>·</span>
-          <a href="/" style={{ color: "#555566", textDecoration: "none" }}>Acasa</a>
-          <span style={{ margin: "0 16px" }}>·</span>
-          <a href="/blog" style={{ color: "#555566", textDecoration: "none" }}>Blog</a>
-        </div>
-      </footer>
     </main>
   );
 }

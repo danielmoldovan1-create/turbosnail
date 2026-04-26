@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Automatizare Procese Afaceri Romania: Ghid Practic 2026 | TurboSnail",
-  description: "Cum automatizezi procesele repetitive din firma ta in Romania. Exemple concrete, instrumente folosite si cat timp economisesti efectiv. Ghid practic fara teorie.",
+  title: "Automatizare Procese Afaceri România: Ghid Practic 2026 | TurboSnail",
+  description: "Cum automatizezi procesele repetitive din firma ta în România. Exemple concrete, instrumente folosite și cât timp economisești efectiv. Ghid practic fără teorie.",
   openGraph: {
-    title: "Automatizare Procese Afaceri Romania: Ghid Practic 2026 | TurboSnail",
-    description: "Cum automatizezi procesele repetitive din firma ta in Romania. Exemple concrete, instrumente folosite si cat timp economisesti efectiv.",
+    title: "Automatizare Procese Afaceri România: Ghid Practic 2026 | TurboSnail",
+    description: "Cum automatizezi procesele repetitive din firma ta în România. Exemple concrete, instrumente folosite și cât timp economisești efectiv.",
     url: "https://turbosnail.ro/blog/automatizare-procese-afaceri-romania",
     siteName: "TurboSnail",
     locale: "ro_RO",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Automatizare Procese Afaceri Romania: Ghid Practic pentru Firme in 2026",
-  "description": "Cum automatizezi procesele repetitive din firma ta in Romania. Exemple concrete, instrumente folosite si cat timp economisesti efectiv.",
+  "headline": "Automatizare Procese Afaceri România: Ghid Practic pentru Firme în 2026",
+  "description": "Cum automatizezi procesele repetitive din firma ta în România. Exemple concrete, instrumente folosite și cât timp economisești efectiv.",
   "url": "https://turbosnail.ro/blog/automatizare-procese-afaceri-romania",
   "datePublished": "2026-04-19",
   "dateModified": "2026-04-19",
@@ -27,7 +27,7 @@ const jsonLd = {
     "url": "https://turbosnail.ro",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://turbosnail.ro/Turbosnail logo.PNG"
+      "url": "https://turbosnail.ro/turbosnail-logo.png"
     }
   },
   "inLanguage": "ro-RO",
@@ -71,7 +71,7 @@ export default function AutomatizareProcese() {
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.88)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
           <a href="/" style={{ textDecoration: "none" }}>
-            <img src="/Turbosnail logo.PNG" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
+            <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
           </a>
           <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
             Audit Gratuit →
@@ -89,7 +89,7 @@ export default function AutomatizareProcese() {
             <span style={{ fontSize: 13, color: "#555566" }}>· 7 min citit</span>
           </div>
           <h1 className="hd" style={{ fontSize: 40, fontWeight: 900, lineHeight: 1.12, marginBottom: 24, letterSpacing: "-1.5px", color: "#eae8e3" }}>
-            Automatizare Procese Afaceri Romania: Ghid Practic pentru Firme in 2026
+            Automatizare Procese Afaceri România: Ghid Practic pentru Firme în 2026
           </h1>
           <p style={{ fontSize: 19, lineHeight: 1.7, color: "#a8a6a1", marginBottom: 0 }}>
             Automatizarea proceselor dintr-o afacere nu inseamna sa cumperi software scump sau sa angajezi un departament IT. Inseamna sa identifici ce faci manual, repetat, in fiecare saptamana si sa faci acel lucru sa se intample singur. Firmele din Romania care au facut asta recupereaza in medie 8-12 ore pe saptamana per angajat.
@@ -108,7 +108,7 @@ export default function AutomatizareProcese() {
           Ceea ce face <a href="https://turbosnail.ro">automatizări AI</a> diferite fata de automatizarile clasice este capacitatea de a gestiona si sarcini care nu sunt complet structurate: clasificarea unui email dupa subiect, extragerea informatiilor dintr-un document PDF, redactarea unui prim draft de raspuns pe baza contextului. Nu vorbim de robotica sau sisteme complexe. Vorbim de instrumente accesibile, care nu necesita cunostinte de programare.
         </p>
 
-        <h2>Automatizare procese afaceri Romania: unde se pierde cel mai mult timp</h2>
+        <h2>Automatizare procese afaceri România: unde se pierde cel mai mult timp</h2>
         <p>
           In urma auditurilor facute cu firme din Romania, am identificat constant aceleasi categorii de procese manuale care consuma cel mai mult timp:
         </p>
@@ -131,7 +131,7 @@ export default function AutomatizareProcese() {
           <cite>McKinsey Global Institute, "A future that works: Automation, employment, and productivity", ianuarie 2017</cite>
         </blockquote>
 
-        <h2>Instrumentele care functioneaza efectiv pentru automatizare procese afaceri Romania</h2>
+        <h2>Instrumentele care funcționează efectiv pentru automatizare procese afaceri România</h2>
         <p>
           Nu ai nevoie de solutii enterprise sau bugete mari. Iata ce folosim concret:
         </p>
@@ -167,7 +167,7 @@ export default function AutomatizareProcese() {
           O regula simpla: daca poti descrie procesul pas cu pas, intr-o lista, fara ambiguitati, poate fi automatizat. Daca raspunsul depinde de context, situatie si relatii, nu poate.
         </p>
 
-        <h2>Cum sa incepi: pasii practici pentru o firma din Romania</h2>
+        <h2>Cum să începi: pașii practici pentru o firmă din România</h2>
         <ul>
           <li><strong>Saptamana 1:</strong> Fa o lista cu tot ce faci manual si repetat. Noteaza cat timp ia fiecare.</li>
           <li><strong>Saptamana 2:</strong> Prioritizeaza dupa timp pierdut si frecventa. Incepe cu cel mai simplu proces, nu cu cel mai important.</li>
@@ -179,7 +179,7 @@ export default function AutomatizareProcese() {
         </p>
 
         {/* FAQ */}
-        <h2>Intrebari frecvente despre automatizarea proceselor</h2>
+        <h2>Întrebări frecvente despre automatizarea proceselor</h2>
         <div style={{ marginTop: 8 }}>
           <div className="faq-item">
             <div className="faq-q">Trebuie sa stiu sa programez ca sa automatizez procese?</div>
@@ -210,7 +210,7 @@ export default function AutomatizareProcese() {
             Afla ce poti automatiza in firma ta
           </h3>
           <p style={{ fontSize: 15, color: "#888899", lineHeight: 1.65, marginBottom: 28, maxWidth: 420, marginLeft: "auto", marginRight: "auto" }}>
-            Audit gratuit de 30 de minute. Iti aratam concret ce procese pierd timp si cu ce impact real le poti automatiza.
+            Audit gratuit de 30 de minute. Îți arătăm concret ce procese pierd timp și cu ce impact real le poți automatiza.
           </p>
           <a href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
             Vreau auditul gratuit →
@@ -219,16 +219,6 @@ export default function AutomatizareProcese() {
 
       </article>
 
-      {/* FOOTER */}
-      <footer style={{ borderTop: "1px solid #1a1d2a", padding: "40px 20px 30px", textAlign: "center" }}>
-        <div style={{ maxWidth: 1180, margin: "0 auto", fontSize: 12, color: "#555566" }}>
-          <span>© 2026 TurboSnail. Toate drepturile rezervate.</span>
-          <span style={{ margin: "0 16px" }}>·</span>
-          <a href="/" style={{ color: "#555566", textDecoration: "none" }}>Acasa</a>
-          <span style={{ margin: "0 16px" }}>·</span>
-          <a href="/blog" style={{ color: "#555566", textDecoration: "none" }}>Blog</a>
-        </div>
-      </footer>
     </main>
   );
 }

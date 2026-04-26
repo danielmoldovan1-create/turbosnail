@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Sisteme de Control pentru Procesele Critice de Business | TurboSnail",
-  description: "Cum implementezi sisteme de control pentru procese critice de afaceri. Ghid B2B pentru manageri: monitorizare, alerte, audit automat si rezilienta operationala.",
+  description: "Cum implementezi sisteme de control pentru procese critice de afaceri. Ghid B2B pentru manageri: monitorizare, alerte, audit automat și reziliență operațională.",
   openGraph: {
     title: "Sisteme de Control pentru Procesele Critice de Business | TurboSnail",
-    description: "Cum implementezi sisteme de control pentru procese critice de afaceri. Ghid B2B pentru manageri: monitorizare, alerte, audit automat si rezilienta operationala.",
+    description: "Cum implementezi sisteme de control pentru procese critice de afaceri. Ghid B2B pentru manageri: monitorizare, alerte, audit automat și reziliență operațională.",
     url: "https://turbosnail.ro/blog/sisteme-control-procese-afaceri",
     siteName: "TurboSnail",
     locale: "ro_RO",
@@ -27,7 +27,7 @@ const jsonLd = {
     "url": "https://turbosnail.ro",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://turbosnail.ro/Turbosnail logo.PNG"
+      "url": "https://turbosnail.ro/turbosnail-logo.png"
     }
   },
   "inLanguage": "ro-RO",
@@ -70,7 +70,7 @@ export default function SistemeControlProceseAfaceri() {
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.88)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
           <a href="/" style={{ textDecoration: "none" }}>
-            <img src="/Turbosnail logo.PNG" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
+            <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
           </a>
           <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
             Audit Gratuit →
@@ -218,7 +218,7 @@ export default function SistemeControlProceseAfaceri() {
             Evalueaza maturitatea operationala a organizatiei tale
           </h3>
           <p style={{ fontSize: 15, color: "#888899", lineHeight: 1.65, marginBottom: 28, maxWidth: 440, marginLeft: "auto", marginRight: "auto" }}>
-            Audit gratuit de 30 de minute. Identificam procesele critice fara monitorizare si propunem o arhitectura de control potrivita pentru dimensiunea si industria voastra.
+            Audit gratuit de 30 de minute. Identificăm procesele critice fără monitorizare și propunem o arhitectură de control potrivită pentru dimensiunea și industria voastră.
           </p>
           <a href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
             Vreau auditul gratuit →
@@ -227,15 +227,6 @@ export default function SistemeControlProceseAfaceri() {
 
       </article>
 
-      <footer style={{ borderTop: "1px solid #1a1d2a", padding: "40px 20px 30px", textAlign: "center" }}>
-        <div style={{ maxWidth: 1180, margin: "0 auto", fontSize: 12, color: "#555566" }}>
-          <span>© 2026 TurboSnail. Toate drepturile rezervate.</span>
-          <span style={{ margin: "0 16px" }}>·</span>
-          <a href="/" style={{ color: "#555566", textDecoration: "none" }}>Acasa</a>
-          <span style={{ margin: "0 16px" }}>·</span>
-          <a href="/blog" style={{ color: "#555566", textDecoration: "none" }}>Blog</a>
-        </div>
-      </footer>
     </main>
   );
 }
