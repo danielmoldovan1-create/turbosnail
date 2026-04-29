@@ -37,12 +37,48 @@ const jsonLd = {
   }
 };
 
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Cât durează să implementezi prima automatizare în firma mea?",
+      acceptedAnswer: { "@type": "Answer", text: "Un flux simplu poate fi gata în 1-3 zile. Un flux mai complex, cu AI și integrări multiple, durează 1-3 săptămâni. Cheia este să nu încerci să automatizezi totul dintr-o dată." }
+    },
+    {
+      "@type": "Question",
+      name: "Am nevoie de cunoștințe tehnice pentru a automatiza procese?",
+      acceptedAnswer: { "@type": "Answer", text: "Pentru procesele simple, nu. Instrumentele vizuale precum Make sau Zapier sunt accesibile oricui știe să folosească Excel. Pentru integrări mai complexe sau AI, un specialist accelerează implementarea și evită erori costisitoare." }
+    },
+    {
+      "@type": "Question",
+      name: "Automatizarea proceselor se aplică și firmelor mici, cu 5-10 angajați?",
+      acceptedAnswer: { "@type": "Answer", text: "Da, și adesea beneficiul este proporțional mai mare la firmele mici, unde fiecare persoană face mai multe roluri. Un angajat care câștigă 2 ore zilnic dintr-o automatizare poate focaliza acea energie pe activități care generează venit direct." }
+    },
+    {
+      "@type": "Question",
+      name: "Ce se întâmplă dacă automatizarea face o eroare?",
+      acceptedAnswer: { "@type": "Answer", text: "Orice flux serios are mecanisme de alertă și loguri. Erorile sunt detectate rapid și pot fi corectate fără impact major dacă procesul este bine proiectat." }
+    },
+    {
+      "@type": "Question",
+      name: "Datele firmei mele sunt în siguranță dacă le procesez prin automatizări?",
+      acceptedAnswer: { "@type": "Answer", text: "Depinde de instrumentele alese. Există soluții GDPR-compliant, cu date stocate în UE. Înainte de orice implementare care atinge date personale, verifică documentația de conformitate a furnizorului." }
+    }
+  ]
+};
+
 export default function AutomatizareProceseBusiness() {
   return (
     <main style={{ fontFamily: "'Instrument Sans', sans-serif", background: "#0a0c14", color: "#eae8e3", minHeight: "100vh" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap');

@@ -37,12 +37,48 @@ const jsonLd = {
   }
 };
 
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Pot automatiza rapoartele dacă datele mele sunt în Excel, nu în sisteme cloud?",
+      acceptedAnswer: { "@type": "Answer", text: "Da, dar cu un pas suplimentar. Excel-ul trebuie să fie accesibil dintr-un loc comun (OneDrive, SharePoint sau un folder sincronizat) pentru ca automatizarea să poată citi fișierul. Alternativ, mutarea datelor în Google Sheets simplifică semnificativ integrările." }
+    },
+    {
+      "@type": "Question",
+      name: "Ce se întâmplă dacă datele sursă lipsesc sau sunt incomplete când rulează automatizarea?",
+      acceptedAnswer: { "@type": "Answer", text: "Orice flux serios trebuie să aibă o regulă pentru date lipsă: fie raportul nu se trimite și se generează o alertă, fie se trimite cu secțiunile incomplete marcate vizibil. Definești comportamentul dorit în faza de configurare." }
+    },
+    {
+      "@type": "Question",
+      name: "Automatizarea rapoartelor necesită acces la datele sensibile ale firmei?",
+      acceptedAnswer: { "@type": "Answer", text: "Da, și de aceea securitatea contează. Folosești token-uri de autentificare cu permisiuni minime necesare, nu credențiale de administrator. Datele ar trebui procesate și stocate în sisteme GDPR-compliant." }
+    },
+    {
+      "@type": "Question",
+      name: "Cât durează să automatizezi primul raport periodic al firmei mele?",
+      acceptedAnswer: { "@type": "Answer", text: "Un raport simplu, cu 1-3 surse de date bine structurate, poate fi automatizat în 1-2 zile de lucru. Un raport complex poate dura 1-2 săptămâni. Pornește cu cel mai simplu raport, nu cu cel mai important." }
+    },
+    {
+      "@type": "Question",
+      name: "AI poate scrie interpretarea raportului sau doar colectează date?",
+      acceptedAnswer: { "@type": "Answer", text: "Poate face amândouă. AI-ul poate identifica variații față de perioadele anterioare și le poate descrie în text, dar nu poate înlocui judecata unui manager care cunoaște contextul de business. Interpretarea AI este utilă ca punct de plecare, nu ca decizie finală." }
+    }
+  ]
+};
+
 export default function AutomatizareRapoarte() {
   return (
     <main style={{ fontFamily: "'Instrument Sans', sans-serif", background: "#0a0c14", color: "#eae8e3", minHeight: "100vh" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap');

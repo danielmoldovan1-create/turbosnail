@@ -37,12 +37,48 @@ const jsonLd = {
   }
 };
 
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Cât durează un angajament tipic de consultanță AI?",
+      acceptedAnswer: { "@type": "Answer", text: "Un audit și o primă implementare pot fi finalizate în 4-8 săptămâni pentru firmele mici și mijlocii. Angajamentele de transformare mai amplă, cu multiple procese automatizate, durează 3-6 luni." }
+    },
+    {
+      "@type": "Question",
+      name: "Firma mea are nevoie de date sau sisteme speciale pentru a beneficia de consultanță AI?",
+      acceptedAnswer: { "@type": "Answer", text: "Nu neapărat. Multe automatizări utile pornesc de la date simple: emailuri, formulare, foi de calcul. Un consultant bun îți spune clar ce este posibil cu datele tale actuale." }
+    },
+    {
+      "@type": "Question",
+      name: "Cum știu că am ales consultantul potrivit și nu unul care vinde teorie?",
+      acceptedAnswer: { "@type": "Answer", text: "Cel mai bun semnal: poate să îți descrie în detaliu ce a implementat concret la o firmă similară cu a ta și ce rezultate a produs. Un consultant serios vorbește despre probleme și rezultate, nu despre platforme și tehnologii." }
+    },
+    {
+      "@type": "Question",
+      name: "Pot angaja consultanță AI dacă nu am buget pentru un proiect mare?",
+      acceptedAnswer: { "@type": "Answer", text: "Da. Poți structura un angajament mic, focusat pe un singur proces critic, cu livrabil clar și buget limitat. Dacă produce rezultate, extinzi." }
+    },
+    {
+      "@type": "Question",
+      name: "Ce diferență este între consultanță AI și consultanță IT clasică?",
+      acceptedAnswer: { "@type": "Answer", text: "Consultanța IT clasică se focusează pe infrastructură și sisteme. Consultanța AI se focusează specific pe unde modelele de limbaj, automatizarea și analiza de date pot înlocui sau augmenta munca manuală repetitivă." }
+    }
+  ]
+};
+
 export default function ConsultantaAI() {
   return (
     <main style={{ fontFamily: "'Instrument Sans', sans-serif", background: "#0a0c14", color: "#eae8e3", minHeight: "100vh" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap');
