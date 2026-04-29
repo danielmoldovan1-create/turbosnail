@@ -37,12 +37,48 @@ const jsonLd = {
   }
 };
 
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Cum identific care procese sunt cu adevarat critice in organizatia mea?",
+      acceptedAnswer: { "@type": "Answer", text: "Un proces este critic daca intreruperea lui genereaza pierderi directe, incalcarea unor obligatii contractuale sau impact imediat asupra clientilor. Exercitiu practic: ce ar trebui sa functioneze in mod obligatoriu chiar daca intreaga echipa este indisponibila 24 de ore? Acelea sunt procesele critice." }
+    },
+    {
+      "@type": "Question",
+      name: "Cat de complex trebuie sa fie un sistem de control pentru o companie medie?",
+      acceptedAnswer: { "@type": "Answer", text: "Proportional cu complexitatea proceselor. O firma de 50 de persoane are nevoie de alt nivel de control fata de una cu 500. Incepeti simplu: monitorizare, alertare, audit. Complexitatea se adauga pe masura ce cerinta devine clara din practica." }
+    },
+    {
+      "@type": "Question",
+      name: "Sistemele de control se integreaza cu ERP-uri sau CRM-uri existente?",
+      acceptedAnswer: { "@type": "Answer", text: "Da, in majoritatea cazurilor. Platformele moderne de automatizare au conectori pentru SAP, Oracle, Salesforce, HubSpot si alte sisteme. Integrarea necesita configurare initiala, dar nu rescrierea sistemelor existente." }
+    },
+    {
+      "@type": "Question",
+      name: "Cum masuram ROI-ul unui sistem de control?",
+      acceptedAnswer: { "@type": "Answer", text: "Calculul include: incidente prevenite inmultite cu costul mediu al unui incident, timp economisit din eliminarea raportarilor manuale si reducerea erorilor care necesita corectie retroactiva. In practica, primele rezultate masurabile apar in 60-90 de zile de la implementare." }
+    },
+    {
+      "@type": "Question",
+      name: "Exista riscul de dependenta de un furnizor pentru sistemul de control?",
+      acceptedAnswer: { "@type": "Answer", text: "Riscul exista si trebuie luat in calcul. O arhitectura bine proiectata minimizeaza dependenta prin separarea straturilor: colectarea datelor, procesarea si alertarea pot folosi componente diferite. Documentatia clara si datele exportabile sunt cerinte minime pentru orice sistem de control serios." }
+    }
+  ]
+};
+
 export default function SistemeControlProceseAfaceri() {
   return (
     <main style={{ fontFamily: "'Instrument Sans', sans-serif", background: "#0a0c14", color: "#eae8e3", minHeight: "100vh" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap');

@@ -37,12 +37,48 @@ const jsonLd = {
   }
 };
 
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "De cate persoane am nevoie in echipa pentru a implementa automatizare completa afacere?",
+      acceptedAnswer: { "@type": "Answer", text: "Nu ai nevoie de un departament IT. Primele automatizari pot fi construite de orice persoana cu interes pentru tehnologie, folosind instrumente no-code precum Make sau n8n. Pentru automatizari complexe cu AI sau integrari enterprise, un specialist extern este mai eficient decat angajarea unui om full-time." }
+    },
+    {
+      "@type": "Question",
+      name: "Cat timp dureaza sa automatizezi complet o afacere mica?",
+      acceptedAnswer: { "@type": "Answer", text: "Nu exista 'complet' ca destinatie finala, ci ca directie. In 3-6 luni, o firma de 10-30 de persoane poate automatiza 60-70% din sarcinile repetitive cu impact masurabil. Restul se adauga treptat, pe masura ce procesele se maturizeaza si nevoia devine clara." }
+    },
+    {
+      "@type": "Question",
+      name: "Ce se intampla cu angajatii ale caror sarcini sunt automatizate?",
+      acceptedAnswer: { "@type": "Answer", text: "In practica, firmele nu concediaza oameni dupa automatizare. Ii redirectioneaza spre sarcini cu valoare mai mare: relatii cu clientii, vanzari, dezvoltare produs. Automatizarea elimina munca mecanica, nu pe oameni." }
+    },
+    {
+      "@type": "Question",
+      name: "Cum gestionez situatiile in care o automatizare esueaza?",
+      acceptedAnswer: { "@type": "Answer", text: "Orice automatizare bine construita are mecanisme de alertare si fallback. Daca un flux esueaza, responsabilul primeste o notificare imediata cu detalii despre eroare. Procesul nu dispare, el este tinut in asteptare pana la rezolvare." }
+    },
+    {
+      "@type": "Question",
+      name: "Pot automatiza procesele fara sa schimb sistemele existente?",
+      acceptedAnswer: { "@type": "Answer", text: "In mare parte, da. Platformele de automatizare moderne se conecteaza la mii de aplicatii prin API sau conectori predefiniti. In cele mai multe cazuri, nu trebuie sa inlocuiesti ce ai, ci sa conectezi corect ce exista deja." }
+    }
+  ]
+};
+
 export default function AutomatizareCompletaAfacere() {
   return (
     <main style={{ fontFamily: "'Instrument Sans', sans-serif", background: "#0a0c14", color: "#eae8e3", minHeight: "100vh" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap');

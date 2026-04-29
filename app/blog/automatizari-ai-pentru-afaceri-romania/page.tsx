@@ -37,12 +37,48 @@ const jsonLd = {
   }
 };
 
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Ce este o automatizare AI, mai simplu spus?",
+      acceptedAnswer: { "@type": "Answer", text: "Un software care face în locul tău o sarcină repetitivă: trimite emailuri, mută date între aplicații, generează rapoarte, răspunde la întrebări. Diferența față de o automatizare clasică este că poate și înțelege context, clasifica informații și lua decizii simple." }
+    },
+    {
+      "@type": "Question",
+      name: "Am nevoie de cunoștințe tehnice pentru a automatiza procese?",
+      acceptedAnswer: { "@type": "Answer", text: "Nu. Instrumentele moderne (Make, n8n, Zapier) sunt vizuale și nu necesită cod. Poți construi fluxuri simple singur. Pentru integrări complexe, un specialist economisește timp și evită erori." }
+    },
+    {
+      "@type": "Question",
+      name: "Ce procese merită automatizate primele?",
+      acceptedAnswer: { "@type": "Answer", text: "Cele mai frecvente și mai predictibile. Dacă faci același lucru de mai mult de 3 ori pe săptămână, în același mod, e un candidat bun. Emailurile de confirmare, rapoartele săptămânale și introducerea datelor în CRM sunt cele mai comune puncte de start." }
+    },
+    {
+      "@type": "Question",
+      name: "Datele firmei mele sunt în siguranță?",
+      acceptedAnswer: { "@type": "Answer", text: "Depinde de instrumentele alese. Există opțiuni GDPR-compliant cu date stocate în UE. Este important să verifici termenii fiecărui instrument înainte de a procesa date personale ale clienților." }
+    },
+    {
+      "@type": "Question",
+      name: "De unde știu dacă automatizarea a meritat efortul?",
+      acceptedAnswer: { "@type": "Answer", text: "Măsoară înainte și după: câte ore pe săptămână durează procesul manual, câte erori apar, câte zile durează un ciclu complet. După automatizare, aceleași metrici îți arată exact impactul." }
+    }
+  ]
+};
+
 export default function BlogPost() {
   return (
     <main style={{ fontFamily: "'Instrument Sans', sans-serif", background: "#0a0c14", color: "#eae8e3", minHeight: "100vh" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap');

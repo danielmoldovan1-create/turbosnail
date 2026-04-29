@@ -37,12 +37,48 @@ const jsonLd = {
   }
 };
 
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Automatizare procese firme: de ce buget am nevoie sa incep?",
+      acceptedAnswer: { "@type": "Answer", text: "Prima automatizare simpla poate fi implementata cu instrumente gratuite sau cu planuri de baza sub 30 EUR/luna. Automatizarile complexe cu AI necesita bugete mai mari, dar ROI-ul este masurabil in primele 30-60 de zile." }
+    },
+    {
+      "@type": "Question",
+      name: "Ce instrumente se folosesc cel mai des pentru automatizarea proceselor?",
+      acceptedAnswer: { "@type": "Answer", text: "Make (fostul Integromat) si n8n sunt cele mai utilizate pentru fluxuri de automatizare fara cod. Pentru procesare documente cu AI se folosesc instrumente precum Docparser sau integrari cu modele de limbaj mari. Alegerea depinde de procesele specifice ale firmei tale." }
+    },
+    {
+      "@type": "Question",
+      name: "Automatizarea afecteaza conformitatea cu GDPR?",
+      acceptedAnswer: { "@type": "Answer", text: "Da, trebuie sa tii cont de GDPR in momentul in care automatizezi procese care implica date personale. Instrumentele serioase ofera stocare in UE si conformitate GDPR. Este recomandat sa documentezi fluxurile automatizate in registrul de prelucrare al firmei." }
+    },
+    {
+      "@type": "Question",
+      name: "Cat timp dureaza pana vad rezultate concrete?",
+      acceptedAnswer: { "@type": "Answer", text: "Primul flux automatizat poate fi gata in 2-5 zile lucratoare. Rezultatele sunt imediate: din prima zi in care procesul ruleaza automat, incepe recuperarea timpului. Un proiect mai complex dureaza 2-4 saptamani si livreaza impact masurabil in prima luna." }
+    },
+    {
+      "@type": "Question",
+      name: "Ce se intampla daca o automatizare se strica sau greseste?",
+      acceptedAnswer: { "@type": "Answer", text: "Fluxurile bine construite au mecanisme de alertare: daca ceva esueaza, responsabilul primeste o notificare imediata. Procesul nu 'dispare', el este tinut in coada sau marcat ca esuat pana la rezolvare. Automatizarile robuste au intotdeauna o cale de fallback catre procesul manual." }
+    }
+  ]
+};
+
 export default function AutomatizareProceseFireme() {
   return (
     <main style={{ fontFamily: "'Instrument Sans', sans-serif", background: "#0a0c14", color: "#eae8e3", minHeight: "100vh" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap');

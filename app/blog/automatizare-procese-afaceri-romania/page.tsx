@@ -37,12 +37,48 @@ const jsonLd = {
   }
 };
 
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Trebuie sa stiu sa programez ca sa automatizez procese?",
+      acceptedAnswer: { "@type": "Answer", text: "Nu. Instrumentele vizuale precum Make sau n8n nu necesita cunostinte de programare. Cele mai multe automatizari simple pot fi construite de oricine in cateva ore." }
+    },
+    {
+      "@type": "Question",
+      name: "Cat timp dureaza sa vad rezultate?",
+      acceptedAnswer: { "@type": "Answer", text: "Prima automatizare functionala poate fi gata in 1-3 zile. Rezultatele (timp economisit) sunt imediate si masurabile chiar din prima saptamana." }
+    },
+    {
+      "@type": "Question",
+      name: "Datele firmei mele sunt in siguranta?",
+      acceptedAnswer: { "@type": "Answer", text: "Depinde de instrumentele alese si de modul de configurare. Exista optiuni GDPR-compliant, cu date stocate in UE. Este important sa verifici termenii fiecarui instrument inainte de a procesa date personale." }
+    },
+    {
+      "@type": "Question",
+      name: "Ce procese sunt cele mai usor de automatizat?",
+      acceptedAnswer: { "@type": "Answer", text: "Cele mai simple: notificari automate, sincronizare date intre aplicatii, trimitere emailuri dupa actiuni specifice. Acestea nu necesita AI si pot fi configurate rapid." }
+    },
+    {
+      "@type": "Question",
+      name: "Cum stiu daca am nevoie de ajutor specializat sau pot face singur?",
+      acceptedAnswer: { "@type": "Answer", text: "Procesele simple le poti automatiza singur cu tutoriale gratuite. Cand ai nevoie sa conectezi sisteme mai complexe, sa integrezi AI sau sa automatizezi procese critice pentru business, un specialist economiseste timp si evita erori costisitoare." }
+    }
+  ]
+};
+
 export default function AutomatizareProcese() {
   return (
     <main style={{ fontFamily: "'Instrument Sans', sans-serif", background: "#0a0c14", color: "#eae8e3", minHeight: "100vh" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap');

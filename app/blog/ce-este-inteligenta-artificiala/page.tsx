@@ -37,12 +37,48 @@ const jsonLd = {
   }
 };
 
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Inteligența artificială poate înlocui angajații din firma mea?",
+      acceptedAnswer: { "@type": "Answer", text: "Nu în sensul în care se teme lumea. AI-ul preia sarcinile repetitive și predictibile: procesarea datelor, generarea de documente standard, răspunsurile la întrebări frecvente. Deciziile complexe, relațiile cu clienții și gândirea strategică rămân în zona umană." }
+    },
+    {
+      "@type": "Question",
+      name: "Trebuie să știu programare ca să folosesc AI în business?",
+      acceptedAnswer: { "@type": "Answer", text: "Nu. Cele mai populare instrumente AI (ChatGPT, Claude, Make, Zapier) nu necesită cunoștințe tehnice. Le folosești ca pe un email: îi dai o sarcină în cuvinte normale și primești un rezultat." }
+    },
+    {
+      "@type": "Question",
+      name: "Ce face AI-ul mai bine decât un angajat?",
+      acceptedAnswer: { "@type": "Answer", text: "Viteza și consistența pe volum mare. Un sistem AI procesează 1.000 de facturi cu aceeași acuratețe ca prima, fără oboseală. Trimite 500 de emailuri personalizate în câteva minute. Generează un raport din 10 surse de date în secunde." }
+    },
+    {
+      "@type": "Question",
+      name: "Datele firmei mele sunt în siguranță dacă folosesc AI?",
+      acceptedAnswer: { "@type": "Answer", text: "Depinde de instrumentul ales și de modul de configurare. Există opțiuni cu date stocate în UE, GDPR-compliant. Este important să nu introduci date personale ale clienților în modele AI publice fără să verifici termenii de utilizare." }
+    },
+    {
+      "@type": "Question",
+      name: "De unde știu ce proces din firma mea merită automatizat cu AI?",
+      acceptedAnswer: { "@type": "Answer", text: "Orice proces pe care îl faci manual, repetat, după același algoritm este un candidat. Dacă poți descrie pașii într-o listă, fără ambiguități, se poate automatiza. Un audit de 30 de minute îți arată exact unde e cel mai mare câștig." }
+    }
+  ]
+};
+
 export default function BlogPost2() {
   return (
     <main style={{ fontFamily: "'Instrument Sans', sans-serif", background: "#0a0c14", color: "#eae8e3", minHeight: "100vh" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap');
