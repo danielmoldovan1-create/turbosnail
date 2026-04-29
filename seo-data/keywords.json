@@ -1,12 +1,15 @@
 [
   {"keyword": "automatizare procese afaceri Romania", "priority": 1, "published": true},
   {"keyword": "chatbot AI pentru site Romania", "priority": 2, "published": true},
-  {"keyword": "cum sa automatizezi emailurile firmei", "priority": 3, "published": false},
-  {"keyword": "consultanta AI pentru firme mici Romania", "priority": 4, "published": false},
-  {"keyword": "automatizare facturi si rapoarte Excel", "priority": 5, "published": false},
-  {"keyword": "agent AI pentru vanzari Romania", "priority": 6, "published": false},
-  {"keyword": "cat costa implementare AI in firma", "priority": 7, "published": false},
-  {"keyword": "n8n automatizari Romania tutorial", "priority": 8, "published": false},
-  {"keyword": "cum economisesti timp cu AI in business", "priority": 9, "published": false},
-  {"keyword": "AI pentru antreprenori Romania 2026", "priority": 10, "published": false}
+  {"keyword": "automatizare procese business", "priority": 3, "published": true},
+  {"keyword": "consultanta AI", "priority": 4, "published": true},
+  {"keyword": "automatizare rapoarte", "priority": 5, "published": true},
+  {"keyword": "cum sa automatizezi emailurile firmei", "priority": 6, "published": false},
+  {"keyword": "consultanta AI pentru firme mici Romania", "priority": 7, "published": false},
+  {"keyword": "automatizare facturi si rapoarte Excel", "priority": 8, "published": false},
+  {"keyword": "agent AI pentru vanzari Romania", "priority": 9, "published": false},
+  {"keyword": "cat costa implementare AI in firma", "priority": 10, "published": false},
+  {"keyword": "n8n automatizari Romania tutorial", "priority": 11, "published": false},
+  {"keyword": "cum economisesti timp cu AI in business", "priority": 12, "published": false},
+  {"keyword": "AI pentru antreprenori Romania 2026", "priority": 13, "published": false}
 ]
