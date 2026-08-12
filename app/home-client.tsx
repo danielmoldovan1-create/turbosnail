@@ -68,156 +68,120 @@ function BgImageMid({ src }: { src: string }) {
   );
 }
 
-const TIMELINE_STATES = [
-  {
-    label: "AZI",
-    title: "Nu ești găsit",
-    stat: "0 mențiuni în AI",
-    color: "#4a4a5a",
-    icon: (active: boolean) => (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="17" cy="17" r="9" stroke={active ? "#4a4a5a" : "#2a2a3a"} strokeWidth="1.5" />
-        <line x1="23.5" y1="23.5" x2="31" y2="31" stroke={active ? "#4a4a5a" : "#2a2a3a"} strokeWidth="1.5" strokeLinecap="round" />
-        <line x1="13" y1="17" x2="21" y2="17" stroke={active ? "#4a4a5a" : "#2a2a3a"} strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    ),
-  },
-  {
-    label: "3-6 LUNI",
-    title: "Ești citat",
-    stat: "12 mențiuni / lună",
-    color: "#ff6a00",
-    icon: (active: boolean) => (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8 10h24a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H22l-6 4v-4H8a2 2 0 0 1-2-2V12a2 2 0 0 1 2-2z" stroke={active ? "#ff6a00" : "#2a2a3a"} strokeWidth="1.5" strokeLinejoin="round" />
-        <path d="M13 18h1.5M18.5 18H20M25 18h1.5" stroke={active ? "#ff6a00" : "#2a2a3a"} strokeWidth="1.5" strokeLinecap="round" />
-        <circle cx="32" cy="10" r="4" fill={active ? "#ff6a00" : "transparent"} stroke={active ? "#ff6a00" : "#2a2a3a"} strokeWidth="1.2" />
-        <path d="M30.5 10l1 1 2-2" stroke={active ? "#fff" : "#2a2a3a"} strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-  },
-  {
-    label: "12+ LUNI",
-    title: "Devii sursa",
-    stat: "35+ mențiuni / lună",
-    color: "#ffa347",
-    icon: (active: boolean) => (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 6l3.09 6.26L30 13.27l-5 4.87 1.18 6.86L20 21.77l-6.18 3.23L15 18.14 10 13.27l6.91-1.01L20 6z" stroke={active ? "#ffa347" : "#2a2a3a"} strokeWidth="1.5" strokeLinejoin="round" fill={active ? "rgba(255,163,71,0.15)" : "transparent"} />
-        <path d="M14 32h12M17 28v4M23 28v4" stroke={active ? "#ffa347" : "#2a2a3a"} strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    ),
-  },
+const TL_STEPS = [
+  { num: "01", when: "Acum", title: "Invizibil online", desc: "Businessul tău nu apare în răspunsurile AI. Clienții cer recomandări, primesc altcineva.", active: "#9a9aab" },
+  { num: "02", when: "3-6 luni", title: "Ești menționat", desc: "Conținutul tău este citat ca sursă de ChatGPT, Claude și Google AI. Vizibilitate în creștere.", active: "#ff6a00" },
+  { num: "03", when: "12+ luni", title: "Devii referința", desc: "Firma ta e prima recomandare pentru domeniul tău. Autoritate stabilită, trafic constant.", active: "#ffa347" },
 ];
 
 function AITimeline() {
   const ref = useRef<HTMLDivElement>(null);
-  const [progress, setProgress] = useState(0);
+  const [pct, setPct] = useState(0);
 
   useEffect(() => {
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduced) { setProgress(100); return; }
-
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) { setPct(100); return; }
     let raf: number;
-    const onScroll = () => {
+    const calc = () => {
       raf = requestAnimationFrame(() => {
         const el = ref.current;
         if (!el) return;
         const rect = el.getBoundingClientRect();
         const vh = window.innerHeight;
-        // 0% when bottom of element enters viewport, 100% when top reaches 40% from top
-        const start = vh;           // rect.top === vh → element just entering
-        const end = vh * 0.40;     // rect.top === 40% vh → fully revealed
-        const raw = 1 - (rect.top - end) / (start - end);
-        setProgress(Math.max(0, Math.min(100, raw * 100)));
+        // 0% when element enters from bottom, 100% when element center hits viewport center
+        const triggerStart = vh;
+        const triggerEnd = vh * 0.5;
+        const raw = (triggerStart - rect.top) / (triggerStart - triggerEnd);
+        setPct(Math.max(0, Math.min(100, raw * 100)));
       });
     };
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll(); // run once on mount in case already in view
-    return () => { window.removeEventListener("scroll", onScroll); cancelAnimationFrame(raf); };
+    window.addEventListener("scroll", calc, { passive: true });
+    calc();
+    return () => { window.removeEventListener("scroll", calc); cancelAnimationFrame(raf); };
   }, []);
 
-  const a = [progress > 10, progress > 45, progress > 80];
-
-  const iconBg = (color: string, active: boolean) => {
-    if (!active) return "#0d0f18";
-    if (color === "#ff6a00") return "rgba(255,106,0,0.1)";
-    if (color === "#ffa347") return "rgba(255,163,71,0.1)";
-    return "rgba(74,74,90,0.1)";
-  };
+  const on = [pct > 5, pct > 42, pct > 78];
+  const DOT_POSITIONS = [0, 50, 100];
 
   return (
-    <div
-      ref={ref}
-      role="region"
-      aria-label="Evoluție de la invizibil la sursă AI"
-      style={{ width: "100%", maxWidth: 860, margin: "40px 0 32px" }}
-    >
-      <div style={{ display: "flex", alignItems: "flex-start", position: "relative" }}>
-        {TIMELINE_STATES.map((s, i) => (
-          <div key={i} style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", position: "relative", zIndex: 2 }}>
-            <span style={{
-              fontFamily: "'Outfit', sans-serif", fontSize: 10, fontWeight: 700,
-              letterSpacing: 2, textTransform: "uppercase",
-              color: a[i] ? s.color : "#2a2a3a",
-              marginBottom: 14, transition: "color 0.3s",
-            }}>{s.label}</span>
+    <div ref={ref} role="region" aria-label="Evoluție de la invizibil la autoritate AI">
+      {/* header */}
+      <div style={{ textAlign: "center", marginBottom: 48 }}>
+        <span className="tag">Transformare</span>
+        <h2 className="hd" style={{ fontSize: 34, fontWeight: 800, marginTop: 16, letterSpacing: "-0.8px", lineHeight: 1.2 }}>
+          De la <span className="ac">invizibil</span> la <span className="ac">autoritate</span>
+        </h2>
+        <p style={{ fontSize: 15, color: "#9a9aab", marginTop: 10 }}>Cum evoluează prezența ta în era căutărilor AI</p>
+      </div>
 
-            <div style={{
-              width: 64, height: 64, borderRadius: "50%",
-              border: `1.5px solid ${a[i] ? s.color : "#1a1d2a"}`,
-              background: iconBg(s.color, a[i]),
-              display: "flex", alignItems: "center", justifyContent: "center",
-              transform: a[i] ? "scale(1.15)" : "scale(1)",
-              transition: "all 0.45s cubic-bezier(0.34,1.56,0.64,1)",
-              boxShadow: a[i] ? `0 0 22px ${s.color}44` : "none",
-            }}>
-              {s.icon(a[i])}
-            </div>
+      {/* timeline row */}
+      <div style={{ position: "relative", display: "flex", alignItems: "stretch", gap: 0 }}>
 
-            <p style={{
-              fontFamily: "'Outfit', sans-serif", fontSize: 13, fontWeight: 700,
-              color: a[i] ? "#eae8e3" : "#3a3a4a",
-              marginTop: 14, marginBottom: 6, textAlign: "center",
-              transform: a[i] ? "translateY(0)" : "translateY(12px)",
-              opacity: a[i] ? 1 : 0, transition: "all 0.4s ease 0.05s",
-            }}>{s.title}</p>
-
-            <p style={{
-              fontFamily: "monospace", fontSize: 11, letterSpacing: 1,
-              textTransform: "uppercase", color: a[i] ? s.color : "#2a2a3a",
-              textAlign: "center",
-              transform: a[i] ? "translateY(0)" : "translateY(10px)",
-              opacity: a[i] ? 1 : 0, transition: "all 0.4s ease 0.12s",
-            }}>{s.stat}</p>
-          </div>
-        ))}
-
-        {/* track */}
-        <div style={{ position: "absolute", top: 45, left: "16%", right: "16%", height: 2, background: "#1a1d2a", zIndex: 1, borderRadius: 2 }}>
-          {/* fill */}
+        {/* connecting track — absolutely behind nodes */}
+        <div style={{ position: "absolute", top: 28, left: "calc(16.66% - 1px)", right: "calc(16.66% - 1px)", height: 2, background: "#1a1d2a", zIndex: 0 }}>
           <div style={{
             position: "absolute", inset: 0,
-            background: "linear-gradient(90deg, #4a4a5a 0%, #ff6a00 50%, #ffa347 100%)",
-            transformOrigin: "left", transform: `scaleX(${progress / 100})`,
-            borderRadius: 2,
+            background: "linear-gradient(90deg, #9a9aab 0%, #ff6a00 50%, #ffa347 100%)",
+            transformOrigin: "left", transform: `scaleX(${pct / 100})`,
+            transition: "transform 0.05s linear",
           }} />
-          {/* dots */}
-          {[0, 50, 100].map((pos, i) => (
+          {DOT_POSITIONS.map((pos, i) => (
             <div key={i} style={{
               position: "absolute", left: `${pos}%`, top: "50%",
               transform: "translate(-50%, -50%)",
-              width: 10, height: 10, borderRadius: "50%",
-              background: progress >= pos - 2
-                ? (i === 0 ? "#4a4a5a" : i === 1 ? "#ff6a00" : "#ffa347")
-                : "#1a1d2a",
-              border: `2px solid ${progress >= pos - 2 ? (i === 0 ? "#4a4a5a" : i === 1 ? "#ff6a00" : "#ffa347") : "#2a2a3a"}`,
-              transition: "background 0.2s, border-color 0.2s",
-              zIndex: 3,
+              width: 10, height: 10, borderRadius: "50%", zIndex: 2,
+              background: on[i] ? TL_STEPS[i].active : "#1a1d2a",
+              border: `2px solid ${on[i] ? TL_STEPS[i].active : "#2a2a3a"}`,
+              transition: "background 0.3s, border-color 0.3s",
             }} />
           ))}
         </div>
+
+        {/* step cards */}
+        {TL_STEPS.map((s, i) => (
+          <div key={i} style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", padding: "0 12px", position: "relative", zIndex: 1 }}>
+            {/* number badge */}
+            <div style={{
+              width: 56, height: 56, borderRadius: "50%",
+              border: `2px solid ${on[i] ? s.active : "#1a1d2a"}`,
+              background: on[i] ? `${s.active}18` : "#0a0c14",
+              display: "flex", alignItems: "center", justifyContent: "center",
+              transition: "all 0.5s cubic-bezier(0.34,1.56,0.64,1)",
+              transform: on[i] ? "scale(1.12)" : "scale(1)",
+              boxShadow: on[i] ? `0 0 24px ${s.active}55` : "none",
+              marginBottom: 20,
+            }}>
+              <span className="hd" style={{ fontSize: 16, fontWeight: 800, color: on[i] ? s.active : "#2a2a3a", transition: "color 0.3s" }}>{s.num}</span>
+            </div>
+
+            {/* when label */}
+            <span style={{
+              fontFamily: "'Outfit', sans-serif", fontSize: 10, fontWeight: 700,
+              letterSpacing: 2, textTransform: "uppercase",
+              color: on[i] ? s.active : "#2a2a3a",
+              marginBottom: 10, transition: "color 0.3s",
+            }}>{s.when}</span>
+
+            {/* title */}
+            <p style={{
+              fontFamily: "'Outfit', sans-serif", fontSize: 15, fontWeight: 700,
+              color: on[i] ? "#eae8e3" : "#2a2a3a",
+              textAlign: "center", marginBottom: 8,
+              transform: on[i] ? "translateY(0)" : "translateY(10px)",
+              opacity: on[i] ? 1 : 0,
+              transition: "all 0.5s ease",
+            }}>{s.title}</p>
+
+            {/* desc */}
+            <p style={{
+              fontSize: 13, lineHeight: 1.6,
+              color: on[i] ? "#9a9aab" : "#1a1d2a",
+              textAlign: "center",
+              transform: on[i] ? "translateY(0)" : "translateY(8px)",
+              opacity: on[i] ? 1 : 0,
+              transition: "all 0.5s ease 0.08s",
+            }}>{s.desc}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
@@ -434,7 +398,6 @@ export default function HomeClient() {
                   <span className="ac">fără chatboți inutili.</span>
                 </h1>
               </Fade>
-              <AITimeline />
               <Fade delay={0.1}>
                 <p style={{ fontSize: 18, lineHeight: 1.65, color: "#a8a6a1", maxWidth: 520, marginBottom: 32 }}>
                   Clienții noștri recuperează <strong style={{ color: "#eae8e3" }}>ore întregi în fiecare săptămână</strong> prin automatizarea sarcinilor repetitive. Copy-paste între foi de calcul, emailuri de follow-up, rapoarte manuale — rezolvate în background, fără să angajezi pe nimeni.
@@ -487,6 +450,15 @@ export default function HomeClient() {
           ))}
         </div>
       </div>
+
+      {/* AI TIMELINE */}
+      <section style={{ paddingTop: 90, paddingBottom: 90 }}>
+        <div className="mx" style={{ maxWidth: 900 }}>
+          <AITimeline />
+        </div>
+      </section>
+
+      <div className="dv" />
 
       {/* INTRO */}
       <section style={{ paddingTop: 100, paddingBottom: 60, position: "relative", overflow: "hidden" }}>
