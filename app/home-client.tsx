@@ -26,67 +26,31 @@ function Fade({ children, delay = 0 }: { children: React.ReactNode; delay?: numb
   );
 }
 
-function AbstractBg1() {
+function BlurHero() {
   return (
-    <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", opacity: 0.35 }}>
-      <defs>
-        <radialGradient id="rg1" cx="70%" cy="30%" r="60%">
-          <stop offset="0%" stopColor="#ff6a00" stopOpacity="0.3" />
-          <stop offset="100%" stopColor="#0a0c14" stopOpacity="0" />
-        </radialGradient>
-        <radialGradient id="rg2" cx="20%" cy="80%" r="50%">
-          <stop offset="0%" stopColor="#ff8c33" stopOpacity="0.15" />
-          <stop offset="100%" stopColor="#0a0c14" stopOpacity="0" />
-        </radialGradient>
-      </defs>
-      <rect width="800" height="500" fill="url(#rg1)" />
-      <rect width="800" height="500" fill="url(#rg2)" />
-      <circle cx="650" cy="120" r="180" fill="none" stroke="#ff6a00" strokeWidth="0.5" strokeOpacity="0.2" />
-      <circle cx="650" cy="120" r="260" fill="none" stroke="#ff6a00" strokeWidth="0.3" strokeOpacity="0.1" />
-      <circle cx="650" cy="120" r="340" fill="none" stroke="#ff6a00" strokeWidth="0.2" strokeOpacity="0.07" />
-      <line x1="0" y1="500" x2="800" y2="0" stroke="#ff6a00" strokeWidth="0.3" strokeOpacity="0.08" />
-    </svg>
+    <div style={{ position: "absolute", inset: 0, overflow: "hidden", pointerEvents: "none" }}>
+      <div style={{ position: "absolute", top: "-10%", right: "-5%", width: 600, height: 600, background: "radial-gradient(circle, rgba(255,106,0,0.22) 0%, rgba(255,85,0,0.08) 45%, transparent 70%)", filter: "blur(80px)", borderRadius: "50%" }} />
+      <div style={{ position: "absolute", bottom: "-20%", left: "-10%", width: 500, height: 500, background: "radial-gradient(circle, rgba(255,140,51,0.14) 0%, transparent 65%)", filter: "blur(90px)", borderRadius: "50%" }} />
+      <div style={{ position: "absolute", top: "40%", left: "30%", width: 300, height: 300, background: "radial-gradient(circle, rgba(255,106,0,0.07) 0%, transparent 70%)", filter: "blur(60px)", borderRadius: "50%" }} />
+    </div>
   );
 }
 
-function AbstractGrid() {
+function BlurMid() {
   return (
-    <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", opacity: 0.4 }}>
-      <defs>
-        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ff6a00" strokeWidth="0.4" strokeOpacity="0.3" />
-        </pattern>
-        <radialGradient id="fade" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopOpacity="1" />
-          <stop offset="100%" stopOpacity="0" />
-        </radialGradient>
-        <mask id="gridmask">
-          <rect width="600" height="400" fill="url(#fade)" />
-        </mask>
-      </defs>
-      <rect width="600" height="400" fill="url(#grid)" mask="url(#gridmask)" />
-    </svg>
+    <div style={{ position: "absolute", inset: 0, overflow: "hidden", pointerEvents: "none" }}>
+      <div style={{ position: "absolute", top: "10%", left: "-8%", width: 420, height: 420, background: "radial-gradient(circle, rgba(255,106,0,0.13) 0%, transparent 65%)", filter: "blur(80px)", borderRadius: "50%" }} />
+      <div style={{ position: "absolute", bottom: "5%", right: "-5%", width: 360, height: 360, background: "radial-gradient(circle, rgba(255,140,51,0.1) 0%, transparent 65%)", filter: "blur(70px)", borderRadius: "50%" }} />
+    </div>
   );
 }
 
-function AbstractOrbs() {
+function BlurAccent() {
   return (
-    <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", opacity: 0.5 }}>
-      <defs>
-        <radialGradient id="orb1" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#ff6a00" stopOpacity="0.25" />
-          <stop offset="100%" stopColor="#ff6a00" stopOpacity="0" />
-        </radialGradient>
-        <radialGradient id="orb2" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#ff8c33" stopOpacity="0.15" />
-          <stop offset="100%" stopColor="#ff8c33" stopOpacity="0" />
-        </radialGradient>
-      </defs>
-      <ellipse cx="420" cy="80" rx="140" ry="140" fill="url(#orb1)" />
-      <ellipse cx="80" cy="220" rx="100" ry="100" fill="url(#orb2)" />
-      <circle cx="420" cy="80" r="80" fill="none" stroke="#ff6a00" strokeWidth="0.6" strokeOpacity="0.2" />
-      <circle cx="420" cy="80" r="120" fill="none" stroke="#ff6a00" strokeWidth="0.4" strokeOpacity="0.1" />
-    </svg>
+    <div style={{ position: "absolute", inset: 0, overflow: "hidden", pointerEvents: "none" }}>
+      <div style={{ position: "absolute", top: "-5%", right: "15%", width: 500, height: 500, background: "radial-gradient(circle, rgba(255,106,0,0.16) 0%, rgba(255,85,0,0.05) 50%, transparent 70%)", filter: "blur(100px)", borderRadius: "50%" }} />
+      <div style={{ position: "absolute", bottom: "-10%", left: "5%", width: 350, height: 350, background: "radial-gradient(circle, rgba(255,140,51,0.1) 0%, transparent 65%)", filter: "blur(80px)", borderRadius: "50%" }} />
+    </div>
   );
 }
 
@@ -201,7 +165,7 @@ export default function HomeClient() {
           .sk { display: none; }
           .g3 { grid-template-columns: 1fr 1fr 1fr !important; }
           .g4 { grid-template-columns: 1fr 1fr 1fr 1fr !important; }
-          .hero-t { font-size: 60px !important; line-height: 1.04 !important; }
+          .hero-t { font-size: 52px !important; line-height: 1.04 !important; }
           .hero-lay { flex-direction: row !important; align-items: center; gap: 56px !important; }
           .hero-l { flex: 1.2; }
           .hero-r { flex: 0.8; }
@@ -210,7 +174,7 @@ export default function HomeClient() {
           .mob-menu { display: none !important; }
           .about-lay { flex-direction: row !important; gap: 80px !important; align-items: center; }
         }
-        @media (min-width: 1024px) { .hero-t { font-size: 68px !important; } }
+        @media (min-width: 1024px) { .hero-t { font-size: 58px !important; } }
         @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
         @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-14px); } }
         @keyframes glow-pulse { 0%, 100% { box-shadow: 0 8px 24px rgba(255,106,0,0.25); } 50% { box-shadow: 0 8px 40px rgba(255,106,0,0.55), 0 0 0 4px rgba(255,106,0,0.12); } }
@@ -225,7 +189,7 @@ export default function HomeClient() {
         <div className="mx" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: scrolled ? 52 : 68, transition: "height 0.35s cubic-bezier(0.22,1,0.36,1)" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
             <div style={{ cursor: "pointer" }} onClick={() => go("top")}>
-              <img src="/turbosnail-logo.png" alt="TurboSnail - Automatizări AI" width={150} height={50} style={{ height: scrolled ? 38 : 50, width: "auto", transition: "height 0.35s cubic-bezier(0.22,1,0.36,1)" }} />
+              <img src="/turbosnail-logo.png" alt="TurboSnail - Automatizări AI" width={150} height={62} style={{ height: scrolled ? 46 : 62, width: "auto", transition: "height 0.35s cubic-bezier(0.22,1,0.36,1)" }} />
             </div>
             <div className="nav-lnk" style={{ display: "none" }}>
               <div className="nav-drop" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
@@ -286,7 +250,7 @@ export default function HomeClient() {
 
       {/* HERO */}
       <section id="top" style={{ paddingTop: 116, paddingBottom: 70, position: "relative", overflow: "hidden", minHeight: "90vh", display: "flex", alignItems: "center" }}>
-        <AbstractBg1 />
+        <BlurHero />
         <div className="mx" style={{ position: "relative", zIndex: 2, width: "100%" }}>
           <div className="hero-lay" style={{ display: "flex", flexDirection: "column", gap: 36 }}>
             <div className="hero-l">
@@ -294,7 +258,7 @@ export default function HomeClient() {
                 <span className="tag" style={{ marginBottom: 24, display: "inline-block" }}>Implementare AI · Timișoara, România</span>
               </Fade>
               <Fade delay={0.05}>
-                <h1 className="hero-t hd" style={{ fontSize: 40, fontWeight: 900, lineHeight: 1.08, marginBottom: 24, letterSpacing: "-2px" }}>
+                <h1 className="hero-t hd" style={{ fontSize: 36, fontWeight: 900, lineHeight: 1.08, marginBottom: 24, letterSpacing: "-2px" }}>
                   Automatizări AI<br />
                   pentru afaceri<br />
                   din România —{" "}
@@ -362,7 +326,7 @@ export default function HomeClient() {
 
       {/* INTRO */}
       <section style={{ paddingTop: 100, paddingBottom: 60, position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", inset: 0, pointerEvents: "none" }}><AbstractGrid /></div>
+        <BlurMid />
         <div className="mx" style={{ maxWidth: 760, textAlign: "center", position: "relative", zIndex: 2 }}>
           <Fade>
             <p className="hd" style={{ fontSize: 24, lineHeight: 1.55, color: "#eae8e3", fontWeight: 500, letterSpacing: "-0.3px" }}>
@@ -420,7 +384,7 @@ export default function HomeClient() {
 
       {/* COMPARISON */}
       <section style={{ paddingTop: 90, paddingBottom: 90, position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", inset: 0, pointerEvents: "none", opacity: 0.6 }}><AbstractOrbs /></div>
+        <BlurAccent />
         <div className="mx" style={{ maxWidth: 820, position: "relative", zIndex: 2 }}>
           <Fade>
             <div style={{ textAlign: "center", marginBottom: 48 }}>
@@ -486,7 +450,7 @@ export default function HomeClient() {
 
       {/* DESPRE */}
       <section id="despre" style={{ paddingTop: 100, paddingBottom: 100, position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", inset: 0, pointerEvents: "none" }}><AbstractBg1 /></div>
+        <BlurMid />
         <div className="mx" style={{ position: "relative", zIndex: 2 }}>
           <div className="about-lay" style={{ display: "flex", flexDirection: "column", gap: 48 }}>
             <Fade>
