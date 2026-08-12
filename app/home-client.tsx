@@ -132,7 +132,23 @@ export default function HomeClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [mobileMenu, setMobileMenu] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
   const go = (id: string) => { setMobileMenu(false); document.getElementById(id)?.scrollIntoView({ behavior: "smooth" }); };
+
+  useEffect(() => {
+    let raf: number;
+    const onScroll = () => {
+      raf = requestAnimationFrame(() => {
+        const y = window.scrollY;
+        setScrolled(y > 60);
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        setScrollProgress(max > 0 ? Math.min(100, (y / max) * 100) : 0);
+      });
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => { window.removeEventListener("scroll", onScroll); cancelAnimationFrame(raf); };
+  }, []);
 
   async function handleSubmit() {
     if (!email || !name) return;
@@ -203,11 +219,13 @@ export default function HomeClient() {
       `}</style>
 
       {/* NAV */}
-      <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.88)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
-        <div className="mx" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
+      <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: scrolled ? "rgba(10,12,20,0.97)" : "rgba(10,12,20,0.88)", backdropFilter: "blur(20px)", borderBottom: scrolled ? "1px solid rgba(255,106,0,0.15)" : "1px solid rgba(26,29,42,0.7)", transition: "background 0.4s, border-color 0.4s, box-shadow 0.4s", boxShadow: scrolled ? "0 4px 32px rgba(0,0,0,0.4)" : "none" }}>
+        {/* scroll progress bar */}
+        <div style={{ position: "absolute", bottom: 0, left: 0, height: 2, width: `${scrollProgress}%`, background: "linear-gradient(90deg, #ff6a00, #ff8c33)", transition: "width 0.1s linear", borderRadius: "0 2px 2px 0", pointerEvents: "none" }} />
+        <div className="mx" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: scrolled ? 52 : 68, transition: "height 0.35s cubic-bezier(0.22,1,0.36,1)" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
             <div style={{ cursor: "pointer" }} onClick={() => go("top")}>
-              <img src="/turbosnail-logo.png" alt="TurboSnail - Automatizări AI" width={150} height={50} style={{ height: 50, width: "auto" }} />
+              <img src="/turbosnail-logo.png" alt="TurboSnail - Automatizări AI" width={150} height={50} style={{ height: scrolled ? 38 : 50, width: "auto", transition: "height 0.35s cubic-bezier(0.22,1,0.36,1)" }} />
             </div>
             <div className="nav-lnk" style={{ display: "none" }}>
               <div className="nav-drop" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
