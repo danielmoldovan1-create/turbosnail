@@ -36,12 +36,12 @@ function BgImage({ src }: { src: string }) {
         style={{
           position: "absolute", inset: 0, width: "100%", height: "100%",
           objectFit: "cover", objectPosition: "center",
-          filter: "blur(12px) saturate(0.8) brightness(0.35)",
+          filter: "blur(10px) saturate(0.9) brightness(0.65)",
           transform: "scale(1.06)",
         }}
       />
       {/* dark overlay for text readability */}
-      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(10,12,20,0.45) 0%, rgba(10,12,20,0.2) 50%, rgba(10,12,20,0.5) 100%)" }} />
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(10,12,20,0.25) 0%, rgba(10,12,20,0.1) 50%, rgba(10,12,20,0.3) 100%)" }} />
       {/* orange accent glow */}
       <div style={{ position: "absolute", top: "-10%", right: "-5%", width: 500, height: 500, background: "radial-gradient(circle, rgba(255,106,0,0.2) 0%, transparent 65%)", filter: "blur(70px)", borderRadius: "50%" }} />
     </div>
@@ -58,11 +58,11 @@ function BgImageMid({ src }: { src: string }) {
         style={{
           position: "absolute", inset: 0, width: "100%", height: "100%",
           objectFit: "cover", objectPosition: "center",
-          filter: "blur(14px) saturate(0.7) brightness(0.3)",
+          filter: "blur(10px) saturate(0.9) brightness(0.6)",
           transform: "scale(1.06)",
         }}
       />
-      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(10,12,20,0.5) 0%, rgba(10,12,20,0.25) 50%, rgba(10,12,20,0.55) 100%)" }} />
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(10,12,20,0.3) 0%, rgba(10,12,20,0.12) 50%, rgba(10,12,20,0.35) 100%)" }} />
       <div style={{ position: "absolute", bottom: "-10%", left: "5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(255,106,0,0.15) 0%, transparent 65%)", filter: "blur(80px)", borderRadius: "50%" }} />
     </div>
   );
