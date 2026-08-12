@@ -26,30 +26,44 @@ function Fade({ children, delay = 0 }: { children: React.ReactNode; delay?: numb
   );
 }
 
-function BlurHero() {
+function BgImage({ src, opacity = 0.18 }: { src: string; opacity?: number }) {
   return (
     <div style={{ position: "absolute", inset: 0, overflow: "hidden", pointerEvents: "none" }}>
-      <div style={{ position: "absolute", top: "-10%", right: "-5%", width: 600, height: 600, background: "radial-gradient(circle, rgba(255,106,0,0.22) 0%, rgba(255,85,0,0.08) 45%, transparent 70%)", filter: "blur(80px)", borderRadius: "50%" }} />
-      <div style={{ position: "absolute", bottom: "-20%", left: "-10%", width: 500, height: 500, background: "radial-gradient(circle, rgba(255,140,51,0.14) 0%, transparent 65%)", filter: "blur(90px)", borderRadius: "50%" }} />
-      <div style={{ position: "absolute", top: "40%", left: "30%", width: 300, height: 300, background: "radial-gradient(circle, rgba(255,106,0,0.07) 0%, transparent 70%)", filter: "blur(60px)", borderRadius: "50%" }} />
+      <img
+        src={src}
+        alt=""
+        aria-hidden="true"
+        style={{
+          position: "absolute", inset: 0, width: "100%", height: "100%",
+          objectFit: "cover", objectPosition: "center",
+          filter: "blur(18px) saturate(0.7) brightness(0.5)",
+          transform: "scale(1.08)",
+          opacity,
+        }}
+      />
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(10,12,20,0.55) 0%, rgba(10,12,20,0.35) 50%, rgba(10,12,20,0.65) 100%)" }} />
+      <div style={{ position: "absolute", top: "-10%", right: "-5%", width: 500, height: 500, background: "radial-gradient(circle, rgba(255,106,0,0.18) 0%, transparent 65%)", filter: "blur(70px)", borderRadius: "50%" }} />
     </div>
   );
 }
 
-function BlurMid() {
+function BgImageMid({ src, opacity = 0.14 }: { src: string; opacity?: number }) {
   return (
     <div style={{ position: "absolute", inset: 0, overflow: "hidden", pointerEvents: "none" }}>
-      <div style={{ position: "absolute", top: "10%", left: "-8%", width: 420, height: 420, background: "radial-gradient(circle, rgba(255,106,0,0.13) 0%, transparent 65%)", filter: "blur(80px)", borderRadius: "50%" }} />
-      <div style={{ position: "absolute", bottom: "5%", right: "-5%", width: 360, height: 360, background: "radial-gradient(circle, rgba(255,140,51,0.1) 0%, transparent 65%)", filter: "blur(70px)", borderRadius: "50%" }} />
-    </div>
-  );
-}
-
-function BlurAccent() {
-  return (
-    <div style={{ position: "absolute", inset: 0, overflow: "hidden", pointerEvents: "none" }}>
-      <div style={{ position: "absolute", top: "-5%", right: "15%", width: 500, height: 500, background: "radial-gradient(circle, rgba(255,106,0,0.16) 0%, rgba(255,85,0,0.05) 50%, transparent 70%)", filter: "blur(100px)", borderRadius: "50%" }} />
-      <div style={{ position: "absolute", bottom: "-10%", left: "5%", width: 350, height: 350, background: "radial-gradient(circle, rgba(255,140,51,0.1) 0%, transparent 65%)", filter: "blur(80px)", borderRadius: "50%" }} />
+      <img
+        src={src}
+        alt=""
+        aria-hidden="true"
+        style={{
+          position: "absolute", inset: 0, width: "100%", height: "100%",
+          objectFit: "cover", objectPosition: "center",
+          filter: "blur(22px) saturate(0.5) brightness(0.4)",
+          transform: "scale(1.08)",
+          opacity,
+        }}
+      />
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(10,12,20,0.6) 0%, rgba(10,12,20,0.4) 50%, rgba(10,12,20,0.7) 100%)" }} />
+      <div style={{ position: "absolute", bottom: "-10%", left: "5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(255,106,0,0.12) 0%, transparent 65%)", filter: "blur(80px)", borderRadius: "50%" }} />
     </div>
   );
 }
@@ -250,7 +264,7 @@ export default function HomeClient() {
 
       {/* HERO */}
       <section id="top" style={{ paddingTop: 116, paddingBottom: 70, position: "relative", overflow: "hidden", minHeight: "90vh", display: "flex", alignItems: "center" }}>
-        <BlurHero />
+        <BgImage src="/bg-hero.webp" opacity={0.22} />
         <div className="mx" style={{ position: "relative", zIndex: 2, width: "100%" }}>
           <div className="hero-lay" style={{ display: "flex", flexDirection: "column", gap: 36 }}>
             <div className="hero-l">
@@ -326,7 +340,7 @@ export default function HomeClient() {
 
       {/* INTRO */}
       <section style={{ paddingTop: 100, paddingBottom: 60, position: "relative", overflow: "hidden" }}>
-        <BlurMid />
+        <BgImageMid src="/bg-mid.webp" opacity={0.12} />
         <div className="mx" style={{ maxWidth: 760, textAlign: "center", position: "relative", zIndex: 2 }}>
           <Fade>
             <p className="hd" style={{ fontSize: 24, lineHeight: 1.55, color: "#eae8e3", fontWeight: 500, letterSpacing: "-0.3px" }}>
@@ -384,7 +398,7 @@ export default function HomeClient() {
 
       {/* COMPARISON */}
       <section style={{ paddingTop: 90, paddingBottom: 90, position: "relative", overflow: "hidden" }}>
-        <BlurAccent />
+        <BgImageMid src="/bg-hero.webp" opacity={0.15} />
         <div className="mx" style={{ maxWidth: 820, position: "relative", zIndex: 2 }}>
           <Fade>
             <div style={{ textAlign: "center", marginBottom: 48 }}>
@@ -450,7 +464,7 @@ export default function HomeClient() {
 
       {/* DESPRE */}
       <section id="despre" style={{ paddingTop: 100, paddingBottom: 100, position: "relative", overflow: "hidden" }}>
-        <BlurMid />
+        <BgImage src="/bg-about.webp" opacity={0.18} />
         <div className="mx" style={{ position: "relative", zIndex: 2 }}>
           <div className="about-lay" style={{ display: "flex", flexDirection: "column", gap: 48 }}>
             <Fade>
