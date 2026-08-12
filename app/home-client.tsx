@@ -26,7 +26,7 @@ function Fade({ children, delay = 0 }: { children: React.ReactNode; delay?: numb
   );
 }
 
-function BgImage({ src, opacity = 0.18 }: { src: string; opacity?: number }) {
+function BgImage({ src }: { src: string }) {
   return (
     <div style={{ position: "absolute", inset: 0, overflow: "hidden", pointerEvents: "none" }}>
       <img
@@ -36,18 +36,19 @@ function BgImage({ src, opacity = 0.18 }: { src: string; opacity?: number }) {
         style={{
           position: "absolute", inset: 0, width: "100%", height: "100%",
           objectFit: "cover", objectPosition: "center",
-          filter: "blur(18px) saturate(0.7) brightness(0.5)",
-          transform: "scale(1.08)",
-          opacity,
+          filter: "blur(12px) saturate(0.8) brightness(0.35)",
+          transform: "scale(1.06)",
         }}
       />
-      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(10,12,20,0.55) 0%, rgba(10,12,20,0.35) 50%, rgba(10,12,20,0.65) 100%)" }} />
-      <div style={{ position: "absolute", top: "-10%", right: "-5%", width: 500, height: 500, background: "radial-gradient(circle, rgba(255,106,0,0.18) 0%, transparent 65%)", filter: "blur(70px)", borderRadius: "50%" }} />
+      {/* dark overlay for text readability */}
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(10,12,20,0.45) 0%, rgba(10,12,20,0.2) 50%, rgba(10,12,20,0.5) 100%)" }} />
+      {/* orange accent glow */}
+      <div style={{ position: "absolute", top: "-10%", right: "-5%", width: 500, height: 500, background: "radial-gradient(circle, rgba(255,106,0,0.2) 0%, transparent 65%)", filter: "blur(70px)", borderRadius: "50%" }} />
     </div>
   );
 }
 
-function BgImageMid({ src, opacity = 0.14 }: { src: string; opacity?: number }) {
+function BgImageMid({ src }: { src: string }) {
   return (
     <div style={{ position: "absolute", inset: 0, overflow: "hidden", pointerEvents: "none" }}>
       <img
@@ -57,13 +58,12 @@ function BgImageMid({ src, opacity = 0.14 }: { src: string; opacity?: number }) 
         style={{
           position: "absolute", inset: 0, width: "100%", height: "100%",
           objectFit: "cover", objectPosition: "center",
-          filter: "blur(22px) saturate(0.5) brightness(0.4)",
-          transform: "scale(1.08)",
-          opacity,
+          filter: "blur(14px) saturate(0.7) brightness(0.3)",
+          transform: "scale(1.06)",
         }}
       />
-      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(10,12,20,0.6) 0%, rgba(10,12,20,0.4) 50%, rgba(10,12,20,0.7) 100%)" }} />
-      <div style={{ position: "absolute", bottom: "-10%", left: "5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(255,106,0,0.12) 0%, transparent 65%)", filter: "blur(80px)", borderRadius: "50%" }} />
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(10,12,20,0.5) 0%, rgba(10,12,20,0.25) 50%, rgba(10,12,20,0.55) 100%)" }} />
+      <div style={{ position: "absolute", bottom: "-10%", left: "5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(255,106,0,0.15) 0%, transparent 65%)", filter: "blur(80px)", borderRadius: "50%" }} />
     </div>
   );
 }
@@ -264,7 +264,7 @@ export default function HomeClient() {
 
       {/* HERO */}
       <section id="top" style={{ paddingTop: 116, paddingBottom: 70, position: "relative", overflow: "hidden", minHeight: "90vh", display: "flex", alignItems: "center" }}>
-        <BgImage src="/bg-hero.webp" opacity={0.22} />
+        <BgImage src="/bg-hero.webp" />
         <div className="mx" style={{ position: "relative", zIndex: 2, width: "100%" }}>
           <div className="hero-lay" style={{ display: "flex", flexDirection: "column", gap: 36 }}>
             <div className="hero-l">
@@ -340,7 +340,7 @@ export default function HomeClient() {
 
       {/* INTRO */}
       <section style={{ paddingTop: 100, paddingBottom: 60, position: "relative", overflow: "hidden" }}>
-        <BgImageMid src="/bg-mid.webp" opacity={0.12} />
+        <BgImageMid src="/bg-mid.webp" />
         <div className="mx" style={{ maxWidth: 760, textAlign: "center", position: "relative", zIndex: 2 }}>
           <Fade>
             <p className="hd" style={{ fontSize: 24, lineHeight: 1.55, color: "#eae8e3", fontWeight: 500, letterSpacing: "-0.3px" }}>
@@ -398,7 +398,7 @@ export default function HomeClient() {
 
       {/* COMPARISON */}
       <section style={{ paddingTop: 90, paddingBottom: 90, position: "relative", overflow: "hidden" }}>
-        <BgImageMid src="/bg-hero.webp" opacity={0.15} />
+        <BgImageMid src="/bg-hero.webp" />
         <div className="mx" style={{ maxWidth: 820, position: "relative", zIndex: 2 }}>
           <Fade>
             <div style={{ textAlign: "center", marginBottom: 48 }}>
@@ -464,7 +464,7 @@ export default function HomeClient() {
 
       {/* DESPRE */}
       <section id="despre" style={{ paddingTop: 100, paddingBottom: 100, position: "relative", overflow: "hidden" }}>
-        <BgImage src="/bg-about.webp" opacity={0.18} />
+        <BgImage src="/bg-about.webp" />
         <div className="mx" style={{ position: "relative", zIndex: 2 }}>
           <div className="about-lay" style={{ display: "flex", flexDirection: "column", gap: 48 }}>
             <Fade>
