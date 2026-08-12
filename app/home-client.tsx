@@ -36,12 +36,11 @@ function BgImage({ src }: { src: string }) {
         style={{
           position: "absolute", inset: 0, width: "100%", height: "100%",
           objectFit: "cover", objectPosition: "center",
-          filter: "blur(10px) saturate(0.9) brightness(0.65)",
+          filter: "blur(8px) saturate(1.1) brightness(0.85)",
           transform: "scale(1.06)",
         }}
       />
-      {/* dark overlay for text readability */}
-      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(10,12,20,0.25) 0%, rgba(10,12,20,0.1) 50%, rgba(10,12,20,0.3) 100%)" }} />
+      <div style={{ position: "absolute", inset: 0, background: "rgba(10,12,20,0.55)" }} />
       {/* orange accent glow */}
       <div style={{ position: "absolute", top: "-10%", right: "-5%", width: 500, height: 500, background: "radial-gradient(circle, rgba(255,106,0,0.2) 0%, transparent 65%)", filter: "blur(70px)", borderRadius: "50%" }} />
     </div>
@@ -58,11 +57,11 @@ function BgImageMid({ src }: { src: string }) {
         style={{
           position: "absolute", inset: 0, width: "100%", height: "100%",
           objectFit: "cover", objectPosition: "center",
-          filter: "blur(10px) saturate(0.9) brightness(0.6)",
+          filter: "blur(8px) saturate(1.0) brightness(0.8)",
           transform: "scale(1.06)",
         }}
       />
-      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(10,12,20,0.3) 0%, rgba(10,12,20,0.12) 50%, rgba(10,12,20,0.35) 100%)" }} />
+      <div style={{ position: "absolute", inset: 0, background: "rgba(10,12,20,0.58)" }} />
       <div style={{ position: "absolute", bottom: "-10%", left: "5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(255,106,0,0.15) 0%, transparent 65%)", filter: "blur(80px)", borderRadius: "50%" }} />
     </div>
   );
@@ -179,7 +178,7 @@ export default function HomeClient() {
           .sk { display: none; }
           .g3 { grid-template-columns: 1fr 1fr 1fr !important; }
           .g4 { grid-template-columns: 1fr 1fr 1fr 1fr !important; }
-          .hero-t { font-size: 52px !important; line-height: 1.04 !important; }
+          .hero-t { font-size: 46px !important; line-height: 1.08 !important; }
           .hero-lay { flex-direction: row !important; align-items: center; gap: 56px !important; }
           .hero-l { flex: 1.2; }
           .hero-r { flex: 0.8; }
@@ -188,7 +187,7 @@ export default function HomeClient() {
           .mob-menu { display: none !important; }
           .about-lay { flex-direction: row !important; gap: 80px !important; align-items: center; }
         }
-        @media (min-width: 1024px) { .hero-t { font-size: 58px !important; } }
+        @media (min-width: 1024px) { .hero-t { font-size: 52px !important; } }
         @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
         @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-14px); } }
         @keyframes glow-pulse { 0%, 100% { box-shadow: 0 8px 24px rgba(255,106,0,0.25); } 50% { box-shadow: 0 8px 40px rgba(255,106,0,0.55), 0 0 0 4px rgba(255,106,0,0.12); } }
@@ -272,16 +271,10 @@ export default function HomeClient() {
                 <span className="tag" style={{ marginBottom: 24, display: "inline-block" }}>Implementare AI · Timișoara, România</span>
               </Fade>
               <Fade delay={0.05}>
-                <h1 className="hero-t hd" style={{ fontSize: 36, fontWeight: 900, lineHeight: 1.08, marginBottom: 24, letterSpacing: "-2px" }}>
+                <h1 className="hero-t hd" style={{ fontSize: 32, fontWeight: 900, lineHeight: 1.1, marginBottom: 24, letterSpacing: "-1.5px" }}>
                   Automatizări AI<br />
-                  pentru afaceri<br />
-                  din România —{" "}
-                  <br />
-                  <span style={{ position: "relative", display: "inline-block", paddingBottom: 6 }}>
-                    <span className="ac">Fără tehnologie de fițe,</span>
-                    <span style={{ position: "absolute", bottom: 0, left: 0, right: "10%", height: 3, background: "linear-gradient(90deg, #ff6a00, #ff8c33, transparent)", borderRadius: 2 }} />
-                  </span>
-                  <br />
+                  pentru afaceri din România.<br />
+                  <span className="ac">Fără tehnologie de fițe,</span><br />
                   <span className="ac">fără chatboți inutili.</span>
                 </h1>
               </Fade>
