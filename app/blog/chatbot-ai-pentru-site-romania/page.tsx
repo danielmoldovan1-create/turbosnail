@@ -3,9 +3,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Chatbot AI pentru Site România: Ce Face, Cât Economisești și Cum Alegi | TurboSnail",
   description: "Ghid practic despre chatbot AI pentru site România: cum funcționează, ce procese automatizează, ce întrebări să pui unui furnizor și cum măsori rezultatele reale.",
+  alternates: {
+    canonical: "https://turbosnail.ro/blog/chatbot-ai-pentru-site-romania",
+  },
   openGraph: {
-    title: "Chatbot AI pentru Site Romania: Ce Face, Cat Economiseste si Cum Alegi | TurboSnail",
-    description: "Ghid practic despre chatbot AI pentru site Romania: cum functioneaza, ce procese automatizeaza, ce intrebari sa pui unui furnizor si cum masori rezultatele reale.",
+    title: "Chatbot AI pentru Site România: Ce Face, Cât Economisești și Cum Alegi | TurboSnail",
+    description: "Ghid practic despre chatbot AI pentru site România: cum funcționează, ce procese automatizează, ce întrebări să pui unui furnizor și cum măsori rezultatele reale.",
     url: "https://turbosnail.ro/blog/chatbot-ai-pentru-site-romania",
     type: "article",
     locale: "ro_RO",
@@ -13,292 +16,282 @@ export const metadata: Metadata = {
   },
 };
 
+const articleLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Chatbot AI pentru Site România: Ce Face, Cât Economisești și Cum Alegi",
+  description: "Ghid practic despre chatbot AI pentru site România: cum funcționează, ce procese automatizează și cum măsori rezultatele reale.",
+  url: "https://turbosnail.ro/blog/chatbot-ai-pentru-site-romania",
+  datePublished: "2026-04-19",
+  dateModified: "2026-08-12",
+  publisher: {
+    "@type": "Organization",
+    name: "TurboSnail",
+    url: "https://turbosnail.ro",
+    logo: { "@type": "ImageObject", url: "https://turbosnail.ro/turbosnail-logo.png" },
+  },
+  inLanguage: "ro-RO",
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://turbosnail.ro/blog/chatbot-ai-pentru-site-romania",
+  },
+};
+
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Cât de repede poate răspunde un chatbot AI în română?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Răspunsul este aproape instantaneu, sub 2 secunde în condiții normale de funcționare. Nu există timp de așteptare ca la un operator uman și nu există program de lucru.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Un chatbot AI poate înțelege greșelile de tastare sau exprimări informale?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Da, modelele de limbaj actuale sunt antrenate pe texte reale și înțeleg greșeli de scriere frecvente, abrevieri și exprimări colocviale în română. Nu este perfect, dar se descurcă în marea majoritate a cazurilor.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Este necesar acordul GDPR pentru a folosi un chatbot AI pe site?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Da. Dacă chatbotul colectează date personale (nume, email, telefon), trebuie să existe o informare clară despre utilizarea datelor și un mecanism de acordare a consimțământului, conform GDPR. Furnizorul trebuie să poată oferi un Data Processing Agreement.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Chatbotul AI poate fi integrat cu orice tip de site?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "În general da. Soluțiile principale funcționează cu WordPress, Webflow, custom HTML sau platforme e-commerce. Integrarea se face printr-un snippet de JavaScript sau un plugin dedicat. Verifică compatibilitatea înainte de a semna un contract.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Cât timp durează până când un chatbot AI aduce rezultate măsurabile?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "În mod realist, primele rezultate semnificative apar după 30-60 de zile de la lansare, după o rundă de optimizări bazate pe conversațiile reale. Nu există chatbot care să fie perfect din prima zi.",
+      },
+    },
+  ],
+};
+
 export default function ChatbotAIPentruSiteRomania() {
   return (
-    <article className="max-w-3xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-6">
-        Chatbot AI pentru site Romania: ce face concret, cat economiseste si cum alegi unul care functioneaza
-      </h1>
+    <main style={{ fontFamily: "'Instrument Sans', sans-serif", background: "#0a0c14", color: "#eae8e3", minHeight: "100vh" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap');
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        .hd { font-family: 'Outfit', sans-serif; }
+        .mx { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+        .prose h2 { font-family: 'Outfit', sans-serif; font-size: 26px; font-weight: 800; margin: 48px 0 16px; color: #eae8e3; letter-spacing: -0.5px; }
+        .prose p { font-size: 17px; line-height: 1.75; color: #a8a6a1; margin-bottom: 20px; }
+        .prose strong { color: #eae8e3; font-weight: 600; }
+        .prose a { color: #ff6a00; text-decoration: none; border-bottom: 1px solid rgba(255,106,0,0.3); }
+        .prose a:hover { border-bottom-color: #ff6a00; }
+        .prose ul { margin: 0 0 20px 0; padding: 0; list-style: none; }
+        .prose ul li { font-size: 16px; line-height: 1.7; color: #a8a6a1; padding: 10px 0 10px 20px; border-bottom: 1px solid #12141f; position: relative; }
+        .prose ul li::before { content: "→"; position: absolute; left: 0; color: #ff6a00; font-size: 14px; top: 12px; }
+        .prose ul li:last-child { border-bottom: none; }
+        .prose ol { margin: 0 0 20px 0; padding: 0; list-style: none; counter-reset: item; }
+        .prose ol li { font-size: 16px; line-height: 1.7; color: #a8a6a1; padding: 10px 0 10px 40px; border-bottom: 1px solid #12141f; position: relative; counter-increment: item; }
+        .prose ol li::before { content: counter(item); position: absolute; left: 0; width: 26px; height: 26px; border-radius: 50%; background: rgba(255,106,0,0.1); border: 1px solid rgba(255,106,0,0.25); font-family: 'Outfit', sans-serif; font-size: 11px; font-weight: 700; color: #ff6a00; top: 12px; text-align: center; line-height: 26px; }
+        .prose ol li:last-child { border-bottom: none; }
+        .prose blockquote { border-left: 3px solid #ff6a00; padding: 16px 20px; margin: 28px 0; background: rgba(255,106,0,0.05); border-radius: 0 8px 8px 0; }
+        .faq-item { border-bottom: 1px solid #1a1d2a; padding: 22px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-q { font-family: 'Outfit', sans-serif; font-size: 17px; font-weight: 700; color: #eae8e3; margin-bottom: 10px; }
+        .faq-a { font-size: 15px; line-height: 1.7; color: #a8a6a1; }
+        .divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,106,0,0.12), transparent); max-width: 760px; margin: 48px auto; }
+      `}</style>
 
-      <p className="text-lg mb-6">
-        Un <strong>chatbot AI pentru site Romania</strong> nu este un simplu formular de contact cu raspunsuri predefinite.
-        Este un asistent virtual care intelege intrebarile scrise in romana, raspunde in timp real 24 de ore din 24
-        si poate califica un potential client inainte ca vreun om din echipa ta sa intervina.
-        In acest ghid vezi exact ce face, unde ajuta cel mai mult si ce trebuie sa verifici inainte sa instalezi unul pe site-ul firmei tale.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-10 mb-4">Ce este un chatbot AI si cum difera de un chatbot clasic</h2>
-      <p className="mb-4">
-        Un chatbot clasic functioneaza pe baza unui arbore de decizie: utilizatorul alege dintr-un meniu, primeste un raspuns prestabilit,
-        apoi alege din nou. Functioneaza bine pentru un flux simplu si previzibil, de exemplu programarea unui service auto.
-        Problema apare cand utilizatorul scrie ceva neprevazut. Chatbotul clasic se blocheaza sau redirectioneaza catre un operator uman.
-      </p>
-      <p className="mb-4">
-        Un chatbot AI, in schimb, foloseste modele de limbaj pentru a intelege intentia din spatele unui mesaj,
-        nu cuvintele exacte. Daca cineva scrie "vreau sa stiu ce puteti face pentru firma mea", chatbotul AI intelege
-        ca este o cerere de informatii despre servicii si raspunde corespunzator, fara sa fi fost programat cu aceasta fraza exacta.
-        Aceasta diferenta este esentiala pentru firmele care primesc intrebari variate si imprevizibile.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-10 mb-4">Ce procese automatizeaza un chatbot AI pentru site Romania</h2>
-      <p className="mb-4">
-        In practica, cele mai frecvente utilizari ale unui chatbot AI pe un site romanesc sunt:
-      </p>
-      <ul className="list-disc pl-6 mb-6 space-y-2">
-        <li>
-          <strong>Calificarea leadurilor</strong> - chatbotul pune 3-5 intrebari de calificare (buget, termen, dimensiunea firmei)
-          si livreaza echipei de vanzari doar contactele relevante, nu orice adresa de email colectata.
-        </li>
-        <li>
-          <strong>Raspunsuri la intrebari frecvente</strong> - ore de program, zone de livrare, conditii de garantie,
-          documente necesare. Toate disponibile instant, fara ca un angajat sa ridice telefonul.
-        </li>
-        <li>
-          <strong>Programari si rezervari</strong> - integrat cu un calendar (Google Calendar, Calendly),
-          chatbotul poate propune si confirma un slot disponibil fara interventie umana.
-        </li>
-        <li>
-          <strong>Suport post-vanzare</strong> - status comanda, instructiuni de utilizare, procesul de retur.
-          Reduce volumul de emailuri si apeluri telefonice cu 30-60% in firmele cu volum mediu de comenzi.
-        </li>
-        <li>
-          <strong>Colectare date pentru oferta</strong> - in domenii ca instalatii, constructii sau servicii profesionale,
-          chatbotul poate colecta detaliile unui proiect inainte de intalnirea cu un consultant.
-        </li>
-      </ul>
-
-      <blockquote className="border-l-4 border-gray-300 pl-4 italic my-8 text-gray-700">
-        "Companiile care implementeaza chatboti AI in procesele de suport raporteaza o reducere medie de 40% a costurilor
-        operationale de customer service si o crestere de 25% a satisfactiei clientilor, datorita raspunsurilor instant disponibile non-stop."
-        <br />
-        <span className="not-italic font-medium">-- <a href="https://www.gartner.com/en/customer-service-support" className="underline" target="_blank" rel="noopener noreferrer">Gartner, Customer Service &amp; Support Leadership Survey, 2024</a></span>
-      </blockquote>
-
-      <h2 className="text-2xl font-semibold mt-10 mb-4">Chatbot AI pentru site Romania: ce rezultate poti masura</h2>
-      <p className="mb-4">
-        Inainte sa instalezi orice solutie, stabileste ce vrei sa masori. Fara metrici clare, nu vei sti daca chatbotul aduce valoare
-        sau doar ocupa spatiu pe site. Indicatorii uzuali sunt:
-      </p>
-      <ul className="list-disc pl-6 mb-6 space-y-2">
-        <li><strong>Rata de angajament</strong> - ce procent din vizitatori initiaza o conversatie</li>
-        <li><strong>Rata de rezolutie</strong> - ce procent din intrebari sunt rezolvate fara transfer la un operator uman</li>
-        <li><strong>Leaduri calificate generate</strong> - cate contacte noi, cu date complete, intra saptamanal prin chatbot</li>
-        <li><strong>Timp mediu de raspuns</strong> - ar trebui sa fie sub 2 secunde, 24/7</li>
-        <li><strong>Satisfactia utilizatorilor</strong> - o intrebare simpla la finalul conversatiei ("A fost util?") ofera date rapide</li>
-      </ul>
-      <p className="mb-4">
-        Un chatbot AI bine configurat pe un site cu 1.000-5.000 de vizitatori lunari poate genera 20-60 de leaduri calificate
-        suplimentar pe luna, fara sa maresti bugetul de reclame. Cifrele variaza mult in functie de industrie si calitatea traficului existent.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-10 mb-4">Intrebari pe care sa le pui unui furnizor de chatbot AI</h2>
-      <p className="mb-4">
-        Piata de chatboti este saturata de promisiuni vagi. Iata ce sa verifici concret:
-      </p>
-      <ul className="list-disc pl-6 mb-6 space-y-2">
-        <li>
-          <strong>Cum se antreneaza chatbotul pe datele mele?</strong> Un chatbot generic nu va cunoaste produsele,
-          politicile sau tonul firmei tale. Cere sa vezi cum se face onboarding-ul si cat dureaza.
-        </li>
-        <li>
-          <strong>Ce se intampla cand chatbotul nu stie sa raspunda?</strong> Trebuie sa existe un mecanism clar de escaladare
-          catre un operator uman sau un formular de contact, nu un mesaj de eroare.
-        </li>
-        <li>
-          <strong>Functioneaza in romana fara accent?</strong> Cere o demonstratie cu intrebari in romana,
-          inclusiv cu greseli de scriere frecvente. Unele solutii internationale au probleme cu diacritice si expresii locale.
-        </li>
-        <li>
-          <strong>Ce date colecteaza si unde sunt stocate?</strong> Relevant pentru GDPR. Datele clientilor tai
-          nu ar trebui sa ajunga pe servere fara o baza legala clara.
-        </li>
-        <li>
-          <strong>Cum se integreaza cu CRM-ul sau cu emailul tau?</strong> Un chatbot izolat care nu trimite leadurile
-          undeva util nu rezolva nimic. Verifica integrarile disponibile din prima.
-        </li>
-      </ul>
-
-      <h2 className="text-2xl font-semibold mt-10 mb-4">Chatbot AI vs. operator uman: nu este o alegere exclusiva</h2>
-      <p className="mb-4">
-        Cea mai frecventa obiectie pe care o aud antreprenorii romani este: "Clientii mei vor sa vorbeasca cu un om, nu cu un robot."
-        Aceasta obiectie este partial corecta. Exista situatii in care un operator uman este ireplacuibil:
-        negocieri complexe, situatii emotionale, decizii cu valoare mare.
-      </p>
-      <p className="mb-4">
-        Insa pentru 70-80% din interactiunile de pe un site de business, clientul vrea o informatie simpla si rapida.
-        Chatbotul AI rezolva exact aceste cazuri si elibereaza oamenii din echipa ta pentru conversatiile care conteaza cu adevarat.
-        Modelul corect nu este "chatbot sau om", ci "chatbot pentru volum, om pentru valoare".
-      </p>
-      <p className="mb-4">
-        In plus, un chatbot AI bun iti permite sa configurezi transferul catre un operator uman in orice moment,
-        la cererea utilizatorului sau la detectarea unui subiect sensibil. Nu este o cutie neagra.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-10 mb-4">Cum se implementeaza un chatbot AI pe un site romanesc</h2>
-      <p className="mb-4">
-        Procesul standard contine patru etape:
-      </p>
-      <ol className="list-decimal pl-6 mb-6 space-y-3">
-        <li>
-          <strong>Audit conversational</strong> - identifici cele mai frecvente 20-30 de intrebari pe care le primesti
-          prin email, telefon sau live chat. Aceasta este baza de cunostinte initiala a chatbotului.
-        </li>
-        <li>
-          <strong>Configurare si antrenament</strong> - chatbotul este incarcat cu informatiile despre firma ta,
-          produse, servicii si procese. Se testeaza cu scenarii reale, nu doar cu intrebari ideale.
-        </li>
-        <li>
-          <strong>Integrare tehnica</strong> - instalarea pe site (de obicei un snippet de cod sau un plugin),
-          plus conectarea la CRM, email sau calendar, dupa caz.
-        </li>
-        <li>
-          <strong>Monitorizare si optimizare</strong> - primele 30 de zile sunt critice. Revizuiesti conversatiile
-          in care chatbotul a esuat sau a dat raspunsuri incorecte si ajustezi.
-        </li>
-      </ol>
-      <p className="mb-4">
-        Implementarea corecta a unui chatbot AI pe un site cu trafic mediu dureaza intre doua si patru saptamani,
-        incluzand testarea. O implementare mai rapida de atat rareori produce rezultate bune.
-      </p>
-      <p className="mb-4">
-        Agentiile specializate in <a href="https://turbosnail.ro" className="text-blue-600 underline">automatizari AI</a> pot
-        accelera procesul, mai ales pentru firme care nu au resurse interne pentru configurare si monitorizare.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-10 mb-4">Cand un chatbot AI nu este solutia potrivita</h2>
-      <p className="mb-4">
-        Nu orice business are nevoie de un chatbot AI acum. Cateva situatii in care investitia nu se justifica:
-      </p>
-      <ul className="list-disc pl-6 mb-6 space-y-2">
-        <li>Site-ul primeste sub 300 de vizitatori pe luna. Volumul e prea mic pentru a amortiza costul de implementare.</li>
-        <li>Produsul sau serviciul tau este extrem de personalizat si fiecare oferta necesita o consultare individuala de la inceput.</li>
-        <li>Echipa nu are timp sa monitorizeze si sa imbunatateasca chatbotul in primele luni. Un chatbot abandonat face mai mult rau decat bine.</li>
-      </ul>
-      <p className="mb-4">
-        In aceste cazuri, o strategie de email automation sau un formular de contact mai bine structurat poate fi mai eficient pe termen scurt.
-        Un furnizor serios iti va spune direct daca situatia ta nu justifica un chatbot AI.
-      </p>
-
-      <section className="mt-12 border-t pt-8">
-        <h2 className="text-2xl font-semibold mb-6">Intrebari frecvente despre chatbot AI pentru site Romania</h2>
-
-        <div className="space-y-6">
-          <div>
-            <h3 className="font-semibold text-lg mb-2">
-              Cat de repede poate raspunde un chatbot AI in romana?
-            </h3>
-            <p>
-              Raspunsul este aproape instantaneu, sub 2 secunde in conditii normale de functionare.
-              Nu exista timp de asteptare ca la un operator uman si nu exista program de lucru.
-            </p>
+      {/* NAV */}
+      <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.92)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 64 }}>
+          <a href="/" style={{ textDecoration: "none" }}>
+            <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 46, width: "auto" }} />
+          </a>
+          <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+            <a href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</a>
+            <a href="/blog" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Blog</a>
+            <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
+              Audit Gratuit →
+            </a>
           </div>
+        </div>
+      </nav>
 
-          <div>
-            <h3 className="font-semibold text-lg mb-2">
-              Un chatbot AI poate intelege gresia de tastatura sau exprimari informale?
-            </h3>
-            <p>
-              Da, modelele de limbaj actuale sunt antrenate pe texte reale si inteleg greseli de scriere frecvente,
-              abrevieri si exprimari colocviale in romana. Nu este perfect, dar se descurca in marea majoritate a cazurilor.
-            </p>
+      {/* HEADER */}
+      <section style={{ paddingTop: 120, paddingBottom: 56 }}>
+        <div className="mx">
+          <div style={{ display: "inline-block", background: "rgba(255,106,0,0.1)", border: "1px solid rgba(255,106,0,0.25)", borderRadius: 100, padding: "6px 16px", fontSize: 11, fontWeight: 700, color: "#ff6a00", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 24, fontFamily: "'Outfit', sans-serif" }}>
+            CHATBOT AI · GHID PRACTIC
           </div>
-
-          <div>
-            <h3 className="font-semibold text-lg mb-2">
-              Este necesar acordul GDPR pentru a folosi un chatbot AI pe site?
-            </h3>
-            <p>
-              Da. Daca chatbotul colecteaza date personale (nume, email, telefon), trebuie sa existe o informare clara
-              despre utilizarea datelor si un mecanism de acordare a consimtamantului, conform GDPR.
-              Furnizorul trebuie sa poata oferi un Data Processing Agreement (DPA).
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg mb-2">
-              Chatbotul AI poate fi integrat cu orice tip de site?
-            </h3>
-            <p>
-              In general da. Solutiile principale functioneaza cu WordPress, Webflow, custom HTML sau platforme e-commerce.
-              Integrarea se face printr-un snippet de JavaScript sau un plugin dedicat.
-              Verifica compatibilitatea inainte de a semna un contract.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg mb-2">
-              Cat timp dureaza pana cand un chatbot AI aduce rezultate masurabile?
-            </h3>
-            <p>
-              In mod realist, primele rezultate semnificative apar dupa 30-60 de zile de la lansare,
-              dupa o runda de optimizari bazate pe conversatiile reale. Nu exista chatbot care sa fie perfect din prima zi.
-            </p>
-          </div>
+          <h1 className="hd" style={{ fontSize: 40, fontWeight: 900, lineHeight: 1.12, letterSpacing: -1, marginBottom: 24 }}>
+            Chatbot AI pentru site România: ce face concret, cât economisești și cum alegi unul care funcționează
+          </h1>
+          <p style={{ fontSize: 18, color: "#a8a6a1", lineHeight: 1.65, maxWidth: 620 }}>
+            Un <strong style={{ color: "#eae8e3" }}>chatbot AI pentru site România</strong> nu este un simplu formular de contact cu răspunsuri predefinite. Este un asistent virtual care înțelege întrebările scrise în română, răspunde în timp real 24 de ore din 24 și poate califica un potențial client înainte ca vreun om din echipa ta să intervină. În acest ghid vezi exact ce face, unde ajută cel mai mult și ce trebuie să verifici înainte să instalezi unul pe site-ul firmei tale.
+          </p>
         </div>
       </section>
 
-      <div className="mt-12 p-6 bg-gray-50 rounded-lg border">
-        <p className="text-base">
-          Vrei sa afli daca un chatbot AI este potrivit pentru site-ul tau si ce rezultate realiste poti astepta?
-          Completeaza formularul de contact pe{" "}
-          <a href="https://turbosnail.ro/#contact" className="text-blue-600 underline font-medium">
-            turbosnail.ro/#contact
-          </a>{" "}
-          si discutam concret despre situatia firmei tale.
-        </p>
-      </div>
+      {/* CONTENT */}
+      <article className="prose mx" style={{ paddingBottom: 60 }}>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "Cat de repede poate raspunde un chatbot AI in romana?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Raspunsul este aproape instantaneu, sub 2 secunde in conditii normale de functionare. Nu exista timp de asteptare ca la un operator uman si nu exista program de lucru.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Un chatbot AI poate intelege greseli de tastatura sau exprimari informale?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Da, modelele de limbaj actuale sunt antrenate pe texte reale si inteleg greseli de scriere frecvente, abrevieri si exprimari colocviale in romana.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Este necesar acordul GDPR pentru a folosi un chatbot AI pe site?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Da. Daca chatbotul colecteaza date personale, trebuie sa existe o informare clara despre utilizarea datelor si un mecanism de acordare a consimtamantului, conform GDPR.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Chatbotul AI poate fi integrat cu orice tip de site?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "In general da. Solutiile principale functioneaza cu WordPress, Webflow, custom HTML sau platforme e-commerce, printr-un snippet de JavaScript sau un plugin dedicat.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Cat timp dureaza pana cand un chatbot AI aduce rezultate masurabile?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "In mod realist, primele rezultate semnificative apar dupa 30-60 de zile de la lansare, dupa o runda de optimizari bazate pe conversatiile reale.",
-                },
-              },
-            ],
-          }),
-        }}
-      />
-    </article>
+        <h2>Ce este un chatbot AI și cum diferă de un chatbot clasic</h2>
+        <p>
+          Un chatbot clasic funcționează pe baza unui arbore de decizie: utilizatorul alege dintr-un meniu, primește un răspuns prestabilit, apoi alege din nou. Funcționează bine pentru un flux simplu și previzibil, de exemplu programarea unui service auto. Problema apare când utilizatorul scrie ceva neprevăzut. Chatbotul clasic se blochează sau redirecționează către un operator uman.
+        </p>
+        <p>
+          Un chatbot AI, în schimb, folosește modele de limbaj pentru a înțelege intenția din spatele unui mesaj, nu cuvintele exacte. Dacă cineva scrie "vreau să știu ce puteți face pentru firma mea", chatbotul AI înțelege că este o cerere de informații despre servicii și răspunde corespunzător, fără să fi fost programat cu această frază exactă. Această diferență este esențială pentru firmele care primesc întrebări variate și imprevizibile.
+        </p>
+
+        <h2>Ce procese automatizează un chatbot AI pentru site România</h2>
+        <p>În practică, cele mai frecvente utilizări ale unui chatbot AI pe un site românesc sunt:</p>
+        <ul>
+          <li>
+            <strong>Calificarea leadurilor</strong> - chatbotul pune 3-5 întrebări de calificare (buget, termen, dimensiunea firmei) și livrează echipei de vânzări doar contactele relevante, nu orice adresă de email colectată.
+          </li>
+          <li>
+            <strong>Răspunsuri la întrebări frecvente</strong> - ore de program, zone de livrare, condiții de garanție, documente necesare. Toate disponibile instant, fără ca un angajat să ridice telefonul.
+          </li>
+          <li>
+            <strong>Programări și rezervări</strong> - integrat cu un calendar (Google Calendar, Calendly), chatbotul poate propune și confirma un slot disponibil fără intervenție umană.
+          </li>
+          <li>
+            <strong>Suport post-vânzare</strong> - status comandă, instrucțiuni de utilizare, procesul de retur. Reduce volumul de emailuri și apeluri telefonice cu 30-60% în firmele cu volum mediu de comenzi.
+          </li>
+          <li>
+            <strong>Colectare date pentru ofertă</strong> - în domenii ca instalații, construcții sau servicii profesionale, chatbotul poate colecta detaliile unui proiect înainte de întâlnirea cu un consultant.
+          </li>
+        </ul>
+
+        <blockquote>
+          <p style={{ fontStyle: "italic", fontSize: 17, color: "#c8c6c1", marginBottom: 12 }}>
+            "Companiile care implementează chatboți AI în procesele de suport raportează o reducere medie de 40% a costurilor operaționale de customer service și o creștere de 25% a satisfacției clienților, datorită răspunsurilor instant disponibile non-stop."
+          </p>
+          <p style={{ fontSize: 14, color: "#666677" }}>
+            <strong style={{ color: "#888899" }}>Gartner</strong>, <a href="https://www.gartner.com/en/customer-service-support" target="_blank" rel="noopener noreferrer">Customer Service &amp; Support Leadership Survey, 2024</a>
+          </p>
+        </blockquote>
+
+        <h2>Chatbot AI pentru site România: ce rezultate poți măsura</h2>
+        <p>
+          Înainte să instalezi orice soluție, stabilește ce vrei să măsori. Fără metrici clare, nu vei ști dacă chatbotul aduce valoare sau doar ocupă spațiu pe site. Indicatorii uzuali sunt:
+        </p>
+        <ul>
+          <li><strong>Rata de angajament</strong> - ce procent din vizitatori inițiază o conversație</li>
+          <li><strong>Rata de rezoluție</strong> - ce procent din întrebări sunt rezolvate fără transfer la un operator uman</li>
+          <li><strong>Leaduri calificate generate</strong> - câte contacte noi, cu date complete, intră săptămânal prin chatbot</li>
+          <li><strong>Timp mediu de răspuns</strong> - ar trebui să fie sub 2 secunde, 24/7</li>
+          <li><strong>Satisfacția utilizatorilor</strong> - o întrebare simplă la finalul conversației ("A fost util?") oferă date rapide</li>
+        </ul>
+        <p>
+          Un chatbot AI bine configurat pe un site cu 1.000-5.000 de vizitatori lunari poate genera 20-60 de leaduri calificate suplimentar pe lună, fără să mărești bugetul de reclame. Cifrele variază mult în funcție de industrie și calitatea traficului existent.
+        </p>
+
+        <h2>Întrebări pe care să le pui unui furnizor de chatbot AI</h2>
+        <p>Piața de chatboți este saturată de promisiuni vagi. Iată ce să verifici concret:</p>
+        <ul>
+          <li>
+            <strong>Cum se antrenează chatbotul pe datele mele?</strong> Un chatbot generic nu va cunoaște produsele, politicile sau tonul firmei tale. Cere să vezi cum se face onboarding-ul și cât durează.
+          </li>
+          <li>
+            <strong>Ce se întâmplă când chatbotul nu știe să răspundă?</strong> Trebuie să existe un mecanism clar de escaladare către un operator uman sau un formular de contact, nu un mesaj de eroare.
+          </li>
+          <li>
+            <strong>Funcționează în română fără accent?</strong> Cere o demonstrație cu întrebări în română, inclusiv cu greșeli de scriere frecvente. Unele soluții internaționale au probleme cu diacritice și expresii locale.
+          </li>
+          <li>
+            <strong>Ce date colectează și unde sunt stocate?</strong> Relevant pentru GDPR. Datele clienților tăi nu ar trebui să ajungă pe servere fără o bază legală clară.
+          </li>
+          <li>
+            <strong>Cum se integrează cu CRM-ul sau cu emailul tău?</strong> Un chatbot izolat care nu trimite leadurile undeva util nu rezolvă nimic. Verifică integrările disponibile din prima.
+          </li>
+        </ul>
+
+        <h2>Chatbot AI vs. operator uman: nu este o alegere exclusivă</h2>
+        <p>
+          Cea mai frecventă obiecție pe care o aud antreprenorii români este: "Clienții mei vor să vorbească cu un om, nu cu un robot." Această obiecție este parțial corectă. Există situații în care un operator uman este iremplacuibil: negocieri complexe, situații emoționale, decizii cu valoare mare.
+        </p>
+        <p>
+          Însă pentru 70-80% din interacțiunile de pe un site de business, clientul vrea o informație simplă și rapidă. Chatbotul AI rezolvă exact aceste cazuri și eliberează oamenii din echipa ta pentru conversațiile care contează cu adevărat. Modelul corect nu este "chatbot sau om", ci "chatbot pentru volum, om pentru valoare".
+        </p>
+        <p>
+          În plus, un chatbot AI bun îți permite să configurezi transferul către un operator uman în orice moment, la cererea utilizatorului sau la detectarea unui subiect sensibil. Nu este o cutie neagră.
+        </p>
+
+        <h2>Cum se implementează un chatbot AI pe un site românesc</h2>
+        <p>Procesul standard conține patru etape:</p>
+        <ol>
+          <li>
+            <strong>Audit conversațional</strong> - identifici cele mai frecvente 20-30 de întrebări pe care le primești prin email, telefon sau live chat. Aceasta este baza de cunoștințe inițială a chatbotului.
+          </li>
+          <li>
+            <strong>Configurare și antrenament</strong> - chatbotul este încărcat cu informațiile despre firma ta, produse, servicii și procese. Se testează cu scenarii reale, nu doar cu întrebări ideale.
+          </li>
+          <li>
+            <strong>Integrare tehnică</strong> - instalarea pe site (de obicei un snippet de cod sau un plugin), plus conectarea la CRM, email sau calendar, după caz.
+          </li>
+          <li>
+            <strong>Monitorizare și optimizare</strong> - primele 30 de zile sunt critice. Revizuiești conversațiile în care chatbotul a eșuat sau a dat răspunsuri incorecte și ajustezi.
+          </li>
+        </ol>
+        <p>
+          Implementarea corectă a unui chatbot AI pe un site cu trafic mediu durează între două și patru săptămâni, inclusiv testarea. O implementare mai rapidă de atât rareori produce rezultate bune.
+        </p>
+        <p>
+          Agențiile specializate în <a href="https://turbosnail.ro">automatizări AI</a> pot accelera procesul, mai ales pentru firme care nu au resurse interne pentru configurare și monitorizare.
+        </p>
+
+        <h2>Când un chatbot AI nu este soluția potrivită</h2>
+        <p>Nu orice business are nevoie de un chatbot AI acum. Câteva situații în care investiția nu se justifică:</p>
+        <ul>
+          <li>Site-ul primește sub 300 de vizitatori pe lună. Volumul este prea mic pentru a amortiza costul de implementare.</li>
+          <li>Produsul sau serviciul tău este extrem de personalizat și fiecare ofertă necesită o consultare individuală de la început.</li>
+          <li>Echipa nu are timp să monitorizeze și să îmbunătățească chatbotul în primele luni. Un chatbot abandonat face mai mult rău decât bine.</li>
+        </ul>
+        <p>
+          În aceste cazuri, o strategie de email automation sau un formular de contact mai bine structurat poate fi mai eficient pe termen scurt. Un furnizor serios îți va spune direct dacă situația ta nu justifică un chatbot AI.
+        </p>
+
+        <div className="divider" />
+
+        <h2>Întrebări frecvente despre chatbot AI pentru site România</h2>
+      </article>
+
+      <section style={{ padding: "0 20px 60px", maxWidth: 760, margin: "0 auto" }}>
+        {faqLd.mainEntity.map((item, i) => (
+          <div key={i} className="faq-item">
+            <div className="faq-q">{item.name}</div>
+            <div className="faq-a">{item.acceptedAnswer.text}</div>
+          </div>
+        ))}
+      </section>
+
+      <div style={{ height: 1, background: "linear-gradient(90deg, transparent, rgba(255,106,0,0.12), transparent)", maxWidth: 760, margin: "0 auto" }} />
+
+      {/* CTA */}
+      <section style={{ padding: "60px 20px 96px", textAlign: "center", maxWidth: 760, margin: "0 auto" }}>
+        <h2 className="hd" style={{ fontSize: 28, fontWeight: 900, letterSpacing: -0.6, marginBottom: 14 }}>Vrei să afli dacă un chatbot AI este potrivit pentru site-ul tău?</h2>
+        <p style={{ fontSize: 16, color: "#a8a6a1", marginBottom: 32, lineHeight: 1.65 }}>
+          Completează formularul de contact și discutăm concret despre situația firmei tale: ce volum de întrebări primești, ce sisteme folosești și ce rezultate realiste poți aștepta.
+        </p>
+        <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
+          Vreau să discut despre chatbot AI →
+        </a>
+      </section>
+    </main>
   );
 }

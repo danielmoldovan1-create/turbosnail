@@ -104,5 +104,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://turbosnail.ro/blog/cold-email-b2b-romania-ghid-complet',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://turbosnail.ro/blog/consultanta-ai-ce-include-cum-alegi',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://turbosnail.ro/blog/automatizare-rapoarte-saptamanale-lunare',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://turbosnail.ro/blog/automatizare-procese-business-ghid-2026',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ]
 }
