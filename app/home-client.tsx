@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 function useVisible() {
   const ref = useRef<HTMLDivElement>(null);
@@ -64,6 +65,226 @@ function BgImageMid({ src }: { src: string }) {
       <div style={{ position: "absolute", inset: 0, background: "rgba(10,12,20,0.58)" }} />
       <div style={{ position: "absolute", bottom: "-10%", left: "5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(255,106,0,0.15) 0%, transparent 65%)", filter: "blur(80px)", borderRadius: "50%" }} />
     </div>
+  );
+}
+
+const TIMELINE_STATES = [
+  {
+    label: "AZI",
+    title: "Nu ești găsit",
+    stat: "0 mențiuni în AI",
+    color: "#4a4a5a",
+    icon: (active: boolean) => (
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="17" cy="17" r="9" stroke={active ? "#4a4a5a" : "#2a2a3a"} strokeWidth="1.5" />
+        <line x1="23.5" y1="23.5" x2="31" y2="31" stroke={active ? "#4a4a5a" : "#2a2a3a"} strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="13" y1="17" x2="21" y2="17" stroke={active ? "#4a4a5a" : "#2a2a3a"} strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    label: "3-6 LUNI",
+    title: "Ești citat",
+    stat: "12 mențiuni / lună",
+    color: "#ff6a00",
+    icon: (active: boolean) => (
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 10h24a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H22l-6 4v-4H8a2 2 0 0 1-2-2V12a2 2 0 0 1 2-2z" stroke={active ? "#ff6a00" : "#2a2a3a"} strokeWidth="1.5" strokeLinejoin="round" />
+        <path d="M13 18h1.5M18.5 18H20M25 18h1.5" stroke={active ? "#ff6a00" : "#2a2a3a"} strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="32" cy="10" r="4" fill={active ? "#ff6a00" : "transparent"} stroke={active ? "#ff6a00" : "#2a2a3a"} strokeWidth="1.2" />
+        <path d="M30.5 10l1 1 2-2" stroke={active ? "#fff" : "#2a2a3a"} strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+  {
+    label: "12+ LUNI",
+    title: "Devii sursa",
+    stat: "35+ mențiuni / lună",
+    color: "#ffa347",
+    icon: (active: boolean) => (
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 6l3.09 6.26L30 13.27l-5 4.87 1.18 6.86L20 21.77l-6.18 3.23L15 18.14 10 13.27l6.91-1.01L20 6z" stroke={active ? "#ffa347" : "#2a2a3a"} strokeWidth="1.5" strokeLinejoin="round" fill={active ? "rgba(255,163,71,0.15)" : "transparent"} />
+        <path d="M14 32h12M17 28v4M23 28v4" stroke={active ? "#ffa347" : "#2a2a3a"} strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+];
+
+function AITimeline() {
+  const ref = useRef<HTMLElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
+  const [progress, setProgress] = useState(0);
+  const [activeStates, setActiveStates] = useState([false, false, false]);
+  const prefersReduced = useRef(false);
+
+  useEffect(() => {
+    prefersReduced.current = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }, []);
+
+  useEffect(() => {
+    if (!isInView) return;
+    if (prefersReduced.current) {
+      setProgress(100);
+      setActiveStates([true, true, true]);
+      return;
+    }
+
+    const duration = 1800;
+    const start = performance.now();
+
+    const tick = (now: number) => {
+      const elapsed = now - start;
+      const p = Math.min(elapsed / duration, 1);
+      const eased = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+      setProgress(eased * 100);
+      // activate each state at 15%, 50%, 85% of progress
+      setActiveStates([eased > 0.15, eased > 0.50, eased > 0.85]);
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }, [isInView]);
+
+  return (
+    <section
+      ref={ref}
+      role="region"
+      aria-label="Evoluție de la invizibil la sursă AI"
+      style={{ width: "100%", maxWidth: 860, margin: "40px 0 32px", padding: "0 0" }}
+    >
+      {/* DESKTOP layout */}
+      <div className="timeline-desktop" style={{ display: "flex", alignItems: "flex-start", position: "relative" }}>
+        {TIMELINE_STATES.map((s, i) => (
+          <div key={i} style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", position: "relative", zIndex: 2 }}>
+            {/* label above */}
+            <span style={{
+              fontFamily: "'Outfit', sans-serif",
+              fontSize: 10, fontWeight: 700, letterSpacing: 2,
+              textTransform: "uppercase",
+              color: activeStates[i] ? s.color : "#2a2a3a",
+              marginBottom: 14,
+              transition: "color 0.4s ease",
+            }}>{s.label}</span>
+
+            {/* icon circle */}
+            <div style={{
+              width: 64, height: 64,
+              borderRadius: "50%",
+              border: `1.5px solid ${activeStates[i] ? s.color : "#1a1d2a"}`,
+              background: activeStates[i] ? `rgba(${s.color === "#ff6a00" ? "255,106,0" : s.color === "#ffa347" ? "255,163,71" : "74,74,90"},0.08)` : "#0d0f18",
+              display: "flex", alignItems: "center", justifyContent: "center",
+              transform: activeStates[i] ? "scale(1.15)" : "scale(1)",
+              transition: "all 0.5s cubic-bezier(0.34,1.56,0.64,1)",
+              boxShadow: activeStates[i] ? `0 0 20px ${s.color}33` : "none",
+            }}>
+              {s.icon(activeStates[i])}
+            </div>
+
+            {/* title */}
+            <p style={{
+              fontFamily: "'Outfit', sans-serif",
+              fontSize: 13, fontWeight: 700,
+              color: activeStates[i] ? "#eae8e3" : "#3a3a4a",
+              marginTop: 14, marginBottom: 6,
+              textAlign: "center",
+              transform: activeStates[i] ? "translateY(0)" : "translateY(12px)",
+              opacity: activeStates[i] ? 1 : 0,
+              transition: "all 0.5s ease 0.1s",
+            }}>{s.title}</p>
+
+            {/* stat */}
+            <p style={{
+              fontFamily: "monospace",
+              fontSize: 11, letterSpacing: 1,
+              textTransform: "uppercase",
+              color: activeStates[i] ? s.color : "#2a2a3a",
+              textAlign: "center",
+              transform: activeStates[i] ? "translateY(0)" : "translateY(10px)",
+              opacity: activeStates[i] ? 1 : 0,
+              transition: "all 0.5s ease 0.2s",
+            }}>{s.stat}</p>
+          </div>
+        ))}
+
+        {/* progress track — behind icons */}
+        <div style={{
+          position: "absolute",
+          top: 39, left: "16%", right: "16%",
+          height: 2,
+          background: "#1a1d2a",
+          zIndex: 1,
+        }}>
+          {/* dots */}
+          {[0, 50, 100].map((pos, i) => (
+            <div key={i} style={{
+              position: "absolute",
+              left: `${pos}%`,
+              top: "50%",
+              transform: "translate(-50%, -50%)",
+              width: 8, height: 8, borderRadius: "50%",
+              background: progress / 100 >= pos / 100 - 0.05
+                ? (i === 0 ? "#4a4a5a" : i === 1 ? "#ff6a00" : "#ffa347")
+                : "#1a1d2a",
+              transition: "background 0.3s ease",
+              zIndex: 3,
+            }} />
+          ))}
+          {/* fill */}
+          <div style={{
+            position: "absolute", inset: 0,
+            background: "linear-gradient(90deg, #4a4a5a 0%, #ff6a00 50%, #ffa347 100%)",
+            transformOrigin: "left",
+            transform: `scaleX(${progress / 100})`,
+            transition: "transform 0.05s linear",
+            borderRadius: 2,
+          }} />
+        </div>
+      </div>
+
+      {/* MOBILE layout */}
+      <div className="timeline-mobile" style={{ display: "none", flexDirection: "column", gap: 0 }}>
+        {TIMELINE_STATES.map((s, i) => (
+          <div key={i} style={{ display: "flex", gap: 20, alignItems: "flex-start", position: "relative", paddingBottom: i < 2 ? 28 : 0 }}>
+            {/* vertical line */}
+            {i < 2 && (
+              <div style={{ position: "absolute", left: 31, top: 64, width: 2, height: "calc(100% - 32px)", background: "#1a1d2a", zIndex: 1 }}>
+                <div style={{
+                  position: "absolute", top: 0, left: 0, right: 0,
+                  background: `linear-gradient(180deg, ${TIMELINE_STATES[i].color}, ${TIMELINE_STATES[i + 1].color})`,
+                  height: activeStates[i + 1] ? "100%" : "0%",
+                  transition: "height 0.6s ease",
+                  borderRadius: 2,
+                }} />
+              </div>
+            )}
+            <div style={{
+              width: 64, height: 64, flexShrink: 0,
+              borderRadius: "50%",
+              border: `1.5px solid ${activeStates[i] ? s.color : "#1a1d2a"}`,
+              background: activeStates[i] ? `rgba(${s.color === "#ff6a00" ? "255,106,0" : s.color === "#ffa347" ? "255,163,71" : "74,74,90"},0.08)` : "#0d0f18",
+              display: "flex", alignItems: "center", justifyContent: "center",
+              transform: activeStates[i] ? "scale(1.1)" : "scale(1)",
+              transition: "all 0.5s cubic-bezier(0.34,1.56,0.64,1)",
+              boxShadow: activeStates[i] ? `0 0 16px ${s.color}33` : "none",
+              zIndex: 2,
+            }}>
+              {s.icon(activeStates[i])}
+            </div>
+            <div style={{ paddingTop: 8 }}>
+              <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 9, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", color: activeStates[i] ? s.color : "#2a2a3a", display: "block", marginBottom: 4 }}>{s.label}</span>
+              <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: 14, fontWeight: 700, color: activeStates[i] ? "#eae8e3" : "#3a3a4a", margin: 0, opacity: activeStates[i] ? 1 : 0, transform: activeStates[i] ? "translateY(0)" : "translateY(8px)", transition: "all 0.5s ease" }}>{s.title}</p>
+              <p style={{ fontFamily: "monospace", fontSize: 11, letterSpacing: 1, textTransform: "uppercase", color: activeStates[i] ? s.color : "#2a2a3a", margin: "4px 0 0", opacity: activeStates[i] ? 1 : 0, transition: "all 0.5s ease 0.15s" }}>{s.stat}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <style>{`
+        @media (max-width: 767px) {
+          .timeline-desktop { display: none !important; }
+          .timeline-mobile { display: flex !important; }
+        }
+      `}</style>
+    </section>
   );
 }
 
@@ -278,6 +499,7 @@ export default function HomeClient() {
                   <span className="ac">fără chatboți inutili.</span>
                 </h1>
               </Fade>
+              <AITimeline />
               <Fade delay={0.1}>
                 <p style={{ fontSize: 18, lineHeight: 1.65, color: "#a8a6a1", maxWidth: 520, marginBottom: 32 }}>
                   Clienții noștri recuperează <strong style={{ color: "#eae8e3" }}>ore întregi în fiecare săptămână</strong> prin automatizarea sarcinilor repetitive. Copy-paste între foi de calcul, emailuri de follow-up, rapoarte manuale — rezolvate în background, fără să angajezi pe nimeni.
