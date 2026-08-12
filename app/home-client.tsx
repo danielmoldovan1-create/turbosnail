@@ -87,10 +87,8 @@ function AITimeline() {
         if (!el) return;
         const rect = el.getBoundingClientRect();
         const vh = window.innerHeight;
-        // 0% when element enters from bottom, 100% when element center hits viewport center
-        const triggerStart = vh;
-        const triggerEnd = vh * 0.5;
-        const raw = (triggerStart - rect.top) / (triggerStart - triggerEnd);
+        // 0% when element bottom enters viewport, 100% when element top reaches 55% viewport height
+        const raw = (vh - rect.top) / (vh * 0.45);
         setPct(Math.max(0, Math.min(100, raw * 100)));
       });
     };
@@ -99,86 +97,84 @@ function AITimeline() {
     return () => { window.removeEventListener("scroll", calc); cancelAnimationFrame(raf); };
   }, []);
 
-  const on = [pct > 5, pct > 42, pct > 78];
-  const DOT_POSITIONS = [0, 50, 100];
+  const on = [pct > 5, pct > 45, pct > 82];
 
   return (
     <div ref={ref} role="region" aria-label="Evoluție de la invizibil la autoritate AI">
-      {/* header */}
-      <div style={{ textAlign: "center", marginBottom: 48 }}>
+      <div style={{ textAlign: "center", marginBottom: 52 }}>
         <span className="tag">Transformare</span>
-        <h2 className="hd" style={{ fontSize: 34, fontWeight: 800, marginTop: 16, letterSpacing: "-0.8px", lineHeight: 1.2 }}>
+        <h2 className="hd" style={{ fontSize: 32, fontWeight: 800, marginTop: 16, letterSpacing: "-0.8px", lineHeight: 1.2 }}>
           De la <span className="ac">invizibil</span> la <span className="ac">autoritate</span>
         </h2>
-        <p style={{ fontSize: 15, color: "#9a9aab", marginTop: 10 }}>Cum evoluează prezența ta în era căutărilor AI</p>
+        <p style={{ fontSize: 14, color: "#9a9aab", marginTop: 8 }}>Cum evoluează prezența ta în era căutărilor AI</p>
       </div>
 
-      {/* timeline row */}
-      <div style={{ position: "relative", display: "flex", alignItems: "stretch", gap: 0 }}>
-
-        {/* connecting track — absolutely behind nodes */}
-        <div style={{ position: "absolute", top: 28, left: "calc(16.66% - 1px)", right: "calc(16.66% - 1px)", height: 2, background: "#1a1d2a", zIndex: 0 }}>
+      <div style={{ position: "relative", display: "flex" }}>
+        {/* track line — sits BETWEEN the badges, z-index 0 so badges render above it */}
+        <div style={{
+          position: "absolute",
+          top: 27,
+          left: "calc(50% / 3)",
+          right: "calc(50% / 3)",
+          height: 2,
+          background: "#1a1d2a",
+          zIndex: 0,
+          overflow: "hidden",
+          borderRadius: 2,
+        }}>
           <div style={{
             position: "absolute", inset: 0,
             background: "linear-gradient(90deg, #9a9aab 0%, #ff6a00 50%, #ffa347 100%)",
-            transformOrigin: "left", transform: `scaleX(${pct / 100})`,
-            transition: "transform 0.05s linear",
+            transformOrigin: "left",
+            transform: `scaleX(${pct / 100})`,
           }} />
-          {DOT_POSITIONS.map((pos, i) => (
-            <div key={i} style={{
-              position: "absolute", left: `${pos}%`, top: "50%",
-              transform: "translate(-50%, -50%)",
-              width: 10, height: 10, borderRadius: "50%", zIndex: 2,
-              background: on[i] ? TL_STEPS[i].active : "#1a1d2a",
-              border: `2px solid ${on[i] ? TL_STEPS[i].active : "#2a2a3a"}`,
-              transition: "background 0.3s, border-color 0.3s",
-            }} />
-          ))}
         </div>
 
-        {/* step cards */}
         {TL_STEPS.map((s, i) => (
-          <div key={i} style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", padding: "0 12px", position: "relative", zIndex: 1 }}>
-            {/* number badge */}
+          <div key={i} style={{
+            flex: 1, display: "flex", flexDirection: "column", alignItems: "center",
+            padding: "0 8px", position: "relative",
+            zIndex: 2, // always above the track line
+          }}>
+            {/* badge — solid background so track line behind it is hidden */}
             <div style={{
-              width: 56, height: 56, borderRadius: "50%",
-              border: `2px solid ${on[i] ? s.active : "#1a1d2a"}`,
-              background: on[i] ? `${s.active}18` : "#0a0c14",
+              width: 54, height: 54, borderRadius: "50%",
+              border: `2px solid ${on[i] ? s.active : "#252535"}`,
+              background: on[i] ? `${s.active}1a` : "#0a0c14",
               display: "flex", alignItems: "center", justifyContent: "center",
-              transition: "all 0.5s cubic-bezier(0.34,1.56,0.64,1)",
-              transform: on[i] ? "scale(1.12)" : "scale(1)",
-              boxShadow: on[i] ? `0 0 24px ${s.active}55` : "none",
-              marginBottom: 20,
+              transform: on[i] ? "scale(1.1)" : "scale(1)",
+              boxShadow: on[i] ? `0 0 22px ${s.active}55` : "none",
+              transition: "all 0.45s cubic-bezier(0.34,1.56,0.64,1)",
+              marginBottom: 18,
+              // solid bg clip hides the line behind the circle
+              isolation: "isolate",
             }}>
-              <span className="hd" style={{ fontSize: 16, fontWeight: 800, color: on[i] ? s.active : "#2a2a3a", transition: "color 0.3s" }}>{s.num}</span>
+              <span className="hd" style={{ fontSize: 15, fontWeight: 800, color: on[i] ? s.active : "#3a3a4a", transition: "color 0.3s" }}>{s.num}</span>
             </div>
 
-            {/* when label */}
             <span style={{
               fontFamily: "'Outfit', sans-serif", fontSize: 10, fontWeight: 700,
               letterSpacing: 2, textTransform: "uppercase",
               color: on[i] ? s.active : "#2a2a3a",
-              marginBottom: 10, transition: "color 0.3s",
+              marginBottom: 8, transition: "color 0.3s",
             }}>{s.when}</span>
 
-            {/* title */}
             <p style={{
-              fontFamily: "'Outfit', sans-serif", fontSize: 15, fontWeight: 700,
+              fontFamily: "'Outfit', sans-serif", fontSize: 14, fontWeight: 700,
               color: on[i] ? "#eae8e3" : "#2a2a3a",
               textAlign: "center", marginBottom: 8,
-              transform: on[i] ? "translateY(0)" : "translateY(10px)",
               opacity: on[i] ? 1 : 0,
-              transition: "all 0.5s ease",
+              transform: on[i] ? "translateY(0)" : "translateY(10px)",
+              transition: "all 0.45s ease",
             }}>{s.title}</p>
 
-            {/* desc */}
             <p style={{
-              fontSize: 13, lineHeight: 1.6,
-              color: on[i] ? "#9a9aab" : "#1a1d2a",
-              textAlign: "center",
-              transform: on[i] ? "translateY(0)" : "translateY(8px)",
+              fontSize: 13, lineHeight: 1.6, textAlign: "center",
+              color: on[i] ? "#9a9aab" : "transparent",
               opacity: on[i] ? 1 : 0,
-              transition: "all 0.5s ease 0.08s",
+              transform: on[i] ? "translateY(0)" : "translateY(8px)",
+              transition: "all 0.45s ease 0.07s",
+              maxWidth: 180,
             }}>{s.desc}</p>
           </div>
         ))}
@@ -442,6 +438,13 @@ export default function HomeClient() {
         </div>
       </section>
 
+      {/* AI TIMELINE */}
+      <section style={{ paddingTop: 72, paddingBottom: 72, borderTop: "1px solid #1a1d2a" }}>
+        <div className="mx" style={{ maxWidth: 900 }}>
+          <AITimeline />
+        </div>
+      </section>
+
       {/* TRUST STRIP */}
       <div style={{ padding: "28px 0", background: "rgba(255,255,255,0.015)", borderTop: "1px solid #1a1d2a", borderBottom: "1px solid #1a1d2a", overflow: "hidden" }}>
         <div className="marquee-track" style={{ display: "flex", width: "max-content", animation: "marquee 24s linear infinite" }}>
@@ -450,15 +453,6 @@ export default function HomeClient() {
           ))}
         </div>
       </div>
-
-      {/* AI TIMELINE */}
-      <section style={{ paddingTop: 90, paddingBottom: 90 }}>
-        <div className="mx" style={{ maxWidth: 900 }}>
-          <AITimeline />
-        </div>
-      </section>
-
-      <div className="dv" />
 
       {/* INTRO */}
       <section style={{ paddingTop: 100, paddingBottom: 60, position: "relative", overflow: "hidden" }}>
