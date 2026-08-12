@@ -153,7 +153,7 @@ export default function HomeClient() {
         .hd { font-family: 'Outfit', sans-serif; }
         .ac { background: linear-gradient(135deg, #ff8c33, #ff6a00, #ff5500); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .mx { max-width: 1180px; margin: 0 auto; padding-left: 20px; padding-right: 20px; }
-        .btn-p { display: inline-flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #ff6a00, #ff5500); color: #fff; border: none; padding: 16px 30px; border-radius: 12px; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 15px; cursor: pointer; transition: all 0.3s; gap: 8px; box-shadow: 0 8px 24px rgba(255,106,0,0.25); }
+        .btn-p { display: inline-flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #ff6a00, #ff5500); color: #fff; border: none; padding: 16px 30px; border-radius: 12px; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 15px; cursor: pointer; transition: transform 0.3s, background 0.3s; gap: 8px; box-shadow: 0 8px 24px rgba(255,106,0,0.25); animation: glow-pulse 3s ease-in-out infinite; }
         .btn-p:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(255,106,0,0.4); background: linear-gradient(135deg, #ff8c33, #ff6a00); }
         .btn-s { display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.04); color: #ff6a00; border: 1px solid rgba(255,106,0,0.3); padding: 15px 30px; border-radius: 12px; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 14px; cursor: pointer; transition: all 0.3s; backdrop-filter: blur(10px); }
         .btn-s:hover { border-color: #ff6a00; background: rgba(255,106,0,0.08); }
@@ -195,6 +195,11 @@ export default function HomeClient() {
           .about-lay { flex-direction: row !important; gap: 80px !important; align-items: center; }
         }
         @media (min-width: 1024px) { .hero-t { font-size: 68px !important; } }
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-14px); } }
+        @keyframes glow-pulse { 0%, 100% { box-shadow: 0 8px 24px rgba(255,106,0,0.25); } 50% { box-shadow: 0 8px 40px rgba(255,106,0,0.55), 0 0 0 4px rgba(255,106,0,0.12); } }
+        @keyframes bob { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-9px); } }
+        @media (prefers-reduced-motion: reduce) { .marquee-track, .float-card, .btn-p, .bob-num { animation: none !important; } }
       `}</style>
 
       {/* NAV */}
@@ -307,7 +312,7 @@ export default function HomeClient() {
               </Fade>
             </div>
             <Fade delay={0.2}>
-              <div className="hero-r card" style={{ padding: "32px 28px", position: "relative", overflow: "hidden" }}>
+              <div className="hero-r card float-card" style={{ padding: "32px 28px", position: "relative", overflow: "hidden", animation: "float 6s ease-in-out infinite" }}>
                 <div style={{ position: "absolute", top: -40, right: -40, width: 180, height: 180, background: "radial-gradient(circle, rgba(255,106,0,0.12) 0%, transparent 70%)", borderRadius: "50%", pointerEvents: "none" }} />
                 <p className="hd" style={{ fontSize: 12, fontWeight: 700, color: "#ff6a00", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 24 }}>Rezultate tipice</p>
                 {[
@@ -329,10 +334,10 @@ export default function HomeClient() {
       </section>
 
       {/* TRUST STRIP */}
-      <div style={{ padding: "28px 0", background: "rgba(255,255,255,0.015)", borderTop: "1px solid #1a1d2a", borderBottom: "1px solid #1a1d2a" }}>
-        <div className="mx" style={{ display: "flex", gap: 48, alignItems: "center", justifyContent: "center", flexWrap: "wrap" }}>
-          {TOOLS.map((t, i) => (
-            <span key={i} className="hd" style={{ fontSize: 13, fontWeight: 600, color: "#555566", letterSpacing: 0.5, whiteSpace: "nowrap" }}>{t}</span>
+      <div style={{ padding: "28px 0", background: "rgba(255,255,255,0.015)", borderTop: "1px solid #1a1d2a", borderBottom: "1px solid #1a1d2a", overflow: "hidden" }}>
+        <div className="marquee-track" style={{ display: "flex", width: "max-content", animation: "marquee 24s linear infinite" }}>
+          {[...TOOLS, ...TOOLS].map((t, i) => (
+            <span key={i} className="hd" style={{ fontSize: 13, fontWeight: 600, color: "#555566", letterSpacing: 0.5, whiteSpace: "nowrap", padding: "0 40px" }}>{t}</span>
           ))}
         </div>
       </div>
@@ -444,7 +449,7 @@ export default function HomeClient() {
               <Fade key={i} delay={i * 0.08}>
                 <div className="card" style={{ padding: "32px 26px 28px", height: "100%", position: "relative", overflow: "hidden" }}>
                   <div style={{ position: "absolute", bottom: -20, right: -20, width: 100, height: 100, background: "radial-gradient(circle, rgba(255,106,0,0.06) 0%, transparent 70%)", borderRadius: "50%", pointerEvents: "none" }} />
-                  <div className="hd ac" style={{ fontSize: 44, fontWeight: 900, marginBottom: 14, letterSpacing: "-1px", lineHeight: 1 }}>{s.n}</div>
+                  <div className="hd ac bob-num" style={{ fontSize: 44, fontWeight: 900, marginBottom: 14, letterSpacing: "-1px", lineHeight: 1, animation: `bob 3s ease-in-out ${i * 0.75}s infinite` }}>{s.n}</div>
                   <h3 className="hd" style={{ fontSize: 18, fontWeight: 700, marginBottom: 8 }}>{s.t}</h3>
                   <p style={{ fontSize: 14, lineHeight: 1.6, color: "#888899" }}>{s.d}</p>
                 </div>
