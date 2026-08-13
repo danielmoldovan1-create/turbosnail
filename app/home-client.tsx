@@ -76,6 +76,7 @@ const TL_STEPS = [
 
 function AITimeline() {
   const ref = useRef<HTMLDivElement>(null);
+  const rowRef = useRef<HTMLDivElement>(null);
   const [pct, setPct] = useState(0);
 
   useEffect(() => {
@@ -83,18 +84,20 @@ function AITimeline() {
     let raf: number;
     const calc = () => {
       raf = requestAnimationFrame(() => {
-        const el = ref.current;
+        const el = rowRef.current;
         if (!el) return;
         const rect = el.getBoundingClientRect();
         const vh = window.innerHeight;
-        // 0% when element bottom enters viewport, 100% when element top reaches 55% viewport height
-        const raw = (vh - rect.top) / (vh * 0.45);
+        // 0% when the badge row enters the viewport from the bottom,
+        // 100% once it has scrolled almost all the way to the top
+        const raw = (vh - rect.top) / (vh * 0.9);
         setPct(Math.max(0, Math.min(100, raw * 100)));
       });
     };
     window.addEventListener("scroll", calc, { passive: true });
+    window.addEventListener("resize", calc);
     calc();
-    return () => { window.removeEventListener("scroll", calc); cancelAnimationFrame(raf); };
+    return () => { window.removeEventListener("scroll", calc); window.removeEventListener("resize", calc); cancelAnimationFrame(raf); };
   }, []);
 
   const on = [pct > 5, pct > 45, pct > 82];
@@ -109,7 +112,7 @@ function AITimeline() {
         <p style={{ fontSize: 14, color: "#9a9aab", marginTop: 8 }}>Cum evoluează prezența ta în era căutărilor AI</p>
       </div>
 
-      <div style={{ position: "relative", display: "flex" }}>
+      <div ref={rowRef} style={{ position: "relative", display: "flex" }}>
         {/* track line — sits BETWEEN the badges, z-index 0 so badges render above it */}
         <div style={{
           position: "absolute",
@@ -140,7 +143,7 @@ function AITimeline() {
             <div style={{
               width: 54, height: 54, borderRadius: "50%",
               border: `2px solid ${on[i] ? s.active : "#252535"}`,
-              background: on[i] ? `${s.active}1a` : "#0a0c14",
+              background: on[i] ? `linear-gradient(${s.active}22, ${s.active}22), #0a0c14` : "#0a0c14",
               display: "flex", alignItems: "center", justifyContent: "center",
               transform: on[i] ? "scale(1.1)" : "scale(1)",
               boxShadow: on[i] ? `0 0 22px ${s.active}55` : "none",
