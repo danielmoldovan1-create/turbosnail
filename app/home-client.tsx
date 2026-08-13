@@ -298,9 +298,6 @@ export default function HomeClient() {
           .g3 { grid-template-columns: 1fr 1fr 1fr !important; }
           .g4 { grid-template-columns: 1fr 1fr 1fr 1fr !important; }
           .hero-t { font-size: 46px !important; line-height: 1.08 !important; }
-          .hero-lay { flex-direction: row !important; align-items: center; gap: 56px !important; }
-          .hero-l { flex: 1.2; }
-          .hero-r { flex: 0.8; }
           .nav-lnk { display: flex !important; gap: 26px; }
           .hamburger { display: none !important; }
           .mob-menu { display: none !important; }
@@ -381,70 +378,66 @@ export default function HomeClient() {
       </nav>
 
       {/* HERO */}
-      <section id="top" style={{ paddingTop: 116, paddingBottom: 70, position: "relative", overflow: "hidden", minHeight: "90vh", display: "flex", alignItems: "center" }}>
+      <section id="top" style={{ paddingTop: 116, paddingBottom: 90, position: "relative", overflow: "hidden" }}>
         <BgImage src="/bg-hero.webp" />
         <div className="mx" style={{ position: "relative", zIndex: 2, width: "100%" }}>
-          <div className="hero-lay" style={{ display: "flex", flexDirection: "column", gap: 36 }}>
-            <div className="hero-l">
-              <Fade>
-                <span className="tag" style={{ marginBottom: 24, display: "inline-block" }}>Implementare AI · Timișoara, România</span>
-              </Fade>
-              <Fade delay={0.05}>
-                <h1 className="hero-t hd" style={{ fontSize: 32, fontWeight: 900, lineHeight: 1.1, marginBottom: 24, letterSpacing: "-1.5px" }}>
-                  Automatizări AI<br />
-                  pentru afaceri din România.<br />
-                  <span className="ac">Fără tehnologie de fițe,</span><br />
-                  <span className="ac">fără chatboți inutili.</span>
-                </h1>
-              </Fade>
-              <Fade delay={0.1}>
-                <p style={{ fontSize: 18, lineHeight: 1.65, color: "#a8a6a1", maxWidth: 520, marginBottom: 32 }}>
-                  Clienții noștri recuperează <strong style={{ color: "#eae8e3" }}>ore întregi în fiecare săptămână</strong> prin automatizarea sarcinilor repetitive. Copy-paste între foi de calcul, emailuri de follow-up, rapoarte manuale — rezolvate în background, fără să angajezi pe nimeni.
-                </p>
-              </Fade>
-              <Fade delay={0.15}>
-                <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-                  <button className="btn-p" onClick={() => go("contact")}>Vreau o consultanță gratuită →</button>
-                  <a href="/servicii" className="btn-s" style={{ textDecoration: "none" }}>Vezi serviciile</a>
-                </div>
-              </Fade>
-              <Fade delay={0.22}>
-                <div style={{ display: "flex", gap: 24, marginTop: 32, flexWrap: "wrap" }}>
-                  {["Fără contract pe termen lung", "Audit 100% gratuit", "GDPR compliant"].map((t, i) => (
-                    <div key={i} style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                      <span style={{ color: "#ff6a00", fontSize: 14 }}>✓</span>
-                      <span style={{ fontSize: 13, color: "#888899" }}>{t}</span>
-                    </div>
-                  ))}
-                </div>
-              </Fade>
-            </div>
-            <Fade delay={0.2}>
-              <div className="hero-r card float-card" style={{ padding: "32px 28px", position: "relative", overflow: "hidden", animation: "float 6s ease-in-out infinite" }}>
-                <div style={{ position: "absolute", top: -40, right: -40, width: 180, height: 180, background: "radial-gradient(circle, rgba(255,106,0,0.12) 0%, transparent 70%)", borderRadius: "50%", pointerEvents: "none" }} />
-                <p className="hd" style={{ fontSize: 12, fontWeight: 700, color: "#ff6a00", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 24 }}>Rezultate tipice</p>
-                {[
-                  { n: "10+", l: "ore economisite săptămânal*" },
-                  { n: "24/7", l: "automatizări care rulează singure" },
-                  { n: "până la -40%", l: "reducere cost per lead*" },
-                  { n: "7-14 zile", l: "de la brief la sistem funcțional" },
-                ].map((m, i) => (
-                  <div key={i} style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: i < 3 ? 18 : 0, paddingBottom: i < 3 ? 18 : 0, borderBottom: i < 3 ? "1px solid #1a1d2a" : "none" }}>
-                    <span className="hd ac" style={{ fontSize: i === 2 ? 18 : 28, fontWeight: 900, minWidth: 80 }}>{m.n}</span>
-                    <span style={{ fontSize: 13, color: "#a8a6a1" }}>{m.l}</span>
+          <div className="hero-l" style={{ maxWidth: 640 }}>
+            <Fade>
+              <span className="tag" style={{ marginBottom: 24, display: "inline-block" }}>Implementare AI · Timișoara, România</span>
+            </Fade>
+            <Fade delay={0.05}>
+              <h1 className="hero-t hd" style={{ fontSize: 32, fontWeight: 900, lineHeight: 1.1, marginBottom: 24, letterSpacing: "-1.5px" }}>
+                Automatizări AI<br />
+                pentru afaceri din România.<br />
+                <span className="ac">Fără tehnologie de fițe,</span><br />
+                <span className="ac">fără chatboți inutili.</span>
+              </h1>
+            </Fade>
+            <Fade delay={0.1}>
+              <p style={{ fontSize: 18, lineHeight: 1.65, color: "#a8a6a1", maxWidth: 520, marginBottom: 32 }}>
+                Clienții noștri recuperează <strong style={{ color: "#eae8e3" }}>ore întregi în fiecare săptămână</strong> prin automatizarea sarcinilor repetitive. Copy-paste între foi de calcul, emailuri de follow-up, rapoarte manuale — rezolvate în background, fără să angajezi pe nimeni.
+              </p>
+            </Fade>
+            <Fade delay={0.15}>
+              <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+                <button className="btn-p" onClick={() => go("contact")}>Vreau o consultanță gratuită →</button>
+                <a href="/servicii" className="btn-s" style={{ textDecoration: "none" }}>Vezi serviciile</a>
+              </div>
+            </Fade>
+            <Fade delay={0.22}>
+              <div style={{ display: "flex", gap: 24, marginTop: 32, flexWrap: "wrap" }}>
+                {["Fără contract pe termen lung", "Audit 100% gratuit", "GDPR compliant"].map((t, i) => (
+                  <div key={i} style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                    <span style={{ color: "#ff6a00", fontSize: 14 }}>✓</span>
+                    <span style={{ fontSize: 13, color: "#888899" }}>{t}</span>
                   </div>
                 ))}
-                <p style={{ fontSize: 10, color: "#444455", marginTop: 16, lineHeight: 1.5 }}>* Rezultatele variază în funcție de complexitatea businessului și tipul proceselor automatizate.</p>
               </div>
             </Fade>
           </div>
-        </div>
-      </section>
 
-      {/* AI TIMELINE */}
-      <section style={{ paddingTop: 72, paddingBottom: 72, borderTop: "1px solid #1a1d2a" }}>
-        <div className="mx" style={{ maxWidth: 900 }}>
-          <AITimeline />
+          <div style={{ marginTop: 64, paddingTop: 56, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+            <AITimeline />
+          </div>
+
+          <Fade delay={0.2}>
+            <div className="card float-card" style={{ maxWidth: 480, margin: "56px auto 0", padding: "32px 28px", position: "relative", overflow: "hidden", animation: "float 6s ease-in-out infinite" }}>
+              <div style={{ position: "absolute", top: -40, right: -40, width: 180, height: 180, background: "radial-gradient(circle, rgba(255,106,0,0.12) 0%, transparent 70%)", borderRadius: "50%", pointerEvents: "none" }} />
+              <p className="hd" style={{ fontSize: 12, fontWeight: 700, color: "#ff6a00", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 24 }}>Rezultate tipice</p>
+              {[
+                { n: "10+", l: "ore economisite săptămânal*" },
+                { n: "24/7", l: "automatizări care rulează singure" },
+                { n: "până la -40%", l: "reducere cost per lead*" },
+                { n: "7-14 zile", l: "de la brief la sistem funcțional" },
+              ].map((m, i) => (
+                <div key={i} style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: i < 3 ? 18 : 0, paddingBottom: i < 3 ? 18 : 0, borderBottom: i < 3 ? "1px solid #1a1d2a" : "none" }}>
+                  <span className="hd ac" style={{ fontSize: i === 2 ? 18 : 28, fontWeight: 900, minWidth: 80 }}>{m.n}</span>
+                  <span style={{ fontSize: 13, color: "#a8a6a1" }}>{m.l}</span>
+                </div>
+              ))}
+              <p style={{ fontSize: 10, color: "#444455", marginTop: 16, lineHeight: 1.5 }}>* Rezultatele variază în funcție de complexitatea businessului și tipul proceselor automatizate.</p>
+            </div>
+          </Fade>
         </div>
       </section>
 
@@ -459,7 +452,7 @@ export default function HomeClient() {
 
       {/* INTRO */}
       <section style={{ paddingTop: 100, paddingBottom: 60, position: "relative", overflow: "hidden" }}>
-        <BgImageMid src="/bg-mid.webp" />
+        <BgImageMid src="/bg-about.webp" />
         <div className="mx" style={{ maxWidth: 760, textAlign: "center", position: "relative", zIndex: 2 }}>
           <Fade>
             <p className="hd" style={{ fontSize: 24, lineHeight: 1.55, color: "#eae8e3", fontWeight: 500, letterSpacing: "-0.3px" }}>
@@ -470,6 +463,16 @@ export default function HomeClient() {
             <p style={{ fontSize: 17, lineHeight: 1.6, color: "#888899", marginTop: 24, maxWidth: 560, marginLeft: "auto", marginRight: "auto" }}>
               Nu ai nevoie de AI scump. Ai nevoie ca munca plictisitoare să se facă singură.
             </p>
+          </Fade>
+          <Fade delay={0.1}>
+            <div style={{ marginTop: 40, maxWidth: 600, marginLeft: "auto", marginRight: "auto", textAlign: "left", padding: "24px 28px", borderLeft: "3px solid #ff6a00", background: "rgba(255,255,255,0.04)", backdropFilter: "blur(6px)", borderRadius: "0 14px 14px 0" }}>
+              <p className="hd" style={{ fontSize: 17, lineHeight: 1.6, color: "#eae8e3", fontStyle: "italic", marginBottom: 12 }}>
+                &ldquo;When things are changing quickly, the companies that have the quickest adoption speed&hellip; win.&rdquo;
+              </p>
+              <p style={{ fontSize: 13, color: "#9a9aab" }}>
+                <strong style={{ color: "#ff6a00", fontWeight: 700 }}>Sam Altman</strong> — CEO, OpenAI · Snowflake Summit 2025
+              </p>
+            </div>
           </Fade>
         </div>
       </section>
