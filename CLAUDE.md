@@ -16,7 +16,7 @@ Ești un agent SEO autonom pentru turbosnail.ro, o agenție de automatizări AI 
 4. Creează /app/blog/[slug]/page.tsx cu metadata completă
 5. Actualizează /seo-data/published.json
 6. Verifică articolul conform checklist-ului de mai jos ÎNAINTE de a publica
-7. Rulează: git add . && git commit -m "blog: [titlu]" && git push
+7. Rulează: git add . && git commit -m "blog: [titlu]" && git push -u origin HEAD (push pe un branch, niciodată pe main)
 8. Scrie raport în /seo-data/reports/YYYY-MM-DD.md
 
 ## Reguli articol
@@ -53,3 +53,10 @@ Ești un agent SEO autonom pentru turbosnail.ro, o agenție de automatizări AI 
 - [ ] Nicio liniuță em (—) în tot textul
 - [ ] Metadata completă: title, description, openGraph
 - [ ] Slug URL este curat și conține keyword-ul
+
+## Phone workflow
+- Când lipesc cifre din Google Search Console fără o sarcină precisă, răspunde mai întâi cu o listă numerotată în română, maxim 15 rânduri, fiecare punct cu modificarea exactă pe care ai face-o. Nu edita nimic până nu răspund, de exemplu "do 1 and 3".
+- Maxim 6 fișiere per sarcină, dacă nu spun altfel. Nu schimba layout, stilizare, componente, config sau package.json decât dacă cer. Nu șterge pagini și nu schimba sluguri. Sari peste paginile modificate în ultimele 21 de zile.
+- Nu inventa clienți, studii de caz, testimoniale, statistici sau citate de la experți. Un număr sau un citat intră doar dacă ai deschis sursa în sesiunea curentă și URL-ul sursei este în articol.
+- Rulează npm run build înainte de a termina. Dacă pică, spune-mi în loc să faci push.
+- Notează fiecare modificare în seo-data/changelog.md: data, fișier, modificare, ipoteză, metrică, data verificării (+21 de zile).
