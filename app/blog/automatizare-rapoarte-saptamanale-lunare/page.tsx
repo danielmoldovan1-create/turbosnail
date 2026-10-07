@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cum Automatizezi Rapoartele Săptămânale și Lunare ale Firmei (cu Exemple Reale) | TurboSnail",
-  description: "Automatizare rapoarte săptămânale și lunare: cum elimini 3-6 ore de muncă manuală pe săptămână, ce instrumente folosești și exemple reale din firme românești.",
+  title: "Automatizare rapoarte săptămânale și lunare | TurboSnail",
+  description: "Automatizare rapoarte săptămânale și lunare: ce rapoarte automatizezi primele, ce instrumente folosești și pașii concreți de implementare.",
+  alternates: {
+    canonical: "https://turbosnail.ro/blog/automatizare-rapoarte-saptamanale-lunare",
+  },
   openGraph: {
-    title: "Cum Automatizezi Rapoartele Săptămânale și Lunare ale Firmei (cu Exemple Reale) | TurboSnail",
-    description: "Automatizare rapoarte săptămânale și lunare: cum elimini 3-6 ore de muncă manuală pe săptămână, ce instrumente folosești și exemple reale din firme românești.",
+    title: "Automatizare rapoarte săptămânale și lunare | TurboSnail",
+    description: "Automatizare rapoarte săptămânale și lunare: ce rapoarte automatizezi primele, ce instrumente folosești și pașii concreți de implementare.",
     url: "https://turbosnail.ro/blog/automatizare-rapoarte-saptamanale-lunare",
     siteName: "TurboSnail",
     locale: "ro_RO",
@@ -20,7 +23,7 @@ const jsonLd = {
   "description": "Automatizare rapoarte săptămânale și lunare: cum elimini ore de muncă manuală, ce instrumente folosești și exemple reale din firme românești.",
   "url": "https://turbosnail.ro/blog/automatizare-rapoarte-saptamanale-lunare",
   "datePublished": "2026-04-29",
-  "dateModified": "2026-04-29",
+  "dateModified": "2026-10-07",
   "publisher": {
     "@type": "Organization",
     "name": "TurboSnail",

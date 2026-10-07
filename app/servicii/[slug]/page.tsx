@@ -13,6 +13,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: service.metaTitle,
     description: service.metaDescription,
+    alternates: {
+      canonical: `https://turbosnail.ro/servicii/${service.slug}`,
+    },
     openGraph: {
       title: service.metaTitle,
       description: service.metaDescription,

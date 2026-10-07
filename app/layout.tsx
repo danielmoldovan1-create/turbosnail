@@ -4,17 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: {
     default: "TurboSnail | Automatizări AI pentru Afaceri din România",
-    template: "%s | TurboSnail",
+    template: "%s",
   },
   description: "Agenție de automatizări AI din Timișoara. Recuperezi ore în fiecare săptămână prin automatizarea proceselor repetitive. Audit gratuit, fără obligații.",
   metadataBase: new URL("https://turbosnail.ro"),
-  alternates: {
-    canonical: "https://turbosnail.ro",
-    languages: {
-      "ro": "https://turbosnail.ro",
-      "x-default": "https://turbosnail.ro",
-    },
-  },
   openGraph: {
     title: "TurboSnail | Automatizări AI pentru Afaceri din România",
     description: "Agenție de automatizări AI din Timișoara. Recuperezi ore în fiecare săptămână prin automatizarea proceselor repetitive.",
