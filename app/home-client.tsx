@@ -206,7 +206,7 @@ const FAQS = [
   { q: "Cât costă un audit?", a: "Auditul inițial e complet gratuit. 30 de minute în care analizăm businessul tău și îți arătăm ce poate fi automatizat. Fără obligații, fără presiune." },
   { q: "Cât durează implementarea?", a: "Depinde de complexitate. Automatizările simple sunt gata în 5-7 zile. Sistemele mai complexe în 2-3 săptămâni. Îți spunem exact la audit." },
   { q: "Trebuie să fiu tehnic?", a: "Nu. Noi facem partea tehnică. Tu doar ne arăți ce faci manual și noi îți arătăm cum se poate face singur." },
-  { q: "Pot anula oricând?", a: "Da. Fără contracte pe termen lung. Lucrăm lunar și poți opri oricând." },
+  { q: "Pot anula oricând?", a: "Da, poți anula oricând. Nu semnezi contracte pe termen lung, iar noi lucrăm lunar. Poți opri colaborarea în orice moment, dacă simți că nu mai are sens pentru tine." },
   { q: "Ce se întâmplă cu datele mele?", a: "Datele rămân ale tale. Servere UE, GDPR compliant. Nu partajăm nimic cu terți." },
 ];
 
