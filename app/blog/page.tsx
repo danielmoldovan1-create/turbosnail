@@ -23,6 +23,13 @@ const ARTICLES = [
     tag: "Automatizare",
   },
   {
+    slug: "agent-ai-pentru-vanzari-romania",
+    title: "Agent AI pentru vânzări în România: ce face concret și când merită",
+    date: "7 octombrie 2026",
+    excerpt: "Ce face un agent AI pentru echipa de vânzări, ce nu poate face încă și cum îl implementezi pas cu pas, fără să strici procesul care funcționează.",
+    tag: "Vânzări",
+  },
+  {
     slug: "cold-email-b2b-romania-ghid-complet",
     title: "Cold Email B2B în România: ghid complet pentru 2026",
     date: "12 august 2026",
