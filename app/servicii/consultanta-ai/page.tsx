@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Consultanță AI pentru Companii din România: Ghid Complet 2026 | TurboSnail",
-  description: "Consultanță AI pentru companii din România: audit complet, plan concret și implementare fără jargon. Aflăm exact ce merită automatizat în firma ta și estimăm ROI-ul real.",
+  title: "Consultanță AI pentru firme din România | TurboSnail",
+  description: "Consultanță AI și consultanță în inteligență artificială pentru firme din România: audit al proceselor, plan concret și implementare fără jargon.",
   alternates: {
     canonical: "https://turbosnail.ro/servicii/consultanta-ai",
   },
   openGraph: {
-    title: "Consultanță AI pentru Companii din România | TurboSnail",
-    description: "Consultanță AI pentru companii din România: audit complet, plan concret și implementare fără jargon.",
+    title: "Consultanță AI pentru firme din România | TurboSnail",
+    description: "Consultanță AI și consultanță în inteligență artificială pentru firme din România: audit al proceselor, plan concret și implementare fără jargon.",
     url: "https://turbosnail.ro/servicii/consultanta-ai",
     siteName: "TurboSnail",
     locale: "ro_RO",
@@ -146,7 +146,7 @@ export default function ConsultantaAIPage() {
       {/* CE ESTE CONSULTANTA AI */}
       <section style={{ paddingTop: 56, paddingBottom: 48 }}>
         <div className="mx">
-          <h2 className="hd" style={{ fontSize: 28, fontWeight: 800, marginBottom: 20, letterSpacing: -0.5 }}>Ce este consultanța AI și când ai nevoie de ea</h2>
+          <h2 className="hd" style={{ fontSize: 28, fontWeight: 800, marginBottom: 20, letterSpacing: -0.5 }}>Ce este consultanța în inteligență artificială și când ai nevoie de ea</h2>
           <article className="prose">
             <p>
               Inteligența artificială, în context de business, nu înseamnă roboți care înlocuiesc echipe întregi sau sisteme sofisticate accesibile doar corporațiilor. Înseamnă programe capabile să execute sarcini care până acum necesitau judecată umană: să clasifice și să răspundă emailuri, să extragă informații din documente, să genereze rapoarte pe baza datelor din sisteme diferite sau să detecteze tipare în seturi mari de date. Consultanța AI este răspunsul la o întrebare simplă dar costisitoare dacă rămâne fără răspuns: unde anume din businessul meu are sens să introduc aceste instrumente?

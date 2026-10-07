@@ -203,6 +203,7 @@ const STEPS = [
 ];
 
 const FAQS = [
+  { q: "Ce sunt automatizările AI?", a: "Sunt fluxuri care preiau sarcini repetitive și le execută singure: mută date între aplicații, trimit emailuri, generează rapoarte. Partea de AI intervine unde e nevoie de înțelegere, de exemplu la citirea unui email sau a unei facturi." },
   { q: "Cât costă un audit?", a: "Auditul inițial e complet gratuit. 30 de minute în care analizăm businessul tău și îți arătăm ce poate fi automatizat. Fără obligații, fără presiune." },
   { q: "Cât durează implementarea?", a: "Depinde de complexitate. Automatizările simple sunt gata în 5-7 zile. Sistemele mai complexe în 2-3 săptămâni. Îți spunem exact la audit." },
   { q: "Trebuie să fiu tehnic?", a: "Nu. Noi facem partea tehnică. Tu doar ne arăți ce faci manual și noi îți arătăm cum se poate face singur." },
@@ -395,7 +396,7 @@ export default function HomeClient() {
             </Fade>
             <Fade delay={0.1}>
               <p style={{ fontSize: 18, lineHeight: 1.65, color: "#a8a6a1", maxWidth: 520, marginBottom: 32 }}>
-                Clienții noștri recuperează <strong style={{ color: "#eae8e3" }}>ore întregi în fiecare săptămână</strong> prin automatizarea sarcinilor repetitive. Copy-paste între foi de calcul, emailuri de follow-up, rapoarte manuale — rezolvate în background, fără să angajezi pe nimeni.
+                Clienții noștri recuperează <strong style={{ color: "#eae8e3" }}>ore întregi în fiecare săptămână</strong> prin automatizarea sarcinilor repetitive. Copy-paste între foi de calcul, emailuri de follow-up, rapoarte manuale: toate rezolvate în background, fără să angajezi pe nimeni.
               </p>
             </Fade>
             <Fade delay={0.15}>
@@ -470,7 +471,7 @@ export default function HomeClient() {
                 &ldquo;When things are changing quickly, the companies that have the quickest adoption speed&hellip; win.&rdquo;
               </p>
               <p style={{ fontSize: 13, color: "#9a9aab" }}>
-                <strong style={{ color: "#ff6a00", fontWeight: 700 }}>Sam Altman</strong> — CEO, OpenAI · Snowflake Summit 2025
+                <strong style={{ color: "#ff6a00", fontWeight: 700 }}>Sam Altman</strong>, CEO OpenAI · Snowflake Summit 2025
               </p>
             </div>
           </Fade>
