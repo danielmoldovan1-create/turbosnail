@@ -1,43 +1,37 @@
 # TurboSnail
 
-> Agenție de automatizări AI și consultanță pentru afaceri din România, cu sediul în Timișoara.
+> Agenție de automatizări AI din Timișoara, care ajută firmele din România să economisească timp și bani prin automatizarea proceselor repetitive.
 
-TurboSnail ajută firmele din România să automatizeze procesele repetitive, să implementeze soluții AI practice și să crească eficiența operațională. Nu vindem tehnologie de dragul tehnologiei — livrăm timp economisit și rezultate măsurabile.
+Conținutul site-ului este în limba română și se adresează antreprenorilor și managerilor din România. Punctul de intrare pentru orice discuție comercială este formularul de contact: https://turbosnail.ro/#contact
 
 ## Servicii
 
-- **Automatizări AI** — identificăm și automatizăm procesele repetitive din firme (email, CRM, facturare, raportare)
-- **Consultanță AI** — audit operațional, roadmap clar, estimare ROI înainte de orice investiție
-- **Chatbot AI în Română** — asistenți virtuali pentru website care califică leaduri și răspund 24/7 în limba română
-- **Cold Email & Outbound** — infrastructură tehnică completă, secvențe personalizate, meetinguri calificate
-- **Paid Ads cu AI** — campanii Google și Meta optimizate cu AI, tracking complet, ROAS real
-- **SEO bazat pe AI** — audit tehnic, keyword research, conținut optimizat în română
-- **Raportare & Analytics** — dashboarduri automate conectate la toate sursele de date
-
-## Locație și contact
-
-- Sediu: Timișoara, România
-- Email: hello@turbosnail.ro
-- Website: https://turbosnail.ro
-- Audit gratuit: https://turbosnail.ro/#contact
+- [Servicii (prezentare generală)](https://turbosnail.ro/servicii): toate serviciile TurboSnail într-un singur loc.
+- [Automatizări AI](https://turbosnail.ro/servicii/automatizari-ai): automatizarea proceselor repetitive din firmă (email, CRM, facturare, raportare).
+- [Consultanță AI](https://turbosnail.ro/servicii/consultanta-ai): audit operațional și plan clar de implementare înainte de orice investiție.
+- [Chatbot AI în Română](https://turbosnail.ro/servicii/chatbot-ai-romania): asistent virtual pentru site care răspunde clienților în limba română.
+- [Cold Email & Outbound](https://turbosnail.ro/servicii/cold-email-outbound): infrastructură de email, secvențe și generare de meetinguri B2B.
+- [Paid Ads cu AI](https://turbosnail.ro/servicii/paid-ads-ai): campanii Google și Meta optimizate cu AI, cu tracking complet.
+- [SEO bazat pe AI](https://turbosnail.ro/servicii/seo-ai): audit tehnic, cercetare de cuvinte cheie și conținut în română.
+- [Raportare & Analytics](https://turbosnail.ro/servicii/raportare-analytics): dashboarduri automate conectate la sursele de date ale firmei.
 
 ## Blog
 
-Articole practice despre automatizări AI și digitalizare pentru antreprenori din România:
+- [Ce este inteligența artificială](https://turbosnail.ro/blog/ce-este-inteligenta-artificiala): ghid pentru antreprenori despre cum funcționează AI și ce poate face în afacere.
+- [Automatizări AI pentru afaceri](https://turbosnail.ro/blog/automatizari-ai-pentru-afaceri-romania): ghid practic cu exemple și pași de implementare.
+- [Automatizare procese afaceri](https://turbosnail.ro/blog/automatizare-procese-afaceri-romania): cum automatizezi procesele repetitive și cât timp economisești.
+- [Automatizare procese firme](https://turbosnail.ro/blog/automatizare-procese-firme): automatizare în contabilitate, HR și vânzări pentru IMM-uri.
+- [Sisteme de control pentru procese](https://turbosnail.ro/blog/sisteme-control-procese-afaceri): monitorizare, alerte și audit automat pentru procesele critice.
+- [Automatizarea completă a unei afaceri](https://turbosnail.ro/blog/automatizare-completa-afacere): de unde începi și cum măsori impactul real.
+- [Chatbot AI pentru site](https://turbosnail.ro/blog/chatbot-ai-pentru-site-romania): ce automatizează, cum alegi un furnizor și cum măsori rezultatele.
+- [Consultanță AI pentru firme](https://turbosnail.ro/blog/consultanta-ai-ce-include-cum-alegi): ce include un angajament, cum alegi consultantul și ce să eviți.
+- [Automatizare rapoarte](https://turbosnail.ro/blog/automatizare-rapoarte-saptamanale-lunare): cum elimini munca manuală din rapoartele săptămânale și lunare.
+- [Automatizare procese business](https://turbosnail.ro/blog/automatizare-procese-business-ghid-2026): 12 fluxuri concrete, pe industrii.
+- [Cold email B2B în România](https://turbosnail.ro/blog/cold-email-b2b-romania-ghid-complet): deliverability, secvențe și tool-uri.
 
-- https://turbosnail.ro/blog/ce-este-inteligenta-artificiala
-- https://turbosnail.ro/blog/automatizari-ai-pentru-afaceri-romania
-- https://turbosnail.ro/blog/automatizare-procese-afaceri-romania
-- https://turbosnail.ro/blog/automatizare-procese-firme
-- https://turbosnail.ro/blog/sisteme-control-procese-afaceri
-- https://turbosnail.ro/blog/automatizare-completa-afacere
+## Contact
 
-## Pagini principale
-
-- Servicii: https://turbosnail.ro/servicii
-- Blog: https://turbosnail.ro/blog
+- Sediu: Timișoara, România
+- Email: hello@turbosnail.ro
+- Formular: https://turbosnail.ro/#contact
 - Sitemap: https://turbosnail.ro/sitemap.xml
-
-## Note pentru crawleri AI
-
-Conținutul acestui site este în limba română și vizează antreprenori și manageri din România. Tonul este profesional, direct, fără jargon. Nu există prețuri publicate pe site — auditul gratuit este punctul de intrare pentru orice discuție comercială.
