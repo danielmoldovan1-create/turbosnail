@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { motion, useInView, useAnimation } from "framer-motion";
 
 function useVisible() {
   const ref = useRef<HTMLDivElement>(null);
@@ -383,29 +382,29 @@ export default function HomeClient() {
         <BgImage src="/bg-hero.webp" />
         <div className="mx" style={{ position: "relative", zIndex: 2, width: "100%" }}>
           <div className="hero-l" style={{ maxWidth: 640 }}>
-            <Fade>
+            <div>
               <span className="tag" style={{ marginBottom: 24, display: "inline-block" }}>Implementare AI · Timișoara, România</span>
-            </Fade>
-            <Fade delay={0.05}>
+            </div>
+            <div>
               <h1 className="hero-t hd" style={{ fontSize: 32, fontWeight: 900, lineHeight: 1.1, marginBottom: 24, letterSpacing: "-1.5px" }}>
                 Automatizări AI<br />
                 pentru afaceri din România.<br />
                 <span className="ac">Fără tehnologie de fițe,</span><br />
                 <span className="ac">fără chatboți inutili.</span>
               </h1>
-            </Fade>
-            <Fade delay={0.1}>
+            </div>
+            <div>
               <p style={{ fontSize: 18, lineHeight: 1.65, color: "#a8a6a1", maxWidth: 520, marginBottom: 32 }}>
                 Clienții noștri recuperează <strong style={{ color: "#eae8e3" }}>ore întregi în fiecare săptămână</strong> prin automatizarea sarcinilor repetitive. Copy-paste între foi de calcul, emailuri de follow-up, rapoarte manuale: toate rezolvate în background, fără să angajezi pe nimeni.
               </p>
-            </Fade>
-            <Fade delay={0.15}>
+            </div>
+            <div>
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
                 <button className="btn-p" onClick={() => go("contact")}>Vreau o consultanță gratuită →</button>
                 <a href="/servicii" className="btn-s" style={{ textDecoration: "none" }}>Vezi serviciile</a>
               </div>
-            </Fade>
-            <Fade delay={0.22}>
+            </div>
+            <div>
               <div style={{ display: "flex", gap: 24, marginTop: 32, flexWrap: "wrap" }}>
                 {["Fără contract pe termen lung", "Audit 100% gratuit", "GDPR compliant"].map((t, i) => (
                   <div key={i} style={{ display: "flex", alignItems: "center", gap: 8 }}>
@@ -414,7 +413,7 @@ export default function HomeClient() {
                   </div>
                 ))}
               </div>
-            </Fade>
+            </div>
           </div>
 
           <div style={{ marginTop: 64, paddingTop: 56, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
