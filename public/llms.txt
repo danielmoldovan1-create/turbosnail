@@ -28,6 +28,9 @@ Conținutul site-ului este în limba română și se adresează antreprenorilor 
 - [Automatizare rapoarte](https://turbosnail.ro/blog/automatizare-rapoarte-saptamanale-lunare): cum elimini munca manuală din rapoartele săptămânale și lunare.
 - [Automatizare procese business](https://turbosnail.ro/blog/automatizare-procese-business-ghid-2026): 12 fluxuri concrete, pe industrii.
 - [Cold email B2B în România](https://turbosnail.ro/blog/cold-email-b2b-romania-ghid-complet): deliverability, secvențe și tool-uri.
+- [Cum să automatizezi emailurile firmei](https://turbosnail.ro/blog/cum-sa-automatizezi-emailurile-firmei): ce emailuri preiei automat, ce rămâne personal și pașii de început.
+- [Agent AI pentru vânzări în România](https://turbosnail.ro/blog/agent-ai-pentru-vanzari-romania): ce face un agent AI pentru echipa de vânzări și cum îl implementezi.
+- [Întreabă inteligența artificială](https://turbosnail.ro/blog/intreaba-inteligenta-artificiala): ce asistent AI folosești, cum formulezi întrebarea și ce date nu-i dai.
 
 ## Contact
 
