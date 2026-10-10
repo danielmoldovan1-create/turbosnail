@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ce este Inteligența Artificială și Cum Transformă Afacerile în 2026 | TurboSnail",
-  description: "Ghid complet despre inteligența artificială pentru antreprenori din România. Cum funcționează AI-ul, ce poate face pentru afacerea ta și cum începi implementarea.",
+  title: "Ce este inteligența artificială? Explicat simplu | TurboSnail",
+  description: "Ce este inteligența artificială, explicat simplu pentru antreprenori: cum funcționează, ce poate face concret într-o firmă și cum începi fără riscuri.",
+  alternates: {
+    canonical: "https://turbosnail.ro/blog/ce-este-inteligenta-artificiala",
+  },
   openGraph: {
-    title: "Ce este Inteligența Artificială și Cum Transformă Afacerile în 2026 | TurboSnail",
-    description: "Ghid complet despre inteligența artificială pentru antreprenori din România. Cum funcționează AI-ul, ce poate face pentru afacerea ta și cum începi implementarea.",
+    title: "Ce este inteligența artificială? Explicat simplu | TurboSnail",
+    description: "Ce este inteligența artificială, explicat simplu pentru antreprenori: cum funcționează, ce poate face concret într-o firmă și cum începi fără riscuri.",
     url: "https://turbosnail.ro/blog/ce-este-inteligenta-artificiala",
     siteName: "TurboSnail",
     locale: "ro_RO",
@@ -20,7 +23,7 @@ const jsonLd = {
   "description": "Ghid complet despre inteligența artificială pentru antreprenori din România. Cum funcționează AI-ul și ce poate face pentru afacerea ta.",
   "url": "https://turbosnail.ro/blog/ce-este-inteligenta-artificiala",
   "datePublished": "2026-04-10",
-  "dateModified": "2026-04-19",
+  "dateModified": "2026-10-10",
   "publisher": {
     "@type": "Organization",
     "name": "TurboSnail",
@@ -128,7 +131,7 @@ export default function BlogPost2() {
           <div style={{ display: "flex", alignItems: "center", gap: 16, color: "#555566", fontSize: 14 }}>
             <span>TurboSnail</span>
             <span>·</span>
-            <span>10 aprilie 2026</span>
+            <span>10 aprilie 2026, actualizat 10 octombrie 2026</span>
             <span>·</span>
             <span>9 min citire</span>
           </div>
@@ -149,13 +152,14 @@ export default function BlogPost2() {
           </ul>
 
           <blockquote>
-            <p>"Inteligența artificială va fi cel mai transformator instrument pe care l-a creat umanitatea. Dar impactul ei real se va simți în eficiența organizațiilor mici, nu doar în laboratoarele marilor corporații."</p>
-            <cite>Andrew Ng, fondator Google Brain, profesor la Stanford University</cite>
+            <p>"AI-ul îi poate ajuta pe oameni să scape de munca măruntă și poate lăsa inovația și creativitatea să înflorească."</p>
+            <cite>Michael Platt, neuroscientist și profesor la Wharton School, University of Pennsylvania, în <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part" target="_blank" rel="noopener noreferrer">Microsoft Work Trend Index 2024</a></cite>
           </blockquote>
 
           <h2>Cum Funcționează Inteligența Artificială în Practică</h2>
           <p>Fără să intrăm în detalii tehnice: un model AI a fost antrenat pe miliarde de texte, documente și date. Din acest antrenament, a învățat tipare: cum se construiesc propozițiile, cum se rezolvă probleme logice, cum arată o factură sau cum sună un email profesional.</p>
           <p>Când îi dai o sarcină, AI-ul nu "gândește" ca un om. El identifică tipare similare din datele pe care le-a procesat și generează cel mai probabil răspuns corect. Rezultatul poate părea remarcabil de inteligent, și pentru scopuri practice, chiar este.</p>
+          <p>De aici vine și cea mai importantă limită: un model AI poate genera un răspuns care sună convingător, dar este greșit. În limbajul de specialitate, fenomenul se numește „halucinație”. Nu e o eroare rară care va dispărea mâine, ci o consecință a felului în care funcționează modelul: produce textul cel mai probabil, nu textul verificat. De aceea, orice cifră, dată sau afirmație importantă primită de la un AI se verifică înainte să ajungă într-o ofertă, într-un contract sau într-un raport pentru clienți.</p>
 
           <h2>Ce Poate Face Inteligența Artificială pentru Afacerea Ta din România</h2>
           <p>Aceasta este întrebarea care contează cu adevărat. La <a href="https://turbosnail.ro">automatizări AI</a> pentru afaceri din România, am implementat sisteme AI în zeci de firme. Iată ce funcționează cel mai bine:</p>
@@ -173,18 +177,19 @@ export default function BlogPost2() {
           <p>AI-ul poate analiza datele din vânzări, trafic web și campanii de marketing pentru a identifica tendințe, anomalii și oportunități pe care un om le-ar rata sau ar dura ore să le găsească.</p>
 
           <blockquote>
-            <p>"Nu companiile mari înlocuiesc companiile mici. Companiile care folosesc AI înlocuiesc companiile care nu îl folosesc."</p>
-            <cite>Dario Amodei, CEO Anthropic</cite>
+            <p>"Suntem în avangarda integrării AI-ului nu doar ca să lucrăm mai repede, ci ca să lucrăm mai inteligent."</p>
+            <cite>Karim R. Lakhani, Chair, Digital Data Design Institute at Harvard, și profesor la Harvard Business School, în <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part" target="_blank" rel="noopener noreferrer">Microsoft Work Trend Index 2024</a></cite>
           </blockquote>
 
           <h2>Inteligența Artificială în România: Unde Suntem în 2026</h2>
           <p>România are un avantaj neașteptat în adoptarea AI-ului: infrastructura tehnică există, forța de muncă e educată digital, iar competiția pentru implementarea AI în afaceri mici e încă redusă. Asta înseamnă că firmele care acționează acum au o fereastră de oportunitate care nu va dura mult.</p>
+          <p>La nivel global, adopția a crescut rapid. Conform <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part" target="_blank" rel="noopener noreferrer">Work Trend Index 2024 publicat de Microsoft</a>, realizat pe baza unui sondaj cu 31.000 de oameni din 31 de țări, 75% dintre angajații care lucrează cu informații folosesc deja AI generativ, iar 79% dintre lideri spun că firma lor trebuie să adopte AI ca să rămână competitivă.</p>
           <p>Principala barieră pe care o vedem nu e tehnică și nu e financiară. E psihologică: mulți antreprenori simt că AI-ul e complicat, scump sau "pentru firme mari". Nu e niciunul dintre acestea. Consultați și raportul <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="noopener noreferrer">State of AI 2024 al McKinsey</a> pentru date despre adoptarea globală.</p>
 
           <h2>Cum Începi cu Inteligența Artificială: Pași Practici</h2>
           <ul>
             <li><strong>Identifică o sarcină repetitivă</strong> pe care o faci manual în fiecare săptămână</li>
-            <li><strong>Testează un model AI:</strong> <a href="https://www.anthropic.com/claude" target="_blank" rel="noopener">Claude</a> sau <a href="https://openai.com/chatgpt" target="_blank" rel="noopener">ChatGPT</a> au versiuni gratuite cu care poți experimenta azi</li>
+            <li><strong>Testează un model AI:</strong> <a href="https://www.anthropic.com/claude" target="_blank" rel="noopener">Claude</a> sau <a href="https://openai.com/chatgpt" target="_blank" rel="noopener">ChatGPT</a> au versiuni gratuite cu care poți experimenta azi. Ca să primești răspunsuri utile, vezi ghidul despre cum să <a href="/blog/intreaba-inteligenta-artificiala">întrebi inteligența artificială</a></li>
             <li><strong>Automatizează un singur proces,</strong> nu tot deodată. Un workflow funcțional îți demonstrează valoarea mai repede decât un plan mare neterminat</li>
             <li><strong>Măsoară impactul:</strong> câte ore ai economisit, câte erori ai eliminat, câți bani ai salvat</li>
           </ul>
