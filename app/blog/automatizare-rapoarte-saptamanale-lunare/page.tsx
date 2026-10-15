@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Cum Automatizezi Rapoartele Săptămânale și Lunare ale Firmei (cu Exemple Reale)",
-  "description": "Automatizare rapoarte săptămânale și lunare: cum elimini ore de muncă manuală, ce instrumente folosești și exemple reale din firme românești.",
+  "headline": "Cum Automatizezi Rapoartele Săptămânale și Lunare ale Firmei (cu Exemple Concrete)",
+  "description": "Automatizare rapoarte săptămânale și lunare: cum elimini ore de muncă manuală, ce instrumente folosești și exemple concrete pentru firme românești.",
   "url": "https://turbosnail.ro/blog/automatizare-rapoarte-saptamanale-lunare",
   "datePublished": "2026-04-29",
   "dateModified": "2026-10-07",
@@ -137,7 +137,7 @@ export default function AutomatizareRapoarte() {
             <span style={{ fontSize: 13, color: "#555566" }}>· 8 min citit</span>
           </div>
           <h1 className="hd" style={{ fontSize: 40, fontWeight: 900, lineHeight: 1.12, marginBottom: 24, letterSpacing: "-1.5px", color: "#eae8e3" }}>
-            Cum automatizezi rapoartele săptămânale și lunare ale firmei (cu exemple reale)
+            Cum automatizezi rapoartele săptămânale și lunare ale firmei (cu exemple concrete)
           </h1>
           <p style={{ fontSize: 19, lineHeight: 1.7, color: "#a8a6a1", marginBottom: 0 }}>
             Rapoartele periodice sunt una dintre cele mai frecvente surse de muncă manuală în firme: colectezi date din mai multe locuri, le aduni într-un tabel, faci câteva calcule și trimiți pe email. Se repetă săptămânal sau lunar, urmează mereu aceiași pași și este una din primele automatizări pe care merită să o faci.
@@ -161,54 +161,54 @@ export default function AutomatizareRapoarte() {
 
         <blockquote>
           <p>
-            "Companiile care automatizează raportarea internă reduc timpul alocat activităților administrative cu 30-40% și câștigă în calitatea deciziilor, pentru că informația ajunge la manageri mai rapid și fără erori umane."
+            "A căutat în toate documentele și emailurile relevante și a generat o structură, așa că aveam un punct de plecare."
           </p>
-          <cite>Gartner, "Future of Finance: Automation and Analytics", raport publicat 2024</cite>
+          <cite>Sumit Chauhan, Corporate Vice President, Office Product Group, Microsoft, în <a href="https://www.microsoft.com/en-us/worklab/how-6-experts-use-next-generation-ai" target="_blank" rel="noopener noreferrer">Microsoft WorkLab</a></cite>
         </blockquote>
 
-        <h2>Exemple reale de automatizare rapoarte în firme din România</h2>
+        <h2>Exemple tipice de automatizare rapoarte în firme din România</h2>
         <p>
-          Mai jos sunt cinci situații concrete, tipice pentru firmele mici și mijlocii din România, cu detalii despre cum funcționează automatizarea în practică.
+          Mai jos sunt cinci scenarii tipice pentru firmele mici și mijlocii din România, cu detalii despre cum funcționează automatizarea în practică. Economiile de timp sunt estimări, nu rezultate măsurate la un client anume.
         </p>
 
         <div className="example-box">
           <div className="label">Exemplul 01 · E-commerce</div>
           <div className="title">Raport săptămânal de performanță vânzări</div>
-          <p>Un magazin online cu 200-500 de comenzi săptămânale pierdea în fiecare luni dimineață 3-4 ore adunând date din Shopify, Google Analytics și Meta Ads într-un fișier Excel. Raportul merge săptămânal la 3 parteneri de afaceri.</p>
+          <p>Un magazin online cu 200-500 de comenzi săptămânale pierde în fiecare luni dimineață 3-4 ore adunând date din Shopify, Google Analytics și Meta Ads într-un fișier Excel. Raportul merge săptămânal la 3 parteneri de afaceri.</p>
           <p>Soluția: un flux Make care rulează automat în fiecare luni la ora 7:00, preia datele din cele trei surse prin API, le completează într-un Google Sheets pre-formatat și trimite un email cu raportul atașat ca PDF. Un script AI adaugă un paragraf de interpretare: ce a crescut față de săptămâna anterioară, ce a scăzut și ce necesită atenție.</p>
-          <div className="result">Economie: 12-16 ore lunar, zero erori de copiere, date disponibile înainte ca echipa să înceapă ziua</div>
+          <div className="result">Economie estimată: 12-16 ore lunar, zero erori de copiere, date disponibile înainte ca echipa să înceapă ziua</div>
         </div>
 
         <div className="example-box">
           <div className="label">Exemplul 02 · Agenție de marketing</div>
           <div className="title">Rapoarte lunare pentru clienți</div>
-          <p>O agenție cu 15 clienți activi producea lunar câte un raport per client: trafic organic, performanță campanii plătite, social media. Un angajat dedica 2-3 ore per client, adică 30-45 de ore lunar doar pentru raportare.</p>
+          <p>O agenție cu 15 clienți activi produce lunar câte un raport per client: trafic organic, performanță campanii plătite, social media. Un angajat dedică 2-3 ore per client, adică 30-45 de ore lunar doar pentru raportare.</p>
           <p>Soluția: template-uri Google Slides conectate la Google Analytics și platformele de ads prin Looker Studio. Datele se actualizează automat lunar. Angajatul verifică în 15 minute, adaugă interpretarea strategică și trimite. Munca mecanică a dispărut aproape complet.</p>
-          <div className="result">Economie: 25-35 ore lunar, capacitate crescută fără angajare suplimentară</div>
+          <div className="result">Economie estimată: 25-35 ore lunar, capacitate crescută fără angajare suplimentară</div>
         </div>
 
         <div className="example-box">
           <div className="label">Exemplul 03 · Firmă de construcții</div>
           <div className="title">Raport săptămânal de avans lucrări și costuri</div>
-          <p>Managerul de proiect completa manual un raport de avans pentru fiecare șantier activ: ore lucrate, materiale consumate, stadiu față de plan. Datele veneau din foi de pontaj trimise pe WhatsApp, facturi și un sistem intern de urmărire a comenzilor.</p>
+          <p>Managerul de proiect completează manual un raport de avans pentru fiecare șantier activ: ore lucrate, materiale consumate, stadiu față de plan. Datele vin din foi de pontaj trimise pe WhatsApp, facturi și un sistem intern de urmărire a comenzilor.</p>
           <p>Soluția: un formular standardizat completat de șeful de șantier direct pe telefon în fiecare vineri. Datele intră automat într-o bază de date centralizată, declanșează generarea raportului consolidat și îl trimit pe email managementului la ora 18:00. Raportul include comparație cu săptămâna anterioară și alertă automată dacă un indicator depășește pragul stabilit.</p>
-          <div className="result">Economie: 4-5 ore săptămânal per manager de proiect, vizibilitate în timp real</div>
+          <div className="result">Economie estimată: 4-5 ore săptămânal per manager de proiect, vizibilitate în timp real</div>
         </div>
 
         <div className="example-box">
           <div className="label">Exemplul 04 · Clinică medicală privată</div>
           <div className="title">Raport lunar de activitate și cash flow</div>
-          <p>Administratorul clinicii compila lunar: număr de consultații per medic, venituri per serviciu, facturi neîncasate, stoc consumabile. Informațiile veneau din softul de programări, Excel-ul contabilității și evidența furnizorilor.</p>
+          <p>Administratorul clinicii compilează lunar: număr de consultații per medic, venituri per serviciu, facturi neîncasate, stoc consumabile. Informațiile vin din softul de programări, Excel-ul contabilității și evidența furnizorilor.</p>
           <p>Soluția: integrare n8n care preia date din softul de programări și foile de calcul contabile, generează automat un raport consolidat în Google Sheets și trimite un email cu sumarul executiv pe primul luni al lunii. Facturile cu întârziere de plată declanșează automat un reminder separat.</p>
-          <div className="result">Economie: 6-8 ore lunar, rata de încasare îmbunătățită prin reminder-uri automate</div>
+          <div className="result">Economie estimată: 6-8 ore lunar, rata de încasare îmbunătățită prin reminder-uri automate</div>
         </div>
 
         <div className="example-box">
           <div className="label">Exemplul 05 · Distribuitor FMCG</div>
           <div className="title">Raport zilnic de livrări și stocuri</div>
-          <p>Directorul de operațiuni primea în fiecare zi un raport manual: comenzi procesate, livrări finalizate, comenzi întârziate, stocuri sub prag. Raportul era asamblat de un angajat din trei sisteme diferite și ajungea pe email în jurul orei 10:00, uneori mai târziu.</p>
+          <p>Directorul de operațiuni primește în fiecare zi un raport manual: comenzi procesate, livrări finalizate, comenzi întârziate, stocuri sub prag. Raportul este asamblat de un angajat din trei sisteme diferite și ajunge pe email în jurul orei 10:00, uneori mai târziu.</p>
           <p>Soluția: flux automatizat care preia datele din sistemul WMS și ERP la 6:30 dimineața, generează raportul și îl trimite pe email la 7:00, cu alertele critice (stocuri sub prag minim, livrări cu întârziere mai mare de 24h) marcate vizual. Directorul are informația înainte să ajungă la birou.</p>
-          <div className="result">Economie: 1-1.5 ore zilnic, decizie mai rapidă, fără așteptare după raport</div>
+          <div className="result">Economie estimată: 1-1.5 ore zilnic, decizie mai rapidă, fără așteptare după raport</div>
         </div>
 
         <h2>Cum automatizezi rapoartele: pașii practici</h2>

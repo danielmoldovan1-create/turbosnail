@@ -149,23 +149,23 @@ export default function BlogPost() {
 
           <h3>1. Emailuri de follow-up și comunicare cu clienții</h3>
           <p>Cel mai frecvent timp pierdut. Un client trimite o cerere prin formular, tu o vezi a doua zi, răspunzi manual, apoi uiți de follow-up. Cu o automatizare AI: formularul declanșează instant un email personalizat de confirmare, datele intră automat în CRM, iar dacă clientul nu răspunde în 3 zile, se trimite automat un follow-up.</p>
-          <p><strong>Timp recuperat: 3-5 ore/săptămână.</strong></p>
+          <p><strong>Timp recuperat (estimare): 3-5 ore/săptămână.</strong></p>
 
           <h3>2. Rapoarte și dashboard-uri</h3>
           <p>Deschizi Google Analytics, apoi Search Console, apoi contul de Ads, apoi CRM-ul, apoi foaia de calcul unde pui totul cap la cap. Asta e munca de luni dimineață pentru mulți antreprenori. Cu automatizare AI, toate datele se adună singure într-un singur dashboard actualizat în timp real.</p>
-          <p><strong>Timp recuperat: 2-4 ore/săptămână.</strong></p>
+          <p><strong>Timp recuperat (estimare): 2-4 ore/săptămână.</strong></p>
 
           <h3>3. Procesare documente și facturi</h3>
           <p>Facturile de la furnizori vin pe email. Cineva le deschide manual, extrage datele, le introduce în programul de contabilitate. Cu AI și OCR, factura este citită automat, datele sunt extrase și introduse în sistem fără intervenție umană.</p>
-          <p><strong>Timp recuperat: 2-3 ore/săptămână.</strong></p>
+          <p><strong>Timp recuperat (estimare): 2-3 ore/săptămână.</strong></p>
 
           <h3>4. Calificarea lead-urilor</h3>
           <p>Nu toate lead-urile sunt egale. Un sistem AI poate analiza comportamentul vizitatorilor pe site, mesajele trimise prin formular și interacțiunile anterioare, apoi poate atribui un scor fiecărui lead. Echipa ta de vânzări se concentrează doar pe lead-urile calde.</p>
-          <p><strong>Timp recuperat: 3-5 ore/săptămână.</strong></p>
+          <p><strong>Timp recuperat (estimare): 3-5 ore/săptămână.</strong></p>
 
           <h3>5. Generare conținut și social media</h3>
           <p>Postările pe social media, descrierile de produse, emailurile de marketing consumă timp. Cu modele de limbaj precum Claude sau ChatGPT, poți genera draft-uri de conținut pe care le editezi rapid, nu le scrii de la zero.</p>
-          <p><strong>Timp recuperat: 3-6 ore/săptămână.</strong></p>
+          <p><strong>Timp recuperat (estimare): 3-6 ore/săptămână.</strong></p>
 
           <blockquote>
             <p>
@@ -184,7 +184,7 @@ export default function BlogPost() {
           <p>Pentru majoritatea companiilor mici și mijlocii, ordinea sănătoasă este aceeași: întâi o automatizare simplă pe un proces repetitiv, apoi asistenți AI folosiți după reguli clare, iar agenții abia după ce procesele și datele sunt în ordine.</p>
 
           <h2>Cât durează implementarea automatizărilor AI</h2>
-          <p>Una dintre cele mai frecvente întrebări pe care le primim. Răspunsul depinde de complexitate, dar iată un reper real bazat pe proiectele noastre:</p>
+          <p>Răspunsul depinde de complexitate. Iată câteva repere orientative:</p>
           <ul>
             <li><strong>Un singur flux automatizat:</strong> 3-5 zile. Exemplu: formular de contact care declanșează email automat și adăugare în CRM.</li>
             <li><strong>Mai multe fluxuri conectate:</strong> 1-2 săptămâni. Lead scoring, secvențe email, raportare automată integrate.</li>
