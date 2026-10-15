@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Automatizări AI pentru Afaceri: Ghid Complet România 2026 | TurboSnail",
-  description: "Află cum automatizările AI pot recupera 10+ ore/săptămână în firma ta. Ghid practic cu exemple reale și pași de implementare pentru afaceri din România.",
+  description: "Automatizări AI și soluții AI pentru firme din România: ce procese poți automatiza, de unde începi și cât durează implementarea, cu exemple concrete.",
+  alternates: {
+    canonical: "https://turbosnail.ro/blog/automatizari-ai-pentru-afaceri-romania",
+  },
   openGraph: {
     title: "Automatizări AI pentru Afaceri: Ghid Complet România 2026 | TurboSnail",
-    description: "Află cum automatizările AI pot recupera 10+ ore/săptămână în firma ta. Ghid practic cu exemple reale și pași de implementare pentru afaceri din România.",
+    description: "Automatizări AI și soluții AI pentru firme din România: ce procese poți automatiza, de unde începi și cât durează implementarea, cu exemple concrete.",
     url: "https://turbosnail.ro/blog/automatizari-ai-pentru-afaceri-romania",
     siteName: "TurboSnail",
     locale: "ro_RO",
@@ -20,7 +23,7 @@ const jsonLd = {
   "description": "Ghid practic despre automatizările AI pentru afaceri din România, cu exemple concrete și pași de implementare.",
   "url": "https://turbosnail.ro/blog/automatizari-ai-pentru-afaceri-romania",
   "datePublished": "2026-04-15",
-  "dateModified": "2026-04-19",
+  "dateModified": "2026-10-15",
   "publisher": {
     "@type": "Organization",
     "name": "TurboSnail",
@@ -140,7 +143,7 @@ export default function BlogPost() {
 
           <h2>Ce sunt automatizările AI și de ce contează pentru afacerea ta</h2>
           <p>Automatizările AI sunt sisteme care preiau sarcini repetitive din businessul tău și le execută singure, fără intervenție umană. Nu vorbim despre inteligență artificială din filme. Vorbim despre lucruri concrete: un email de follow-up care se trimite automat după ce un client completează un formular, un raport care se generează singur în fiecare luni dimineață, sau date care se mută automat din facturi în contabilitate.</p>
-          <p>Diferența dintre o automatizare clasică și una cu AI este că <a href="https://turbosnail.ro">automatizările AI</a> pot lua și decizii. De exemplu: poate clasifica un lead ca "cald" sau "rece" pe baza mesajului pe care l-a trimis, poate genera un răspuns personalizat pentru fiecare client, sau poate analiza datele de vânzări și semnala anomalii.</p>
+          <p>Diferența dintre o automatizare clasică și una cu AI este că <a href="https://turbosnail.ro">automatizări AI</a> bine construite pot lua și decizii. De exemplu: poate clasifica un lead ca "cald" sau "rece" pe baza mesajului pe care l-a trimis, poate genera un răspuns personalizat pentru fiecare client, sau poate analiza datele de vânzări și semnala anomalii.</p>
 
           <h2>5 procese pe care orice firmă din România le poate automatiza azi</h2>
 
@@ -165,9 +168,20 @@ export default function BlogPost() {
           <p><strong>Timp recuperat: 3-6 ore/săptămână.</strong></p>
 
           <blockquote>
-            <p>"Automatizarea nu înlocuiește oamenii. Îi eliberează să facă munca pentru care sunt cu adevărat valoroși."</p>
-            <cite>Tomas Chamorro-Premuzic, profesor de psihologie organizațională, University College London</cite>
+            <p>
+              "Trebuie să te gândești la el [AI-ul] ca la un stagiar."
+            </p>
+            <cite>Ethan Mollick, profesor la Wharton School, University of Pennsylvania, în <a href="https://www.microsoft.com/en-us/worklab/why-one-expert-says-ai-is-like-the-worlds-greatest-intern" target="_blank" rel="noopener noreferrer">Microsoft WorkLab</a></cite>
           </blockquote>
+
+          <h2>Soluții AI pentru firme și companii: de unde începi</h2>
+          <p>Când cauți soluții AI pentru firme, găsești de obicei trei categorii, ușor de confundat între ele:</p>
+          <ul>
+            <li><strong>Asistenți AI pentru oameni:</strong> ChatGPT, Gemini, Claude sau Copilot, folosiți pentru texte, rezumate și analize. Am explicat cum îi folosești corect în ghidul despre cum să <a href="/blog/intreaba-inteligenta-artificiala">întrebi inteligența artificială</a>.</li>
+            <li><strong>Automatizări între aplicații:</strong> fluxuri care mută date și declanșează acțiuni fără intervenție umană, ca exemplele de mai sus.</li>
+            <li><strong>Agenți AI:</strong> sisteme care primesc un obiectiv și execută singure mai mulți pași, de exemplu în <a href="/blog/agent-ai-pentru-vanzari-romania">vânzări</a>.</li>
+          </ul>
+          <p>Pentru majoritatea companiilor mici și mijlocii, ordinea sănătoasă este aceeași: întâi o automatizare simplă pe un proces repetitiv, apoi asistenți AI folosiți după reguli clare, iar agenții abia după ce procesele și datele sunt în ordine.</p>
 
           <h2>Cât durează implementarea automatizărilor AI</h2>
           <p>Una dintre cele mai frecvente întrebări pe care le primim. Răspunsul depinde de complexitate, dar iată un reper real bazat pe proiectele noastre:</p>

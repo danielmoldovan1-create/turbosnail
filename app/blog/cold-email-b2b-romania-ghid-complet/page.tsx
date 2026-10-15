@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cold Email B2B în România: Ghid Complet pentru 2026 (Deliverability, Secvențe, Tool-uri) | TurboSnail",
-  description: "Ghid complet de cold email B2B în România pentru 2026: cum configurezi infrastructura, cum scrii secvențe care primesc răspuns și ce tool-uri funcționează în 2026.",
+  title: "Cold email B2B în România: ghid complet | TurboSnail",
+  description: "Cold email B2B în România: cum configurezi infrastructura, cum scrii secvențe care primesc răspuns și ce instrumente funcționează în 2026.",
   alternates: {
     canonical: "https://turbosnail.ro/blog/cold-email-b2b-romania-ghid-complet",
   },
@@ -23,7 +23,7 @@ const articleLd = {
   description: "Ghid complet de cold email B2B în România pentru 2026: cum configurezi infrastructura, cum scrii secvențe care primesc răspuns și ce tool-uri funcționează.",
   url: "https://turbosnail.ro/blog/cold-email-b2b-romania-ghid-complet",
   datePublished: "2026-08-12",
-  dateModified: "2026-08-12",
+  dateModified: "2026-10-15",
   publisher: {
     "@type": "Organization",
     name: "TurboSnail",
@@ -208,10 +208,10 @@ export default function ColdEmailB2BRomania() {
 
         <blockquote>
           <p style={{ fontStyle: "italic", fontSize: 18, color: "#c8c6c1", marginBottom: 12 }}>
-            "Un sistem de outbound predictibil nu se construiește trimiând mai multe emailuri. Se construiește trimiând emailuri mai bune, către oamenii potriviți, cu un mesaj care le rezolvă o problemă reală."
+            "AI-ul îți ia din încărcătură înainte, în timpul și după întâlnirea de vânzare."
           </p>
           <p style={{ fontSize: 14, color: "#666677" }}>
-            <strong style={{ color: "#888899" }}>Aaron Ross</strong>, Co-autor al lucrării "Predictable Revenue", co-fondator Predictable Revenue Inc.
+            <strong style={{ color: "#888899" }}>Angela Byers</strong>, senior director for product marketing, customer experience, Microsoft, în <a href="https://www.microsoft.com/en-us/worklab/guides/how-sellers-can-use-ai-to-better-engage-with-customers" target="_blank" rel="noopener noreferrer">ghidul Microsoft WorkLab despre AI în vânzări</a>
           </p>
         </blockquote>
 
@@ -244,7 +244,7 @@ export default function ColdEmailB2BRomania() {
           Dacă situația ta se potrivește cu cold email-ul B2B, serviciile noastre de <a href="/servicii/cold-email-outbound">cold email și outbound</a> acoperă tot procesul: de la construirea infrastructurii tehnice și warming, la sourcing-ul și verificarea listelor, scrierea secvențelor și optimizarea continuă pe baza datelor. Nu livrăm volume de emailuri. Livrăm meetinguri calificate în calendarul tău.
         </p>
         <p>
-          Conform <a href="https://www.forrester.com/blogs/the-death-of-the-b2b-sales-rep/" target="_blank" rel="noopener noreferrer">raportului Forrester privind evoluția vânzărilor B2B</a>, cumpărătorii B2B moderni fac cercetare independentă înainte să intre în contact cu un vânzător, ceea ce înseamnă că un email relevant care ajunge la momentul potrivit este mult mai valoros față de tehnicile de outbound pur bazate pe volum. Calitatea și relevanța bat volumul în orice canal. Dacă vrei să înțelegi mai bine cum se integrează outbound-ul cu celelalte procese de vânzare automatizate din firma ta, vizitează pagina noastră de <a href="https://turbosnail.ro">automatizări AI</a>.
+          Un <a href="https://www.microsoft.com/en-us/worklab/guides/how-sellers-can-use-ai-to-better-engage-with-customers" target="_blank" rel="noopener noreferrer">ghid Microsoft WorkLab despre AI în vânzări</a> citează raportul LinkedIn State of Sales 2022: oamenii din vânzări petrec mai puțin de o treime din timp vânzând efectiv. De aceea, un email relevant care ajunge la momentul potrivit valorează mai mult decât volumul: timpul vânzătorului e puțin și trebuie să meargă spre conversațiile care contează. Calitatea și relevanța bat volumul în orice canal. Dacă vrei să înțelegi mai bine cum se integrează outbound-ul cu celelalte procese de vânzare automatizate din firma ta, vizitează pagina noastră de <a href="https://turbosnail.ro">automatizări AI</a>.
         </p>
 
         <div className="divider" />

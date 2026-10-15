@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Automatizare Procese Afaceri România: Ghid Practic 2026 | TurboSnail",
   description: "Cum automatizezi procesele repetitive din firma ta în România. Exemple concrete, instrumente folosite și cât timp economisești efectiv. Ghid practic fără teorie.",
+  alternates: {
+    canonical: "https://turbosnail.ro/blog/automatizare-procese-afaceri-romania",
+  },
   openGraph: {
     title: "Automatizare Procese Afaceri România: Ghid Practic 2026 | TurboSnail",
     description: "Cum automatizezi procesele repetitive din firma ta în România. Exemple concrete, instrumente folosite și cât timp economisești efectiv.",
@@ -20,7 +23,7 @@ const jsonLd = {
   "description": "Cum automatizezi procesele repetitive din firma ta în România. Exemple concrete, instrumente folosite și cât timp economisești efectiv.",
   "url": "https://turbosnail.ro/blog/automatizare-procese-afaceri-romania",
   "datePublished": "2026-04-19",
-  "dateModified": "2026-04-19",
+  "dateModified": "2026-10-15",
   "publisher": {
     "@type": "Organization",
     "name": "TurboSnail",
@@ -162,9 +165,9 @@ export default function AutomatizareProcese() {
 
         <blockquote>
           <p>
-            "Aproximativ 60% din toate ocupatiile au cel putin 30% din activitati care sunt automatizabile din punct de vedere tehnic cu tehnologiile disponibile astazi."
+            "Deși suntem abia la început, această schimbare va extinde oportunitățile, va crea roluri noi și va crește productivitatea."
           </p>
-          <cite>McKinsey Global Institute, "A future that works: Automation, employment, and productivity", ianuarie 2017</cite>
+          <cite>Karin Kimbrough, chief economist, LinkedIn, în <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/will-ai-fix-work" target="_blank" rel="noopener noreferrer">Microsoft Work Trend Index 2023</a></cite>
         </blockquote>
 
         <h2>Instrumentele care funcționează efectiv pentru automatizare procese afaceri România</h2>
@@ -189,10 +192,10 @@ export default function AutomatizareProcese() {
 
         <h2>Un exemplu concret: automatizarea rapoartelor saptamanale</h2>
         <p>
-          Un client din domeniul e-commerce pierdea 4 ore in fiecare luni dimineata colectand date din Google Analytics, Meta Ads si platforma lor de comenzi, lipind totul intr-un tabel Excel si trimitand un email catre parteneri. Azi, acelasi raport se genereaza automat la ora 8:00 in fiecare luni, se trimite automat si include si un paragraf de interpretare generat de AI.
+          Exemplu tipic: un magazin online pierde câteva ore în fiecare luni dimineața colectând date din Google Analytics, Meta Ads și platforma de comenzi, lipind totul într-un tabel Excel și trimițând un email către parteneri. Automatizat, același raport se generează la ora 8:00 în fiecare luni, se trimite singur și include un paragraf de interpretare generat de AI.
         </p>
         <p>
-          Implementarea a durat 3 zile. Economie: 16 ore pe luna, zero erori de copy-paste, date intotdeauna actualizate.
+          Rezultatul: orele de luni dimineața rămân pentru altceva, fără erori de copy-paste și cu date mereu actualizate.
         </p>
 
         <h2>Ce nu se poate (inca) automatiza</h2>

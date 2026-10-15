@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Consultanță AI pentru Firme: Ce Include, Cum Alegi Consultantul Potrivit și Ce să Eviți | TurboSnail",
-  description: "Ghid complet de consultanță AI pentru firme: ce include un angajament real, cum evaluezi un consultant, întrebări concrete și greșeli frecvente pe care le fac antreprenorii români.",
+  title: "Consultanță AI: ce include și cum alegi | TurboSnail",
+  description: "Consultanță AI pentru firme: ce include un angajament real, cum evaluezi un consultant, ce întrebări pui și ce greșeli fac des antreprenorii români.",
+  alternates: {
+    canonical: "https://turbosnail.ro/blog/consultanta-ai-ce-include-cum-alegi",
+  },
   openGraph: {
-    title: "Consultanță AI pentru Firme: Ce Include, Cum Alegi Consultantul Potrivit și Ce să Eviți | TurboSnail",
+    title: "Consultanță AI: ce include și cum alegi | TurboSnail",
     description: "Ghid complet de consultanță AI pentru firme: ce include un angajament real, cum evaluezi un consultant, întrebări concrete și greșeli frecvente.",
     url: "https://turbosnail.ro/blog/consultanta-ai-ce-include-cum-alegi",
     siteName: "TurboSnail",
@@ -20,7 +23,7 @@ const jsonLd = {
   "description": "Ghid complet de consultanță AI pentru firme: ce include un angajament real, cum evaluezi un consultant, întrebări concrete și greșeli frecvente.",
   "url": "https://turbosnail.ro/blog/consultanta-ai-ce-include-cum-alegi",
   "datePublished": "2026-04-29",
-  "dateModified": "2026-04-29",
+  "dateModified": "2026-10-15",
   "publisher": {
     "@type": "Organization",
     "name": "TurboSnail",
@@ -156,9 +159,9 @@ export default function ConsultantaAI() {
 
         <blockquote>
           <p>
-            "Cea mai mare greșeală pe care o fac companiile când adoptă AI este că pornesc de la tehnologie în loc să pornească de la problemă. Întrebarea corectă nu este 'cum folosim AI?', ci 'ce problemă vrem să rezolvăm și AI este cel mai bun instrument pentru asta?'"
+            "Organizațiile care au o abordare atentă și deliberată vor fi cele care vor culege beneficiile AI-ului."
           </p>
-          <cite>Andrew Ng, fondator Google Brain și Coursera, interviu acordat Harvard Business Review, 2023</cite>
+          <cite>Jared Spataro, Corporate Vice President, Modern Work and Business Applications, Microsoft, în <a href="https://www.microsoft.com/en-us/worklab/the-right-way-to-ai" target="_blank" rel="noopener noreferrer">„The Right Way to AI”, Microsoft WorkLab</a></cite>
         </blockquote>
 
         <h2>Ce include un angajament serios de consultanță AI: cele 5 etape</h2>
@@ -191,7 +194,7 @@ export default function ConsultantaAI() {
 
         <h3>5. Monitorizarea și optimizarea după lansare</h3>
         <p>
-          Primele 30-60 de zile după implementare sunt critice. Sistemele AI și automatizările au nevoie de ajustări bazate pe comportamentul real al utilizatorilor și al datelor. Un consultant care dispare după livrare nu îți este de folos pe termen lung.
+          Primele 30-60 de zile după implementare sunt critice. Sistemele AI și automatizările au nevoie de ajustări bazate pe comportamentul real al utilizatorilor și al datelor. Un consultant care dispare după livrare nu îți este de folos pe termen lung. Același principiu se aplică oricăror <a href="https://turbosnail.ro">automatizări AI</a>: valoarea apare în lunile de după lansare, nu în ziua lansării.
         </p>
 
         <h2>Consultanță AI: cum evaluezi un consultant înainte să semnezi</h2>
@@ -243,7 +246,7 @@ export default function ConsultantaAI() {
           Pentru firmele mici și mijlocii din România, fără echipă IT dedicată, un consultant extern care acoperă întregul ciclu, de la audit la implementare și monitorizare, produce rezultate mai rapide și mai consistente decât formarea unui angajat intern de la zero.
         </p>
         <p>
-          Conform unui <a href="https://www.ibm.com/think/insights/ai-adoption-index" target="_blank" rel="noopener noreferrer">raport IBM privind adoptarea AI în companii</a>, 42% dintre firmele care au implementat AI cu succes au folosit consultanți externi pentru cel puțin o etapă a procesului, în special pentru definirea cazurilor de utilizare cu impact real.
+          Conform <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part" target="_blank" rel="noopener noreferrer">Work Trend Index 2024 publicat de Microsoft</a>, realizat pe baza unui sondaj cu 31.000 de oameni din 31 de țări, 60% dintre lideri se tem că firma lor nu are un plan și o viziune pentru implementarea AI, iar 59% își fac griji că nu pot măsura câștigurile de productivitate aduse de AI. Exact aceste două goluri, planul și măsurarea, ar trebui să le acopere o consultanță AI serioasă.
         </p>
 
         <h2>Ce să ceri ca livrabil minim într-un angajament de consultanță AI</h2>
