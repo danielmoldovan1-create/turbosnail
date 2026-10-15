@@ -190,7 +190,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         </blockquote>
 
         <p>
-          Conform <a href={service.externalLink.url} target="_blank" rel="noopener noreferrer">{service.externalLink.anchor}</a>, companiile care adoptă automatizarea și AI în procese operaționale obțin câștiguri semnificative de productivitate față de competitorii care amână decizia. Pentru mai multe detalii despre cum pot <a href="https://turbosnail.ro">automatizări AI</a> să transforme operațiunile firmei tale, vizitează pagina noastră principală.
+          Sursa citatului de mai sus: <a href={service.externalLink.url} target="_blank" rel="noopener noreferrer">{service.externalLink.anchor}</a>. Pentru mai multe detalii despre cum pot <a href="https://turbosnail.ro">automatizări AI</a> să transforme operațiunile firmei tale, vizitează pagina noastră principală.
         </p>
       </article>
 
