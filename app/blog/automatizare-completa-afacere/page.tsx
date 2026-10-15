@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Automatizarea Completă a Unei Afaceri: De Unde Începi | TurboSnail",
   description: "Ghid practic pentru antreprenori: cum implementezi automatizare completa afacere pas cu pas, ce sisteme conectezi si cum masori impactul real. Fara teorie, fara hype.",
+  alternates: {
+    canonical: "https://turbosnail.ro/blog/automatizare-completa-afacere",
+  },
   openGraph: {
     title: "Automatizarea Completă a Unei Afaceri: De Unde Începi | TurboSnail",
     description: "Ghid practic pentru antreprenori: cum implementezi automatizare completă afacere pas cu pas, ce sisteme conectezi și cum măsori impactul real. Fără teorie, fără hype.",
@@ -20,7 +23,7 @@ const jsonLd = {
   "description": "Ghid practic pentru antreprenori: cum implementezi automatizare completă afacere pas cu pas, ce sisteme conectezi și cum măsori impactul real.",
   "url": "https://turbosnail.ro/blog/automatizare-completa-afacere",
   "datePublished": "2026-04-22",
-  "dateModified": "2026-04-22",
+  "dateModified": "2026-10-15",
   "publisher": {
     "@type": "Organization",
     "name": "TurboSnail",
@@ -49,7 +52,7 @@ const faqLd = {
     {
       "@type": "Question",
       name: "Cat timp dureaza sa automatizezi complet o afacere mica?",
-      acceptedAnswer: { "@type": "Answer", text: "Nu exista 'complet' ca destinatie finala, ci ca directie. In 3-6 luni, o firma de 10-30 de persoane poate automatiza 60-70% din sarcinile repetitive cu impact masurabil. Restul se adauga treptat, pe masura ce procesele se maturizeaza si nevoia devine clara." }
+      acceptedAnswer: { "@type": "Answer", text: "Nu există 'complet' ca destinație finală, ci ca direcție. În primele luni automatizezi sarcinile repetitive cu impactul cel mai mare, iar restul se adaugă treptat, pe măsură ce procesele se maturizează și nevoia devine clară." }
     },
     {
       "@type": "Question",
@@ -138,7 +141,7 @@ export default function AutomatizareCompletaAfacere() {
           Automatizarea, in sensul ei practic, inseamna ca un software executa sarcini repetitive in locul unui om. Inteligenta artificiala este stratul care permite acestor sisteme sa gestioneze si situatii mai putin structurate: sa clasifice un email dupa intentie, sa extraga date dintr-un document scanat sau sa genereze un raspuns personalizat pe baza contextului unui client.
         </p>
         <p>
-          Automatizarea completa a unei afaceri nu este un proiect cu o data de finalizare. Este o stare pe care o atingi treptat, adaugand fluxuri automatizate peste fluxuri, pana cand majoritatea sarcinilor repetitive se intampla fara interventie umana. <a href="https://turbosnail.ro">Automatizarile AI</a> permit astazi firmelor mici sa atinga un nivel de eficienta operationala care altadata necesita departamente intregi.
+          Automatizarea completa a unei afaceri nu este un proiect cu o data de finalizare. Este o stare pe care o atingi treptat, adaugand fluxuri automatizate peste fluxuri, pana cand majoritatea sarcinilor repetitive se intampla fara interventie umana. Cu <a href="https://turbosnail.ro">automatizări AI</a>, firmele mici pot atinge astăzi un nivel de eficiență operațională care altădată necesita departamente întregi.
         </p>
         <p>
           Inainte de orice implementare, o sesiune de <a href="/servicii/consultanta-ai">consultanta AI</a> ajuta la identificarea corecta a prioritatilor si la evitarea proiectelor care consuma timp fara ROI masurabil.
@@ -188,9 +191,9 @@ export default function AutomatizareCompletaAfacere() {
 
         <blockquote>
           <p>
-            "Antreprenorii care construiesc sisteme castiga in fata celor care construiesc obiceiuri. Un sistem functioneaza si cand nu esti acolo. Un obicei, nu."
+            "Un prompt îi cere AI-ului să se descurce singur. Un «skill» îi spune AI-ului cum a hotărât organizația să facă acel lucru."
           </p>
-          <cite>James Clear, autor "Atomic Habits", consultant in productivitate si schimbare comportamentala</cite>
+          <cite>Jared Spataro, CMO of AI at Work, Microsoft, în <a href="https://www.microsoft.com/en-us/worklab/ai-at-work-redesign-first-then-ai-just-works" target="_blank" rel="noopener noreferrer">Microsoft WorkLab, 2026</a></cite>
         </blockquote>
 
         <h2>Ordinea corecta de implementare pentru automatizare completa afacere</h2>
@@ -219,7 +222,7 @@ export default function AutomatizareCompletaAfacere() {
           <li><strong>Comunicare automatizata:</strong> ActiveCampaign sau Brevo pentru secvente de email declansate de comportamentul clientului.</li>
         </ul>
         <p>
-          Conform unui raport McKinsey privind <a href="https://www.mckinsey.com/capabilities/operations/our-insights/the-next-normal-in-manufacturing" target="_blank" rel="noopener noreferrer">automatizarea operatiunilor de business</a>, firmele care adopta o abordare sistematica a automatizarii, in locul unor proiecte izolate, obtin de trei ori mai mult impact masurabil la acelasi nivel de investitie.
+          Diferența dintre o firmă cu automatizări izolate și una care construiește un sistem se vede în timp: într-un sistem, fiecare flux nou folosește datele și conexiunile celor existente, așa că fiecare pas următor cere mai puțin efort decât primul.
         </p>
 
         <h2>Cum stii ca automatizarea completa a afacerii tale functioneaza</h2>
@@ -238,7 +241,7 @@ export default function AutomatizareCompletaAfacere() {
           </div>
           <div className="faq-item">
             <div className="faq-q">Cat timp dureaza sa automatizezi complet o afacere mica?</div>
-            <div className="faq-a">Nu exista "complet" ca destinatie finala, ci ca directie. In 3-6 luni, o firma de 10-30 de persoane poate automatiza 60-70% din sarcinile repetitive cu impact masurabil. Restul se adauga treptat, pe masura ce procesele se maturizeaza si nevoia devine clara.</div>
+            <div className="faq-a">Nu există "complet" ca destinație finală, ci ca direcție. În primele luni automatizezi sarcinile repetitive cu impactul cel mai mare, iar restul se adaugă treptat, pe măsură ce procesele se maturizează și nevoia devine clară.</div>
           </div>
           <div className="faq-item">
             <div className="faq-q">Ce se intampla cu angajatii ale caror sarcini sunt automatizate?</div>
