@@ -169,21 +169,21 @@ export default function AutomatizareProceseBusiness() {
           <div className="num">Procesul 01</div>
           <div className="title">Onboarding client nou</div>
           <p className="desc">La semnarea unui contract, un flux automat trimite clientului setul de documente necesare, creează un dosar în Google Drive, adaugă proiectul în tool-ul de management și notifică echipa responsabilă. Fără email-uri manuale și fără pași uitați.</p>
-          <div className="saving">Economie: 45-90 minute per client nou</div>
+          <div className="saving">Economie estimată: 45-90 minute per client nou</div>
         </div>
 
         <div className="process-card">
           <div className="num">Procesul 02</div>
           <div className="title">Generare și trimitere rapoarte periodice</div>
           <p className="desc">Rapoartele lunare sau trimestriale pentru clienți sunt generate automat din datele existente (Excel, Google Sheets, CRM), formatate și trimise pe email la o dată fixă. Niciun angajat nu mai pierde o dimineață întreagă asamblând cifre.</p>
-          <div className="saving">Economie: 3-6 ore per raport lunar</div>
+          <div className="saving">Economie estimată: 3-6 ore per raport lunar</div>
         </div>
 
         <div className="process-card">
           <div className="num">Procesul 03</div>
           <div className="title">Reminder-uri scadențe și termene</div>
           <p className="desc">Fiecare termen de depunere, scadență de plată sau deadline contractual declanșează automat notificări pe email sau WhatsApp către clientul și angajatul responsabil, cu 7, 3 și 1 zile înainte. Fără calendar urmărit manual.</p>
-          <div className="saving">Economie: 1-2 ore săptămânal și risc de penalități eliminat</div>
+          <div className="saving">Economie estimată: 1-2 ore săptămânal și risc de penalități eliminat</div>
         </div>
 
         <h2>Automatizare procese business în comerț și e-commerce</h2>
@@ -192,21 +192,21 @@ export default function AutomatizareProceseBusiness() {
           <div className="num">Procesul 04</div>
           <div className="title">Procesare și confirmare comenzi</div>
           <p className="desc">O comandă nouă declanșează automat: confirmare email către client, actualizare stoc, creare task de pregătire în depozit, notificare curier. Un flux care înlocuiește 4-5 acțiuni manuale executate de fiecare dată.</p>
-          <div className="saving">Economie: 8-15 minute per comandă</div>
+          <div className="saving">Economie estimată: 8-15 minute per comandă</div>
         </div>
 
         <div className="process-card">
           <div className="num">Procesul 05</div>
           <div className="title">Urmărire plăți restante</div>
           <p className="desc">Facturile neachitate la scadență declanșează automat o secvență de reminder-uri: email politicos la zi 1, email ferm la zi 7, notificare internă la zi 14. Rata de recuperare crește fără ca nimeni să urmărească manual un tabel.</p>
-          <div className="saving">Economie: 2-3 ore săptămânal în urmărire manuală</div>
+          <div className="saving">Economie estimată: 2-3 ore săptămânal în urmărire manuală</div>
         </div>
 
         <div className="process-card">
           <div className="num">Procesul 06</div>
           <div className="title">Sincronizare stocuri pe canale multiple</div>
           <p className="desc">Dacă vinzi pe site propriu, marketplace și în magazin fizic, stocul actualizat într-o sursă se propagă automat în toate celelalte. Elimini supravânzările și comenzile imposibil de onorat.</p>
-          <div className="saving">Economie: 1-2 ore zilnic și reclamații clienți reduse</div>
+          <div className="saving">Economie estimată: 1-2 ore zilnic și reclamații clienți reduse</div>
         </div>
 
         <h2>Automatizare procese business în imobiliare și construcții</h2>
@@ -215,14 +215,14 @@ export default function AutomatizareProceseBusiness() {
           <div className="num">Procesul 07</div>
           <div className="title">Calificare și distribuire lead-uri</div>
           <p className="desc">Un lead care completează un formular pe site primește imediat un email de confirmare. Simultan, un AI analizează cererea, o clasifică după tip și buget și o atribuie agentului potrivit. Fără intervale de așteptare și fără lead-uri ratate.</p>
-          <div className="saving">Economie: 30-60 minute zilnic per agent și timp de răspuns redus de la ore la secunde</div>
+          <div className="saving">Economie estimată: 30-60 minute zilnic per agent și timp de răspuns redus de la ore la secunde</div>
         </div>
 
         <div className="process-card">
           <div className="num">Procesul 08</div>
           <div className="title">Programare vizionări și confirmări</div>
           <p className="desc">Clientul alege un slot dintr-un calendar integrat pe site sau în chatbot. Confirmarea, reminder-ul cu 24 de ore înainte și feedback-ul post-vizionare se trimit automat. Agentul nu mai gestionează manual agenda.</p>
-          <div className="saving">Economie: 1 oră zilnic per agent activ</div>
+          <div className="saving">Economie estimată: 1 oră zilnic per agent activ</div>
         </div>
 
         <h2>Automatizare procese business în medical și clinici private</h2>
@@ -231,14 +231,14 @@ export default function AutomatizareProceseBusiness() {
           <div className="num">Procesul 09</div>
           <div className="title">Programări și reminder-uri pacienți</div>
           <p className="desc">Pacienții se programează online, primesc confirmare automată și reminder cu 48 de ore înainte. În caz de anulare, slotul devine automat disponibil și este oferit primului pacient de pe lista de așteptare. Mai puține programări ratate, fără telefoane de confirmare făcute manual.</p>
-          <div className="saving">Economie: 2-3 ore zilnic la recepție</div>
+          <div className="saving">Economie estimată: 2-3 ore zilnic la recepție</div>
         </div>
 
         <div className="process-card">
           <div className="num">Procesul 10</div>
           <div className="title">Trimitere rezultate analize și documente</div>
           <p className="desc">Când rezultatele sunt gata în sistem, pacientul primește automat un email cu PDF-ul atașat și un link pentru a programa consultul de interpretare dacă este necesar. Elimină apeluri telefonice repetitive și timpi de așteptare.</p>
-          <div className="saving">Economie: 1-2 ore zilnic în comunicare cu pacienții</div>
+          <div className="saving">Economie estimată: 1-2 ore zilnic în comunicare cu pacienții</div>
         </div>
 
         <h2>Automatizare procese business în producție și logistică</h2>
@@ -247,14 +247,14 @@ export default function AutomatizareProceseBusiness() {
           <div className="num">Procesul 11</div>
           <div className="title">Reaprovizionare automată stocuri</div>
           <p className="desc">Când un material ajunge sub pragul minim stabilit, sistemul generează automat o comandă de achiziție către furnizor sau trimite o alertă echipei de procurement cu datele pre-completate. Fără rupturi de stoc din neglijență.</p>
-          <div className="saving">Economie: 2-4 ore săptămânal în monitorizare manuală</div>
+          <div className="saving">Economie estimată: 2-4 ore săptămânal în monitorizare manuală</div>
         </div>
 
         <div className="process-card">
           <div className="num">Procesul 12</div>
           <div className="title">Raportare producție și KPI operaționali</div>
           <p className="desc">Datele din linia de producție, sistemul ERP sau foile de pontaj se centralizează automat într-un dashboard sau raport zilnic trimis pe email managerilor. Nimeni nu mai introduce manual cifre în Excel la finalul zilei.</p>
-          <div className="saving">Economie: 1-2 ore zilnic în colectare și procesare date</div>
+          <div className="saving">Economie estimată: 1-2 ore zilnic în colectare și procesare date</div>
         </div>
 
         <h2>Cum alegi primul proces de automatizat</h2>

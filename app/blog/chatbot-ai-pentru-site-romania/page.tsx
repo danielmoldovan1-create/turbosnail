@@ -170,7 +170,7 @@ export default function ChatbotAIPentruSiteRomania() {
             <strong>Programări și rezervări</strong> - integrat cu un calendar (Google Calendar, Calendly), chatbotul poate propune și confirma un slot disponibil fără intervenție umană.
           </li>
           <li>
-            <strong>Suport post-vânzare</strong> - status comandă, instrucțiuni de utilizare, procesul de retur. Reduce volumul de emailuri și apeluri telefonice cu 30-60% în firmele cu volum mediu de comenzi.
+            <strong>Suport post-vânzare</strong> - status comandă, instrucțiuni de utilizare, procesul de retur. Reduce volumul de emailuri și apeluri telefonice repetitive.
           </li>
           <li>
             <strong>Colectare date pentru ofertă</strong> - în domenii ca instalații, construcții sau servicii profesionale, chatbotul poate colecta detaliile unui proiect înainte de întâlnirea cu un consultant.
@@ -179,10 +179,10 @@ export default function ChatbotAIPentruSiteRomania() {
 
         <blockquote>
           <p style={{ fontStyle: "italic", fontSize: 17, color: "#c8c6c1", marginBottom: 12 }}>
-            "Companiile care implementează chatboți AI în procesele de suport raportează o reducere medie de 40% a costurilor operaționale de customer service și o creștere de 25% a satisfacției clienților, datorită răspunsurilor instant disponibile non-stop."
+            "[AI-ul] îi ajută pe agenți să se concentreze pe munca pe care le place cel mai mult s-o facă și unde aduc cea mai mare valoare."
           </p>
           <p style={{ fontSize: 14, color: "#666677" }}>
-            <strong style={{ color: "#888899" }}>Gartner</strong>, <a href="https://www.gartner.com/en/customer-service-support" target="_blank" rel="noopener noreferrer">Customer Service &amp; Support Leadership Survey, 2024</a>
+            <strong style={{ color: "#888899" }}>Bryan Belmont</strong>, Corporate Vice President, Customer Service and Support, Microsoft, în <a href="https://www.microsoft.com/en-us/worklab/guides/how-ai-can-empower-customer-service-agents" target="_blank" rel="noopener noreferrer">ghidul Microsoft WorkLab despre AI în customer service</a>
           </p>
         </blockquote>
 
@@ -198,7 +198,7 @@ export default function ChatbotAIPentruSiteRomania() {
           <li><strong>Satisfacția utilizatorilor</strong> - o întrebare simplă la finalul conversației ("A fost util?") oferă date rapide</li>
         </ul>
         <p>
-          Un chatbot AI bine configurat pe un site cu 1.000-5.000 de vizitatori lunari poate genera 20-60 de leaduri calificate suplimentar pe lună, fără să mărești bugetul de reclame. Cifrele variază mult în funcție de industrie și calitatea traficului existent.
+          Estimare orientativă, nu rezultat măsurat: un chatbot AI bine configurat pe un site cu 1.000-5.000 de vizitatori lunari poate aduce câteva zeci de leaduri calificate suplimentare pe lună, fără să mărești bugetul de reclame. Cifrele variază mult în funcție de industrie și calitatea traficului existent.
         </p>
 
         <h2>Întrebări pe care să le pui unui furnizor de chatbot AI</h2>
@@ -226,7 +226,7 @@ export default function ChatbotAIPentruSiteRomania() {
           Cea mai frecventă obiecție pe care o aud antreprenorii români este: "Clienții mei vor să vorbească cu un om, nu cu un robot." Această obiecție este parțial corectă. Există situații în care un operator uman este iremplacuibil: negocieri complexe, situații emoționale, decizii cu valoare mare.
         </p>
         <p>
-          Însă pentru 70-80% din interacțiunile de pe un site de business, clientul vrea o informație simplă și rapidă. Chatbotul AI rezolvă exact aceste cazuri și eliberează oamenii din echipa ta pentru conversațiile care contează cu adevărat. Modelul corect nu este "chatbot sau om", ci "chatbot pentru volum, om pentru valoare".
+          Însă în cele mai multe interacțiuni de pe un site de business, clientul vrea o informație simplă și rapidă. Chatbotul AI rezolvă exact aceste cazuri și eliberează oamenii din echipa ta pentru conversațiile care contează cu adevărat. Modelul corect nu este "chatbot sau om", ci "chatbot pentru volum, om pentru valoare".
         </p>
         <p>
           În plus, un chatbot AI bun îți permite să configurezi transferul către un operator uman în orice moment, la cererea utilizatorului sau la detectarea unui subiect sensibil. Nu este o cutie neagră.

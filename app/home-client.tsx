@@ -395,7 +395,7 @@ export default function HomeClient() {
             </div>
             <div>
               <p style={{ fontSize: 18, lineHeight: 1.65, color: "#a8a6a1", maxWidth: 520, marginBottom: 32 }}>
-                Clienții noștri recuperează <strong style={{ color: "#eae8e3" }}>ore întregi în fiecare săptămână</strong> prin automatizarea sarcinilor repetitive. Copy-paste între foi de calcul, emailuri de follow-up, rapoarte manuale: toate rezolvate în background, fără să angajezi pe nimeni.
+                Automatizarea sarcinilor repetitive îți poate elibera <strong style={{ color: "#eae8e3" }}>ore întregi în fiecare săptămână</strong>. Copy-paste între foi de calcul, emailuri de follow-up, rapoarte manuale: toate rezolvate în background, fără să angajezi pe nimeni.
               </p>
             </div>
             <div>
@@ -423,7 +423,7 @@ export default function HomeClient() {
           <Fade delay={0.2}>
             <div className="card float-card" style={{ maxWidth: 480, margin: "56px auto 0", padding: "32px 28px", position: "relative", overflow: "hidden", animation: "float 6s ease-in-out infinite" }}>
               <div style={{ position: "absolute", top: -40, right: -40, width: 180, height: 180, background: "radial-gradient(circle, rgba(255,106,0,0.12) 0%, transparent 70%)", borderRadius: "50%", pointerEvents: "none" }} />
-              <p className="hd" style={{ fontSize: 12, fontWeight: 700, color: "#ff6a00", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 24 }}>Rezultate tipice</p>
+              <p className="hd" style={{ fontSize: 12, fontWeight: 700, color: "#ff6a00", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 24 }}>Estimări pentru un proiect tipic</p>
               {[
                 { n: "10+", l: "ore economisite săptămânal*" },
                 { n: "24/7", l: "automatizări care rulează singure" },
@@ -435,7 +435,7 @@ export default function HomeClient() {
                   <span style={{ fontSize: 13, color: "#a8a6a1" }}>{m.l}</span>
                 </div>
               ))}
-              <p style={{ fontSize: 10, color: "#444455", marginTop: 16, lineHeight: 1.5 }}>* Rezultatele variază în funcție de complexitatea businessului și tipul proceselor automatizate.</p>
+              <p style={{ fontSize: 10, color: "#444455", marginTop: 16, lineHeight: 1.5 }}>* Estimări orientative, nu rezultate măsurate. Variază în funcție de complexitatea businessului și de procesele automatizate.</p>
             </div>
           </Fade>
         </div>
@@ -600,7 +600,7 @@ export default function HomeClient() {
                   Fiecare proiect începe cu o întrebare simplă: ce faci manual azi care s-ar putea face singur mâine?
                 </p>
                 <p style={{ fontSize: 16, lineHeight: 1.6, color: "#888899", marginBottom: 32 }}>
-                  Răspunsul la întrebarea asta valorează mai mult decât orice chatbot. Suntem bazați în Timișoara și lucrăm cu firme din toată România.
+                  Răspunsul la întrebarea asta valorează mai mult decât orice chatbot. Suntem în Timișoara și putem lucra la distanță cu firme din toată România.
                 </p>
                 <button className="btn-p" onClick={() => go("contact")}>Hai să vorbim →</button>
               </div>

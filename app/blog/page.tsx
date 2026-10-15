@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Blog - Automatizări AI pentru Afaceri | TurboSnail",
-  description: "Articole practice despre automatizări AI, inteligență artificială și digitalizare pentru antreprenori din România. Fără jargon, cu rezultate reale.",
+  description: "Articole practice despre automatizări AI, inteligență artificială și digitalizare pentru antreprenori din România. Fără jargon, cu exemple concrete.",
   openGraph: {
     title: "Blog - Automatizări AI pentru Afaceri | TurboSnail",
     description: "Articole practice despre automatizări AI, inteligență artificială și digitalizare pentru antreprenori din România.",
@@ -15,6 +15,27 @@ export const metadata: Metadata = {
 };
 
 const ARTICLES = [
+  {
+    slug: "ce-este-un-agent-ai",
+    title: "Ce este un agent AI și prin ce diferă de un chatbot sau de o automatizare",
+    date: "15 octombrie 2026",
+    excerpt: "Explicat simplu: ce face un agent AI, prin ce diferă de un chatbot și de o automatizare clasică și cum îți dai seama dacă firma ta are nevoie de unul.",
+    tag: "AI",
+  },
+  {
+    slug: "automatizare-date",
+    title: "Automatizare date: cum scapi de introducerea manuală și de copy-paste",
+    date: "15 octombrie 2026",
+    excerpt: "Ce înseamnă automatizarea datelor, ce fluxuri merită făcute primele și ce trebuie pregătit ca să nu muți haosul dintr-o aplicație în alta.",
+    tag: "Automatizare",
+  },
+  {
+    slug: "intreaba-inteligenta-artificiala",
+    title: "Întreabă inteligența artificială: unde, cum și ce să nu-i spui niciodată",
+    date: "10 octombrie 2026",
+    excerpt: "Ce asistent AI poți folosi în română, cum formulezi întrebarea ca să primești un răspuns util și ce date nu trebuie să ajungă într-un chat cu AI.",
+    tag: "Ghid",
+  },
   {
     slug: "cum-sa-automatizezi-emailurile-firmei",
     title: "Cum să automatizezi emailurile firmei: ce preiei automat și ce rămâne personal",
@@ -96,7 +117,7 @@ const ARTICLES = [
     slug: "automatizari-ai-pentru-afaceri-romania",
     title: "Automatizări AI pentru Afaceri: Ghid Complet România 2026",
     date: "15 aprilie 2026",
-    excerpt: "Aflați cum automatizările AI pot recupera 10+ ore pe săptămână în firma ta. Ghid practic cu exemple reale, costuri și pași de implementare pentru afaceri din România.",
+    excerpt: "Ce procese poți automatiza cu AI, de unde începi și cât durează implementarea, cu exemple concrete pentru afaceri din România.",
     tag: "AI",
   },
   {

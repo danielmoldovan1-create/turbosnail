@@ -71,13 +71,13 @@ export const SERVICES: ServiceData[] = [
       },
     ],
     quote: {
-      text: "Automatizarea nu înseamnă să înlocuiești oamenii. Înseamnă să îi eliberezi de munca care nu necesită judecată umană, ca să se concentreze pe ce contează cu adevărat.",
-      author: "Mihail Dumitru",
-      role: "Director Executiv, Asociatia Romana pentru Smart Industry",
+      text: "AI-ul îi poate ajuta pe oameni să scape de munca măruntă și poate lăsa inovația și creativitatea să înflorească.",
+      author: "Michael Platt",
+      role: "Neuroscientist și profesor, Wharton School, University of Pennsylvania, în Microsoft Work Trend Index 2024",
     },
     externalLink: {
-      url: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai",
-      anchor: "raportul McKinsey despre potentialul economic al AI generativ",
+      url: "https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part",
+      anchor: "Microsoft Work Trend Index 2024",
     },
     faq: [
       {
@@ -110,7 +110,7 @@ export const SERVICES: ServiceData[] = [
         { type: "Firme care au încercat AI fără rezultate", detail: "Ai cumpărat abonamente la tool-uri, ai testat câteva lucruri, dar nu ai văzut impact real. Un audit identifică de ce nu a funcționat și ce ar funcționa în contextul tău specific." },
         { type: "Companii în creștere care vor să scaleze operațiunile", detail: "Businessul crește, dar echipa nu poate ține ritmul cu sarcinile administrative. Consultanța AI mapează ce poate fi preluat de sisteme automate și ce necesită în continuare oameni." },
         { type: "Manageri care vor să prezinte un plan concret board-ului", detail: "Ai nevoie de o analiză structurată, cu estimări de ROI și costuri reale, ca să justifici investiția în automatizare în fața conducerii sau a investitorilor." },
-        { type: "IMM-uri din orice sector", detail: "Consultanța AI nu este rezervată companiilor tech. Lucrăm cu firme din construcții, retail, servicii medicale, transport, HoReCa și orice sector care are procese repetitive." },
+        { type: "IMM-uri din orice sector", detail: "Consultanța AI nu este rezervată companiilor tech. Se potrivește firmelor din construcții, retail, servicii medicale, transport, HoReCa și din orice sector cu procese repetitive." },
       ],
     },
     problems: {
@@ -148,13 +148,13 @@ export const SERVICES: ServiceData[] = [
       },
     ],
     quote: {
-      text: "Valoarea reală a consultanței AI nu este în recomandări sofisticate. Este în claritatea cu care îți arată unde pierzi bani pe lucruri care se pot face singure.",
-      author: "Sorin Mihai",
-      role: "Managing Partner, Romanian Business Automation Network",
+      text: "Să devii o organizație care folosește AI nu se întâmplă apăsând un buton.",
+      author: "Jared Spataro",
+      role: "Corporate Vice President, Modern Work and Business Applications, Microsoft, în Microsoft WorkLab",
     },
     externalLink: {
-      url: "https://www.gartner.com/en/information-technology/insights/artificial-intelligence",
-      anchor: "cercetarile Gartner despre adoptia AI in companii",
+      url: "https://www.microsoft.com/en-us/worklab/the-right-way-to-ai",
+      anchor: "articolul Microsoft WorkLab „The Right Way to AI”",
     },
     faq: [
       {
@@ -225,13 +225,13 @@ export const SERVICES: ServiceData[] = [
       },
     ],
     quote: {
-      text: "Outbound-ul de calitate nu este despre volum. Este despre relevanță: mesajul potrivit, la persoana potrivită, la momentul potrivit. Totul altceva este spam.",
-      author: "Andrei Cismaru",
-      role: "Head of Growth, Sales Automation Institute Romania",
+      text: "Esența a ceea ce face un vânzător bun nu s-a schimbat. Vânzătorii buni înțeleg profund contextul, prioritățile și problemele clientului, apoi potrivesc soluțiile noastre cu aceste nevoi.",
+      author: "Pam Maynard",
+      role: "Chief AI Transformation Officer, Microsoft Commercial, în Microsoft WorkLab",
     },
     externalLink: {
-      url: "https://www.forrester.com/blogs/the-death-of-the-b2b-sales-rep/",
-      anchor: "raportul Forrester despre evolutia vanzarilor B2B",
+      url: "https://www.microsoft.com/en-us/worklab/the-ceo-guide-to-building-a-frontier-firm",
+      anchor: "ghidul Microsoft WorkLab pentru construirea unei firme Frontier",
     },
     faq: [
       {
@@ -302,13 +302,13 @@ export const SERVICES: ServiceData[] = [
       },
     ],
     quote: {
-      text: "AI-ul în publicitate nu elimină creativitatea umană. Elimină ghicitul: știi exact ce funcționează, la cine, la ce cost, în timp real.",
-      author: "Diana Florescu",
-      role: "Director Strategie Digitala, IAB Romania",
+      text: "AI-ul îți dă o primă variantă pe care o editezi și o îmbunătățești, economisind ore de scris, documentare și editare.",
+      author: "Jared Spataro",
+      role: "Corporate Vice President, Modern Work and Business Applications, Microsoft, în Microsoft WorkLab",
     },
     externalLink: {
-      url: "https://www.thinkwithgoogle.com/marketing-strategies/automation/",
-      anchor: "studiile Google despre automatizarea campaniilor publicitare",
+      url: "https://www.microsoft.com/en-us/worklab/guides/how-sellers-can-use-ai-to-better-engage-with-customers",
+      anchor: "ghidul Microsoft WorkLab despre AI în vânzări",
     },
     faq: [
       {
@@ -379,13 +379,13 @@ export const SERVICES: ServiceData[] = [
       },
     ],
     quote: {
-      text: "Diferența dintre SEO care funcționează și SEO care irosește bugetul este simplă: unul pornește de la ce caută clientul, celălalt de la ce crede firma despre sine.",
-      author: "Bogdan Nedelcu",
-      role: "Head of SEO, Romanian Digital Marketing Association",
+      text: "Suntem obișnuiți să folosim tehnologia într-un anumit fel: vedem o casetă de căutare și presupunem că avem de-a face cu un motor de căutare. Deblocarea vine când realizăm că nu e un instrument, ci un nou tip de membru al echipei.",
+      author: "Conor Grennan",
+      role: "Chief AI Architect, NYU Stern School of Business, în Microsoft Work Trend Index 2025",
     },
     externalLink: {
-      url: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
-      anchor: "ghidurile Google privind continutul util si de calitate",
+      url: "https://www.microsoft.com/en-us/worklab/work-trend-index/2025-the-year-the-frontier-firm-is-born",
+      anchor: "Microsoft Work Trend Index 2025",
     },
     faq: [
       {
@@ -456,13 +456,13 @@ export const SERVICES: ServiceData[] = [
       },
     ],
     quote: {
-      text: "O companie care ia decizii bazate pe date reale, nu pe impresii, ia decizii mai bune. Raportarea automată este primul pas spre această cultură.",
-      author: "Cristian Stoica",
-      role: "Director Analytics, Romanian E-commerce Association",
+      text: "Primim zilnic o mulțime de fire de emailuri. Acum ne uităm la aceste șase puncte și înțelegem ce avem de făcut.",
+      author: "David Swenson",
+      role: "Chief Information Officer, Netlogic, în Microsoft WorkLab",
     },
     externalLink: {
-      url: "https://www.gartner.com/en/data-analytics/insights/business-intelligence",
-      anchor: "rapoartele Gartner despre business intelligence si analytics",
+      url: "https://www.microsoft.com/en-us/worklab/guides/how-sellers-can-use-ai-to-better-engage-with-customers",
+      anchor: "ghidul Microsoft WorkLab despre AI în vânzări",
     },
     faq: [
       {
@@ -533,13 +533,13 @@ export const SERVICES: ServiceData[] = [
       },
     ],
     quote: {
-      text: "Companiile care răspund la un lead în primele 5 minute au de 9 ori mai multe șanse să îl convertească față de cele care răspund după o oră. Un chatbot AI elimină complet această problemă.",
-      author: "James Oldroyd",
-      role: "Cercetător, MIT Sloan School of Management, studiu privind viteza de răspuns la leaduri",
+      text: "[AI-ul] îi ajută pe agenți să se concentreze pe munca pe care le place cel mai mult s-o facă și unde aduc cea mai mare valoare.",
+      author: "Bryan Belmont",
+      role: "Corporate Vice President, Customer Service and Support, Microsoft, în Microsoft WorkLab",
     },
     externalLink: {
-      url: "https://hbr.org/2011/03/the-short-life-of-online-sales-leads",
-      anchor: "studiul Harvard Business Review privind viteza de răspuns la leadurile online",
+      url: "https://www.microsoft.com/en-us/worklab/guides/how-ai-can-empower-customer-service-agents",
+      anchor: "ghidul Microsoft WorkLab despre AI în customer service",
     },
     faq: [
       {

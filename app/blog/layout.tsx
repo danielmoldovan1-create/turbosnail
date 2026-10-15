@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Blog - Automatizări AI pentru Afaceri | TurboSnail",
-  description: "Articole practice despre automatizări AI, inteligență artificială și digitalizare pentru antreprenori din România. Fără jargon, cu rezultate reale.",
+  description: "Articole practice despre automatizări AI, inteligență artificială și digitalizare pentru antreprenori din România. Fără jargon, cu exemple concrete.",
   openGraph: {
     title: "Blog - Automatizări AI pentru Afaceri | TurboSnail",
     description: "Articole practice despre automatizări AI, inteligență artificială și digitalizare pentru antreprenori din România.",

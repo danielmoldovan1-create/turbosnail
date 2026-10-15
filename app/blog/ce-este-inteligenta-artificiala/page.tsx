@@ -162,7 +162,7 @@ export default function BlogPost2() {
           <p>De aici vine și cea mai importantă limită: un model AI poate genera un răspuns care sună convingător, dar este greșit. În limbajul de specialitate, fenomenul se numește „halucinație”. Nu e o eroare rară care va dispărea mâine, ci o consecință a felului în care funcționează modelul: produce textul cel mai probabil, nu textul verificat. De aceea, orice cifră, dată sau afirmație importantă primită de la un AI se verifică înainte să ajungă într-o ofertă, într-un contract sau într-un raport pentru clienți.</p>
 
           <h2>Ce Poate Face Inteligența Artificială pentru Afacerea Ta din România</h2>
-          <p>Aceasta este întrebarea care contează cu adevărat. La <a href="https://turbosnail.ro">automatizări AI</a> pentru afaceri din România, am implementat sisteme AI în zeci de firme. Iată ce funcționează cel mai bine:</p>
+          <p>Aceasta este întrebarea care contează cu adevărat. Când proiectăm <a href="https://turbosnail.ro">automatizări AI</a> pentru afaceri din România, pornim de la patru zone în care impactul apare, de regulă, cel mai repede:</p>
 
           <h3>1. Generare și editare de conținut</h3>
           <p>Descrieri de produse, postări pe social media, emailuri de marketing, articole de blog: toate pot fi generate cu AI în câteva secunde. Nu înlocuiesc judecata umană, dar elimină blocajul paginii albe și reduc dramatic timpul de producție.</p>
@@ -196,7 +196,7 @@ export default function BlogPost2() {
 
           <h2>Inteligența Artificială Nu Este Magie. Dar Este Puternică.</h2>
           <p>AI-ul face greșeli. Are limitări. Nu înlocuiește judecata umană în decizii complexe. Dar pentru sarcinile repetitive, procesarea datelor și comunicarea de volum mare, este cel mai eficient instrument pe care îl are la dispoziție un antreprenor în 2026.</p>
-          <p>Dacă vrei să înțelegi concret ce poate face inteligența artificială pentru afacerea ta, nu în teorie, ci cu exemple și cifre reale, primul pas e un audit gratuit.</p>
+          <p>Dacă vrei să înțelegi concret ce poate face inteligența artificială pentru afacerea ta, nu în teorie, ci aplicat pe procesele tale, primul pas e un audit gratuit.</p>
 
           <h2>Întrebări frecvente despre inteligența artificială</h2>
         </div>
