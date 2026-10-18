@@ -1,12 +1,5 @@
 import type { Metadata } from "next";
 
-// Legal entity that operates turbosnail.ro: fill in before publishing
-const OPERATOR = {
-  denumire: "[DENUMIREA FIRMEI]",
-  sediu: "[ADRESA SEDIULUI]",
-  cui: "[CUI]",
-};
-
 const EMAIL = "hello@turbosnail.ro";
 
 export const metadata: Metadata = {
@@ -70,7 +63,7 @@ export default function PoliticaDeConfidentialitate() {
 
         <h2>1. Cine suntem</h2>
         <p>
-          Operatorul datelor este <strong>{OPERATOR.denumire}</strong>, cu sediul în {OPERATOR.sediu}, CUI {OPERATOR.cui}. Firma operează site-ul turbosnail.ro sub numele TurboSnail.
+          Site-ul turbosnail.ro este operat de TurboSnail, din Timișoara, România.
         </p>
         <p>
           Pentru orice întrebare sau cerere legată de datele tale, scrie-ne la <a href={`mailto:${EMAIL}`}>{EMAIL}</a>.
