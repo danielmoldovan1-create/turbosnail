@@ -21,8 +21,8 @@ export default function VisibilityResult() {
       if (raw) r = JSON.parse(raw);
     } catch {}
     if (!r) {
-      const s = Number(new URLSearchParams(window.location.search).get("s"));
-      if (Number.isFinite(s) && s >= 0 && s <= 100) r = { score: s, cat: category(s), recs: [] };
+      const s = new URLSearchParams(window.location.search).get("s");
+      if (s && /^\d{1,3}$/.test(s) && Number(s) <= 100) r = { score: Number(s), cat: category(Number(s)), recs: [] };
     }
     setResult(r);
     setReady(true);
