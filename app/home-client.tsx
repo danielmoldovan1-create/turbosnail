@@ -187,7 +187,7 @@ function AITimeline() {
 
 const SERVICES = [
   { tag: "AUTOMATIZĂRI", name: "Automatizări AI", desc: "Identificăm procesele repetitive din businessul tău și le automatizăm. Date mutate automat, emailuri trimise la momentul potrivit, rapoarte generate fără intervenție umană. Rezultatul: ore recuperate în fiecare săptămână.", cta: "Vezi cum funcționează", icon: "⬡", slug: "automatizari-ai" },
-  { tag: "CONSULTANȚĂ", name: "Consultanță AI", desc: "Nu știi de unde să începi cu AI? Facem un audit al businessului tău și îți spunem exact ce merită automatizat, în ce ordine și cu ce costuri reale. Fără jargon, fără promisiuni exagerate.", cta: "Programează un audit gratuit", icon: "◈", slug: "consultanta-ai" },
+  { tag: "CONSULTANȚĂ", name: "Consultanță AI", desc: "Nu știi de unde să începi cu AI? Facem un audit al businessului tău și îți spunem exact ce merită automatizat, în ce ordine și cu ce costuri reale. Fără jargon, fără promisiuni exagerate.", cta: "Înscrie-te pe lista de așteptare", icon: "◈", slug: "consultanta-ai" },
   { tag: "OUTBOUND", name: "Cold Email & Outbound", desc: "Construim infrastructura de cold email, scriem secvențele, sourcem leadurile și livrăm meetinguri în calendarul tău. Tu te prezinți la call și închizi. De restul ne ocupăm noi.", cta: "Vreau mai multe meetinguri", icon: "◇", slug: "cold-email-outbound" },
   { tag: "PAID ADS", name: "Paid Ads cu AI", desc: "Campanii Google și Meta optimizate cu AI. Targeting precis, costuri reduse, rezultate măsurabile. Fără buget irosit pe audiențe greșite.", cta: "Optimizează campaniile mele", icon: "△", slug: "paid-ads-ai" },
   { tag: "SEO", name: "SEO bazat pe AI", desc: "Conținut optimizat, audit tehnic și strategie de keywords bazată pe date reale din Search Console și Semrush. Rankăm pentru căutările care aduc clienți, nu trafic inutil.", cta: "Vreau să fiu găsit pe Google", icon: "◎", slug: "seo-ai" },
@@ -204,6 +204,7 @@ const STEPS = [
 const FAQS = [
   { q: "Ce sunt automatizările AI?", a: "Sunt fluxuri care preiau sarcini repetitive și le execută singure: mută date între aplicații, trimit emailuri, generează rapoarte. Partea de AI intervine unde e nevoie de înțelegere, de exemplu la citirea unui email sau a unei facturi." },
   { q: "Cât costă un audit?", a: "Auditul inițial e complet gratuit. 30 de minute în care analizăm businessul tău și îți arătăm ce poate fi automatizat. Fără obligații, fără presiune." },
+  { q: "De ce preluați un număr limitat de firme?", a: "Pentru că fiecare automatizare se construiește pe procesele firmei și o urmărim și după lansare. Preferăm puține proiecte duse până la capăt decât multe făcute pe jumătate. Dacă luna e plină, ești primul pe lista lunii următoare." },
   { q: "Cât durează implementarea?", a: "Depinde de complexitate. Automatizările simple sunt gata în 5-7 zile. Sistemele mai complexe în 2-3 săptămâni. Îți spunem exact la audit." },
   { q: "Trebuie să fiu tehnic?", a: "Nu. Noi facem partea tehnică. Tu doar ne arăți ce faci manual și noi îți arătăm cum se poate face singur." },
   { q: "Pot anula oricând?", a: "Da, poți anula oricând. Nu semnezi contracte pe termen lung, iar noi lucrăm lunar. Poți opri colaborarea în orice moment, dacă simți că nu mai are sens pentru tine." },
@@ -254,9 +255,9 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
       headers: { "Content-Type": "application/json", "Accept": "application/json" },
       body: JSON.stringify({
         access_key: "f2d92ef1-727d-47b9-bbe2-f30548f4c010",
-        subject: `[Contact] Mesaj nou de la ${name}`,
-        from_name: "Formular contact turbosnail.ro",
-        formular: "Contact",
+        subject: `[Listă de așteptare] ${name}`,
+        from_name: "Lista de așteptare turbosnail.ro",
+        formular: "Listă de așteptare",
         name, email, phone, message: msg,
       }),
     });
@@ -384,7 +385,7 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <button className="btn-p nav-lnk" style={{ padding: "11px 24px", fontSize: 13 }} onClick={() => go("contact")}>Audit Gratuit →</button>
+            <button className="btn-p nav-lnk" style={{ padding: "11px 24px", fontSize: 13 }} onClick={() => go("contact")}>Înscrie-te →</button>
             <button className="hamburger" style={{ display: "flex" }} aria-label="Meniu" onClick={() => setMobileMenu(m => !m)}>
               <span style={{ transform: mobileMenu ? "rotate(45deg) translate(5px, 5px)" : "none" }} />
               <span style={{ opacity: mobileMenu ? 0 : 1 }} />
@@ -407,7 +408,7 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
             ))}
             <a href="/blog">Blog</a>
             <a href="/test-vizibilitate">Test de vizibilitate</a>
-            <span onClick={() => go("contact")} style={{ color: "#ff6a00", fontWeight: 600 }}>Audit Gratuit →</span>
+            <span onClick={() => go("contact")} style={{ color: "#ff6a00", fontWeight: 600 }}>Înscrie-te pe lista de așteptare →</span>
           </div>
         )}
       </nav>
@@ -435,13 +436,13 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
             </div>
             <div>
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-                <button className="btn-p" onClick={() => go("contact")}>Vreau o consultanță gratuită →</button>
+                <button className="btn-p" onClick={() => go("contact")}>Înscrie-te pe lista de așteptare →</button>
                 <a href="/servicii" className="btn-s" style={{ textDecoration: "none" }}>Vezi serviciile</a>
               </div>
             </div>
             <div>
               <div style={{ display: "flex", gap: 24, marginTop: 32, flexWrap: "wrap" }}>
-                {["Fără contract pe termen lung", "Audit 100% gratuit", "GDPR compliant"].map((t, i) => (
+                {["Fără contract pe termen lung", "Audit 100% gratuit", "Număr limitat de firme pe lună"].map((t, i) => (
                   <div key={i} style={{ display: "flex", alignItems: "center", gap: 8 }}>
                     <span style={{ color: "#ff6a00", fontSize: 14 }}>✓</span>
                     <span style={{ fontSize: 13, color: "#888899" }}>{t}</span>
@@ -569,7 +570,7 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
           </div>
           <Fade delay={0.2}>
             <div style={{ textAlign: "center", marginTop: 48 }}>
-              <button className="btn-p" onClick={() => go("contact")}>Începe cu un audit gratuit →</button>
+              <button className="btn-p" onClick={() => go("contact")}>Înscrie-te pe lista de așteptare →</button>
             </div>
           </Fade>
         </div>
@@ -635,7 +636,7 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
           </div>
           <Fade delay={0.3}>
             <div style={{ textAlign: "center", marginTop: 48 }}>
-              <button className="btn-p" onClick={() => go("contact")}>Începe cu un audit gratuit →</button>
+              <button className="btn-p" onClick={() => go("contact")}>Înscrie-te pe lista de așteptare →</button>
             </div>
           </Fade>
         </div>
@@ -721,12 +722,12 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
         <div style={{ position: "absolute", top: -100, left: "50%", transform: "translateX(-50%)", width: 600, height: 400, background: "radial-gradient(ellipse, rgba(255,106,0,0.08) 0%, transparent 70%)", pointerEvents: "none" }} />
         <div className="mx" style={{ maxWidth: 620, textAlign: "center", position: "relative", zIndex: 2 }}>
           <Fade>
-            <span className="tag">Începe acum</span>
+            <span className="tag">Listă de așteptare</span>
             <h2 className="hd" style={{ fontSize: 40, fontWeight: 900, marginTop: 18, marginBottom: 14, letterSpacing: "-1px", lineHeight: 1.1 }}>
-              Gata să <span className="ac">automatizezi?</span>
+              Înscrie-te pe <span className="ac">lista de așteptare</span>
             </h2>
             <p style={{ fontSize: 17, lineHeight: 1.6, color: "#a8a6a1", marginBottom: 36, maxWidth: 480, marginLeft: "auto", marginRight: "auto" }}>
-              Completează formularul și te contactăm în 24 de ore pentru un audit gratuit, fără obligații.
+              Preluăm un număr limitat de firme în fiecare lună, ca fiecare proiect să primească atenție reală. Lasă-ne datele și îți scriem în cel mult 2 zile lucrătoare dacă putem prelua firma ta luna aceasta, pentru auditul gratuit de 30 de minute.
             </p>
           </Fade>
           <Fade delay={0.1}>
@@ -737,16 +738,16 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
                 <input className="field" type="tel" placeholder="Telefon" value={phone} onChange={e => setPhone(e.target.value)} />
                 <textarea className="field" placeholder="Descrie businessul tău în 2 rânduri" rows={3} value={msg} onChange={e => setMsg(e.target.value)} style={{ resize: "vertical", fontFamily: "'Instrument Sans',sans-serif" }} />
                 <button className="btn-p" style={{ marginTop: 6, fontSize: 16, padding: "18px 30px", width: "100%" }} onClick={handleSubmit}>
-                  Vreau auditul gratuit →
+                  Înscrie-mă pe lista de așteptare →
                 </button>
-                <span style={{ fontSize: 12, color: "#555566", marginTop: 4 }}>Răspundem în 24h · Fără spam · Fără obligații</span>
+                <span style={{ fontSize: 12, color: "#555566", marginTop: 4 }}>Îți scriem în cel mult 2 zile lucrătoare · Fără spam · Fără obligații</span>
                 <span style={{ fontSize: 12, color: "#555566" }}>Detalii despre datele tale în <a href="/politica-de-confidentialitate" target="_blank" rel="noopener" style={{ color: "#888899", textDecoration: "underline" }}>politica de confidențialitate</a>.</span>
               </div>
             ) : (
               <div style={{ padding: 36, borderRadius: 20, border: "1px solid rgba(255,106,0,0.25)", background: "linear-gradient(180deg, rgba(255,106,0,0.06), rgba(255,106,0,0.02))" }}>
                 <div style={{ fontSize: 36, marginBottom: 12 }}>🐌🔥</div>
-                <h3 className="hd" style={{ fontSize: 22, fontWeight: 800, marginBottom: 10 }}>Mulțumim, {name}!</h3>
-                <p style={{ fontSize: 15, color: "#a8a6a1" }}>Te contactăm în maximum 24h pentru auditul tău gratuit.</p>
+                <h3 className="hd" style={{ fontSize: 22, fontWeight: 800, marginBottom: 10 }}>Ești pe listă, {name}!</h3>
+                <p style={{ fontSize: 15, color: "#a8a6a1" }}>Îți scriem în cel mult 2 zile lucrătoare dacă putem prelua firma ta luna aceasta. Dacă locurile s-au ocupat, ești primul pe lista lunii următoare.</p>
               </div>
             )}
           </Fade>
@@ -754,7 +755,7 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
       </section>
 
       <div className="sk">
-        <button className="btn-p" style={{ width: "100%" }} onClick={() => go("contact")}>Vreau audit gratuit →</button>
+        <button className="btn-p" style={{ width: "100%" }} onClick={() => go("contact")}>Înscrie-te pe lista de așteptare →</button>
       </div>
       <div style={{ height: 72 }} />
     </main>

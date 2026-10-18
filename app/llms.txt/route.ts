@@ -7,7 +7,7 @@ const BEFORE = `# TurboSnail
 
 > Agenție de automatizări AI din Timișoara, care ajută firmele din România să economisească timp și bani prin automatizarea proceselor repetitive.
 
-Conținutul site-ului este în limba română și se adresează antreprenorilor și managerilor din România. Punctul de intrare pentru orice discuție comercială este formularul de contact: https://turbosnail.ro/#contact
+Conținutul site-ului este în limba română și se adresează antreprenorilor și managerilor din România. Punctul de intrare pentru orice discuție comercială este lista de așteptare pentru auditul gratuit: https://turbosnail.ro/#contact
 
 ## Servicii
 
@@ -45,7 +45,7 @@ const AFTER = `## Blog
 
 - Sediu: Timișoara, România
 - Email: hello@turbosnail.ro
-- Formular: https://turbosnail.ro/#contact
+- Lista de așteptare (audit gratuit): https://turbosnail.ro/#contact
 - Sitemap: https://turbosnail.ro/sitemap.xml
 `;
 

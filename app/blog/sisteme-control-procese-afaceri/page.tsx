@@ -112,7 +112,7 @@ export default function SistemeControlProceseAfaceri() {
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
           </a>
           <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
-            Audit Gratuit →
+            Înscrie-te →
           </a>
         </div>
       </nav>
@@ -260,7 +260,7 @@ export default function SistemeControlProceseAfaceri() {
             Audit gratuit de 30 de minute. Identificăm procesele critice fără monitorizare și propunem o arhitectură de control potrivită pentru dimensiunea și industria voastră.
           </p>
           <a href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
-            Vreau auditul gratuit →
+            Înscrie-te pe lista de așteptare →
           </a>
         </div>
 

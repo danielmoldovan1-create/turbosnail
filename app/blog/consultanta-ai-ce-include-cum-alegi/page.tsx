@@ -120,7 +120,7 @@ export default function ConsultantaAI() {
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
           </a>
           <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
-            Audit Gratuit →
+            Înscrie-te →
           </a>
         </div>
       </nav>
@@ -296,10 +296,10 @@ export default function ConsultantaAI() {
             Vrei să discuți cu un consultant AI fără teorie?
           </h3>
           <p style={{ fontSize: 15, color: "#888899", lineHeight: 1.65, marginBottom: 28, maxWidth: 440, marginLeft: "auto", marginRight: "auto" }}>
-            Completează formularul de contact și în maxim 24 de ore discutăm concret: ce automatizezi, cu ce impact real și ce pași urmezi.
+            Înscrie-te pe lista de așteptare și îți scriem în cel mult 2 zile lucrătoare. Apoi discutăm concret: ce automatizezi, cu ce impact real și ce pași urmezi.
           </p>
           <a href="https://turbosnail.ro/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
-            Contactează-ne →
+            Înscrie-te pe lista de așteptare →
           </a>
         </div>
 

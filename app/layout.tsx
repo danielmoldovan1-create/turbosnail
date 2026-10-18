@@ -112,7 +112,7 @@ export default function RootLayout({
                 <nav style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   <a href="/blog" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Blog</a>
                   <a href="/test-vizibilitate" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Test de vizibilitate</a>
-                  <a href="/#contact" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Audit Gratuit</a>
+                  <a href="/#contact" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Lista de așteptare</a>
                   <a href="/politica-de-confidentialitate" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Politica de confidențialitate</a>
                 </nav>
               </div>

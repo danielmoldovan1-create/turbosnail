@@ -65,9 +65,9 @@ export default function VisibilityResult() {
       <p className="fine">Scorul este o autoevaluare orientativă, calculată din răspunsurile tale. Nu înlocuiește un audit tehnic al site-ului și al profilului Google.</p>
 
       <div className="cta">
-        <h2 className="hd sub" style={{ marginTop: 0 }}>Vrei să discutăm rezultatul?</h2>
-        <p className="muted">Completează formularul de contact și ne uităm împreună la ce merită făcut primul pentru firma ta.</p>
-        <a href="/#contact" className="btn-p" style={{ marginTop: 18 }}>Vreau să discutăm →</a>
+        <h2 className="hd sub" style={{ marginTop: 0 }}>Vrei să pornim de la scorul tău?</h2>
+        <p className="muted">Preluăm un număr limitat de firme în fiecare lună. Înscrie-te pe lista de așteptare pentru auditul gratuit și ne uităm împreună la ce merită făcut primul pentru firma ta.</p>
+        <a href="/#contact" className="btn-p" style={{ marginTop: 18 }}>Înscrie-te pe lista de așteptare →</a>
       </div>
       <a href="/test-vizibilitate" className="again">Refă testul</a>
     </div>

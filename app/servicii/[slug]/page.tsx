@@ -96,7 +96,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             <a href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</a>
             <a href="/blog" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Blog</a>
             <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
-              Audit Gratuit →
+              Înscrie-te →
             </a>
           </div>
         </div>
@@ -115,7 +115,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             {service.intro}
           </p>
           <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
-            Solicită un audit gratuit →
+            Înscrie-te pe lista de așteptare →
           </a>
         </div>
       </section>
@@ -218,10 +218,10 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         <div className="mx">
           <h2 className="hd" style={{ fontSize: 34, fontWeight: 900, letterSpacing: -0.8, marginBottom: 16 }}>Gata să începi?</h2>
           <p style={{ fontSize: 17, color: "#a8a6a1", marginBottom: 36, lineHeight: 1.65 }}>
-            Completează formularul de contact și te contactăm în 24 de ore pentru un audit gratuit, fără obligații.
+            Preluăm un număr limitat de firme în fiecare lună. Înscrie-te pe lista de așteptare și îți scriem în cel mult 2 zile lucrătoare pentru auditul gratuit, fără obligații.
           </p>
           <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "17px 40px", fontSize: 16, textDecoration: "none", display: "inline-block" }}>
-            Vreau un audit gratuit →
+            Înscrie-te pe lista de așteptare →
           </a>
         </div>
       </section>

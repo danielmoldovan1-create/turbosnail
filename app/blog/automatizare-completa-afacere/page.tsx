@@ -112,7 +112,7 @@ export default function AutomatizareCompletaAfacere() {
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
           </a>
           <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
-            Audit Gratuit →
+            Înscrie-te →
           </a>
         </div>
       </nav>
@@ -266,7 +266,7 @@ export default function AutomatizareCompletaAfacere() {
             Audit gratuit de 30 de minute. Îți arătăm cu ce proces să începi, ce impact ai în primele 30 de zile și ce urmează după.
           </p>
           <a href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
-            Vreau auditul gratuit →
+            Înscrie-te pe lista de așteptare →
           </a>
         </div>
 

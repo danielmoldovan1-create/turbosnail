@@ -110,7 +110,7 @@ export default async function DomainPage({ params }: { params: Promise<{ slug: s
             <a href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</a>
             <a href="/blog" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Blog</a>
             <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
-              Audit Gratuit →
+              Înscrie-te →
             </a>
           </div>
         </div>
@@ -126,7 +126,7 @@ export default async function DomainPage({ params }: { params: Promise<{ slug: s
         <h1 className="hd h1">{domain.h1}</h1>
         <p className="answer">{domain.answer}</p>
         <div className="ctas">
-          <a href="/#contact" className="btn-p">Vreau auditul gratuit →</a>
+          <a href="/#contact" className="btn-p">Înscrie-te pe lista de așteptare →</a>
           <a href="/test-vizibilitate" className="btn-s">Fă testul de vizibilitate</a>
         </div>
       </header>
@@ -261,10 +261,10 @@ export default async function DomainPage({ params }: { params: Promise<{ slug: s
       <section className="mx sec final">
         <h2>Vezi de unde pornești</h2>
         <p>
-          Auditul gratuit durează 30 de minute și pornește de la cum lucrați azi. Dacă vrei întâi un reper rapid, testul de vizibilitate îți dă un scor și recomandări în 2 minute.
+          Preluăm un număr limitat de firme în fiecare lună. Înscrie-te pe lista de așteptare pentru auditul gratuit de 30 de minute și îți scriem în cel mult 2 zile lucrătoare. Dacă vrei întâi un reper rapid, testul de vizibilitate îți dă un scor și recomandări în 2 minute.
         </p>
         <div className="ctas">
-          <a href="/#contact" className="btn-p">Vreau auditul gratuit →</a>
+          <a href="/#contact" className="btn-p">Înscrie-te pe lista de așteptare →</a>
           <a href="/test-vizibilitate" className="btn-s">Fă testul de vizibilitate</a>
         </div>
       </section>
