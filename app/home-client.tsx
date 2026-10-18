@@ -701,6 +701,7 @@ export default function HomeClient() {
                   Vreau auditul gratuit →
                 </button>
                 <span style={{ fontSize: 12, color: "#555566", marginTop: 4 }}>Răspundem în 24h · Fără spam · Fără obligații</span>
+                <span style={{ fontSize: 12, color: "#555566" }}>Detalii despre datele tale în <a href="/politica-de-confidentialitate" target="_blank" rel="noopener" style={{ color: "#888899", textDecoration: "underline" }}>politica de confidențialitate</a>.</span>
               </div>
             ) : (
               <div style={{ padding: 36, borderRadius: 20, border: "1px solid rgba(255,106,0,0.25)", background: "linear-gradient(180deg, rgba(255,106,0,0.06), rgba(255,106,0,0.02))" }}>

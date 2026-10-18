@@ -103,6 +103,7 @@ export default function RootLayout({
                   <a href="/blog" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Blog</a>
                   <a href="/test-vizibilitate" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Test de vizibilitate</a>
                   <a href="/#contact" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Audit Gratuit</a>
+                  <a href="/politica-de-confidentialitate" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Politica de confidențialitate</a>
                 </nav>
               </div>
             </div>

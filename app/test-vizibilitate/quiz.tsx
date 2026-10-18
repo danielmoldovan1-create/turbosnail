@@ -177,7 +177,7 @@ export default function VisibilityQuiz() {
           <button className="btn-p" style={{ width: "100%", marginTop: 8 }} onClick={submit} disabled={sending}>
             {sending ? "Se trimite..." : "Vreau să văd rezultatul →"}
           </button>
-          <p className="fine">Datele nu sunt vândute și nu sunt date altor firme. Poți cere oricând ștergerea lor la hello@turbosnail.ro.</p>
+          <p className="fine">Nu vindem datele tale. Poți cere oricând ștergerea lor la hello@turbosnail.ro. Detalii în <a href="/politica-de-confidentialitate" target="_blank" rel="noopener" style={{ color: "#888899", textDecoration: "underline" }}>politica de confidențialitate</a>.</p>
           <button className="link-btn" onClick={() => setStep("quiz")}>← Înapoi la întrebări</button>
         </div>
       </div>
