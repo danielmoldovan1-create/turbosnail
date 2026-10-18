@@ -101,7 +101,9 @@ export default function RootLayout({
                 <p style={{ fontSize: 11, fontWeight: 700, color: "#ff6a00", letterSpacing: 2, textTransform: "uppercase", marginBottom: 16, fontFamily: "'Outfit', sans-serif" }}>Resurse</p>
                 <nav style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   <a href="/blog" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Blog</a>
+                  <a href="/test-vizibilitate" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Test de vizibilitate</a>
                   <a href="/#contact" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Audit Gratuit</a>
+                  <a href="/politica-de-confidentialitate" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Politica de confidențialitate</a>
                 </nav>
               </div>
             </div>

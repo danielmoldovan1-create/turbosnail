@@ -251,7 +251,13 @@ export default function HomeClient() {
     const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: { "Content-Type": "application/json", "Accept": "application/json" },
-      body: JSON.stringify({ access_key: "f2d92ef1-727d-47b9-bbe2-f30548f4c010", name, email, phone, message: msg }),
+      body: JSON.stringify({
+        access_key: "f2d92ef1-727d-47b9-bbe2-f30548f4c010",
+        subject: `[Contact] Mesaj nou de la ${name}`,
+        from_name: "Formular contact turbosnail.ro",
+        formular: "Contact",
+        name, email, phone, message: msg,
+      }),
     });
     if (res.ok) setSent(true);
   }
@@ -281,6 +287,7 @@ export default function HomeClient() {
         .sk { position: fixed; bottom: 0; left: 0; right: 0; z-index: 90; background: rgba(10,12,20,0.95); backdrop-filter: blur(20px); border-top: 1px solid rgba(255,106,0,0.15); padding: 12px 20px; }
         .dv { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,106,0,0.15), transparent); max-width: 600px; margin: 0 auto; }
         .nav-lnk { display: none; }
+        .nav-test { display: none; }
         .nav-drop { position: relative; }
         .nav-drop-menu { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); padding-top: 12px; min-width: 240px; z-index: 200; }
         .nav-drop-inner { background: #0f1119; border: 1px solid #1a1d2a; border-radius: 14px; padding: 8px; box-shadow: 0 24px 60px rgba(0,0,0,0.5); }
@@ -303,6 +310,7 @@ export default function HomeClient() {
           .mob-menu { display: none !important; }
           .about-lay { flex-direction: row !important; gap: 80px !important; align-items: center; }
         }
+        @media (min-width: 880px) { .nav-test { display: inline; } }
         @media (min-width: 1024px) { .hero-t { font-size: 52px !important; } }
         @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
         @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-14px); } }
@@ -351,6 +359,11 @@ export default function HomeClient() {
                 onMouseLeave={e => (e.currentTarget.style.color = "#888899")}>
                 Blog
               </a>
+              <a href="/test-vizibilitate" className="nav-test" style={{ fontSize: 14, color: "#888899", textDecoration: "none", transition: "color 0.2s" }}
+                onMouseEnter={e => (e.currentTarget.style.color = "#eae8e3")}
+                onMouseLeave={e => (e.currentTarget.style.color = "#888899")}>
+                Test de vizibilitate
+              </a>
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
@@ -372,6 +385,7 @@ export default function HomeClient() {
               <span key={i} onClick={() => go(id)}>{label}</span>
             ))}
             <a href="/blog">Blog</a>
+            <a href="/test-vizibilitate">Test de vizibilitate</a>
             <span onClick={() => go("contact")} style={{ color: "#ff6a00", fontWeight: 600 }}>Audit Gratuit →</span>
           </div>
         )}
@@ -418,6 +432,12 @@ export default function HomeClient() {
 
           <div style={{ marginTop: 64, paddingTop: 56, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
             <AITimeline />
+            <div style={{ textAlign: "center", marginTop: 44 }}>
+              <p style={{ fontSize: 15, lineHeight: 1.6, color: "#a8a6a1", maxWidth: 460, margin: "0 auto 18px" }}>
+                Unde e firma ta acum? Află în 2 minute cât de vizibilă e în Google și în răspunsurile AI.
+              </p>
+              <a href="/test-vizibilitate" className="btn-p" style={{ textDecoration: "none" }}>Fă testul gratuit de vizibilitate →</a>
+            </div>
           </div>
 
           <Fade delay={0.2}>
@@ -681,6 +701,7 @@ export default function HomeClient() {
                   Vreau auditul gratuit →
                 </button>
                 <span style={{ fontSize: 12, color: "#555566", marginTop: 4 }}>Răspundem în 24h · Fără spam · Fără obligații</span>
+                <span style={{ fontSize: 12, color: "#555566" }}>Detalii despre datele tale în <a href="/politica-de-confidentialitate" target="_blank" rel="noopener" style={{ color: "#888899", textDecoration: "underline" }}>politica de confidențialitate</a>.</span>
               </div>
             ) : (
               <div style={{ padding: 36, borderRadius: 20, border: "1px solid rgba(255,106,0,0.25)", background: "linear-gradient(180deg, rgba(255,106,0,0.06), rgba(255,106,0,0.02))" }}>

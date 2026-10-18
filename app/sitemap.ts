@@ -63,6 +63,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: 'https://turbosnail.ro/test-vizibilitate',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: 'https://turbosnail.ro/blog/ce-este-inteligenta-artificiala',
       lastModified: new Date(),
       changeFrequency: 'monthly',
