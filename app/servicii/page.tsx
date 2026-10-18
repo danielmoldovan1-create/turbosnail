@@ -35,7 +35,7 @@ export default function ServicesIndex() {
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 46, width: "auto" }} />
           </a>
           <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", border: "none", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, cursor: "pointer", padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
-            Audit Gratuit →
+            Înscrie-te →
           </a>
         </div>
       </nav>

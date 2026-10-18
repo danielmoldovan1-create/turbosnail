@@ -127,7 +127,7 @@ export default function ColdEmailB2BRomania() {
             <a href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</a>
             <a href="/blog" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Blog</a>
             <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
-              Audit Gratuit →
+              Înscrie-te →
             </a>
           </div>
         </div>
@@ -270,7 +270,7 @@ export default function ColdEmailB2BRomania() {
           Completează formularul de contact și discutăm concret despre situația firmei tale: ce volum vizezi, ce piață targetezi și ce infrastructură ai deja.
         </p>
         <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
-          Vreau să discut despre outbound →
+          Înscrie-te pe lista de așteptare →
         </a>
       </section>
     </main>

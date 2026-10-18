@@ -154,7 +154,7 @@ export default function BlogIndex() {
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
           </a>
           <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
-            Audit Gratuit →
+            Înscrie-te →
           </a>
         </div>
       </nav>
@@ -202,7 +202,7 @@ export default function BlogIndex() {
               Audit gratuit, 30 de minute. Îți arătăm ce procese din firma ta pot fi automatizate și cu ce impact real.
             </p>
             <a href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 30px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
-              Vreau auditul gratuit →
+              Înscrie-te pe lista de așteptare →
             </a>
           </div>
         </div>

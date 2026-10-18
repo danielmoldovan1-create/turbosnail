@@ -122,7 +122,7 @@ export default function AutomatizareRapoarte() {
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
           </a>
           <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
-            Audit Gratuit →
+            Înscrie-te →
           </a>
         </div>
       </nav>
@@ -284,7 +284,7 @@ export default function AutomatizareRapoarte() {
             Spune-ne ce raport consomă cel mai mult timp la tine și discutăm concret ce automatizăm, cu ce instrumente și în cât timp.
           </p>
           <a href="https://turbosnail.ro/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
-            Contactează-ne →
+            Înscrie-te pe lista de așteptare →
           </a>
         </div>
 
