@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { DOMAINS } from "./domenii/data";
 
 export const metadata: Metadata = {
   title: {
@@ -95,6 +96,15 @@ export default function RootLayout({
                   <a href="/servicii/paid-ads-ai" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Paid Ads cu AI</a>
                   <a href="/servicii/seo-ai" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>SEO bazat pe AI</a>
                   <a href="/servicii/raportare-analytics" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Raportare & Analytics</a>
+                </nav>
+              </div>
+              <div>
+                <p style={{ fontSize: 11, fontWeight: 700, color: "#ff6a00", letterSpacing: 2, textTransform: "uppercase", marginBottom: 16, fontFamily: "'Outfit', sans-serif" }}>Domenii</p>
+                <nav style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  {DOMAINS.map((d) => (
+                    <a key={d.slug} href={`/domenii/${d.slug}`} style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>{d.name}</a>
+                  ))}
+                  <a href="/domenii" style={{ fontSize: 13, color: "#888899", textDecoration: "none" }}>Toate domeniile</a>
                 </nav>
               </div>
               <div>

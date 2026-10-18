@@ -219,7 +219,7 @@ const COMPARISONS = [
   { old: "Leads lăsați fără răspuns ore întregi", now: "Răspuns automat în secunde, calificare AI" },
 ];
 
-export default function HomeClient() {
+export default function HomeClient({ domains, domainCards }: { domains: { slug: string; name: string }[]; domainCards: React.ReactNode }) {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -228,6 +228,7 @@ export default function HomeClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [mobileMenu, setMobileMenu] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [domainsOpen, setDomainsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const go = (id: string) => { setMobileMenu(false); document.getElementById(id)?.scrollIntoView({ behavior: "smooth" }); };
@@ -295,7 +296,7 @@ export default function HomeClient() {
         .nav-drop-item:hover { background: rgba(255,106,0,0.08); color: #eae8e3; }
         .hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
         .hamburger span { display: block; width: 22px; height: 2px; background: #eae8e3; border-radius: 2px; transition: all 0.3s; }
-        .mob-menu { display: flex; flex-direction: column; gap: 0; background: rgba(10,12,20,0.98); border-bottom: 1px solid rgba(26,29,42,0.7); }
+        .mob-menu { display: flex; flex-direction: column; gap: 0; background: rgba(10,12,20,0.98); border-bottom: 1px solid rgba(26,29,42,0.7); max-height: calc(100vh - 68px); max-height: calc(100dvh - 68px); overflow-y: auto; }
         .mob-menu a, .mob-menu span { display: block; padding: 16px 20px; font-size: 15px; color: #888899; cursor: pointer; border-bottom: 1px solid rgba(26,29,42,0.5); text-decoration: none; }
         .mob-menu a:last-child, .mob-menu span:last-child { border-bottom: none; }
         .svc-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 24px; background: rgba(255,106,0,0.08); border: 1px solid rgba(255,106,0,0.15); margin-bottom: 18px; transition: all 0.3s; }
@@ -305,13 +306,12 @@ export default function HomeClient() {
           .g3 { grid-template-columns: 1fr 1fr 1fr !important; }
           .g4 { grid-template-columns: 1fr 1fr 1fr 1fr !important; }
           .hero-t { font-size: 46px !important; line-height: 1.08 !important; }
-          .nav-lnk { display: flex !important; gap: 26px; }
+          .nav-lnk { display: flex !important; gap: 20px; }
           .hamburger { display: none !important; }
           .mob-menu { display: none !important; }
           .about-lay { flex-direction: row !important; gap: 80px !important; align-items: center; }
         }
-        @media (min-width: 880px) { .nav-test { display: inline; } }
-        @media (min-width: 1024px) { .hero-t { font-size: 52px !important; } }
+        @media (min-width: 1024px) { .hero-t { font-size: 52px !important; } .nav-lnk { gap: 26px; } .nav-test { display: inline; } }
         @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
         @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-14px); } }
         @keyframes glow-pulse { 0%, 100% { box-shadow: 0 8px 24px rgba(255,106,0,0.25); } 50% { box-shadow: 0 8px 40px rgba(255,106,0,0.55), 0 0 0 4px rgba(255,106,0,0.12); } }
@@ -341,6 +341,23 @@ export default function HomeClient() {
                       <a href="/servicii" className="nav-drop-item" style={{ borderBottom: "1px solid #1a1d2a", marginBottom: 4, color: "#ff6a00" }}>Toate serviciile →</a>
                       {SERVICES.map((s) => (
                         <a key={s.slug} href={`/servicii/${s.slug}`} className="nav-drop-item">{s.name}</a>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+              <div className="nav-drop" onMouseEnter={() => setDomainsOpen(true)} onMouseLeave={() => setDomainsOpen(false)}>
+                <span style={{ fontSize: 14, color: "#888899", cursor: "pointer", transition: "color 0.2s", display: "flex", alignItems: "center", gap: 4 }}
+                  onMouseEnter={e => (e.currentTarget.style.color = "#eae8e3")}
+                  onMouseLeave={e => (e.currentTarget.style.color = "#888899")}>
+                  Domenii <span style={{ fontSize: 10, opacity: 0.6 }}>▾</span>
+                </span>
+                {domainsOpen && (
+                  <div className="nav-drop-menu">
+                    <div className="nav-drop-inner">
+                      <a href="/domenii" className="nav-drop-item" style={{ borderBottom: "1px solid #1a1d2a", marginBottom: 4, color: "#ff6a00" }}>Toate domeniile →</a>
+                      {domains.map((d) => (
+                        <a key={d.slug} href={`/domenii/${d.slug}`} className="nav-drop-item">{d.name}</a>
                       ))}
                     </div>
                   </div>
@@ -380,6 +397,10 @@ export default function HomeClient() {
             <a href="/servicii" style={{ color: "#ff6a00", fontWeight: 700 }}>Servicii</a>
             {SERVICES.map((s) => (
               <a key={s.slug} href={`/servicii/${s.slug}`} style={{ paddingLeft: 32, fontSize: 14 }}>{s.name}</a>
+            ))}
+            <a href="/domenii" style={{ color: "#ff6a00", fontWeight: 700 }}>Domenii</a>
+            {domains.map((d) => (
+              <a key={d.slug} href={`/domenii/${d.slug}`} style={{ paddingLeft: 32, fontSize: 14 }}>{d.name}</a>
             ))}
             {[["proces","Cum funcționează"],["despre","Despre"],["faq","Întrebări"]].map(([id, label], i) => (
               <span key={i} onClick={() => go(id)}>{label}</span>
@@ -494,6 +515,24 @@ export default function HomeClient() {
               </p>
             </div>
           </Fade>
+        </div>
+      </section>
+
+      {/* DOMENII */}
+      <section aria-label="Soluții pe domeniul tău" style={{ paddingTop: 40, paddingBottom: 30 }}>
+        <div className="mx">
+          <Fade>
+            <div style={{ textAlign: "center", marginBottom: 36 }}>
+              <span className="tag">Domenii</span>
+              <h2 className="hd" style={{ fontSize: 38, fontWeight: 800, marginTop: 18, letterSpacing: "-1px", lineHeight: 1.15 }}>
+                Soluții pe <span className="ac">domeniul tău</span>
+              </h2>
+              <p style={{ fontSize: 16, color: "#888899", marginTop: 12, maxWidth: 480, marginLeft: "auto", marginRight: "auto" }}>
+                Alege domeniul și vezi ce automatizăm concret, cu cifre pe care le poți verifica.
+              </p>
+            </div>
+          </Fade>
+          {domainCards}
         </div>
       </section>
 

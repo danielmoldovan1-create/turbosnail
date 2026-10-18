@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import { DOMAINS } from './domenii/data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -68,6 +69,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: 'https://turbosnail.ro/domenii',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    ...DOMAINS.map((d) => ({
+      url: `https://turbosnail.ro/domenii/${d.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    })),
     {
       url: 'https://turbosnail.ro/blog/ce-este-inteligenta-artificiala',
       lastModified: new Date(),

@@ -1,4 +1,9 @@
-# TurboSnail
+import { DOMAINS } from "../domenii/data";
+
+// Generated from app/domenii/data.ts so new domain pages show up here automatically.
+export const dynamic = "force-static";
+
+const BEFORE = `# TurboSnail
 
 > Agenție de automatizări AI din Timișoara, care ajută firmele din România să economisească timp și bani prin automatizarea proceselor repetitive.
 
@@ -15,7 +20,9 @@ Conținutul site-ului este în limba română și se adresează antreprenorilor 
 - [SEO bazat pe AI](https://turbosnail.ro/servicii/seo-ai): audit tehnic, cercetare de cuvinte cheie și conținut în română.
 - [Raportare & Analytics](https://turbosnail.ro/servicii/raportare-analytics): dashboarduri automate conectate la sursele de date ale firmei.
 
-## Blog
+`;
+
+const AFTER = `## Blog
 
 - [Ce este inteligența artificială](https://turbosnail.ro/blog/ce-este-inteligenta-artificiala): ghid pentru antreprenori despre cum funcționează AI și ce poate face în afacere.
 - [Automatizări AI pentru afaceri](https://turbosnail.ro/blog/automatizari-ai-pentru-afaceri-romania): ghid practic cu exemple și pași de implementare.
@@ -40,3 +47,18 @@ Conținutul site-ului este în limba română și se adresează antreprenorilor 
 - Email: hello@turbosnail.ro
 - Formular: https://turbosnail.ro/#contact
 - Sitemap: https://turbosnail.ro/sitemap.xml
+`;
+
+export function GET() {
+  const domenii = [
+    "## Domenii",
+    "",
+    "- [Domenii (prezentare generală)](https://turbosnail.ro/domenii): ce automatizăm concret în fiecare domeniu de activitate.",
+    ...DOMAINS.map((d) => `- [${d.name}](https://turbosnail.ro/domenii/${d.slug}): ${d.summary}`),
+    "",
+    "",
+  ].join("\n");
+  return new Response(BEFORE + domenii + AFTER, {
+    headers: { "Content-Type": "text/plain; charset=utf-8" },
+  });
+}

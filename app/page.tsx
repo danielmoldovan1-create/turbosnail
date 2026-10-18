@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import HomeClient from "./home-client";
+import DomainCarousel from "./components/DomainCarousel";
+import { DOMAINS } from "./domenii/data";
 
 export const metadata: Metadata = {
   title: "Automatizări AI pentru Afaceri din România | TurboSnail",
@@ -34,7 +36,7 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
       />
-      <HomeClient />
+      <HomeClient domains={DOMAINS.map((d) => ({ slug: d.slug, name: d.name }))} domainCards={<DomainCarousel />} />
     </>
   );
 }
