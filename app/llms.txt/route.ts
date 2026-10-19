@@ -40,6 +40,7 @@ const AFTER = `## Blog
 - [Întreabă inteligența artificială](https://turbosnail.ro/blog/intreaba-inteligenta-artificiala): ce asistent AI folosești, cum formulezi întrebarea și ce date nu-i dai.
 - [Automatizare date](https://turbosnail.ro/blog/automatizare-date): cum scapi de introducerea manuală, ce fluxuri automatizezi primele și ce pregătești înainte.
 - [Ce este un agent AI](https://turbosnail.ro/blog/ce-este-un-agent-ai): explicat simplu, diferența față de chatbot și automatizare, când merită.
+- [Automatizare documente](https://turbosnail.ro/blog/automatizare-documente): ce documente automatizezi primele, cum le citește AI-ul și unde rămâne verificarea umană.
 
 ## Contact
 

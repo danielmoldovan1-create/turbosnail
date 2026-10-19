@@ -8,13 +8,13 @@ Mai multe pagini pe prima pagină Google pentru căutările unde avem deja afiș
 - Nișa are un număr limitat de subiecte distincte. Articolele zilnice ajung să concureze între ele (canibalizare).
 - Google penalizează conținutul produs în masă cu scopul principal de a urca în rezultate (politica "scaled content abuse").
 - Regulile din CLAUDE.md (1200-1500 de cuvinte, surse verificate, fără cifre inventate) nu sunt compatibile cu un articol pe zi.
-- Cu un articol pe zi nu mai putem măsura ce funcționează (regula de 21 de zile).
+- Cu un articol pe zi nu mai putem măsura ce funcționează (regula de măsurare din CLAUDE.md).
 
 ## Ritm săptămânal
 - Luni: export GSC pe ultimele 7 zile. Primești lista de modificări (max 15 rânduri) și alegi ce facem.
 - Marți: articolul nou 1.
 - Joi: articolul nou 2.
-- Vineri: optimizarea a 1-2 pagini existente (titlu, meta, linkuri interne), doar pentru pagini nemodificate în ultimele 21 de zile.
+- Vineri: optimizarea a 1-2 pagini existente (titlu, meta, linkuri interne), doar dacă pe pagina respectivă n-a fost nicio schimbare de SEO în ultimele 14 zile (21 pentru paginile cu peste 100 de afișări pe săptămână).
 
 ## Lunar (în afara site-ului, făcut de Daniel)
 - Google Business Profile pentru Timișoara.
