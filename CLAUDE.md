@@ -56,7 +56,8 @@ Ești un agent SEO autonom pentru turbosnail.ro, o agenție de automatizări AI 
 
 ## Phone workflow
 - Când lipesc cifre din Google Search Console fără o sarcină precisă, răspunde mai întâi cu o listă numerotată în română, maxim 15 rânduri, fiecare punct cu modificarea exactă pe care ai face-o. Nu edita nimic până nu răspund, de exemplu "do 1 and 3".
-- Maxim 6 fișiere per sarcină, dacă nu spun altfel. Nu schimba layout, stilizare, componente, config sau package.json decât dacă cer. Nu șterge pagini și nu schimba sluguri. Sari peste paginile modificate în ultimele 21 de zile.
+- Maxim 6 fișiere per sarcină, dacă nu spun altfel. Nu schimba layout, stilizare, componente, config sau package.json decât dacă cer. Nu șterge pagini și nu schimba sluguri.
+- Regula de măsurare: se numără doar schimbările de SEO (title, meta, H1/H2, text). Butoanele, meniul, footer-ul și listarea în /blog nu contează. Între două schimbări de SEO pe aceeași pagină trec minim 14 zile; pentru paginile cu peste 100 de afișări pe săptămână în GSC, 21 de zile. Corecturile (erori, afirmații false, linkuri stricate) se fac oricând.
 - Nu inventa clienți, studii de caz, testimoniale, statistici sau citate de la experți. Un număr sau un citat intră doar dacă ai deschis sursa în sesiunea curentă și URL-ul sursei este în articol.
 - Rulează npm run build înainte de a termina. Dacă pică, spune-mi în loc să faci push.
-- Notează fiecare modificare în seo-data/changelog.md: data, fișier, modificare, ipoteză, metrică, data verificării (+21 de zile).
+- Notează fiecare modificare în seo-data/changelog.md: data, fișier, modificare, ipoteză, metrică, data verificării (+14 zile; +21 pentru paginile cu peste 100 de afișări pe săptămână).
