@@ -16,6 +16,13 @@ export const metadata: Metadata = {
 
 const ARTICLES = [
   {
+    slug: "automatizare-documente",
+    title: "Automatizare documente: facturi, contracte și acte citite automat",
+    date: "19 octombrie 2026",
+    excerpt: "Ce documente merită automatizate primele, cum citește AI-ul facturile și contractele, unde rămâne nevoie de om și cum pornești cu un singur flux.",
+    tag: "Automatizare",
+  },
+  {
     slug: "ce-este-un-agent-ai",
     title: "Ce este un agent AI și prin ce diferă de un chatbot sau de o automatizare",
     date: "15 octombrie 2026",

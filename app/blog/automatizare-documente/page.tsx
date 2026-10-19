@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
 
-// DRAFT: before publishing, replace every TODO-SURSA with a source opened in the session
-// (expert quote + external link), per CLAUDE.md.
-
 export const metadata: Metadata = {
   title: "Automatizare documente: facturi și contracte | TurboSnail",
   description: "Automatizare documente: cum citești automat facturi, bonuri, extrase și contracte, ce rămâne verificat de om și cum pornești cu un singur flux.",
@@ -25,8 +22,8 @@ const articleLd = {
   headline: "Automatizare documente: facturi, contracte și acte citite automat",
   description: "Automatizare documente: cum citești automat facturi, bonuri, extrase și contracte, ce rămâne verificat de om și cum pornești cu un singur flux.",
   url: "https://turbosnail.ro/blog/automatizare-documente",
-  datePublished: "2026-10-20",
-  dateModified: "2026-10-20",
+  datePublished: "2026-10-19",
+  dateModified: "2026-10-19",
   publisher: {
     "@type": "Organization",
     name: "TurboSnail",
@@ -216,7 +213,9 @@ export default function AutomatizareDocumente() {
           <li><strong>Deciziile:</strong> aprobarea unei plăți, acceptarea unei clauze, contestarea unei facturi greșite.</li>
           <li><strong>Primele săptămâni:</strong> până vezi cât de corect lucrează fluxul pe documentele tale, verifici fiecare lot.</li>
         </ul>
-        {/* TODO-SURSA: citat real de la un expert (nume, funcție, organizație), dintr-o sursă deschisă în sesiune, cu link extern credibil */}
+        <p>
+          Marcin Nowak, membru al consiliului de administrație la Decerto, descrie același principiu într-un <a href="https://www.forbes.com/councils/forbestechcouncil/2026/03/23/why-your-ai-strategy-should-start-with-boring-documents/" target="_blank" rel="noopener noreferrer">articol din Forbes</a>: documentele standard trec automat, iar cazurile complexe și citirile nesigure sunt marcate pentru verificare umană. Tot el recomandă ca primul proiect să pornească de la documentele standardizate, cum sunt facturile.
+        </p>
 
         <h2>Greșeli frecvente la automatizarea documentelor</h2>
         <ul>
@@ -233,6 +232,15 @@ export default function AutomatizareDocumente() {
         </p>
 
         <h2>Cum începi automatizarea documentelor în firma ta</h2>
+        <blockquote>
+          <p style={{ fontStyle: "italic", fontSize: 17, color: "#c8c6c1", marginBottom: 12 }}>
+            „Organizațiile care câștigă cu AI nu încep cu cea mai complexă problemă. Încep cu cea mai scumpă.”
+          </p>
+          <p style={{ fontSize: 14, color: "#666677" }}>
+            <strong style={{ color: "#888899" }}>Marcin Nowak</strong>, membru al consiliului de administrație, Decerto, în <a href="https://www.forbes.com/councils/forbestechcouncil/2026/03/23/why-your-ai-strategy-should-start-with-boring-documents/" target="_blank" rel="noopener noreferrer">Forbes</a>
+          </p>
+        </blockquote>
+        <p>Într-o firmă mică, cea mai scumpă problemă cu documentele e de obicei cea care se repetă cel mai des. De acolo pornești:</p>
         <ol>
           <li><strong>Numără documentele</strong> - o săptămână, notează ce documente vin, pe ce canal și cine le prelucrează.</li>
           <li><strong>Alege un singur tip</strong> - cel mai frecvent și cu format previzibil, de obicei facturile de la furnizorii obișnuiți.</li>
