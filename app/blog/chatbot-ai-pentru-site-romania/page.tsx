@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Chatbot AI pentru Site România: Ce Face, Cât Economisești și Cum Alegi | TurboSnail",
@@ -118,15 +119,15 @@ export default function ChatbotAIPentruSiteRomania() {
       {/* NAV */}
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.92)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 64 }}>
-          <a href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 46, width: "auto" }} />
-          </a>
+          </Link>
           <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <a href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</a>
+            <Link href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</Link>
             <a href="/blog" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Blog</a>
-            <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
+            <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
               Înscrie-te →
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
@@ -154,7 +155,7 @@ export default function ChatbotAIPentruSiteRomania() {
           Un chatbot clasic funcționează pe baza unui arbore de decizie: utilizatorul alege dintr-un meniu, primește un răspuns prestabilit, apoi alege din nou. Funcționează bine pentru un flux simplu și previzibil, de exemplu programarea unui service auto. Problema apare când utilizatorul scrie ceva neprevăzut. Chatbotul clasic se blochează sau redirecționează către un operator uman.
         </p>
         <p>
-          Un chatbot AI, în schimb, folosește modele de limbaj pentru a înțelege intenția din spatele unui mesaj, nu cuvintele exacte. Dacă cineva scrie "vreau să știu ce puteți face pentru firma mea", chatbotul AI înțelege că este o cerere de informații despre servicii și răspunde corespunzător, fără să fi fost programat cu această frază exactă. Această diferență este esențială pentru firmele care primesc întrebări variate și imprevizibile.
+          Un chatbot AI, în schimb, folosește modele de limbaj pentru a înțelege intenția din spatele unui mesaj, nu cuvintele exacte. Dacă cineva scrie &quot;vreau să știu ce puteți face pentru firma mea&quot;, chatbotul AI înțelege că este o cerere de informații despre servicii și răspunde corespunzător, fără să fi fost programat cu această frază exactă. Această diferență este esențială pentru firmele care primesc întrebări variate și imprevizibile.
         </p>
 
         <h2>Ce procese automatizează un chatbot AI pentru site România</h2>
@@ -179,7 +180,7 @@ export default function ChatbotAIPentruSiteRomania() {
 
         <blockquote>
           <p style={{ fontStyle: "italic", fontSize: 17, color: "#c8c6c1", marginBottom: 12 }}>
-            "[AI-ul] îi ajută pe agenți să se concentreze pe munca pe care le place cel mai mult s-o facă și unde aduc cea mai mare valoare."
+            &quot;[AI-ul] îi ajută pe agenți să se concentreze pe munca pe care le place cel mai mult s-o facă și unde aduc cea mai mare valoare.&quot;
           </p>
           <p style={{ fontSize: 14, color: "#666677" }}>
             <strong style={{ color: "#888899" }}>Bryan Belmont</strong>, Corporate Vice President, Customer Service and Support, Microsoft, în <a href="https://www.microsoft.com/en-us/worklab/guides/how-ai-can-empower-customer-service-agents" target="_blank" rel="noopener noreferrer">ghidul Microsoft WorkLab despre AI în customer service</a>
@@ -195,7 +196,7 @@ export default function ChatbotAIPentruSiteRomania() {
           <li><strong>Rata de rezoluție</strong> - ce procent din întrebări sunt rezolvate fără transfer la un operator uman</li>
           <li><strong>Leaduri calificate generate</strong> - câte contacte noi, cu date complete, intră săptămânal prin chatbot</li>
           <li><strong>Timp mediu de răspuns</strong> - ar trebui să fie sub 2 secunde, 24/7</li>
-          <li><strong>Satisfacția utilizatorilor</strong> - o întrebare simplă la finalul conversației ("A fost util?") oferă date rapide</li>
+          <li><strong>Satisfacția utilizatorilor</strong> - o întrebare simplă la finalul conversației (&quot;A fost util?&quot;) oferă date rapide</li>
         </ul>
         <p>
           Estimare orientativă, nu rezultat măsurat: un chatbot AI bine configurat pe un site cu 1.000-5.000 de vizitatori lunari poate aduce câteva zeci de leaduri calificate suplimentare pe lună, fără să mărești bugetul de reclame. Cifrele variază mult în funcție de industrie și calitatea traficului existent.
@@ -223,10 +224,10 @@ export default function ChatbotAIPentruSiteRomania() {
 
         <h2>Chatbot AI vs. operator uman: nu este o alegere exclusivă</h2>
         <p>
-          Cea mai frecventă obiecție pe care o aud antreprenorii români este: "Clienții mei vor să vorbească cu un om, nu cu un robot." Această obiecție este parțial corectă. Există situații în care un operator uman este iremplacuibil: negocieri complexe, situații emoționale, decizii cu valoare mare.
+          Cea mai frecventă obiecție pe care o aud antreprenorii români este: &quot;Clienții mei vor să vorbească cu un om, nu cu un robot.&quot; Această obiecție este parțial corectă. Există situații în care un operator uman este iremplacuibil: negocieri complexe, situații emoționale, decizii cu valoare mare.
         </p>
         <p>
-          Însă în cele mai multe interacțiuni de pe un site de business, clientul vrea o informație simplă și rapidă. Chatbotul AI rezolvă exact aceste cazuri și eliberează oamenii din echipa ta pentru conversațiile care contează cu adevărat. Modelul corect nu este "chatbot sau om", ci "chatbot pentru volum, om pentru valoare".
+          Însă în cele mai multe interacțiuni de pe un site de business, clientul vrea o informație simplă și rapidă. Chatbotul AI rezolvă exact aceste cazuri și eliberează oamenii din echipa ta pentru conversațiile care contează cu adevărat. Modelul corect nu este &quot;chatbot sau om&quot;, ci &quot;chatbot pentru volum, om pentru valoare&quot;.
         </p>
         <p>
           În plus, un chatbot AI bun îți permite să configurezi transferul către un operator uman în orice moment, la cererea utilizatorului sau la detectarea unui subiect sensibil. Nu este o cutie neagră.
@@ -288,9 +289,9 @@ export default function ChatbotAIPentruSiteRomania() {
         <p style={{ fontSize: 16, color: "#a8a6a1", marginBottom: 32, lineHeight: 1.65 }}>
           Completează formularul de contact și discutăm concret despre situația firmei tale: ce volum de întrebări primești, ce sisteme folosești și ce rezultate realiste poți aștepta.
         </p>
-        <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
+        <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
           Înscrie-te pe lista de așteptare →
-        </a>
+        </Link>
       </section>
     </main>
   );

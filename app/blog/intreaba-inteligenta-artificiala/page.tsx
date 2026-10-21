@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Întreabă inteligența artificială: ghid practic | TurboSnail",
@@ -118,15 +119,15 @@ export default function IntreabaInteligentaArtificiala() {
       {/* NAV */}
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.92)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 64 }}>
-          <a href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 46, width: "auto" }} />
-          </a>
+          </Link>
           <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <a href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</a>
+            <Link href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</Link>
             <a href="/blog" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Blog</a>
-            <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
+            <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
               Înscrie-te →
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
@@ -176,7 +177,7 @@ export default function IntreabaInteligentaArtificiala() {
 
         <blockquote>
           <p style={{ fontStyle: "italic", fontSize: 17, color: "#c8c6c1", marginBottom: 12 }}>
-            "Este o schimbare de mentalitate. Suntem obișnuiți să folosim tehnologia într-un anumit fel: vedem o casetă de căutare și presupunem că avem de-a face cu un motor de căutare. Deblocarea vine când realizăm că nu e un instrument, ci un nou tip de membru al echipei."
+            &quot;Este o schimbare de mentalitate. Suntem obișnuiți să folosim tehnologia într-un anumit fel: vedem o casetă de căutare și presupunem că avem de-a face cu un motor de căutare. Deblocarea vine când realizăm că nu e un instrument, ci un nou tip de membru al echipei.&quot;
           </p>
           <p style={{ fontSize: 14, color: "#666677" }}>
             <strong style={{ color: "#888899" }}>Conor Grennan</strong>, Chief AI Architect, NYU Stern School of Business, în <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/2025-the-year-the-frontier-firm-is-born" target="_blank" rel="noopener noreferrer">Microsoft Work Trend Index 2025</a>
@@ -274,9 +275,9 @@ export default function IntreabaInteligentaArtificiala() {
         <p style={{ fontSize: 16, color: "#a8a6a1", marginBottom: 32, lineHeight: 1.65 }}>
           Completează formularul de contact și ne uităm împreună la ce sarcini faceți manual azi, unde un asistent AI ajută și unde merită un flux automat.
         </p>
-        <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
+        <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
           Înscrie-te pe lista de așteptare →
-        </a>
+        </Link>
       </section>
     </main>
   );

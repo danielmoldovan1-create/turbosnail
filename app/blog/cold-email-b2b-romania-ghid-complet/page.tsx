@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Cold email B2B în România: ghid complet | TurboSnail",
@@ -120,15 +121,15 @@ export default function ColdEmailB2BRomania() {
       {/* NAV */}
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.92)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 64 }}>
-          <a href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 46, width: "auto" }} />
-          </a>
+          </Link>
           <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <a href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</a>
+            <Link href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</Link>
             <a href="/blog" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Blog</a>
-            <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
+            <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
               Înscrie-te →
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
@@ -200,15 +201,15 @@ export default function ColdEmailB2BRomania() {
           <strong>Personalizarea la nivel de companie, nu la nivel de persoană.</strong> Personalizarea nu înseamnă să menționezi numele și funcția destinatarului, asta fac toți. Înseamnă să menționezi ceva specific despre compania lui: o extindere recentă, un anunț public, o provocare specifică industriei din care face parte, un concurent care a adoptat o soluție similară cu ce oferi tu. Această informație se poate obține din LinkedIn, site-ul companiei, articole de presă sau baze de date publice.
         </p>
         <p>
-          <strong>Follow-up-urile adaugă o perspectivă nouă, nu repetă.</strong> Al doilea email nu este o reamintire că ai trimis primul email. Este un unghi nou: o statistică relevantă, un caz de utilizare diferit, o întrebare care deschide conversația. Al treilea email poate fi mai scurt și mai direct, cu o ieșire elegantă dacă nu există interes. Ceva de forma: "Dacă nu este momentul potrivit, spune-mi și nu te mai contactez. Dacă e relevant în viitor, sunt disponibil." Această abordare câștigă respect și uneori răspunsuri pozitive chiar la al treilea email.
+          <strong>Follow-up-urile adaugă o perspectivă nouă, nu repetă.</strong> Al doilea email nu este o reamintire că ai trimis primul email. Este un unghi nou: o statistică relevantă, un caz de utilizare diferit, o întrebare care deschide conversația. Al treilea email poate fi mai scurt și mai direct, cu o ieșire elegantă dacă nu există interes. Ceva de forma: &quot;Dacă nu este momentul potrivit, spune-mi și nu te mai contactez. Dacă e relevant în viitor, sunt disponibil.&quot; Această abordare câștigă respect și uneori răspunsuri pozitive chiar la al treilea email.
         </p>
         <p>
-          <strong>Subiectul emailului nu trebuie să fie clickbait.</strong> Subiectele care încearcă să inducă în eroare destinatarul (RE: sau FWD: false, întrebări ambigue, false urgențe) pot genera deschideri la primul email, dar creează neîncredere și spam complaints. Subiectele care funcționează pe termen lung sunt clare, specifice și relevante: "[Numele companiei] + [problema specifică]" sau o întrebare directă despre un subiect relevant pentru rolul destinatarului.
+          <strong>Subiectul emailului nu trebuie să fie clickbait.</strong> Subiectele care încearcă să inducă în eroare destinatarul (RE: sau FWD: false, întrebări ambigue, false urgențe) pot genera deschideri la primul email, dar creează neîncredere și spam complaints. Subiectele care funcționează pe termen lung sunt clare, specifice și relevante: &quot;[Numele companiei] + [problema specifică]&quot; sau o întrebare directă despre un subiect relevant pentru rolul destinatarului.
         </p>
 
         <blockquote>
           <p style={{ fontStyle: "italic", fontSize: 18, color: "#c8c6c1", marginBottom: 12 }}>
-            "AI-ul îți ia din încărcătură înainte, în timpul și după întâlnirea de vânzare."
+            &quot;AI-ul îți ia din încărcătură înainte, în timpul și după întâlnirea de vânzare.&quot;
           </p>
           <p style={{ fontSize: 14, color: "#666677" }}>
             <strong style={{ color: "#888899" }}>Angela Byers</strong>, senior director for product marketing, customer experience, Microsoft, în <a href="https://www.microsoft.com/en-us/worklab/guides/how-sellers-can-use-ai-to-better-engage-with-customers" target="_blank" rel="noopener noreferrer">ghidul Microsoft WorkLab despre AI în vânzări</a>
@@ -241,7 +242,7 @@ export default function ColdEmailB2BRomania() {
           <li>Echipa nu are capacitate de follow-up. Dacă un prospect răspunde că este interesat și nu primește un răspuns rapid, toată investiția în infrastructură și secvențe este risipită.</li>
         </ul>
         <p>
-          Dacă situația ta se potrivește cu cold email-ul B2B, serviciile noastre de <a href="/servicii/cold-email-outbound">cold email și outbound</a> acoperă tot procesul: de la construirea infrastructurii tehnice și warming, la sourcing-ul și verificarea listelor, scrierea secvențelor și optimizarea continuă pe baza datelor. Nu livrăm volume de emailuri. Livrăm meetinguri calificate în calendarul tău.
+          Dacă situația ta se potrivește cu cold email-ul B2B, serviciile noastre de <Link href="/servicii/cold-email-outbound">cold email și outbound</Link> acoperă tot procesul: de la construirea infrastructurii tehnice și warming, la sourcing-ul și verificarea listelor, scrierea secvențelor și optimizarea continuă pe baza datelor. Nu livrăm volume de emailuri. Livrăm meetinguri calificate în calendarul tău.
         </p>
         <p>
           Un <a href="https://www.microsoft.com/en-us/worklab/guides/how-sellers-can-use-ai-to-better-engage-with-customers" target="_blank" rel="noopener noreferrer">ghid Microsoft WorkLab despre AI în vânzări</a> citează raportul LinkedIn State of Sales 2022: oamenii din vânzări petrec mai puțin de o treime din timp vânzând efectiv. De aceea, un email relevant care ajunge la momentul potrivit valorează mai mult decât volumul: timpul vânzătorului e puțin și trebuie să meargă spre conversațiile care contează. Calitatea și relevanța bat volumul în orice canal. Dacă vrei să înțelegi mai bine cum se integrează outbound-ul cu celelalte procese de vânzare automatizate din firma ta, vizitează pagina noastră de <a href="https://turbosnail.ro">automatizări AI</a>.
@@ -269,9 +270,9 @@ export default function ColdEmailB2BRomania() {
         <p style={{ fontSize: 16, color: "#a8a6a1", marginBottom: 32, lineHeight: 1.65 }}>
           Completează formularul de contact și discutăm concret despre situația firmei tale: ce volum vizezi, ce piață targetezi și ce infrastructură ai deja.
         </p>
-        <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
+        <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
           Înscrie-te pe lista de așteptare →
-        </a>
+        </Link>
       </section>
     </main>
   );

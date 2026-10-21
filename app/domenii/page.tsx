@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import DomainCarousel from "../components/DomainCarousel";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Automatizări AI pe domenii de activitate | TurboSnail",
@@ -34,15 +35,15 @@ export default function DomainsIndex() {
 
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.92)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 64 }}>
-          <a href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 46, width: "auto" }} />
-          </a>
+          </Link>
           <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <a href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</a>
+            <Link href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</Link>
             <a href="/blog" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Blog</a>
-            <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
+            <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
               Înscrie-te →
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
@@ -67,7 +68,7 @@ export default function DomainsIndex() {
               Problemele se repetă în aproape orice firmă: cereri care așteaptă, date copiate de mână, clienți uitați după prima discuție. Fă testul de vizibilitate sau înscrie-te pe lista de așteptare pentru auditul gratuit de 30 de minute. Preluăm un număr limitat de firme în fiecare lună.
             </p>
             <div className="ctas">
-              <a href="/#contact" className="btn-p">Înscrie-te pe lista de așteptare →</a>
+              <Link href="/#contact" className="btn-p">Înscrie-te pe lista de așteptare →</Link>
               <a href="/test-vizibilitate" className="btn-s">Fă testul de vizibilitate</a>
             </div>
           </div>

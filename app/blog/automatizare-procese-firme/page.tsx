@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Automatizare Procese Firme: Ghid pentru IMM-uri din România 2026 | TurboSnail",
@@ -109,12 +110,12 @@ export default function AutomatizareProceseFireme() {
       {/* NAV */}
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.88)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
-          <a href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
-          </a>
-          <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
+          </Link>
+          <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
             Înscrie-te →
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -147,7 +148,7 @@ export default function AutomatizareProceseFireme() {
           Automatizarea nu presupune programare sau solutii IT complexe. Instrumentele disponibile astazi permit oricarui antreprenor sa construiasca fluxuri functionale intr-un timp rezonabil. Diferenta fata de o simpla automatizare clasica o fac <a href="https://turbosnail.ro">automatizări AI</a> care pot gestiona si sarcini care nu sunt complet structurate: sa clasifice un email dupa intentie, sa extraga date dintr-un document scanat sau sa genereze un prim draft de raspuns pe baza contextului.
         </p>
         <p>
-          Consultanta de specialitate poate accelera semnificativ procesul. Serviciile de <a href="/servicii/consultanta-ai">consultanta AI</a> ajuta firmele sa identifice corect ce merita automatizat si in ce ordine, evitand proiectele care consuma timp fara rezultat masurabil.
+          Consultanta de specialitate poate accelera semnificativ procesul. Serviciile de <Link href="/servicii/consultanta-ai">consultanta AI</Link> ajuta firmele sa identifice corect ce merita automatizat si in ce ordine, evitand proiectele care consuma timp fara rezultat masurabil.
         </p>
 
         <h2>Automatizare procese firme in contabilitate: unde se pierde cel mai mult timp</h2>
@@ -183,7 +184,7 @@ export default function AutomatizareProceseFireme() {
 
         <blockquote>
           <p>
-            "Acum companiile trebuie să renegocieze «contractul operațional», adică felul în care se face munca, cu angajații lor, pe măsură ce AI-ul pune mai multă putere în mâinile oamenilor în privința modului în care își fac treaba."
+            &quot;Acum companiile trebuie să renegocieze «contractul operațional», adică felul în care se face munca, cu angajații lor, pe măsură ce AI-ul pune mai multă putere în mâinile oamenilor în privința modului în care își fac treaba.&quot;
           </p>
           <cite>Constance Noonan Hadley, psiholog organizațional, Institute for Life at Work și Boston University Questrom School of Business, în <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part" target="_blank" rel="noopener noreferrer">Microsoft Work Trend Index 2024</a></cite>
         </blockquote>
@@ -208,7 +209,7 @@ export default function AutomatizareProceseFireme() {
           Managerul de vanzari primeste in fiecare luni dimineata un raport automat: numar de leaduri noi, rata de conversie, pipeline valoric, performanta per agent. Datele vin direct din CRM, nu din tabele Excel completate manual.
         </p>
         <p>
-          Implementarea unui ecosistem complet de automatizare pentru vanzari este posibila prin servicii dedicate de <a href="/servicii/automatizari-ai">automatizari AI</a> care integreaza toate componentele intr-un sistem coerent.
+          Implementarea unui ecosistem complet de automatizare pentru vanzari este posibila prin servicii dedicate de <Link href="/servicii/automatizari-ai">automatizari AI</Link> care integreaza toate componentele intr-un sistem coerent.
         </p>
 
         <h2>De unde incepi: prioritizarea proceselor pentru automatizare</h2>
@@ -245,7 +246,7 @@ export default function AutomatizareProceseFireme() {
           </div>
           <div className="faq-item">
             <div className="faq-q">Ce se intampla daca o automatizare se strica sau greseste?</div>
-            <div className="faq-a">Fluxurile bine construite au mecanisme de alertare: daca ceva esueaza, responsabilul primeste o notificare imediata. Procesul nu "dispare", el este tinut in coada sau marcat ca esuat pana la rezolvare. Automatizarile robuste au intotdeauna o cale de fallback catre procesul manual.</div>
+            <div className="faq-a">Fluxurile bine construite au mecanisme de alertare: daca ceva esueaza, responsabilul primeste o notificare imediata. Procesul nu &quot;dispare&quot;, el este tinut in coada sau marcat ca esuat pana la rezolvare. Automatizarile robuste au intotdeauna o cale de fallback catre procesul manual.</div>
           </div>
         </div>
 
@@ -258,9 +259,9 @@ export default function AutomatizareProceseFireme() {
           <p style={{ fontSize: 15, color: "#888899", lineHeight: 1.65, marginBottom: 28, maxWidth: 420, marginLeft: "auto", marginRight: "auto" }}>
             Audit gratuit de 30 de minute. Îți arătăm exact ce pierde timp în contabilitate, HR și vânzări și cu ce impact real le poți automatiza.
           </p>
-          <a href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
+          <Link href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
             Înscrie-te pe lista de așteptare →
-          </a>
+          </Link>
         </div>
 
       </article>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SERVICES } from "../data";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -89,15 +90,15 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       {/* NAV */}
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.92)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 64 }}>
-          <a href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 46, width: "auto" }} />
-          </a>
+          </Link>
           <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <a href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</a>
+            <Link href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</Link>
             <a href="/blog" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Blog</a>
-            <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
+            <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
               Înscrie-te →
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
@@ -114,9 +115,9 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <p style={{ fontSize: 19, color: "#a8a6a1", lineHeight: 1.65, maxWidth: 620, marginBottom: 36 }}>
             {service.intro}
           </p>
-          <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
+          <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
             Înscrie-te pe lista de așteptare →
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -183,7 +184,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         ))}
 
         <blockquote>
-          <p style={{ fontStyle: "italic", fontSize: 18, color: "#c8c6c1", marginBottom: 12 }}>"{service.quote.text}"</p>
+          <p style={{ fontStyle: "italic", fontSize: 18, color: "#c8c6c1", marginBottom: 12 }}>&quot;{service.quote.text}&quot;</p>
           <p style={{ fontSize: 14, color: "#666677" }}>
             <strong style={{ color: "#888899" }}>{service.quote.author}</strong>, {service.quote.role}
           </p>
@@ -220,9 +221,9 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <p style={{ fontSize: 17, color: "#a8a6a1", marginBottom: 36, lineHeight: 1.65 }}>
             Preluăm un număr limitat de firme în fiecare lună. Înscrie-te pe lista de așteptare și îți scriem în cel mult 2 zile lucrătoare pentru auditul gratuit, fără obligații.
           </p>
-          <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "17px 40px", fontSize: 16, textDecoration: "none", display: "inline-block" }}>
+          <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "17px 40px", fontSize: 16, textDecoration: "none", display: "inline-block" }}>
             Înscrie-te pe lista de așteptare →
-          </a>
+          </Link>
         </div>
       </section>
     </main>
