@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Automatizare rapoarte: gata luni dimineață, fără Excel",
@@ -118,12 +119,12 @@ export default function AutomatizareRapoarte() {
       {/* NAV */}
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.88)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
-          <a href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
-          </a>
-          <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
+          </Link>
+          <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
             Înscrie-te →
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -161,7 +162,7 @@ export default function AutomatizareRapoarte() {
 
         <blockquote>
           <p>
-            "A căutat în toate documentele și emailurile relevante și a generat o structură, așa că aveam un punct de plecare."
+            &quot;A căutat în toate documentele și emailurile relevante și a generat o structură, așa că aveam un punct de plecare.&quot;
           </p>
           <cite>Sumit Chauhan, Corporate Vice President, Office Product Group, Microsoft, în <a href="https://www.microsoft.com/en-us/worklab/how-6-experts-use-next-generation-ai" target="_blank" rel="noopener noreferrer">Microsoft WorkLab</a></cite>
         </blockquote>

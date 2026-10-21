@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Automatizare documente: facturi și contracte | TurboSnail",
@@ -118,15 +119,15 @@ export default function AutomatizareDocumente() {
       {/* NAV */}
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.92)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 64 }}>
-          <a href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 46, width: "auto" }} />
-          </a>
+          </Link>
           <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <a href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</a>
+            <Link href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</Link>
             <a href="/blog" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Blog</a>
-            <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
+            <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
               Înscrie-te →
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
@@ -201,7 +202,7 @@ export default function AutomatizareDocumente() {
           O parte din facturi nu mai trebuie citite din PDF. Facturile transmise prin RO e-Factura ajung în Spațiul Privat Virtual ca fișiere XML, adică date deja structurate: furnizor, linii, sume, TVA. Pentru ele, automatizarea are alt rol: preluarea lor regulată din SPV, potrivirea cu plățile din extras și semnalarea celor care nu au pereche.
         </p>
         <p>
-          Combinația e cea mai utilă: facturile din SPV se preiau ca date, iar documentele care vin pe alte căi (bonuri, chitanțe, facturi externe, contracte) se citesc cu AI. Rezultatul ajunge în același loc, iar contabilul lucrează dintr-o singură listă. Detaliile pentru birourile de contabilitate sunt pe pagina despre <a href="/domenii/firme-contabilitate">automatizări pentru firme de contabilitate</a>.
+          Combinația e cea mai utilă: facturile din SPV se preiau ca date, iar documentele care vin pe alte căi (bonuri, chitanțe, facturi externe, contracte) se citesc cu AI. Rezultatul ajunge în același loc, iar contabilul lucrează dintr-o singură listă. Detaliile pentru birourile de contabilitate sunt pe pagina despre <Link href="/domenii/firme-contabilitate">automatizări pentru firme de contabilitate</Link>.
         </p>
 
         <h2>Unde rămâne nevoie de om</h2>
@@ -274,9 +275,9 @@ export default function AutomatizareDocumente() {
         <p style={{ fontSize: 16, color: "#a8a6a1", marginBottom: 32, lineHeight: 1.65 }}>
           Înscrie-te pe lista de așteptare și ne uităm împreună la documentele care vin cel mai des și la fluxul care merită automatizat primul.
         </p>
-        <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
+        <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
           Înscrie-te pe lista de așteptare →
-        </a>
+        </Link>
       </section>
     </main>
   );

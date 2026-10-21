@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Automatizarea Completă a Unei Afaceri: De Unde Începi | TurboSnail",
@@ -108,12 +109,12 @@ export default function AutomatizareCompletaAfacere() {
 
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.88)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
-          <a href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
-          </a>
-          <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
+          </Link>
+          <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
             Înscrie-te →
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -144,7 +145,7 @@ export default function AutomatizareCompletaAfacere() {
           Automatizarea completa a unei afaceri nu este un proiect cu o data de finalizare. Este o stare pe care o atingi treptat, adaugand fluxuri automatizate peste fluxuri, pana cand majoritatea sarcinilor repetitive se intampla fara interventie umana. Cu <a href="https://turbosnail.ro">automatizări AI</a>, firmele mici pot atinge astăzi un nivel de eficiență operațională care altădată necesita departamente întregi.
         </p>
         <p>
-          Inainte de orice implementare, o sesiune de <a href="/servicii/consultanta-ai">consultanta AI</a> ajuta la identificarea corecta a prioritatilor si la evitarea proiectelor care consuma timp fara ROI masurabil.
+          Inainte de orice implementare, o sesiune de <Link href="/servicii/consultanta-ai">consultanta AI</Link> ajuta la identificarea corecta a prioritatilor si la evitarea proiectelor care consuma timp fara ROI masurabil.
         </p>
 
         <h2>Automatizare completa afacere: de ce esueaza majoritatea proiectelor</h2>
@@ -186,12 +187,12 @@ export default function AutomatizareCompletaAfacere() {
           Ultima zona, si adesea cea mai valoroasa pentru antreprenor, este raportarea automata. In loc sa petreci luni dimineata colectand date din cinci surse diferite, primesti un raport structurat care iti arata starea businessului: vanzari, leaduri, conversii, cheltuieli, cashflow. Datele vin direct din surse, fara intermediari si fara erori de copy-paste.
         </p>
         <p>
-          Serviciile de <a href="/servicii/automatizari-ai">automatizari AI</a> pot conecta toate aceste surse si livra rapoarte configurate exact pe metricile care conteaza pentru tine.
+          Serviciile de <Link href="/servicii/automatizari-ai">automatizari AI</Link> pot conecta toate aceste surse si livra rapoarte configurate exact pe metricile care conteaza pentru tine.
         </p>
 
         <blockquote>
           <p>
-            "Un prompt îi cere AI-ului să se descurce singur. Un «skill» îi spune AI-ului cum a hotărât organizația să facă acel lucru."
+            &quot;Un prompt îi cere AI-ului să se descurce singur. Un «skill» îi spune AI-ului cum a hotărât organizația să facă acel lucru.&quot;
           </p>
           <cite>Jared Spataro, CMO of AI at Work, Microsoft, în <a href="https://www.microsoft.com/en-us/worklab/ai-at-work-redesign-first-then-ai-just-works" target="_blank" rel="noopener noreferrer">Microsoft WorkLab, 2026</a></cite>
         </blockquote>
@@ -241,7 +242,7 @@ export default function AutomatizareCompletaAfacere() {
           </div>
           <div className="faq-item">
             <div className="faq-q">Cat timp dureaza sa automatizezi complet o afacere mica?</div>
-            <div className="faq-a">Nu există "complet" ca destinație finală, ci ca direcție. În primele luni automatizezi sarcinile repetitive cu impactul cel mai mare, iar restul se adaugă treptat, pe măsură ce procesele se maturizează și nevoia devine clară.</div>
+            <div className="faq-a">Nu există &quot;complet&quot; ca destinație finală, ci ca direcție. În primele luni automatizezi sarcinile repetitive cu impactul cel mai mare, iar restul se adaugă treptat, pe măsură ce procesele se maturizează și nevoia devine clară.</div>
           </div>
           <div className="faq-item">
             <div className="faq-q">Ce se intampla cu angajatii ale caror sarcini sunt automatizate?</div>
@@ -265,9 +266,9 @@ export default function AutomatizareCompletaAfacere() {
           <p style={{ fontSize: 15, color: "#888899", lineHeight: 1.65, marginBottom: 28, maxWidth: 420, marginLeft: "auto", marginRight: "auto" }}>
             Audit gratuit de 30 de minute. Îți arătăm cu ce proces să începi, ce impact ai în primele 30 de zile și ce urmează după.
           </p>
-          <a href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
+          <Link href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
             Înscrie-te pe lista de așteptare →
-          </a>
+          </Link>
         </div>
 
       </article>

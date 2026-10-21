@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Consultanță AI: ce include și cum alegi | TurboSnail",
@@ -116,12 +117,12 @@ export default function ConsultantaAI() {
       {/* NAV */}
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.88)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
-          <a href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
-          </a>
-          <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
+          </Link>
+          <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
             Înscrie-te →
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -151,7 +152,7 @@ export default function ConsultantaAI() {
           Consultanța AI pentru firme înseamnă că un specialist extern analizează procesele tale de business, identifică unde inteligența artificială și automatizarea pot aduce un beneficiu real și măsurabil, și te ajută să implementezi soluțiile potrivite. Inteligența artificială, în acest context, se referă la sisteme software care pot înțelege text, lua decizii pe baza datelor, genera conținut sau automatiza sarcini care necesitau anterior judecată umană.
         </p>
         <p>
-          Ce nu este: o prezentare despre viitorul AI, un abonament la ChatGPT instalat pe calculatoarele angajaților sau o promisiune că „vei economisi 80% din timp" fără o analiză concretă a proceselor tale. Din nefericire, o parte semnificativă din ce se vinde drept <a href="https://turbosnail.ro/servicii/consultanta-ai">consultanță AI</a> în România astăzi se oprește la nivelul teoriei.
+          Ce nu este: o prezentare despre viitorul AI, un abonament la ChatGPT instalat pe calculatoarele angajaților sau o promisiune că „vei economisi 80% din timp&quot; fără o analiză concretă a proceselor tale. Din nefericire, o parte semnificativă din ce se vinde drept <a href="https://turbosnail.ro/servicii/consultanta-ai">consultanță AI</a> în România astăzi se oprește la nivelul teoriei.
         </p>
         <p>
           Un angajament de consultanță AI serios produce la final un lucru: cel puțin un proces automatizat sau îmbunătățit cu AI, cu rezultate măsurabile, operațional în firma ta.
@@ -159,7 +160,7 @@ export default function ConsultantaAI() {
 
         <blockquote>
           <p>
-            "Organizațiile care au o abordare atentă și deliberată vor fi cele care vor culege beneficiile AI-ului."
+            &quot;Organizațiile care au o abordare atentă și deliberată vor fi cele care vor culege beneficiile AI-ului.&quot;
           </p>
           <cite>Jared Spataro, Corporate Vice President, Modern Work and Business Applications, Microsoft, în <a href="https://www.microsoft.com/en-us/worklab/the-right-way-to-ai" target="_blank" rel="noopener noreferrer">„The Right Way to AI”, Microsoft WorkLab</a></cite>
         </blockquote>
@@ -204,26 +205,26 @@ export default function ConsultantaAI() {
 
         <ul>
           <li>
-            <strong>„Poți să îmi dai un exemplu de proiect similar cu al meu, cu rezultatele obținute?"</strong> Un consultant cu experiență reală are exemple concrete. Dacă răspunsul este vag sau „din confidențialitate nu pot spune nimic", ridică un semn de întrebare.
+            <strong>„Poți să îmi dai un exemplu de proiect similar cu al meu, cu rezultatele obținute?&quot;</strong> Un consultant cu experiență reală are exemple concrete. Dacă răspunsul este vag sau „din confidențialitate nu pot spune nimic&quot;, ridică un semn de întrebare.
           </li>
           <li>
-            <strong>„Care este primul lucru pe care îl faci în ziua 1 a angajamentului?"</strong> Răspunsul corect este ceva de genul „analizăm procesele și datele tale". Răspunsul greșit este să înceapă direct să îți prezinte instrumente sau platforme.
+            <strong>„Care este primul lucru pe care îl faci în ziua 1 a angajamentului?&quot;</strong> Răspunsul corect este ceva de genul „analizăm procesele și datele tale&quot;. Răspunsul greșit este să înceapă direct să îți prezinte instrumente sau platforme.
           </li>
           <li>
-            <strong>„Cum măsori succesul angajamentului?"</strong> Trebuie să existe metrici clare: ore economisit pe săptămână, număr de leaduri procesate automat, rata de erori redusă. Dacă nu pot numi metrici, nu vor putea demonstra valoarea.
+            <strong>„Cum măsori succesul angajamentului?&quot;</strong> Trebuie să existe metrici clare: ore economisit pe săptămână, număr de leaduri procesate automat, rata de erori redusă. Dacă nu pot numi metrici, nu vor putea demonstra valoarea.
           </li>
           <li>
-            <strong>„Ce se întâmplă dacă soluția nu funcționează cum am estimat?"</strong> Orice implementare reală implică riscuri. Un consultant onest îți explică ce scenarii de eșec există și cum le adresează, nu îți promite că totul va merge perfect.
+            <strong>„Ce se întâmplă dacă soluția nu funcționează cum am estimat?&quot;</strong> Orice implementare reală implică riscuri. Un consultant onest îți explică ce scenarii de eșec există și cum le adresează, nu îți promite că totul va merge perfect.
           </li>
           <li>
-            <strong>„Cine face efectiv implementarea?"</strong> Unii consultanți subcontractează implementarea tehnica fără să îți spună. Nu este neapărat o problemă, dar trebuie să știi cine răspunde pentru calitatea livrabilului.
+            <strong>„Cine face efectiv implementarea?&quot;</strong> Unii consultanți subcontractează implementarea tehnica fără să îți spună. Nu este neapărat o problemă, dar trebuie să știi cine răspunde pentru calitatea livrabilului.
           </li>
         </ul>
 
         <h2>Semnale de alarmă: consultanții AI pe care să îi eviți</h2>
 
         <div className="warning-box">
-          <p><strong>Promit rezultate înainte de audit.</strong> Orice cifră de economie de timp sau ROI înainte de a înțelege procesele tale este inventată. Nu există consultant serios care să știe că vei economisi „X ore pe lună" fără să fi analizat ce faci acum.</p>
+          <p><strong>Promit rezultate înainte de audit.</strong> Orice cifră de economie de timp sau ROI înainte de a înțelege procesele tale este inventată. Nu există consultant serios care să știe că vei economisi „X ore pe lună&quot; fără să fi analizat ce faci acum.</p>
         </div>
 
         <div className="warning-box">
@@ -235,7 +236,7 @@ export default function ConsultantaAI() {
         </div>
 
         <div className="warning-box">
-          <p><strong>Vorbesc exclusiv despre instrumente, nu despre probleme.</strong> „Îți instalăm ChatGPT Enterprise" sau „îți implementăm o platformă de AI" nu este consultanță AI. Instrumentul urmează problema, nu invers.</p>
+          <p><strong>Vorbesc exclusiv despre instrumente, nu despre probleme.</strong> „Îți instalăm ChatGPT Enterprise&quot; sau „îți implementăm o platformă de AI&quot; nu este consultanță AI. Instrumentul urmează problema, nu invers.</p>
         </div>
 
         <h2>Consultanță AI intern vs. externă: când are sens fiecare</h2>

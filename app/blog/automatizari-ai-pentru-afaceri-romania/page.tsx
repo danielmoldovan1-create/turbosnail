@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Automatizări AI pentru Afaceri: Ghid Complet România 2026 | TurboSnail",
@@ -109,12 +110,12 @@ export default function BlogPost() {
       {/* NAV */}
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.88)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
-          <a href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
-          </a>
-          <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
+          </Link>
+          <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
             Înscrie-te →
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -138,12 +139,12 @@ export default function BlogPost() {
         </div>
 
         <div className="prose">
-          <p>Dacă conduci o afacere în România și ai auzit de inteligență artificială dar nu știi de unde să începi, nu ești singur. Majoritatea antreprenorilor cu care vorbim la TurboSnail ne spun același lucru: "Știu că automatizările AI sunt importante, dar nu înțeleg ce pot face concret pentru firma mea."</p>
+          <p>Dacă conduci o afacere în România și ai auzit de inteligență artificială dar nu știi de unde să începi, nu ești singur. Majoritatea antreprenorilor cu care vorbim la TurboSnail ne spun același lucru: &quot;Știu că automatizările AI sunt importante, dar nu înțeleg ce pot face concret pentru firma mea.&quot;</p>
           <p>Răspunsul e mai simplu decât crezi. Și nu implică roboți, chatboți sofisticați sau investiții de zeci de mii de euro.</p>
 
           <h2>Ce sunt automatizările AI și de ce contează pentru afacerea ta</h2>
           <p>Automatizările AI sunt sisteme care preiau sarcini repetitive din businessul tău și le execută singure, fără intervenție umană. Nu vorbim despre inteligență artificială din filme. Vorbim despre lucruri concrete: un email de follow-up care se trimite automat după ce un client completează un formular, un raport care se generează singur în fiecare luni dimineață, sau date care se mută automat din facturi în contabilitate.</p>
-          <p>Diferența dintre o automatizare clasică și una cu AI este că <a href="https://turbosnail.ro">automatizări AI</a> bine construite pot lua și decizii. De exemplu: poate clasifica un lead ca "cald" sau "rece" pe baza mesajului pe care l-a trimis, poate genera un răspuns personalizat pentru fiecare client, sau poate analiza datele de vânzări și semnala anomalii.</p>
+          <p>Diferența dintre o automatizare clasică și una cu AI este că <a href="https://turbosnail.ro">automatizări AI</a> bine construite pot lua și decizii. De exemplu: poate clasifica un lead ca &quot;cald&quot; sau &quot;rece&quot; pe baza mesajului pe care l-a trimis, poate genera un răspuns personalizat pentru fiecare client, sau poate analiza datele de vânzări și semnala anomalii.</p>
 
           <h2>5 procese pe care orice firmă din România le poate automatiza azi</h2>
 
@@ -169,7 +170,7 @@ export default function BlogPost() {
 
           <blockquote>
             <p>
-              "Trebuie să te gândești la el [AI-ul] ca la un stagiar."
+              &quot;Trebuie să te gândești la el [AI-ul] ca la un stagiar.&quot;
             </p>
             <cite>Ethan Mollick, profesor la Wharton School, University of Pennsylvania, în <a href="https://www.microsoft.com/en-us/worklab/why-one-expert-says-ai-is-like-the-worlds-greatest-intern" target="_blank" rel="noopener noreferrer">Microsoft WorkLab</a></cite>
           </blockquote>
@@ -190,14 +191,14 @@ export default function BlogPost() {
             <li><strong>Mai multe fluxuri conectate:</strong> 1-2 săptămâni. Lead scoring, secvențe email, raportare automată integrate.</li>
             <li><strong>Ecosistem complet:</strong> 2-4 săptămâni. CRM integrat cu facturare, dashboard unificat, automatizare ads.</li>
           </ul>
-          <p>Fiecare proiect începe cu un <a href="/#contact">audit gratuit de 30 de minute</a> în care analizăm ce se poate automatiza și ce impact real poți obține, înainte de orice decizie.</p>
+          <p>Fiecare proiect începe cu un <Link href="/#contact">audit gratuit de 30 de minute</Link> în care analizăm ce se poate automatiza și ce impact real poți obține, înainte de orice decizie.</p>
 
           <h2>Greșeli frecvente în automatizarea proceselor cu AI</h2>
           <ul>
-            <li><strong>"Automatizăm totul dintr-o dată":</strong> Nu. Începe cu un singur proces, demonstrează ROI-ul, apoi extinde.</li>
-            <li><strong>"AI-ul înlocuiește angajații":</strong> Nu. AI-ul preia sarcinile repetitive ca echipa ta să se concentreze pe ce contează.</li>
-            <li><strong>"Avem nevoie de un departament IT":</strong> Nu pentru automatizări de business. Platformele no-code permit implementări rapide fără programatori.</li>
-            <li><strong>"E prea complicat pentru firma noastră":</strong> Nu. Dacă poți descrie un proces în pași clari, se poate automatiza.</li>
+            <li><strong>&quot;Automatizăm totul dintr-o dată&quot;:</strong> Nu. Începe cu un singur proces, demonstrează ROI-ul, apoi extinde.</li>
+            <li><strong>&quot;AI-ul înlocuiește angajații&quot;:</strong> Nu. AI-ul preia sarcinile repetitive ca echipa ta să se concentreze pe ce contează.</li>
+            <li><strong>&quot;Avem nevoie de un departament IT&quot;:</strong> Nu pentru automatizări de business. Platformele no-code permit implementări rapide fără programatori.</li>
+            <li><strong>&quot;E prea complicat pentru firma noastră&quot;:</strong> Nu. Dacă poți descrie un proces în pași clari, se poate automatiza.</li>
           </ul>
 
           <h2>Automatizări AI: concluzie practică</h2>
@@ -234,9 +235,9 @@ export default function BlogPost() {
         <div style={{ marginTop: 56, padding: 36, borderRadius: 20, border: "1px solid rgba(255,106,0,0.25)", background: "linear-gradient(180deg, rgba(255,106,0,0.06), rgba(255,106,0,0.02))", textAlign: "center" }}>
           <h3 className="hd" style={{ fontSize: 24, fontWeight: 800, marginBottom: 12 }}>Vrei să afli ce poți automatiza în firma ta?</h3>
           <p style={{ fontSize: 16, color: "#a8a6a1", marginBottom: 24 }}>Audit gratuit de 30 de minute. Îți arătăm exact câte ore poți recupera săptămânal și cu ce impact real.</p>
-          <a href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "16px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
+          <Link href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "16px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
             Înscrie-te pe lista de așteptare →
-          </a>
+          </Link>
         </div>
 
         {/* Back */}

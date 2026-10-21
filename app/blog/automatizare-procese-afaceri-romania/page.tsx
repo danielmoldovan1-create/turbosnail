@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Automatizare Procese Afaceri România: Ghid Practic 2026 | TurboSnail",
@@ -109,12 +110,12 @@ export default function AutomatizareProcese() {
       {/* NAV */}
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.88)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
-          <a href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
-          </a>
-          <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
+          </Link>
+          <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
             Înscrie-te →
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -165,7 +166,7 @@ export default function AutomatizareProcese() {
 
         <blockquote>
           <p>
-            "Deși suntem abia la început, această schimbare va extinde oportunitățile, va crea roluri noi și va crește productivitatea."
+            &quot;Deși suntem abia la început, această schimbare va extinde oportunitățile, va crea roluri noi și va crește productivitatea.&quot;
           </p>
           <cite>Karin Kimbrough, chief economist, LinkedIn, în <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/will-ai-fix-work" target="_blank" rel="noopener noreferrer">Microsoft Work Trend Index 2023</a></cite>
         </blockquote>
@@ -251,9 +252,9 @@ export default function AutomatizareProcese() {
           <p style={{ fontSize: 15, color: "#888899", lineHeight: 1.65, marginBottom: 28, maxWidth: 420, marginLeft: "auto", marginRight: "auto" }}>
             Audit gratuit de 30 de minute. Îți arătăm concret ce procese pierd timp și cu ce impact real le poți automatiza.
           </p>
-          <a href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
+          <Link href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
             Înscrie-te pe lista de așteptare →
-          </a>
+          </Link>
         </div>
 
       </article>

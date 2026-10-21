@@ -1,6 +1,7 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { RESULT_KEY, category } from "../quiz";
+import Link from "next/link";
 
 type Result = { score: number; cat: string; recs: string[] };
 
@@ -10,25 +11,36 @@ const SUMMARY: Record<string, string> = {
   "Greu de găsit": "Pentru clienții care nu te cunosc încă, firma este greu de găsit online. Vestea bună: primii pași sunt simpli.",
 };
 
+// Rezultatul nu se schimbă cât timp pagina e deschisă, deci abonamentul nu are ce asculta
+const subscribe = () => () => {};
+
+function storedResult() {
+  try {
+    return sessionStorage.getItem(RESULT_KEY) ?? "";
+  } catch {
+    return "";
+  }
+}
+
+function toResult(raw: string, search: string): Result | null {
+  let r: Result | null = null;
+  try {
+    if (raw) r = JSON.parse(raw);
+  } catch {}
+  if (!r) {
+    const s = new URLSearchParams(search).get("s");
+    if (s && /^\d{1,3}$/.test(s) && Number(s) <= 100) r = { score: Number(s), cat: category(Number(s)), recs: [] };
+  }
+  return r;
+}
+
 export default function VisibilityResult() {
-  const [result, setResult] = useState<Result | null>(null);
-  const [ready, setReady] = useState(false);
+  // Pe server și la hidratare datele din browser lipsesc (null); imediat după, React citește valorile reale
+  const raw = useSyncExternalStore(subscribe, storedResult, () => null);
+  const search = useSyncExternalStore(subscribe, () => window.location.search, () => null);
 
-  useEffect(() => {
-    let r: Result | null = null;
-    try {
-      const raw = sessionStorage.getItem(RESULT_KEY);
-      if (raw) r = JSON.parse(raw);
-    } catch {}
-    if (!r) {
-      const s = new URLSearchParams(window.location.search).get("s");
-      if (s && /^\d{1,3}$/.test(s) && Number(s) <= 100) r = { score: Number(s), cat: category(Number(s)), recs: [] };
-    }
-    setResult(r);
-    setReady(true);
-  }, []);
-
-  if (!ready) return <div className="mx" style={{ minHeight: 300 }} />;
+  if (raw === null || search === null) return <div className="mx" style={{ minHeight: 300 }} />;
+  const result = toResult(raw, search);
 
   if (!result) {
     return (
@@ -67,7 +79,7 @@ export default function VisibilityResult() {
       <div className="cta">
         <h2 className="hd sub" style={{ marginTop: 0 }}>Vrei să pornim de la scorul tău?</h2>
         <p className="muted">Preluăm un număr limitat de firme în fiecare lună. Înscrie-te pe lista de așteptare pentru auditul gratuit și ne uităm împreună la ce merită făcut primul pentru firma ta.</p>
-        <a href="/#contact" className="btn-p" style={{ marginTop: 18 }}>Înscrie-te pe lista de așteptare →</a>
+        <Link href="/#contact" className="btn-p" style={{ marginTop: 18 }}>Înscrie-te pe lista de așteptare →</Link>
       </div>
       <a href="/test-vizibilitate" className="again">Refă testul</a>
     </div>

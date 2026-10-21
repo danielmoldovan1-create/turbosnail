@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Consultanță AI pentru firme din România | TurboSnail",
@@ -110,15 +111,15 @@ export default function ConsultantaAIPage() {
       {/* NAV */}
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.92)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 64 }}>
-          <a href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 46, width: "auto" }} />
-          </a>
+          </Link>
           <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <a href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</a>
+            <Link href="/servicii" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Servicii</Link>
             <a href="/blog" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Blog</a>
-            <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
+            <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
               Înscrie-te →
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
@@ -135,9 +136,9 @@ export default function ConsultantaAIPage() {
           <p style={{ fontSize: 19, color: "#a8a6a1", lineHeight: 1.65, maxWidth: 620, marginBottom: 36 }}>
             Consultanța AI este procesul prin care analizăm operațiunile businessului tău, identificăm unde inteligența artificială poate reduce munca manuală repetitivă și construim un plan concret de implementare cu rezultate măsurabile. Nu prezentări despre viitorul tehnologiei. Procese concrete, economii reale, fără jargon.
           </p>
-          <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
+          <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
             Înscrie-te pe lista de așteptare →
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -313,7 +314,7 @@ export default function ConsultantaAIPage() {
 
             <blockquote>
               <p style={{ fontStyle: "italic", fontSize: 18, color: "#c8c6c1", marginBottom: 12 }}>
-                "Valoarea reală a inteligenței artificiale în business nu este în automatizarea lucrurilor pe care oamenii nu le pot face. Este în automatizarea lucrurilor pe care oamenii le fac prea lent, prea costisitor sau cu prea multe greșeli."
+                &quot;Valoarea reală a inteligenței artificiale în business nu este în automatizarea lucrurilor pe care oamenii nu le pot face. Este în automatizarea lucrurilor pe care oamenii le fac prea lent, prea costisitor sau cu prea multe greșeli.&quot;
               </p>
               <p style={{ fontSize: 14, color: "#666677" }}>
                 <strong style={{ color: "#888899" }}>Thomas H. Davenport</strong>, Profesor de Tehnologie Informațională și Management, Babson College, autor al lucrărilor de referință privind AI în business
@@ -321,7 +322,7 @@ export default function ConsultantaAIPage() {
             </blockquote>
 
             <p>
-              Conform <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part" target="_blank" rel="noopener noreferrer">Work Trend Index 2024 publicat de Microsoft</a>, realizat pe baza unui sondaj cu 31.000 de oameni din 31 de țări, 60% dintre lideri se tem că firma lor nu are un plan și o viziune pentru implementarea AI. Un audit structurat al proceselor, făcut înainte de orice investiție, răspunde exact acestei probleme. Consultanța AI nu este un cost suplimentar, ci o investiție care reduce risipa de resurse în proiecte greșite. Serviciile noastre de <a href="/servicii/automatizari-ai">automatizări AI</a> sunt construite exact pe baza recomandărilor din audit.
+              Conform <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part" target="_blank" rel="noopener noreferrer">Work Trend Index 2024 publicat de Microsoft</a>, realizat pe baza unui sondaj cu 31.000 de oameni din 31 de țări, 60% dintre lideri se tem că firma lor nu are un plan și o viziune pentru implementarea AI. Un audit structurat al proceselor, făcut înainte de orice investiție, răspunde exact acestei probleme. Consultanța AI nu este un cost suplimentar, ci o investiție care reduce risipa de resurse în proiecte greșite. Serviciile noastre de <Link href="/servicii/automatizari-ai">automatizări AI</Link> sunt construite exact pe baza recomandărilor din audit.
             </p>
           </article>
         </div>
@@ -353,9 +354,9 @@ export default function ConsultantaAIPage() {
           <p style={{ fontSize: 17, color: "#a8a6a1", marginBottom: 36, lineHeight: 1.65 }}>
             Preluăm un număr limitat de firme în fiecare lună. Înscrie-te pe lista de așteptare și îți scriem în cel mult 2 zile lucrătoare pentru auditul gratuit de consultanță AI, fără obligații.
           </p>
-          <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "17px 40px", fontSize: 16, textDecoration: "none", display: "inline-block" }}>
+          <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "17px 40px", fontSize: 16, textDecoration: "none", display: "inline-block" }}>
             Înscrie-te pe lista de așteptare →
-          </a>
+          </Link>
         </div>
       </section>
     </main>

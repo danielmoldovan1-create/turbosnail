@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 
 function useVisible() {
   const ref = useRef<HTMLDivElement>(null);
@@ -79,7 +80,11 @@ function AITimeline() {
   const [pct, setPct] = useState(0);
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) { setPct(100); return; }
+    // Cu mișcare redusă, linia apare direct plină, din cadrul următor (nu sincron în efect)
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      const id = requestAnimationFrame(() => setPct(100));
+      return () => cancelAnimationFrame(id);
+    }
     let raf: number;
     const calc = () => {
       raf = requestAnimationFrame(() => {
@@ -339,7 +344,7 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
                 {servicesOpen && (
                   <div className="nav-drop-menu">
                     <div className="nav-drop-inner">
-                      <a href="/servicii" className="nav-drop-item" style={{ borderBottom: "1px solid #1a1d2a", marginBottom: 4, color: "#ff6a00" }}>Toate serviciile →</a>
+                      <Link href="/servicii" className="nav-drop-item" style={{ borderBottom: "1px solid #1a1d2a", marginBottom: 4, color: "#ff6a00" }}>Toate serviciile →</Link>
                       {SERVICES.map((s) => (
                         <a key={s.slug} href={`/servicii/${s.slug}`} className="nav-drop-item">{s.name}</a>
                       ))}
@@ -356,7 +361,7 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
                 {domainsOpen && (
                   <div className="nav-drop-menu">
                     <div className="nav-drop-inner">
-                      <a href="/domenii" className="nav-drop-item" style={{ borderBottom: "1px solid #1a1d2a", marginBottom: 4, color: "#ff6a00" }}>Toate domeniile →</a>
+                      <Link href="/domenii" className="nav-drop-item" style={{ borderBottom: "1px solid #1a1d2a", marginBottom: 4, color: "#ff6a00" }}>Toate domeniile →</Link>
                       {domains.map((d) => (
                         <a key={d.slug} href={`/domenii/${d.slug}`} className="nav-drop-item">{d.name}</a>
                       ))}
@@ -395,11 +400,11 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
         </div>
         {mobileMenu && (
           <div className="mob-menu">
-            <a href="/servicii" style={{ color: "#ff6a00", fontWeight: 700 }}>Servicii</a>
+            <Link href="/servicii" style={{ color: "#ff6a00", fontWeight: 700 }}>Servicii</Link>
             {SERVICES.map((s) => (
               <a key={s.slug} href={`/servicii/${s.slug}`} style={{ paddingLeft: 32, fontSize: 14 }}>{s.name}</a>
             ))}
-            <a href="/domenii" style={{ color: "#ff6a00", fontWeight: 700 }}>Domenii</a>
+            <Link href="/domenii" style={{ color: "#ff6a00", fontWeight: 700 }}>Domenii</Link>
             {domains.map((d) => (
               <a key={d.slug} href={`/domenii/${d.slug}`} style={{ paddingLeft: 32, fontSize: 14 }}>{d.name}</a>
             ))}
@@ -437,7 +442,7 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
             <div>
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
                 <button className="btn-p" onClick={() => go("contact")}>Înscrie-te pe lista de așteptare →</button>
-                <a href="/servicii" className="btn-s" style={{ textDecoration: "none" }}>Vezi serviciile</a>
+                <Link href="/servicii" className="btn-s" style={{ textDecoration: "none" }}>Vezi serviciile</Link>
               </div>
             </div>
             <div>
