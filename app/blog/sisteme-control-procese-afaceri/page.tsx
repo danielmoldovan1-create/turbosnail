@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Sisteme de Control pentru Procesele Critice de Business | TurboSnail",
@@ -108,12 +109,12 @@ export default function SistemeControlProceseAfaceri() {
 
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.88)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
-          <a href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
-          </a>
-          <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
+          </Link>
+          <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
             Înscrie-te →
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -181,12 +182,12 @@ export default function SistemeControlProceseAfaceri() {
           Cate instante asteapta in coada la un moment dat? O crestere brusca a backlogului este adesea primul indicator al unei probleme care nu este inca vizibila in alte metrici. Fara aceasta masurare, problema este descoperita cu intarziere, cand deja are impact extern.
         </p>
         <p>
-          Definirea acestor parametri este primul pas in orice proiect de <a href="/servicii/consultanta-ai">consultanta AI</a> orientat spre control operational. Fara definitii clare, nu exista sistem de control, doar colectare de date fara utilizare.
+          Definirea acestor parametri este primul pas in orice proiect de <Link href="/servicii/consultanta-ai">consultanta AI</Link> orientat spre control operational. Fara definitii clare, nu exista sistem de control, doar colectare de date fara utilizare.
         </p>
 
         <blockquote>
           <p>
-            "Organizațiile nu se transformă prin modele mai bune. Se transformă regândind felul în care se desfășoară sarcinile, astfel încât tehnologia să devină invizibilă în interiorul lor."
+            &quot;Organizațiile nu se transformă prin modele mai bune. Se transformă regândind felul în care se desfășoară sarcinile, astfel încât tehnologia să devină invizibilă în interiorul lor.&quot;
           </p>
           <cite>Jared Spataro, CMO of AI at Work, Microsoft, în <a href="https://www.microsoft.com/en-us/worklab/ai-at-work-redesign-first-then-ai-just-works" target="_blank" rel="noopener noreferrer">Microsoft WorkLab, 2026</a></cite>
         </blockquote>
@@ -213,7 +214,7 @@ export default function SistemeControlProceseAfaceri() {
           Un sistem de control eficient nu functioneaza izolat. El se integreaza cu toate fluxurile automatizate existente si adauga un strat de observabilitate peste acestea. Fiecare automatizare raporteaza starea catre sistemul central: rulata cu succes, rulata cu avertisment, esuat cu eroare specifica.
         </p>
         <p>
-          Serviciile de <a href="/servicii/automatizari-ai">automatizari AI</a> mature includ aceasta componenta de observabilitate in mod nativ. Logarea, alertarea si auditul fac parte din arhitectura de baza, nu dintr-o faza ulterioara adaugata dupa probleme.
+          Serviciile de <Link href="/servicii/automatizari-ai">automatizari AI</Link> mature includ aceasta componenta de observabilitate in mod nativ. Logarea, alertarea si auditul fac parte din arhitectura de baza, nu dintr-o faza ulterioara adaugata dupa probleme.
         </p>
         <p>
           Monitorizarea gândită din faza de design costă mult mai puțin decât cea adăugată după primul incident: pragurile, alertele și responsabilii se stabilesc o singură dată, odată cu fluxul, nu în grabă, după ce ceva s-a stricat.
@@ -259,9 +260,9 @@ export default function SistemeControlProceseAfaceri() {
           <p style={{ fontSize: 15, color: "#888899", lineHeight: 1.65, marginBottom: 28, maxWidth: 440, marginLeft: "auto", marginRight: "auto" }}>
             Audit gratuit de 30 de minute. Identificăm procesele critice fără monitorizare și propunem o arhitectură de control potrivită pentru dimensiunea și industria voastră.
           </p>
-          <a href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
+          <Link href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
             Înscrie-te pe lista de așteptare →
-          </a>
+          </Link>
         </div>
 
       </article>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Ce este inteligența artificială? Explicat simplu | TurboSnail",
@@ -109,12 +110,12 @@ export default function BlogPost2() {
       {/* NAV */}
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, background: "rgba(10,12,20,0.88)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(26,29,42,0.7)" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
-          <a href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
             <img src="/turbosnail-logo.png" alt="TurboSnail" style={{ height: 48, width: "auto" }} />
-          </a>
-          <a href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
+          </Link>
+          <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", border: "none", padding: "11px 24px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
             Înscrie-te →
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -152,13 +153,13 @@ export default function BlogPost2() {
           </ul>
 
           <blockquote>
-            <p>"AI-ul îi poate ajuta pe oameni să scape de munca măruntă și poate lăsa inovația și creativitatea să înflorească."</p>
+            <p>&quot;AI-ul îi poate ajuta pe oameni să scape de munca măruntă și poate lăsa inovația și creativitatea să înflorească.&quot;</p>
             <cite>Michael Platt, neuroscientist și profesor la Wharton School, University of Pennsylvania, în <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part" target="_blank" rel="noopener noreferrer">Microsoft Work Trend Index 2024</a></cite>
           </blockquote>
 
           <h2>Cum Funcționează Inteligența Artificială în Practică</h2>
           <p>Fără să intrăm în detalii tehnice: un model AI a fost antrenat pe miliarde de texte, documente și date. Din acest antrenament, a învățat tipare: cum se construiesc propozițiile, cum se rezolvă probleme logice, cum arată o factură sau cum sună un email profesional.</p>
-          <p>Când îi dai o sarcină, AI-ul nu "gândește" ca un om. El identifică tipare similare din datele pe care le-a procesat și generează cel mai probabil răspuns corect. Rezultatul poate părea remarcabil de inteligent, și pentru scopuri practice, chiar este.</p>
+          <p>Când îi dai o sarcină, AI-ul nu &quot;gândește&quot; ca un om. El identifică tipare similare din datele pe care le-a procesat și generează cel mai probabil răspuns corect. Rezultatul poate părea remarcabil de inteligent, și pentru scopuri practice, chiar este.</p>
           <p>De aici vine și cea mai importantă limită: un model AI poate genera un răspuns care sună convingător, dar este greșit. În limbajul de specialitate, fenomenul se numește „halucinație”. Nu e o eroare rară care va dispărea mâine, ci o consecință a felului în care funcționează modelul: produce textul cel mai probabil, nu textul verificat. De aceea, orice cifră, dată sau afirmație importantă primită de la un AI se verifică înainte să ajungă într-o ofertă, într-un contract sau într-un raport pentru clienți.</p>
 
           <h2>Ce Poate Face Inteligența Artificială pentru Afacerea Ta din România</h2>
@@ -177,14 +178,14 @@ export default function BlogPost2() {
           <p>AI-ul poate analiza datele din vânzări, trafic web și campanii de marketing pentru a identifica tendințe, anomalii și oportunități pe care un om le-ar rata sau ar dura ore să le găsească.</p>
 
           <blockquote>
-            <p>"Suntem în avangarda integrării AI-ului nu doar ca să lucrăm mai repede, ci ca să lucrăm mai inteligent."</p>
+            <p>&quot;Suntem în avangarda integrării AI-ului nu doar ca să lucrăm mai repede, ci ca să lucrăm mai inteligent.&quot;</p>
             <cite>Karim R. Lakhani, Chair, Digital Data Design Institute at Harvard, și profesor la Harvard Business School, în <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part" target="_blank" rel="noopener noreferrer">Microsoft Work Trend Index 2024</a></cite>
           </blockquote>
 
           <h2>Inteligența Artificială în România: Unde Suntem în 2026</h2>
           <p>România are un avantaj neașteptat în adoptarea AI-ului: infrastructura tehnică există, forța de muncă e educată digital, iar competiția pentru implementarea AI în afaceri mici e încă redusă. Asta înseamnă că firmele care acționează acum au o fereastră de oportunitate care nu va dura mult.</p>
           <p>La nivel global, adopția a crescut rapid. Conform <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part" target="_blank" rel="noopener noreferrer">Work Trend Index 2024 publicat de Microsoft</a>, realizat pe baza unui sondaj cu 31.000 de oameni din 31 de țări, 75% dintre angajații care lucrează cu informații folosesc deja AI generativ, iar 79% dintre lideri spun că firma lor trebuie să adopte AI ca să rămână competitivă.</p>
-          <p>Principala barieră pe care o vedem nu e tehnică și nu e financiară. E psihologică: mulți antreprenori simt că AI-ul e complicat, scump sau "pentru firme mari". Nu e niciunul dintre acestea. Consultați și raportul <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="noopener noreferrer">State of AI 2024 al McKinsey</a> pentru date despre adoptarea globală.</p>
+          <p>Principala barieră pe care o vedem nu e tehnică și nu e financiară. E psihologică: mulți antreprenori simt că AI-ul e complicat, scump sau &quot;pentru firme mari&quot;. Nu e niciunul dintre acestea. Consultați și raportul <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="noopener noreferrer">State of AI 2024 al McKinsey</a> pentru date despre adoptarea globală.</p>
 
           <h2>Cum Începi cu Inteligența Artificială: Pași Practici</h2>
           <ul>
@@ -228,9 +229,9 @@ export default function BlogPost2() {
         <div style={{ marginTop: 56, padding: 36, borderRadius: 20, border: "1px solid rgba(255,106,0,0.25)", background: "linear-gradient(180deg, rgba(255,106,0,0.06), rgba(255,106,0,0.02))", textAlign: "center" }}>
           <h3 className="hd" style={{ fontSize: 24, fontWeight: 800, marginBottom: 12 }}>Vrei să aplici inteligența artificială în firma ta?</h3>
           <p style={{ fontSize: 16, color: "#a8a6a1", marginBottom: 24 }}>Audit gratuit de 30 de minute. Îți arătăm exact unde AI-ul poate produce impact real în businessul tău.</p>
-          <a href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "16px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
+          <Link href="/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "16px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
             Înscrie-te pe lista de așteptare →
-          </a>
+          </Link>
         </div>
 
         {/* Back */}

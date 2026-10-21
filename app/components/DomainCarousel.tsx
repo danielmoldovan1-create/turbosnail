@@ -1,4 +1,5 @@
 import { DOMAINS } from "../domenii/data";
+import Link from "next/link";
 
 // Server component: the homepage gets the rendered cards, not the data file.
 // Phones: horizontal scroll-snap row with the next card peeking in.
@@ -53,10 +54,10 @@ export default function DomainCarousel({ grid = false }: { grid?: boolean }) {
         })}
         {!grid && (
           <li className="dom-item">
-            <a href="/domenii" className="dom-card dom-all">
+            <Link href="/domenii" className="dom-card dom-all">
               <span className="dom-name">Toate domeniile →</span>
               <span className="dom-promise" style={{ marginBottom: 0 }}>Ce automatizăm concret în fiecare domeniu, cu cifre și surse.</span>
-            </a>
+            </Link>
           </li>
         )}
       </ul>
