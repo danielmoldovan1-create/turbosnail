@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Automatizare rapoarte săptămânale și lunare | TurboSnail",
-  description: "Automatizare rapoarte săptămânale și lunare: ce rapoarte automatizezi primele, ce instrumente folosești și pașii concreți de implementare.",
+  title: "Automatizare rapoarte: gata luni dimineață, fără Excel",
+  description: "Automatizare rapoarte financiare, de vânzări și de marketing: datele se adună singure din CRM, Excel și contabilitate, iar raportul vine pe email la timp.",
   alternates: {
     canonical: "https://turbosnail.ro/blog/automatizare-rapoarte-saptamanale-lunare",
   },
   openGraph: {
-    title: "Automatizare rapoarte săptămânale și lunare | TurboSnail",
-    description: "Automatizare rapoarte săptămânale și lunare: ce rapoarte automatizezi primele, ce instrumente folosești și pașii concreți de implementare.",
+    title: "Automatizare rapoarte: gata luni dimineață, fără Excel",
+    description: "Automatizare rapoarte financiare, de vânzări și de marketing: datele se adună singure din CRM, Excel și contabilitate, iar raportul vine pe email la timp.",
     url: "https://turbosnail.ro/blog/automatizare-rapoarte-saptamanale-lunare",
     siteName: "TurboSnail",
     locale: "ro_RO",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Cum Automatizezi Rapoartele Săptămânale și Lunare ale Firmei (cu Exemple Concrete)",
+  "headline": "Automatizare rapoarte: gata luni dimineață, fără Excel",
   "description": "Automatizare rapoarte săptămânale și lunare: cum elimini ore de muncă manuală, ce instrumente folosești și exemple concrete pentru firme românești.",
   "url": "https://turbosnail.ro/blog/automatizare-rapoarte-saptamanale-lunare",
   "datePublished": "2026-04-29",
@@ -153,7 +153,7 @@ export default function AutomatizareRapoarte() {
           Automatizarea rapoartelor înseamnă că un sistem software colectează datele necesare din sursele tale (Google Analytics, platforme de vânzări, foi de calcul, CRM, sisteme contabile), le procesează conform unui template predefinit și trimite raportul final pe email sau îl depune într-un folder partajat, la o oră și dată stabilite, fără intervenție umană.
         </p>
         <p>
-          Prin <a href="https://turbosnail.ro/servicii/raportare-analytics">raportare și analytics</a> automatizată, firmele din România elimină nu doar timpul de execuție, ci și erorile de copy-paste, întârzierile cauzate de absența celui care face raportul și inconsistențele dintre versiuni diferite ale aceluiași document.
+          Prin <a href="https://turbosnail.ro/servicii/raportare-analytics">raportare și analytics</a> automatizată, firmele din România elimină nu doar timpul de execuție, ci și erorile de copy-paste, întârzierile cauzate de absența celui care face raportul și inconsistențele dintre versiuni diferite ale aceluiași document. De aceea, rapoartele sunt un punct de pornire bun pentru <a href="https://turbosnail.ro">automatizări AI</a>: procesul e clar, iar rezultatul se vede de la primul raport trimis automat.
         </p>
         <p>
           Există trei tipuri de rapoarte pe care firmele le automatizează frecvent: rapoartele operaționale (vânzări, stocuri, producție), rapoartele de marketing (trafic, conversii, campanii) și rapoartele financiare interne (cash flow săptămânal, situație clienți, facturi neîncasate). Fiecare dintre ele urmează un pattern similar și se poate automatiza cu instrumente accesibile.
@@ -235,7 +235,7 @@ export default function AutomatizareRapoarte() {
           <li><strong>Power BI sau Tableau</strong> pentru firme cu volume mari de date și nevoi complexe de vizualizare. Acestea cer mai multă configurare și uneori un specialist dedicat.</li>
         </ul>
         <p>
-          Pentru 80% din rapoartele periodice ale firmelor mici și mijlocii din România, combinația Make + Google Sheets + email este suficientă și poate fi implementată fără cunoștințe de programare. Citește mai multe despre ce instrumente de automatizare există și cum se compară pe <a href="https://zapier.com/blog/best-workflow-automation-software/" target="_blank" rel="noopener noreferrer">Zapier Blog, ghid comparativ instrumente de automatizare</a>.
+          Pentru multe dintre rapoartele periodice ale firmelor mici și mijlocii din România, combinația Make + Google Sheets + email este suficientă și poate fi implementată fără cunoștințe de programare. Citește mai multe despre ce instrumente de automatizare există și cum se compară pe <a href="https://zapier.com/blog/best-workflow-automation-software/" target="_blank" rel="noopener noreferrer">Zapier Blog, ghid comparativ instrumente de automatizare</a>.
         </p>
 
         <h2>Greșelile frecvente când automatizezi raportarea</h2>
@@ -281,7 +281,7 @@ export default function AutomatizareRapoarte() {
             Automatizează primul raport al firmei tale
           </h3>
           <p style={{ fontSize: 15, color: "#888899", lineHeight: 1.65, marginBottom: 28, maxWidth: 440, marginLeft: "auto", marginRight: "auto" }}>
-            Spune-ne ce raport consomă cel mai mult timp la tine și discutăm concret ce automatizăm, cu ce instrumente și în cât timp.
+            Spune-ne ce raport consumă cel mai mult timp la tine și discutăm concret ce automatizăm, cu ce instrumente și în cât timp.
           </p>
           <a href="https://turbosnail.ro/#contact" style={{ display: "inline-block", background: "linear-gradient(135deg, #ff6a00, #ff5500)", color: "#fff", padding: "15px 32px", borderRadius: 12, fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
             Înscrie-te pe lista de așteptare →

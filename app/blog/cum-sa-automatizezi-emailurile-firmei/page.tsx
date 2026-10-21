@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Cum să automatizezi emailurile firmei: ghid practic | TurboSnail",
-  description: "Cum să automatizezi emailurile firmei: ce emailuri merită automatizate primele, ce rămâne scris de un om și cum pornești fără să riști relația cu clienții.",
+  description: "Automatizare email: cum să automatizezi emailurile firmei, ce pleacă automat, ce rămâne scris de un om și cum pornești fără să riști relația cu clienții.",
   alternates: {
     canonical: "https://turbosnail.ro/blog/cum-sa-automatizezi-emailurile-firmei",
   },
   openGraph: {
     title: "Cum să automatizezi emailurile firmei: ghid practic | TurboSnail",
-    description: "Cum să automatizezi emailurile firmei: ce emailuri merită automatizate primele, ce rămâne scris de un om și cum pornești fără să riști relația cu clienții.",
+    description: "Automatizare email: cum să automatizezi emailurile firmei, ce pleacă automat, ce rămâne scris de un om și cum pornești fără să riști relația cu clienții.",
     url: "https://turbosnail.ro/blog/cum-sa-automatizezi-emailurile-firmei",
     type: "article",
     locale: "ro_RO",
@@ -149,7 +149,7 @@ export default function CumSaAutomatizeziEmailurileFirmei() {
       {/* CONTENT */}
       <article className="prose mx" style={{ paddingBottom: 60 }}>
 
-        <h2>Ce înseamnă, concret, automatizarea emailurilor</h2>
+        <h2>Automatizare email: ce înseamnă concret</h2>
         <p>
           Automatizarea înseamnă că un sistem execută singur o sarcină pe baza unei reguli: <strong>dacă se întâmplă X, fă Y</strong>. Un client plasează o comandă, sistemul trimite confirmarea. O factură ajunge la scadență, sistemul trimite un reminder. Nimeni din echipă nu trebuie să apese vreun buton.
         </p>
