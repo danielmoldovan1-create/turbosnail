@@ -22,7 +22,7 @@ export const SERVICES: ServiceData[] = [
     keyword: "automatizari AI pentru firme Romania",
     title: "Automatizări AI",
     metaTitle: "Automatizări AI pentru Firme din România | TurboSnail",
-    metaDescription: "Automatizări AI pentru firme din România: identificăm procesele repetitive și le automatizăm. Date, emailuri, rapoarte — rezolvate fără intervenție umană.",
+    metaDescription: "Automatizări AI pentru firme din România: identificăm procesele repetitive și le automatizăm. Date, emailuri, rapoarte: rezolvate fără intervenție umană.",
     h1: "Automatizări AI pentru firme din România",
     tag: "AUTOMATIZĂRI",
     intro: "Automatizările AI sunt sisteme care preiau sarcini repetitive din businessul tău și le execută singure. Nu vorbim de proiecte IT complexe sau bugete mari. Vorbim de procese concrete: emailuri trimise automat după ce un client completează un formular, date mutate fără copy-paste, rapoarte generate fără să deschizi un tabel Excel.",
@@ -48,12 +48,12 @@ export const SERVICES: ServiceData[] = [
     includes: {
       title: "Ce include implementarea unei automatizări AI",
       steps: [
-        "Audit inițial — analizăm procesele tale și identificăm cele mai costisitoare în timp",
-        "Maparea fluxului — documentăm exact pașii procesului și punctele de integrare între sisteme",
-        "Construirea automatizării — configurăm fluxul în Make.com, n8n sau Zapier, conectat la sistemele tale",
-        "Testare completă — rulăm scenarii reale, inclusiv cazuri excepționale, înainte de lansare",
-        "Lansare supravegheată — monitorizăm primele zile de funcționare și ajustăm dacă apar probleme",
-        "Training și documentare — îți explicăm cum funcționează totul și lăsăm documentație clară pentru echipă",
+        "Audit inițial: analizăm procesele tale și identificăm cele mai costisitoare în timp",
+        "Maparea fluxului: documentăm exact pașii procesului și punctele de integrare între sisteme",
+        "Construirea automatizării: configurăm fluxul în Make.com, n8n sau Zapier, conectat la sistemele tale",
+        "Testare completă: rulăm scenarii reale, inclusiv cazuri excepționale, înainte de lansare",
+        "Lansare supravegheată: monitorizăm primele zile de funcționare și ajustăm dacă apar probleme",
+        "Training și documentare: îți explicăm cum funcționează totul și lăsăm documentație clară pentru echipă",
       ],
     },
     sections: [
@@ -67,7 +67,7 @@ export const SERVICES: ServiceData[] = [
       },
       {
         heading: "Cum arată procesul de implementare",
-        body: "Începem cu un audit gratuit al businessului tău: identificăm cele mai costisitoare procese repetitive și estimăm economiile reale. Urmează construirea fluxului, testarea și predarea — documentat, cu training inclus. Nu lăsăm sisteme pe care echipa ta nu le înțelege. Totul rămâne al tău: codul, fluxurile, accesul la instrumente.",
+        body: "Începem cu un audit gratuit al businessului tău: identificăm cele mai costisitoare procese repetitive și estimăm economiile reale. Urmează construirea fluxului, testarea și predarea, totul documentat, cu training inclus. Nu lăsăm sisteme pe care echipa ta nu le înțelege. Totul rămâne al tău: codul, fluxurile, accesul la instrumente.",
       },
     ],
     quote: {
@@ -90,7 +90,7 @@ export const SERVICES: ServiceData[] = [
       },
       {
         q: "Datele firmei mele sunt în siguranță?",
-        a: "Da. Lucrăm exclusiv cu instrumente certificate (Make.com, n8n self-hosted, Zapier) care respectă GDPR. Datele tale nu trec prin infrastructura noastră — conexiunile sunt directe între aplicațiile tale.",
+        a: "Da. Lucrăm exclusiv cu instrumente certificate (Make.com, n8n self-hosted, Zapier) care respectă GDPR. Datele tale nu trec prin infrastructura noastră: conexiunile sunt directe între aplicațiile tale.",
       },
     ],
   },
@@ -116,7 +116,7 @@ export const SERVICES: ServiceData[] = [
     problems: {
       title: "Probleme pe care le rezolvă consultanța AI",
       items: [
-        { problem: "Bani investiți în tool-uri AI neutilizate", detail: "Abonamente la ChatGPT, Notion AI, diverse platforme — plătite lunar, folosite ocazional. Un audit identifică ce tool-uri aduc valoare reală și ce subscripții pot fi eliminate." },
+        { problem: "Bani investiți în tool-uri AI neutilizate", detail: "Abonamente la ChatGPT, Notion AI, diverse platforme, plătite lunar, folosite ocazional. Un audit identifică ce tool-uri aduc valoare reală și ce subscripții pot fi eliminate." },
         { problem: "Nu știi ce procese merită automatizate", detail: "Nu toate procesele repetitive sunt la fel de valoroase de automatizat. Unele sunt simple dar cu impact mic, altele complexe dar cu ROI uriaș. Consultanța prioritizează corect, bazat pe timp pierdut și frecvență." },
         { problem: "Echipa rezistă la schimbare", detail: "Angajații se tem că automatizarea le va lua locul de muncă sau că vor trebui să învețe sisteme complicate. Un plan bun de consultanță include și strategia de adoptare internă, cu comunicare și training adecvate." },
         { problem: "Oferte de la furnizori prea vagi sau prea tehnice", detail: "Ai primit oferte de la alte companii dar nu înțelegi ce primești exact, ce se întâmplă dacă colaborarea se termină sau cât va dura implementarea. Consultanța îți oferă claritate înainte să semnezi orice contract." },
@@ -125,12 +125,12 @@ export const SERVICES: ServiceData[] = [
     includes: {
       title: "Ce include un audit de consultanță AI",
       steps: [
-        "Interviu inițial (60-90 minute) — înțelegem businessul, fluxurile actuale și prioritățile tale",
-        "Audit operațional — analizăm fiecare departament și identificăm procesele repetitive cu cel mai mare cost în timp",
-        "Analiza tool-urilor existente — evaluăm ce sisteme folosești deja și cum pot fi integrate sau înlocuite",
-        "Raport scris cu recomandări — document clar cu ce merită automatizat, în ce ordine, cu ce instrumente",
-        "Estimare ROI și costuri — calcul realist al economiilor posibile versus investiția necesară pentru fiecare automatizare",
-        "Sesiune de Q&A (60 minute) — discutăm raportul, clarificăm orice întrebare și stabilim pașii următori",
+        "Interviu inițial (60-90 minute): înțelegem businessul, fluxurile actuale și prioritățile tale",
+        "Audit operațional: analizăm fiecare departament și identificăm procesele repetitive cu cel mai mare cost în timp",
+        "Analiza tool-urilor existente: evaluăm ce sisteme folosești deja și cum pot fi integrate sau înlocuite",
+        "Raport scris cu recomandări: document clar cu ce merită automatizat, în ce ordine, cu ce instrumente",
+        "Estimare ROI și costuri: calcul realist al economiilor posibile versus investiția necesară pentru fiecare automatizare",
+        "Sesiune de Q&A (60 minute): discutăm raportul, clarificăm orice întrebare și stabilim pașii următori",
       ],
     },
     sections: [
@@ -144,7 +144,7 @@ export const SERVICES: ServiceData[] = [
       },
       {
         heading: "De la consultanță la implementare",
-        body: "Auditul poate rămâne un document de strategie pe care îl implementezi singur sau cu echipa ta internă. Sau putem prelua implementarea noi, de la configurarea primelor fluxuri până la livrarea unui sistem complet de automatizare. Alegerea îți aparține — nu există obligații după audit.",
+        body: "Auditul poate rămâne un document de strategie pe care îl implementezi singur sau cu echipa ta internă. Sau putem prelua implementarea noi, de la configurarea primelor fluxuri până la livrarea unui sistem complet de automatizare. Alegerea îți aparține: nu există obligații după audit.",
       },
     ],
     quote: {
@@ -179,7 +179,7 @@ export const SERVICES: ServiceData[] = [
     metaDescription: "Agenție cold email outbound România: construim infrastructura, scriem secvențele, sourcem leadurile și livrăm meetinguri în calendarul tău.",
     h1: "Cold Email & Outbound pentru firme din România",
     tag: "OUTBOUND",
-    intro: "Cold email-ul funcționează când este făcut corect: infrastructură tehnică solidă, liste curate, mesaje personalizate și secvențe bine calibrate. Construim tot sistemul de outbound al firmei tale, de la domenii și warming până la secvențe și urmărire — și livrăm meetinguri calificate în calendarul tău.",
+    intro: "Cold email-ul funcționează când este făcut corect: infrastructură tehnică solidă, liste curate, mesaje personalizate și secvențe bine calibrate. Construim tot sistemul de outbound al firmei tale, de la domenii și warming până la secvențe și urmărire. Livrăm meetinguri calificate în calendarul tău.",
     forWho: {
       title: "Pentru cine este cold email outbound",
       items: [
@@ -193,7 +193,7 @@ export const SERVICES: ServiceData[] = [
     problems: {
       title: "Probleme pe care le rezolvă un sistem de cold email bine construit",
       items: [
-        { problem: "Lipsa unui flux predictibil de leads noi", detail: "Businessul depinde de referințe și recomandări — când acestea se opresc, nu mai intră leads noi. Cold email-ul creează un canal de vânzare pe care îl controlezi tu, independent de rețeaua existentă." },
+        { problem: "Lipsa unui flux predictibil de leads noi", detail: "Businessul depinde de referințe și recomandări: când acestea se opresc, nu mai intră leads noi. Cold email-ul creează un canal de vânzare pe care îl controlezi tu, independent de rețeaua existentă." },
         { problem: "Emailurile ajung la spam și nu primești răspunsuri", detail: "Ai încercat să trimiți emailuri de prospectare, dar rata de deschidere e sub 10% sau primești bounce-uri. Fără infrastructură corectă (domenii secundare, warming, autentificare SPF/DKIM/DMARC), emailurile nu ajung în inbox." },
         { problem: "Timp pierdut pe prospectat și personalizat manual", detail: "Un om din echipa de vânzări petrece ore căutând contacte pe LinkedIn, verificând emailuri și scriind mesaje unul câte unul. Un sistem outbound automatizează sourcing-ul și personalizarea la scară." },
         { problem: "Mesaje generice care nu primesc răspuns", detail: "Templateurile standard 'Bună ziua, sunt X de la Y, vrem să vă oferim Z' sunt ignorate sistematic. Personalizarea la nivel de companie și relevanța mesajului față de situația specifică a destinatarului fac diferența." },
@@ -202,18 +202,18 @@ export const SERVICES: ServiceData[] = [
     includes: {
       title: "Ce include sistemul de cold email outbound",
       steps: [
-        "Setup infrastructură tehnică — domenii secundare, cutii poștale dedicate, configurare SPF, DKIM, DMARC",
-        "Warming progresiv — încălzim cutiile poștale timp de 2-3 săptămâni pentru a construi reputație de trimitere",
-        "Sourcing și verificare leads — construim liste din surse verificate (LinkedIn, baze de date publice) filtrate după criteriile tale exacte",
-        "Scriere secvențe de email — 3-5 emailuri per secvență, cu personalizare la nivel de companie și industrie",
-        "Lansare și monitorizare — rulăm campaniile, monitorizăm zilnic ratele de deschidere, răspuns și bounce",
-        "Optimizare săptămânală și raportare — ajustăm mesajele și segmentele pe baza datelor, raportăm transparent săptămânal",
+        "Setup infrastructură tehnică: domenii secundare, cutii poștale dedicate, configurare SPF, DKIM, DMARC",
+        "Warming progresiv: încălzim cutiile poștale timp de 2-3 săptămâni pentru a construi reputație de trimitere",
+        "Sourcing și verificare leads: construim liste din surse verificate (LinkedIn, baze de date publice) filtrate după criteriile tale exacte",
+        "Scriere secvențe de email: 3-5 emailuri per secvență, cu personalizare la nivel de companie și industrie",
+        "Lansare și monitorizare: rulăm campaniile, monitorizăm zilnic ratele de deschidere, răspuns și bounce",
+        "Optimizare săptămânală și raportare: ajustăm mesajele și segmentele pe baza datelor, raportăm transparent săptămânal",
       ],
     },
     sections: [
       {
         heading: "Ce face o agentie cold email outbound profesionista",
-        body: "Diferența dintre cold email-ul care funcționează și cel care ajunge la spam este infrastructura tehnică: domenii secundare configurate corect (SPF, DKIM, DMARC), cutii poștale încălzite treptat, liste de leaduri verificate și curățate, mesaje cu personalizare reală — nu template-uri generice. Noi ne ocupăm de tot: configurare, scriere, testare, optimizare bazată pe date.",
+        body: "Diferența dintre cold email-ul care funcționează și cel care ajunge la spam este infrastructura tehnică: domenii secundare configurate corect (SPF, DKIM, DMARC), cutii poștale încălzite treptat, liste de leaduri verificate și curățate, mesaje cu personalizare reală, nu template-uri generice. Noi ne ocupăm de tot: configurare, scriere, testare, optimizare bazată pe date.",
       },
       {
         heading: "Outbound România: cum sourcem leadurile",
@@ -221,7 +221,7 @@ export const SERVICES: ServiceData[] = [
       },
       {
         heading: "Ce primești la final: meetinguri, nu rapoarte",
-        body: "KPI-ul nostru principal sunt meetingurile livrate în calendarul tău — nu ratele de deschidere sau alte metrici intermediare. Tu te prezinți la call, închizi dealul. De prospectat, scris, urmărit și calificat ne ocupăm noi. Raportăm săptămânal: emailuri trimise, răspunsuri, meetinguri programate, motive de refuz.",
+        body: "KPI-ul nostru principal sunt meetingurile livrate în calendarul tău, nu ratele de deschidere sau alte metrici intermediare. Tu te prezinți la call, închizi dealul. De prospectat, scris, urmărit și calificat ne ocupăm noi. Raportăm săptămânal: emailuri trimise, răspunsuri, meetinguri programate, motive de refuz.",
       },
     ],
     quote: {
@@ -240,7 +240,7 @@ export const SERVICES: ServiceData[] = [
       },
       {
         q: "Cât timp durează până primesc primele meetinguri?",
-        a: "Primele 2-3 săptămâni sunt dedicate setup-ului infrastructurii și warming-ului — faza critică dar invizibilă. Primele emailuri ies în săptămâna 3-4. Primele meetinguri apar de obicei în săptămânile 4-6, cu volumul crescând în luna 2-3 pe măsură ce secvențele se optimizează.",
+        a: "Primele 2-3 săptămâni sunt dedicate setup-ului infrastructurii și warming-ului, faza critică dar invizibilă. Primele emailuri ies în săptămâna 3-4. Primele meetinguri apar de obicei în săptămânile 4-6, cu volumul crescând în luna 2-3 pe măsură ce secvențele se optimizează.",
       },
       {
         q: "Ce se întâmplă cu sistemul dacă oprim colaborarea?",
@@ -256,7 +256,7 @@ export const SERVICES: ServiceData[] = [
     metaDescription: "Campanii paid ads cu AI pentru firme din România. Google Ads și Meta Ads optimizate cu inteligență artificială: targeting precis, costuri reduse, rezultate măsurabile.",
     h1: "Campanii Paid Ads cu AI pentru firme din România",
     tag: "PAID ADS",
-    intro: "Campaniile de publicitate plătită consumă buget rapid când nu sunt optimizate corect. Folosim instrumente AI pentru targeting precis, testare automată de creative-uri și optimizare continuă a licitației — astfel bugetul tău ajunge la oamenii care cumpără, nu la cei care navighează fără intenție.",
+    intro: "Campaniile de publicitate plătită consumă buget rapid când nu sunt optimizate corect. Folosim instrumente AI pentru targeting precis, testare automată de creative-uri și optimizare continuă a licitației, astfel bugetul tău ajunge la oamenii care cumpără, nu la cei care navighează fără intenție.",
     forWho: {
       title: "Pentru cine sunt campaniile paid ads cu AI",
       items: [
@@ -272,19 +272,19 @@ export const SERVICES: ServiceData[] = [
       items: [
         { problem: "Buget consumat pe clicuri fără conversii", detail: "Campania rulează, banii se duc, dar nu se transformă în clienți. De obicei problema este în targeting (audiențe prea largi), în pagina de destinație (care nu convinge) sau în structura campaniei (obiectiv greșit ales)." },
         { problem: "Creative-uri oboseite care nu mai performează", detail: "Același anunț văzut de prea multe ori de aceeași audiență își pierde eficiența. AI-ul testează automat variante de texte, imagini și formate și identifică ce combinație performează cel mai bine pentru fiecare segment." },
-        { problem: "Nu știi care campanie aduce clienți reali", detail: "Ai date în Google Ads, date în Meta Ads, date în Google Analytics — și nu se potrivesc. Un setup corect de tracking cu GA4, Pixel și conversii server-side îți arată clar ce canal aduce clienți și la ce cost real." },
+        { problem: "Nu știi care campanie aduce clienți reali", detail: "Ai date în Google Ads, date în Meta Ads, date în Google Analytics, dar nu se potrivesc. Un setup corect de tracking cu GA4, Pixel și conversii server-side îți arată clar ce canal aduce clienți și la ce cost real." },
         { problem: "Costuri în creștere de la lună la lună", detail: "CPC-ul crește, audiențele se saturează, concurența licitează mai agresiv. Fără optimizare activă și testare continuă de noi segmente și creative-uri, costul per lead sau per vânzare crește inevitabil." },
       ],
     },
     includes: {
       title: "Ce include managementul campaniilor paid ads cu AI",
       steps: [
-        "Audit cont existent (dacă există) sau setup de la zero — structură, obiective, tracking, audiențe",
-        "Configurare tracking complet — GA4, Meta Pixel, conversii server-side, atribuire corectă pe canale",
-        "Creare campanii și creative-uri — texte, formate, audiențe pentru fiecare etapă a funnel-ului",
-        "Lansare și calibrare — primele 2-4 săptămâni de colectare date și ajustări rapide",
-        "Optimizare săptămânală — licitații, audiențe, buget alocat pe campanii în funcție de performanță",
-        "Raport lunar transparent — cost per lead, cost per vânzare, ROAS, recomandări pentru luna următoare",
+        "Audit cont existent (dacă există) sau setup de la zero: structură, obiective, tracking, audiențe",
+        "Configurare tracking complet: GA4, Meta Pixel, conversii server-side, atribuire corectă pe canale",
+        "Creare campanii și creative-uri: texte, formate, audiențe pentru fiecare etapă a funnel-ului",
+        "Lansare și calibrare: primele 2-4 săptămâni de colectare date și ajustări rapide",
+        "Optimizare săptămânală: licitații, audiențe, buget alocat pe campanii în funcție de performanță",
+        "Raport lunar transparent: cost per lead, cost per vânzare, ROAS, recomandări pentru luna următoare",
       ],
     },
     sections: [
@@ -356,12 +356,12 @@ export const SERVICES: ServiceData[] = [
     includes: {
       title: "Ce include serviciul de SEO bazat pe AI",
       steps: [
-        "Audit tehnic SEO — viteze de încărcare, erori de crawl, structura URL-urilor, date structurate, mobile usability",
-        "Cercetare keywords — identificarea termenilor cu volum și intenție comercială relevanți pentru businessul tău",
-        "Analiza concurenților — ce rankează ei, ce keywords nu acoperă, unde sunt oportunități de diferențiere",
-        "Optimizare pagini existente — title tags, meta descriptions, structura H1-H3, conținut, linkuri interne",
-        "Plan editorial și producție articole — calendar de conținut cu keywords targetate și articole scrise și publicate lunar",
-        "Raportare lunară cu Search Console — impresii, clicuri, poziție medie pe fiecare keyword targetat",
+        "Audit tehnic SEO: viteze de încărcare, erori de crawl, structura URL-urilor, date structurate, mobile usability",
+        "Cercetare keywords: identificarea termenilor cu volum și intenție comercială relevanți pentru businessul tău",
+        "Analiza concurenților: ce rankează ei, ce keywords nu acoperă, unde sunt oportunități de diferențiere",
+        "Optimizare pagini existente: title tags, meta descriptions, structura H1-H3, conținut, linkuri interne",
+        "Plan editorial și producție articole: calendar de conținut cu keywords targetate și articole scrise și publicate lunar",
+        "Raportare lunară cu Search Console: impresii, clicuri, poziție medie pe fiecare keyword targetat",
       ],
     },
     sections: [
@@ -433,12 +433,12 @@ export const SERVICES: ServiceData[] = [
     includes: {
       title: "Ce include implementarea raportării automate și a analytics",
       steps: [
-        "Audit surse de date — identificăm toate sistemele care generează date relevante (ads, CRM, e-commerce, financiar)",
-        "Configurare conexiuni API — conectăm sursele de date la platforma de raportare (Looker Studio, Power BI sau custom)",
-        "Construire dashboard — vizualizări clare pentru KPI-urile tale specifice, cu filtre și granularitate configurabilă",
-        "Setup rapoarte automate — rapoarte programate (zilnic, săptămânal, lunar) trimise automat pe email echipei",
-        "Configurare alerte — notificări automate când un KPI depășește sau coboară sub praguri definite",
-        "Training echipă și documentare — sesiune de onboarding și documentație pentru utilizarea independentă a sistemului",
+        "Audit surse de date: identificăm toate sistemele care generează date relevante (ads, CRM, e-commerce, financiar)",
+        "Configurare conexiuni API: conectăm sursele de date la platforma de raportare (Looker Studio, Power BI sau custom)",
+        "Construire dashboard: vizualizări clare pentru KPI-urile tale specifice, cu filtre și granularitate configurabilă",
+        "Setup rapoarte automate: rapoarte programate (zilnic, săptămânal, lunar) trimise automat pe email echipei",
+        "Configurare alerte: notificări automate când un KPI depășește sau coboară sub praguri definite",
+        "Training echipă și documentare: sesiune de onboarding și documentație pentru utilizarea independentă a sistemului",
       ],
     },
     sections: [
@@ -483,15 +483,15 @@ export const SERVICES: ServiceData[] = [
     slug: "chatbot-ai-romania",
     keyword: "chatbot AI Romania",
     title: "Chatbot AI în Română",
-    metaTitle: "Chatbot AI în Limba Română — Asistent Virtual pentru Website | TurboSnail",
+    metaTitle: "Chatbot AI în Limba Română: Asistent Virtual pentru Website | TurboSnail",
     metaDescription: "Chatbot AI în limba română pentru website-ul firmei tale: răspunde automat la întrebări, califică leaduri și programează întâlniri non-stop, fără intervenție umană.",
-    h1: "Chatbot AI în Limba Română — Asistent Virtual pentru Website",
+    h1: "Chatbot AI în Limba Română: Asistent Virtual pentru Website",
     tag: "CHATBOT AI",
     intro: "Un chatbot AI în limba română înseamnă că vizitatorul site-ului tău primește răspuns imediat, indiferent de ora la care accesează pagina. Nu un meniu de răspunsuri predefinite cu butoane, ci o conversație reală: înțelege întrebările formulate liber, răspunde în context și colectează informații relevante despre prospect. Rezultatul: leads calificate în CRM fără intervenție umană, 24 de ore din 24.",
     forWho: {
       title: "Pentru cine este chatbot-ul AI în română",
       items: [
-        { type: "Firme de servicii cu volum mare de întrebări repetitive", detail: "Clinici, cabinete de avocatură, firme de contabilitate, agenții imobiliare — orice business unde potențialii clienți întreabă în mod repetat aceleași lucruri: program, locație, prețuri orientative, documente necesare. Chatbot-ul răspunde corect și consistent, fără să obosească." },
+        { type: "Firme de servicii cu volum mare de întrebări repetitive", detail: "Clinici, cabinete de avocatură, firme de contabilitate, agenții imobiliare: orice business unde potențialii clienți întreabă în mod repetat aceleași lucruri: program, locație, prețuri orientative, documente necesare. Chatbot-ul răspunde corect și consistent, fără să obosească." },
         { type: "Magazine online care vor suport 24/7 fără costuri suplimentare", detail: "E-commerce-uri unde clienții întreabă despre disponibilitate produse, timp de livrare, politică de retur sau specificații tehnice. Chatbot-ul AI răspunde instantaneu din baza de date a magazinului, fără să implice un agent de suport." },
         { type: "Companii B2B cu ciclu de vânzare lung", detail: "Firme care primesc cereri de ofertă sau demonstrații prin site. Chatbot-ul califică prospecții înainte ca un om din echipa de vânzări să intervină: extrage bugetul, dimensiunea companiei, urgența și programează automat o întâlnire în calendar." },
         { type: "Firme cu personal de suport suprasolicitat", detail: "Dacă echipa de suport petrece jumătate din zi răspunzând la aceleași întrebări prin email sau telefon, un chatbot AI preia aceste cazuri standard și lasă oamenii să se ocupe de situațiile complexe care necesită judecată." },
@@ -503,19 +503,19 @@ export const SERVICES: ServiceData[] = [
       items: [
         { problem: "Întrebări fără răspuns în afara orelor de program", detail: "Un vizitator care nu primește răspuns imediat pleacă la concurență. Chatbot-ul AI răspunde în secunde la orice oră, menține vizitatorul pe site și colectează datele de contact pentru follow-up din partea echipei tale." },
         { problem: "Leads necalificate care consumă timp echipei de vânzări", detail: "Fără un filtru inițial, echipa de vânzări pierde timp cu prospecți care nu se potrivesc profilului de client ideal. Chatbot-ul pune întrebările de calificare, evaluează potrivirea și transmite în CRM doar leadurile cu potențial real." },
-        { problem: "Aceleași întrebări răspunse de zeci de ori pe zi", detail: "Program de funcționare, adresă, metode de plată, timp de livrare, documente necesare pentru o programare — întrebări la care un angajat răspunde de zeci de ori pe zi. Automatizarea acestor răspunsuri eliberează ore întregi din agenda echipei." },
+        { problem: "Aceleași întrebări răspunse de zeci de ori pe zi", detail: "Program de funcționare, adresă, metode de plată, timp de livrare, documente necesare pentru o programare: întrebări la care un angajat răspunde de zeci de ori pe zi. Automatizarea acestor răspunsuri eliberează ore întregi din agenda echipei." },
         { problem: "Formulare de contact ignorate de vizitatori", detail: "Formularele statice au rate de completare scăzute. O conversație interactivă cu un chatbot AI are rate de engagement mult mai mari și colectează mai multe informații relevante decât un formular simplu." },
       ],
     },
     includes: {
       title: "Ce include implementarea chatbot-ului AI în română",
       steps: [
-        "Audit nevoi și cazuri de utilizare — identificăm întrebările frecvente, fluxurile de calificare și acțiunile pe care chatbot-ul trebuie să le execute",
-        "Construirea bazei de cunoștințe — documentăm răspunsurile corecte pentru toate scenariile identificate, în tonul și stilul brandului tău",
-        "Configurare model AI și flux conversațional — antrenăm chatbot-ul cu datele tale și construim logica de conversație, inclusiv escaladarea către un om când e nevoie",
-        "Integrare în site și sisteme — embed pe website, conectare la CRM pentru transferul automat al leadurilor, integrare cu Google Calendar pentru programări",
-        "Testare completă — simulăm zeci de scenarii reale, inclusiv întrebări ambigue sau situații excepționale, înainte de lansare",
-        "Monitorizare și optimizare post-lansare — urmărim conversațiile din primele săptămâni, identificăm lacune în baza de cunoștințe și ajustăm răspunsurile",
+        "Audit nevoi și cazuri de utilizare: identificăm întrebările frecvente, fluxurile de calificare și acțiunile pe care chatbot-ul trebuie să le execute",
+        "Construirea bazei de cunoștințe: documentăm răspunsurile corecte pentru toate scenariile identificate, în tonul și stilul brandului tău",
+        "Configurare model AI și flux conversațional: antrenăm chatbot-ul cu datele tale și construim logica de conversație, inclusiv escaladarea către un om când e nevoie",
+        "Integrare în site și sisteme: embed pe website, conectare la CRM pentru transferul automat al leadurilor, integrare cu Google Calendar pentru programări",
+        "Testare completă: simulăm zeci de scenarii reale, inclusiv întrebări ambigue sau situații excepționale, înainte de lansare",
+        "Monitorizare și optimizare post-lansare: urmărim conversațiile din primele săptămâni, identificăm lacune în baza de cunoștințe și ajustăm răspunsurile",
       ],
     },
     sections: [

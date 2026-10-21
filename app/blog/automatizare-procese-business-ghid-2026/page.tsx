@@ -281,7 +281,7 @@ export default function AutomatizareProceseBusiness() {
         <div style={{ marginTop: 8 }}>
           <div className="faq-item">
             <div className="faq-q">Cât durează să implementezi prima automatizare în firma mea?</div>
-            <div className="faq-a">Un flux simplu, de exemplu notificări automate sau sincronizare date între două aplicații, poate fi gata în 1-3 zile. Un flux mai complex, cu AI și integrări multiple, durează 1-3 săptămâni. Cheia este să nu încerci să automatizezi totul dintr-o dată.</div>
+            <div className="faq-a">Un flux simplu, de exemplu notificări automate sau <a href="https://turbosnail.ro/blog/automatizare-date">sincronizare date între două aplicații</a>, poate fi gata în 1-3 zile. Un flux mai complex, cu AI și integrări multiple, durează 1-3 săptămâni. Cheia este să nu încerci să automatizezi totul dintr-o dată.</div>
           </div>
           <div className="faq-item">
             <div className="faq-q">Am nevoie de cunoștințe tehnice pentru a automatiza procese?</div>
