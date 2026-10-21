@@ -48,7 +48,7 @@ export default function ServicesIndex() {
               Tot ce ai nevoie pentru a crește
             </h1>
             <p style={{ fontSize: 18, color: "#a8a6a1", maxWidth: 560, margin: "0 auto", lineHeight: 1.65 }}>
-              De la automatizări AI la paid ads și SEO — construim sistemele care recuperează timp și aduc clienți noi pentru <a href="https://turbosnail.ro" style={{ color: "#ff6a00", textDecoration: "none" }}>automatizări AI</a> în firma ta.
+              De la automatizări AI la paid ads și SEO, construim sistemele care recuperează timp și aduc clienți noi pentru <a href="https://turbosnail.ro" style={{ color: "#ff6a00", textDecoration: "none" }}>automatizări AI</a> în firma ta.
             </p>
           </div>
 

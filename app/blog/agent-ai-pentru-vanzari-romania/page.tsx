@@ -154,7 +154,7 @@ export default function AgentAIPentruVanzariRomania() {
           Inteligența artificială, în forma folosită azi în firme, înseamnă software care înțelege text, îl poate rezuma și poate scrie răspunsuri pe baza instrucțiunilor primite. Un chatbot folosește această capacitate într-un singur loc: răspunde atunci când cineva îi scrie.
         </p>
         <p>
-          Un agent merge un pas mai departe. Primește un obiectiv, de exemplu "pregătește lista de follow-up-uri pentru azi", și execută singur mai mulți pași ca să ajungă acolo: citește CRM-ul, verifică emailurile, compară datele și propune acțiuni. Lucrează doar cu instrumentele la care i-ai dat acces și doar în limitele pe care le-ai stabilit tu.
+          Un agent merge un pas mai departe. Primește un obiectiv, de exemplu "pregătește lista de follow-up-uri pentru azi", și execută singur mai mulți pași ca să ajungă acolo: citește CRM-ul, verifică emailurile, compară datele și propune acțiuni. Lucrează doar cu instrumentele la care i-ai dat acces și doar în limitele pe care le-ai stabilit tu. Pentru explicația completă, cu exemple din afara vânzărilor, vezi ghidul despre <a href="/blog/ce-este-un-agent-ai">ce este un agent AI</a>.
         </p>
         <p>
           Dacă te interesează partea de conversație cu vizitatorii site-ului, am scris separat despre <a href="/blog/chatbot-ai-pentru-site-romania">chatbot AI pentru site</a>. Aici vorbim despre ce se întâmplă în spatele vânzării.
