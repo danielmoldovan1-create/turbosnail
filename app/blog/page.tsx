@@ -16,6 +16,13 @@ export const metadata: Metadata = {
 
 const ARTICLES = [
   {
+    slug: "agenti-ai-reguli-siguranta",
+    title: "Agenți AI în firmă: reguli ca să nu-ți scape de sub control",
+    date: "22 octombrie 2026",
+    excerpt: "Cinci reguli pentru o firmă mică: aprobare umană la acțiunile riscante, plafoane de volum și buget, jurnal, test pe date de probă și oprire de urgență.",
+    tag: "AI",
+  },
+  {
     slug: "automatizare-documente",
     title: "Automatizare documente: facturi, contracte și acte citite automat",
     date: "19 octombrie 2026",
