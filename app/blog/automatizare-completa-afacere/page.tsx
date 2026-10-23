@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Automatizarea Completă a Unei Afaceri: De Unde Începi | TurboSnail",
-  description: "Ghid practic pentru antreprenori: cum implementezi automatizare completa afacere pas cu pas, ce sisteme conectezi si cum masori impactul real. Fara teorie, fara hype.",
+  description: "Ghid practic pentru antreprenori: cum implementezi automatizare completă afacere pas cu pas, ce sisteme conectezi și cum măsori impactul real. Fără teorie, fără hype.",
   alternates: {
     canonical: "https://turbosnail.ro/blog/automatizare-completa-afacere",
   },
@@ -24,7 +24,7 @@ const jsonLd = {
   "description": "Ghid practic pentru antreprenori: cum implementezi automatizare completă afacere pas cu pas, ce sisteme conectezi și cum măsori impactul real.",
   "url": "https://turbosnail.ro/blog/automatizare-completa-afacere",
   "datePublished": "2026-04-22",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-23",
   "publisher": {
     "@type": "Organization",
     "name": "TurboSnail",
@@ -47,28 +47,28 @@ const faqLd = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "De cate persoane am nevoie in echipa pentru a implementa automatizare completa afacere?",
-      acceptedAnswer: { "@type": "Answer", text: "Nu ai nevoie de un departament IT. Primele automatizari pot fi construite de orice persoana cu interes pentru tehnologie, folosind instrumente no-code precum Make sau n8n. Pentru automatizari complexe cu AI sau integrari enterprise, un specialist extern este mai eficient decat angajarea unui om full-time." }
+      name: "De câte persoane am nevoie în echipă pentru a implementa automatizare completă afacere?",
+      acceptedAnswer: { "@type": "Answer", text: "Nu ai nevoie de un departament IT. Primele automatizări pot fi construite de orice persoană cu interes pentru tehnologie, folosind instrumente no-code precum Make sau n8n. Pentru automatizări complexe cu AI sau integrări enterprise, un specialist extern este mai eficient decât angajarea unui om full-time." }
     },
     {
       "@type": "Question",
-      name: "Cat timp dureaza sa automatizezi complet o afacere mica?",
+      name: "Cât timp durează să automatizezi complet o afacere mică?",
       acceptedAnswer: { "@type": "Answer", text: "Nu există 'complet' ca destinație finală, ci ca direcție. În primele luni automatizezi sarcinile repetitive cu impactul cel mai mare, iar restul se adaugă treptat, pe măsură ce procesele se maturizează și nevoia devine clară." }
     },
     {
       "@type": "Question",
-      name: "Ce se intampla cu angajatii ale caror sarcini sunt automatizate?",
-      acceptedAnswer: { "@type": "Answer", text: "In practica, firmele nu concediaza oameni dupa automatizare. Ii redirectioneaza spre sarcini cu valoare mai mare: relatii cu clientii, vanzari, dezvoltare produs. Automatizarea elimina munca mecanica, nu pe oameni." }
+      name: "Ce se întâmplă cu angajații ale căror sarcini sunt automatizate?",
+      acceptedAnswer: { "@type": "Answer", text: "Automatizarea nu înseamnă automat concedieri. Oamenii pot fi redirecționați spre sarcini cu valoare mai mare: relații cu clienții, vânzări, dezvoltare produs. Automatizarea elimină munca mecanică, nu pe oameni." }
     },
     {
       "@type": "Question",
-      name: "Cum gestionez situatiile in care o automatizare esueaza?",
-      acceptedAnswer: { "@type": "Answer", text: "Orice automatizare bine construita are mecanisme de alertare si fallback. Daca un flux esueaza, responsabilul primeste o notificare imediata cu detalii despre eroare. Procesul nu dispare, el este tinut in asteptare pana la rezolvare." }
+      name: "Cum gestionez situațiile în care o automatizare eșuează?",
+      acceptedAnswer: { "@type": "Answer", text: "Orice automatizare bine construită are mecanisme de alertare și fallback. Dacă un flux eșuează, responsabilul primește o notificare imediată cu detalii despre eroare. Procesul nu dispare, el este ținut în așteptare până la rezolvare." }
     },
     {
       "@type": "Question",
-      name: "Pot automatiza procesele fara sa schimb sistemele existente?",
-      acceptedAnswer: { "@type": "Answer", text: "In mare parte, da. Platformele de automatizare moderne se conecteaza la mii de aplicatii prin API sau conectori predefiniti. In cele mai multe cazuri, nu trebuie sa inlocuiesti ce ai, ci sa conectezi corect ce exista deja." }
+      name: "Pot automatiza procesele fără să schimb sistemele existente?",
+      acceptedAnswer: { "@type": "Answer", text: "În mare parte, da. Platformele de automatizare moderne se conectează la mii de aplicații prin API sau conectori predefiniți. În cele mai multe cazuri, nu trebuie să înlocuiești ce ai, ci să conectezi corect ce există deja." }
     }
   ]
 };
@@ -130,64 +130,64 @@ export default function AutomatizareCompletaAfacere() {
             Automatizarea Completă a Unei Afaceri: De Unde Începi
           </h1>
           <p style={{ fontSize: 19, lineHeight: 1.7, color: "#a8a6a1", marginBottom: 0 }}>
-            Automatizare completa afacere nu inseamna sa inlocuiesti toti angajatii cu roboti sau sa implementezi un sistem ERP de un milion de euro. Inseamna sa construiesti treptat un set de fluxuri care functioneaza fara tine, eliberandu-ti timpul pentru decizii si crestere. Acest ghid arata de unde incepi, in ce ordine si cum stii ca ai facut-o corect.
+            Automatizare completă afacere nu înseamnă să înlocuiești toți angajații cu roboți sau să implementezi un sistem ERP scump. Înseamnă să construiești treptat un set de fluxuri care funcționează fără tine, eliberându-ți timpul pentru decizii și creștere. Acest ghid arată de unde începi, în ce ordine și cum știi că ai făcut-o corect.
           </p>
         </div>
       </section>
 
       <article style={{ maxWidth: 760, margin: "0 auto", padding: "0 20px 80px" }} className="prose">
 
-        <h2>Ce inseamna cu adevarat automatizarea completa a unei afaceri</h2>
+        <h2>Ce înseamnă cu adevărat automatizarea completă a unei afaceri</h2>
         <p>
-          Automatizarea, in sensul ei practic, inseamna ca un software executa sarcini repetitive in locul unui om. Inteligenta artificiala este stratul care permite acestor sisteme sa gestioneze si situatii mai putin structurate: sa clasifice un email dupa intentie, sa extraga date dintr-un document scanat sau sa genereze un raspuns personalizat pe baza contextului unui client.
+          Automatizarea, în sensul ei practic, înseamnă că un software execută sarcini repetitive în locul unui om. Inteligența artificială este stratul care permite acestor sisteme să gestioneze și situații mai puțin structurate: să clasifice un email după intenție, să extragă date dintr-un document scanat sau să genereze un răspuns personalizat pe baza contextului unui client.
         </p>
         <p>
-          Automatizarea completa a unei afaceri nu este un proiect cu o data de finalizare. Este o stare pe care o atingi treptat, adaugand fluxuri automatizate peste fluxuri, pana cand majoritatea sarcinilor repetitive se intampla fara interventie umana. Cu <a href="https://turbosnail.ro">automatizări AI</a>, firmele mici pot atinge astăzi un nivel de eficiență operațională care altădată necesita departamente întregi.
+          Automatizarea completă a unei afaceri nu este un proiect cu o dată de finalizare. Este o stare pe care o atingi treptat, adăugând fluxuri automatizate peste fluxuri, până când majoritatea sarcinilor repetitive se întâmplă fără intervenție umană. Cu <a href="https://turbosnail.ro">automatizări AI</a>, firmele mici pot atinge astăzi un nivel de eficiență operațională care altădată necesita departamente întregi.
         </p>
         <p>
-          Inainte de orice implementare, o sesiune de <Link href="/servicii/consultanta-ai">consultanta AI</Link> ajuta la identificarea corecta a prioritatilor si la evitarea proiectelor care consuma timp fara ROI masurabil.
-        </p>
-
-        <h2>Automatizare completa afacere: de ce esueaza majoritatea proiectelor</h2>
-        <p>
-          Cel mai frecvent motiv de esec nu este tehnologia. Este ordinea gresita de implementare. Antreprenorii care incearca sa automatizeze totul dintr-o data, fara o logica clara de prioritizare, ajung cu sisteme incomplete care necesita interventie manuala constanta, consumand mai mult timp decat inainte.
-        </p>
-        <p>
-          Al doilea motiv de esec este automatizarea proceselor proaste. Daca un proces manual este disfunctional, automatizarea lui nu il repara, ci produce erori mai rapid si la scara mai mare. Inainte de a automatiza, trebuie sa intelegi si, daca e nevoie, sa simplifici procesul.
-        </p>
-        <p>
-          Al treilea motiv este lipsa masurarii. Fara metrici clare inainte si dupa implementare, nu poti demonstra valoarea, nu poti justifica investitia urmatoare si nu poti identifica ce nu functioneaza.
+          Înainte de orice implementare, o sesiune de <Link href="/servicii/consultanta-ai">consultanță AI</Link> ajută la identificarea corectă a priorităților și la evitarea proiectelor care consumă timp fără ROI măsurabil.
         </p>
 
-        <h2>Cele patru zone ale automatizarii complete a unei afaceri</h2>
-
-        <h3>Zona 1: Generarea si calificarea leadurilor</h3>
+        <h2>Automatizare completă afacere: de ce eșuează majoritatea proiectelor</h2>
         <p>
-          Prima zona pe care o automatizeaza firmele cu rezultate bune este capatul de sus al palniei de vanzare. Un lead care trimite un formular primeste instant o confirmare personalizata. Datele lui intra automat in CRM. Un sistem AI evalueaza potentialul pe baza raspunsurilor si a comportamentului pe site si atribuie un scor de prioritate. Agentul de vanzari vede dimineata o lista ordonata, nu o cutie de spam cu cereri nesortate.
+          Cel mai frecvent motiv de eșec nu este tehnologia. Este ordinea greșită de implementare. Antreprenorii care încearcă să automatizeze totul dintr-o dată, fără o logică clară de prioritizare, ajung cu sisteme incomplete care necesită intervenție manuală constantă, consumând mai mult timp decât înainte.
         </p>
         <p>
-          Impactul: timp de reactie redus de la ore la minute, rata de conversie mai mare, zero leaduri pierdute din lipsa de follow-up.
-        </p>
-
-        <h3>Zona 2: Operatiunile interne</h3>
-        <p>
-          A doua zona include tot ce se intampla in interiorul firmei: procesarea facturilor, raportarea, managementul stocurilor, programarile, aprobarea cererilor interne. Fiecare dintre acestea are o componenta mecanica ridicata si un nivel de decizie scazut, ceea ce le face candidati ideali pentru automatizare.
+          Al doilea motiv de eșec este automatizarea proceselor proaste. Dacă un proces manual este disfuncțional, automatizarea lui nu îl repară, ci produce erori mai rapid și la scară mai mare. Înainte de a automatiza, trebuie să înțelegi și, dacă e nevoie, să simplifici procesul.
         </p>
         <p>
-          Un exemplu concret: facturile de la furnizori sosesc pe un email dedicat. Un instrument OCR extrage datele, le verifica impotriva bazei de furnizori si le introduce automat in sistemul contabil. Discrepantele sunt marcate pentru verificare umana. Procesul care dura 3 ore pe saptamana dureaza acum 15 minute.
+          Al treilea motiv este lipsa măsurării. Fără metrici clare înainte și după implementare, nu poți demonstra valoarea, nu poți justifica investiția următoare și nu poți identifica ce nu funcționează.
         </p>
 
-        <h3>Zona 3: Comunicarea cu clientii</h3>
+        <h2>Cele patru zone ale automatizării complete a unei afaceri</h2>
+
+        <h3>Zona 1: Generarea și calificarea leadurilor</h3>
         <p>
-          Emailurile de confirmare, reminder-ele, notificarile de livrare, urmarile post-vanzare. Toate acestea pot fi automatizate cu mesaje personalizate, declansate de actiunile clientului, trimise la momentul potrivit. Diferenta fata de o campanie generica de email marketing este contextul: mesajul este relevant pentru ce face clientul in acel moment, nu un newsletter trimis tuturor.
+          Prima zonă pe care o automatizează firmele cu rezultate bune este capătul de sus al pâlniei de vânzare. Un lead care trimite un formular primește instant o confirmare personalizată. Datele lui intră automat în CRM. Un sistem AI evaluează potențialul pe baza răspunsurilor și a comportamentului pe site și atribuie un scor de prioritate. Agentul de vânzări vede dimineața o listă ordonată, nu o cutie de spam cu cereri nesortate.
+        </p>
+        <p>
+          Impactul urmărit: un timp de reacție mai scurt și mai puține leaduri pierdute din lipsă de follow-up.
         </p>
 
-        <h3>Zona 4: Raportarea si luarea deciziilor</h3>
+        <h3>Zona 2: Operațiunile interne</h3>
         <p>
-          Ultima zona, si adesea cea mai valoroasa pentru antreprenor, este raportarea automata. In loc sa petreci luni dimineata colectand date din cinci surse diferite, primesti un raport structurat care iti arata starea businessului: vanzari, leaduri, conversii, cheltuieli, cashflow. Datele vin direct din surse, fara intermediari si fara erori de copy-paste.
+          A doua zonă include tot ce se întâmplă în interiorul firmei: procesarea facturilor, raportarea, managementul stocurilor, programările, aprobarea cererilor interne. Fiecare dintre acestea are o componentă mecanică ridicată și un nivel de decizie scăzut, ceea ce le face candidați ideali pentru automatizare.
         </p>
         <p>
-          Serviciile de <Link href="/servicii/automatizari-ai">automatizari AI</Link> pot conecta toate aceste surse si livra rapoarte configurate exact pe metricile care conteaza pentru tine.
+          Un exemplu tipic: facturile de la furnizori sosesc pe un email dedicat. Un instrument OCR extrage datele, le verifică împotriva bazei de furnizori și le introduce automat în sistemul contabil. Discrepanțele sunt marcate pentru verificare umană. Munca de fiecare săptămână se reduce la verificarea excepțiilor.
+        </p>
+
+        <h3>Zona 3: Comunicarea cu clienții</h3>
+        <p>
+          Emailurile de confirmare, reminder-ele, notificările de livrare, urmările post-vânzare. Toate acestea pot fi automatizate cu mesaje personalizate, declanșate de acțiunile clientului, trimise la momentul potrivit. Diferența față de o campanie generică de email marketing este contextul: mesajul este relevant pentru ce face clientul în acel moment, nu un newsletter trimis tuturor.
+        </p>
+
+        <h3>Zona 4: Raportarea și luarea deciziilor</h3>
+        <p>
+          Ultima zonă, și adesea cea mai valoroasă pentru antreprenor, este raportarea automată. În loc să petreci luni dimineața colectând date din cinci surse diferite, primești un raport structurat care îți arată starea businessului: vânzări, leaduri, conversii, cheltuieli, cashflow. Datele vin direct din surse, fără intermediari și fără erori de copy-paste.
+        </p>
+        <p>
+          Serviciile de <Link href="/servicii/automatizari-ai">automatizări AI</Link> pot conecta toate aceste surse și livra rapoarte configurate exact pe metricile care contează pentru tine.
         </p>
 
         <blockquote>
@@ -197,71 +197,71 @@ export default function AutomatizareCompletaAfacere() {
           <cite>Jared Spataro, CMO of AI at Work, Microsoft, în <a href="https://www.microsoft.com/en-us/worklab/ai-at-work-redesign-first-then-ai-just-works" target="_blank" rel="noopener noreferrer">Microsoft WorkLab, 2026</a></cite>
         </blockquote>
 
-        <h2>Ordinea corecta de implementare pentru automatizare completa afacere</h2>
+        <h2>Ordinea corectă de implementare pentru automatizare completă afacere</h2>
         <p>
-          Dupa sute de implementari, am observat ca ordinea conteaza mai mult decat instrumentele alese. Aceasta este secventa care functioneaza:
+          Ordinea în care implementezi contează mai mult decât instrumentele alese. O secvență care reduce riscul arată așa:
         </p>
         <ul>
-          <li><strong>Luna 1:</strong> Automatizeaza un singur proces din zona leadurilor sau operatiunilor interne. Masoara impactul. Documenteaza ce ai invatat.</li>
-          <li><strong>Luna 2-3:</strong> Adauga doua-trei fluxuri noi, conectate logic cu primul. Incepe sa construiesti un ecosistem, nu fluxuri izolate.</li>
-          <li><strong>Luna 4-6:</strong> Integreaza zonele intre ele. CRM-ul vorbeste cu sistemul de facturare. Formularul de pe site alimenteaza direct raportul de vanzari.</li>
-          <li><strong>Luna 6+:</strong> Adauga AI acolo unde exista decizii repetitive care necesita judecata simpla: calificarea leadurilor, clasificarea cererilor de suport, detectarea anomaliilor in date.</li>
+          <li><strong>Luna 1:</strong> Automatizează un singur proces din zona leadurilor sau operațiunilor interne. Măsoară impactul. Documentează ce ai învățat.</li>
+          <li><strong>Luna 2-3:</strong> Adaugă două-trei fluxuri noi, conectate logic cu primul. Începe să construiești un ecosistem, nu fluxuri izolate.</li>
+          <li><strong>Luna 4-6:</strong> Integrează zonele între ele. CRM-ul vorbește cu sistemul de facturare. Formularul de pe site alimentează direct raportul de vânzări.</li>
+          <li><strong>Luna 6+:</strong> Adaugă AI acolo unde există decizii repetitive care necesită judecată simplă: calificarea leadurilor, clasificarea cererilor de suport, detectarea anomaliilor în date.</li>
         </ul>
         <p>
-          Aceasta secventa nu este rigida. Poate fi comprimata daca ai resurse, sau extinsa daca echipa are nevoie de timp sa se adapteze. Important este principiul: un pas, masurare, urmatorul pas.
+          Această secvență nu este rigidă. Poate fi comprimată dacă ai resurse, sau extinsă dacă echipa are nevoie de timp să se adapteze. Important este principiul: un pas, măsurare, următorul pas.
         </p>
 
-        <h2>Ce instrumente folosesti pentru automatizarea completa a afacerii</h2>
+        <h2>Ce instrumente folosești pentru automatizarea completă a afacerii</h2>
         <p>
-          Nu exista o stiva universala. Alegerea depinde de sistemele existente, de complexitate si de preferintele echipei. Insa exista categorii de instrumente care apar in aproape orice proiect de automatizare completa:
+          Nu există o stivă universală. Alegerea depinde de sistemele existente, de complexitate și de preferințele echipei. Însă există categorii de instrumente care apar în aproape orice proiect de automatizare completă:
         </p>
         <ul>
-          <li><strong>Platforma de automatizare a fluxurilor:</strong> Make sau n8n pentru conectarea aplicatiilor si orchestrarea proceselor fara cod.</li>
-          <li><strong>CRM:</strong> HubSpot, Pipedrive sau Salesforce pentru centralizarea relatiei cu clientii si automatizarea secventelor de vanzare.</li>
-          <li><strong>Procesare documente:</strong> instrumente OCR combinate cu modele de limbaj pentru extragerea si structurarea datelor din documente.</li>
+          <li><strong>Platforma de automatizare a fluxurilor:</strong> Make sau n8n pentru conectarea aplicațiilor și orchestrarea proceselor fără cod.</li>
+          <li><strong>CRM:</strong> HubSpot, Pipedrive sau Salesforce pentru centralizarea relației cu clienții și automatizarea secvențelor de vânzare.</li>
+          <li><strong>Procesare documente:</strong> instrumente OCR combinate cu modele de limbaj pentru extragerea și structurarea datelor din documente.</li>
           <li><strong>Raportare:</strong> Google Looker Studio sau Metabase pentru dashboarduri automate alimentate din surse conectate.</li>
-          <li><strong>Comunicare automatizata:</strong> ActiveCampaign sau Brevo pentru secvente de email declansate de comportamentul clientului.</li>
+          <li><strong>Comunicare automatizată:</strong> ActiveCampaign sau Brevo pentru secvențe de email declanșate de comportamentul clientului.</li>
         </ul>
         <p>
           Diferența dintre o firmă cu automatizări izolate și una care construiește un sistem se vede în timp: într-un sistem, fiecare flux nou folosește datele și conexiunile celor existente, așa că fiecare pas următor cere mai puțin efort decât primul.
         </p>
 
-        <h2>Cum stii ca automatizarea completa a afacerii tale functioneaza</h2>
+        <h2>Cum știi că automatizarea completă a afacerii tale funcționează</h2>
         <p>
-          Exista trei semne clare ca ai construit ceva care functioneaza cu adevarat. In primul rand, poti pleca in vacanta doua saptamani fara sa primesti apeluri despre lucruri care nu merg. In al doilea rand, rapoartele tale sunt mai precise si mai rapide decat inainte, fara ca cineva sa fi muncit mai mult pentru ele. In al treilea rand, echipa ta rezolva probleme, nu sarcini mecanice.
+          Există trei semne clare că ai construit ceva care funcționează cu adevărat. În primul rând, poți pleca în vacanță două săptămâni fără să primești apeluri despre lucruri care nu merg. În al doilea rând, rapoartele tale sunt mai precise și mai rapide decât înainte, fără ca cineva să fi muncit mai mult pentru ele. În al treilea rând, echipa ta rezolvă probleme, nu sarcini mecanice.
         </p>
         <p>
-          Automatizarea completa a unei afaceri nu este un proiect de informatica. Este o schimbare in modul in care functioneaza organizatia ta. Instrumentele sunt mijlocul, nu scopul.
+          Automatizarea completă a unei afaceri nu este un proiect de informatică. Este o schimbare în modul în care funcționează organizația ta. Instrumentele sunt mijlocul, nu scopul.
         </p>
 
-        <h2>Intrebari frecvente despre automatizarea completa a afacerii</h2>
+        <h2>Întrebări frecvente despre automatizarea completă a afacerii</h2>
         <div style={{ marginTop: 8 }}>
           <div className="faq-item">
-            <div className="faq-q">De cate persoane am nevoie in echipa pentru a implementa automatizare completa afacere?</div>
-            <div className="faq-a">Nu ai nevoie de un departament IT. Primele automatizari pot fi construite de orice persoana cu interes pentru tehnologie, folosind instrumente no-code precum Make sau n8n. Pentru automatizari complexe cu AI sau integrari enterprise, un specialist extern este mai eficient decat angajarea unui om full-time.</div>
+            <div className="faq-q">De câte persoane am nevoie în echipă pentru a implementa automatizare completă afacere?</div>
+            <div className="faq-a">Nu ai nevoie de un departament IT. Primele automatizări pot fi construite de orice persoană cu interes pentru tehnologie, folosind instrumente no-code precum Make sau n8n. Pentru automatizări complexe cu AI sau integrări enterprise, un specialist extern este mai eficient decât angajarea unui om full-time.</div>
           </div>
           <div className="faq-item">
-            <div className="faq-q">Cat timp dureaza sa automatizezi complet o afacere mica?</div>
+            <div className="faq-q">Cât timp durează să automatizezi complet o afacere mică?</div>
             <div className="faq-a">Nu există &quot;complet&quot; ca destinație finală, ci ca direcție. În primele luni automatizezi sarcinile repetitive cu impactul cel mai mare, iar restul se adaugă treptat, pe măsură ce procesele se maturizează și nevoia devine clară.</div>
           </div>
           <div className="faq-item">
-            <div className="faq-q">Ce se intampla cu angajatii ale caror sarcini sunt automatizate?</div>
-            <div className="faq-a">In practica, firmele nu concediaza oameni dupa automatizare. Ii redirectioneaza spre sarcini cu valoare mai mare: relatii cu clientii, vanzari, dezvoltare produs. Automatizarea elimina munca mecanica, nu pe oameni. Cele mai bune rezultate vin cand echipa este implicata in proiectul de automatizare, nu informatata dupa.</div>
+            <div className="faq-q">Ce se întâmplă cu angajații ale căror sarcini sunt automatizate?</div>
+            <div className="faq-a">Automatizarea nu înseamnă automat concedieri. Oamenii pot fi redirecționați spre sarcini cu valoare mai mare: relații cu clienții, vânzări, dezvoltare produs. Automatizarea elimină munca mecanică, nu pe oameni. Cele mai bune rezultate vin când echipa este implicată în proiectul de automatizare, nu informată după.</div>
           </div>
           <div className="faq-item">
-            <div className="faq-q">Cum gestionez situatiile in care o automatizare esueaza?</div>
-            <div className="faq-a">Orice automatizare bine construita are mecanisme de alertare si fallback. Daca un flux esueaza, responsabilul primeste o notificare imediata cu detalii despre eroare. Procesul nu dispare, el este tinut in asteptare pana la rezolvare. Regula de baza: niciodata nu automatizezi un proces fara sa definesti si ce se intampla cand ceva nu merge.</div>
+            <div className="faq-q">Cum gestionez situațiile în care o automatizare eșuează?</div>
+            <div className="faq-a">Orice automatizare bine construită are mecanisme de alertare și fallback. Dacă un flux eșuează, responsabilul primește o notificare imediată cu detalii despre eroare. Procesul nu dispare, el este ținut în așteptare până la rezolvare. Regula de bază: niciodată nu automatizezi un proces fără să definești și ce se întâmplă când ceva nu merge.</div>
           </div>
           <div className="faq-item">
-            <div className="faq-q">Pot automatiza procesele fara sa schimb sistemele existente?</div>
-            <div className="faq-a">In mare parte, da. Platformele de automatizare moderne se conecteaza la mii de aplicatii prin API sau conectori predefiniti. In cele mai multe cazuri, nu trebuie sa inlocuiesti ce ai, ci sa conectezi corect ce exista deja. Exceptie fac sistemele foarte vechi sau proprietare fara API, unde integrarea necesita mai multa munca tehnica.</div>
+            <div className="faq-q">Pot automatiza procesele fără să schimb sistemele existente?</div>
+            <div className="faq-a">În mare parte, da. Platformele de automatizare moderne se conectează la mii de aplicații prin API sau conectori predefiniți. În cele mai multe cazuri, nu trebuie să înlocuiești ce ai, ci să conectezi corect ce există deja. Excepție fac sistemele foarte vechi sau proprietare fără API, unde integrarea necesită mai multă muncă tehnică.</div>
           </div>
         </div>
 
         <div style={{ marginTop: 64, padding: "44px 36px", background: "linear-gradient(160deg, #0f1119, #0c0e15)", border: "1px solid rgba(255,106,0,0.2)", borderRadius: 20, textAlign: "center" }}>
-          <p className="hd" style={{ fontSize: 12, fontWeight: 700, color: "#ff6a00", letterSpacing: 2, textTransform: "uppercase", marginBottom: 16 }}>Pasul urmator</p>
+          <p className="hd" style={{ fontSize: 12, fontWeight: 700, color: "#ff6a00", letterSpacing: 2, textTransform: "uppercase", marginBottom: 16 }}>Pasul următor</p>
           <h3 className="hd" style={{ fontSize: 26, fontWeight: 800, marginBottom: 14, letterSpacing: "-0.5px", lineHeight: 1.2, color: "#eae8e3" }}>
-            Construieste primul flux automatizat in firma ta
+            Construiește primul flux automatizat în firma ta
           </h3>
           <p style={{ fontSize: 15, color: "#888899", lineHeight: 1.65, marginBottom: 28, maxWidth: 420, marginLeft: "auto", marginRight: "auto" }}>
             Audit gratuit de 30 de minute. Îți arătăm cu ce proces să începi, ce impact ai în primele 30 de zile și ce urmează după.
