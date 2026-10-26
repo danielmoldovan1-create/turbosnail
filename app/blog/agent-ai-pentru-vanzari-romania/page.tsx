@@ -138,6 +138,7 @@ export default function AgentAIPentruVanzariRomania() {
           <div style={{ display: "inline-block", background: "rgba(255,106,0,0.1)", border: "1px solid rgba(255,106,0,0.25)", borderRadius: 100, padding: "6px 16px", fontSize: 11, fontWeight: 700, color: "#ff6a00", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 24, fontFamily: "'Outfit', sans-serif" }}>
             VÂNZĂRI · AGENȚI AI
           </div>
+          <span style={{ marginLeft: 12, fontSize: 13, color: "#555566" }}>7 octombrie 2026</span>
           <h1 className="hd" style={{ fontSize: 40, fontWeight: 900, lineHeight: 1.12, letterSpacing: -1, marginBottom: 24 }}>
             Agent AI pentru vânzări în România: ce face concret și când merită
           </h1>
