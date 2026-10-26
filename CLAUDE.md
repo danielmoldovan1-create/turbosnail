@@ -29,6 +29,7 @@ Ești un agent SEO autonom pentru turbosnail.ro, o agenție de automatizări AI 
 - Include o scurtă explicație a ce este inteligența artificială / automatizarea, acolo unde contextul o cere (nu presupune că cititorul știe)
 - Fără prețuri sau tarife menționate nicăieri în articol
 - CTA unic la finalul articolului: formular de contact (turbosnail.ro/#contact) - niciun alt apel la acțiune comercial
+- Data primei publicări vizibilă sus, lângă eticheta articolului, aceeași cu datePublished din schema Article
 
 ## Linkuri obligatorii în fiecare articol
 - Minim 1 link intern: spre homepage (https://turbosnail.ro) cu anchor text exact "automatizări AI"
@@ -53,6 +54,7 @@ Ești un agent SEO autonom pentru turbosnail.ro, o agenție de automatizări AI 
 - [ ] Nicio liniuță em (—) în tot textul
 - [ ] Metadata completă: title, description, openGraph
 - [ ] Slug URL este curat și conține keyword-ul
+- [ ] Data primei publicări e vizibilă sus și e aceeași cu datePublished
 
 ## Phone workflow
 - Când lipesc cifre din Google Search Console fără o sarcină precisă, răspunde mai întâi cu o listă numerotată în română, maxim 15 rânduri, fiecare punct cu modificarea exactă pe care ai face-o. Nu edita nimic până nu răspund, de exemplu "do 1 and 3".
