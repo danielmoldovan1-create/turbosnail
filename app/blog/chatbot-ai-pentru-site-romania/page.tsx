@@ -23,7 +23,7 @@ const articleLd = {
   headline: "Chatbot AI pentru Site România: Ce Face, Cât Economisești și Cum Alegi",
   description: "Ghid practic despre chatbot AI pentru site România: cum funcționează, ce procese automatizează și cum măsori rezultatele reale.",
   url: "https://turbosnail.ro/blog/chatbot-ai-pentru-site-romania",
-  datePublished: "2026-04-19",
+  datePublished: "2026-04-23",
   dateModified: "2026-08-12",
   publisher: {
     "@type": "Organization",
@@ -138,6 +138,7 @@ export default function ChatbotAIPentruSiteRomania() {
           <div style={{ display: "inline-block", background: "rgba(255,106,0,0.1)", border: "1px solid rgba(255,106,0,0.25)", borderRadius: 100, padding: "6px 16px", fontSize: 11, fontWeight: 700, color: "#ff6a00", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 24, fontFamily: "'Outfit', sans-serif" }}>
             CHATBOT AI · GHID PRACTIC
           </div>
+          <span style={{ marginLeft: 12, fontSize: 13, color: "#555566" }}>23 aprilie 2026</span>
           <h1 className="hd" style={{ fontSize: 40, fontWeight: 900, lineHeight: 1.12, letterSpacing: -1, marginBottom: 24 }}>
             Chatbot AI pentru site România: ce face concret, cât economisești și cum alegi unul care funcționează
           </h1>

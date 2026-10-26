@@ -116,7 +116,7 @@ const ARTICLES = [
   {
     slug: "chatbot-ai-pentru-site-romania",
     title: "Chatbot AI pentru site România: ce face concret și cum alegi unul care funcționează",
-    date: "19 aprilie 2026",
+    date: "23 aprilie 2026",
     excerpt: "Cum funcționează un chatbot AI pe site, ce procese preia, ce întrebări pui unui furnizor și cum măsori rezultatele.",
     tag: "AI",
   },
@@ -130,14 +130,14 @@ const ARTICLES = [
   {
     slug: "automatizari-ai-pentru-afaceri-romania",
     title: "Automatizări AI pentru Afaceri: Ghid Complet România 2026",
-    date: "15 aprilie 2026",
+    date: "13 aprilie 2026",
     excerpt: "Ce procese poți automatiza cu AI, de unde începi și cât durează implementarea, cu exemple concrete pentru afaceri din România.",
     tag: "AI",
   },
   {
     slug: "ce-este-inteligenta-artificiala",
     title: "Ce este Inteligența Artificială și Cum Transformă Afacerile în 2026",
-    date: "10 aprilie 2026",
+    date: "13 aprilie 2026",
     excerpt: "Ghid complet despre inteligența artificială pentru antreprenori din România. Cum funcționează AI-ul, ce poate face pentru afacerea ta și cum începi implementarea.",
     tag: "Ghid",
   },

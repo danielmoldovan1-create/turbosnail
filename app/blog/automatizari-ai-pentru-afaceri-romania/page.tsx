@@ -23,7 +23,7 @@ const jsonLd = {
   "headline": "Automatizări AI pentru Afaceri: Ghid Complet România 2026",
   "description": "Ghid practic despre automatizările AI pentru afaceri din România, cu exemple concrete și pași de implementare.",
   "url": "https://turbosnail.ro/blog/automatizari-ai-pentru-afaceri-romania",
-  "datePublished": "2026-04-15",
+  "datePublished": "2026-04-13",
   "dateModified": "2026-10-15",
   "publisher": {
     "@type": "Organization",
@@ -132,7 +132,7 @@ export default function BlogPost() {
           <div style={{ display: "flex", alignItems: "center", gap: 16, color: "#555566", fontSize: 14 }}>
             <span>TurboSnail</span>
             <span>·</span>
-            <span>15 aprilie 2026</span>
+            <span>13 aprilie 2026</span>
             <span>·</span>
             <span>8 min citire</span>
           </div>

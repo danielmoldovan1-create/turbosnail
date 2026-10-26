@@ -23,7 +23,7 @@ const jsonLd = {
   "headline": "Ce este Inteligența Artificială și Cum Transformă Afacerile în 2026",
   "description": "Ghid complet despre inteligența artificială pentru antreprenori din România. Cum funcționează AI-ul și ce poate face pentru afacerea ta.",
   "url": "https://turbosnail.ro/blog/ce-este-inteligenta-artificiala",
-  "datePublished": "2026-04-10",
+  "datePublished": "2026-04-13",
   "dateModified": "2026-10-10",
   "publisher": {
     "@type": "Organization",
@@ -132,7 +132,7 @@ export default function BlogPost2() {
           <div style={{ display: "flex", alignItems: "center", gap: 16, color: "#555566", fontSize: 14 }}>
             <span>TurboSnail</span>
             <span>·</span>
-            <span>10 aprilie 2026, actualizat 10 octombrie 2026</span>
+            <span>13 aprilie 2026, actualizat 10 octombrie 2026</span>
             <span>·</span>
             <span>9 min citire</span>
           </div>
