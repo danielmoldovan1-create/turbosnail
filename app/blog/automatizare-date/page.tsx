@@ -187,7 +187,7 @@ export default function AutomatizareDate() {
             <strong>Formular, CRM și notificare</strong> - cererea de pe site intră direct în CRM, cu toate câmpurile completate, iar persoana responsabilă primește o notificare. Nimeni nu mai copiază nimic.
           </li>
           <li>
-            <strong>Facturi primite pe email</strong> - un flux preia atașamentul, AI-ul extrage furnizorul, suma și data, iar datele ajung în tabelul sau în programul contabil. Facturile neclare ajung la un om pentru verificare.
+            <strong>Facturi primite pe email</strong> - un flux preia atașamentul, AI-ul extrage furnizorul, suma și data, iar datele ajung în tabelul sau în programul contabil. Facturile neclare ajung la un om pentru verificare. Fluxul complet, de la email la arhivă, e descris în ghidul despre <a href="/blog/automatizare-documente">automatizare documente</a>.
           </li>
           <li>
             <strong>Comenzi și stoc</strong> - fiecare comandă nouă actualizează stocul, iar când un produs scade sub pragul stabilit, primești automat o alertă.

@@ -326,6 +326,7 @@ export const DOMAINS: DomainData[] = [
       { pre: "Colectarea, citirea documentelor și potrivirea plăților sunt ", anchor: "automatizări AI", href: "/servicii/automatizari-ai", post: " construite în jurul programului vostru de contabilitate." },
       { pre: "Rapoartele lunare pentru clienți folosesc același mecanism ca serviciul de ", anchor: "raportare și analytics", href: "/servicii/raportare-analytics", post: "." },
       { pre: "Cum elimini munca manuală din rapoartele periodice am explicat pas cu pas în ghidul despre ", anchor: "automatizarea rapoartelor", href: "/blog/automatizare-rapoarte-saptamanale-lunare", post: "." },
+      { pre: "Cum se citesc automat facturile, bonurile și extrasele clienților am explicat în ghidul despre ", anchor: "automatizare documente", href: "/blog/automatizare-documente", post: "." },
       { pre: "Dacă vrei să afli întâi ce merită automatizat în biroul tău, pornește cu ", anchor: "consultanță AI", href: "/servicii/consultanta-ai", post: "." },
     ],
     faq: [
