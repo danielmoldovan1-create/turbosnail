@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Automatizarea Completă a Unei Afaceri: De Unde Începi | TurboSnail",
@@ -25,6 +26,7 @@ const jsonLd = {
   "url": "https://turbosnail.ro/blog/automatizare-completa-afacere",
   "datePublished": "2026-04-22",
   "dateModified": "2026-10-23",
+  "author": AUTHOR_LD,
   "publisher": {
     "@type": "Organization",
     "name": "TurboSnail",
@@ -257,6 +259,8 @@ export default function AutomatizareCompletaAfacere() {
             <div className="faq-a">În mare parte, da. Platformele de automatizare moderne se conectează la mii de aplicații prin API sau conectori predefiniți. În cele mai multe cazuri, nu trebuie să înlocuiești ce ai, ci să conectezi corect ce există deja. Excepție fac sistemele foarte vechi sau proprietare fără API, unde integrarea necesită mai multă muncă tehnică.</div>
           </div>
         </div>
+
+        <AuthorBox />
 
         <div style={{ marginTop: 64, padding: "44px 36px", background: "linear-gradient(160deg, #0f1119, #0c0e15)", border: "1px solid rgba(255,106,0,0.2)", borderRadius: 20, textAlign: "center" }}>
           <p className="hd" style={{ fontSize: 12, fontWeight: 700, color: "#ff6a00", letterSpacing: 2, textTransform: "uppercase", marginBottom: 16 }}>Pasul următor</p>

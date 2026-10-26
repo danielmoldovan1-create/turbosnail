@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Agent AI pentru vânzări în România: ghid practic | TurboSnail",
@@ -25,6 +26,7 @@ const articleLd = {
   url: "https://turbosnail.ro/blog/agent-ai-pentru-vanzari-romania",
   datePublished: "2026-10-07",
   dateModified: "2026-10-07",
+  author: AUTHOR_LD,
   publisher: {
     "@type": "Organization",
     name: "TurboSnail",
@@ -281,6 +283,10 @@ export default function AgentAIPentruVanzariRomania() {
           </div>
         ))}
       </section>
+
+      <div className="mx" style={{ paddingBottom: 56 }}>
+        <AuthorBox />
+      </div>
 
       <div style={{ height: 1, background: "linear-gradient(90deg, transparent, rgba(255,106,0,0.12), transparent)", maxWidth: 760, margin: "0 auto" }} />
 
