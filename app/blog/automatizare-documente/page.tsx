@@ -163,7 +163,7 @@ export default function AutomatizareDocumente() {
           <li><strong>Recunoașterea</strong> - sistemul stabilește tipul documentului: factură, bon, extras, contract, comandă.</li>
           <li><strong>Extragerea</strong> - câmpurile importante sunt citite și trecute într-un format structurat.</li>
           <li><strong>Validarea</strong> - reguli simple verifică datele: codul fiscal are formatul corect, totalul se potrivește cu suma liniilor, data are sens.</li>
-          <li><strong>Livrarea</strong> - datele ajung în programul de contabilitate, în CRM sau într-un tabel, iar documentul se arhivează cu un nume standard.</li>
+          <li><strong>Livrarea</strong> - datele ajung în programul de contabilitate, în CRM sau într-un tabel, iar documentul se arhivează cu un nume standard. Cum circulă apoi datele între aplicații am explicat în ghidul despre <a href="/blog/automatizare-date">automatizare date</a>.</li>
         </ol>
 
         <h2>Ce documente merită automatizate primele</h2>

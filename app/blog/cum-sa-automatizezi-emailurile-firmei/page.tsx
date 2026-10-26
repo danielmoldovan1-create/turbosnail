@@ -194,7 +194,7 @@ export default function CumSaAutomatizeziEmailurileFirmei() {
             <strong>Răspunsuri la întrebări frecvente</strong> - program, documente necesare, termene, pașii colaborării. AI-ul propune o ciornă pe baza răspunsurilor validate de tine, iar un om o verifică înainte de trimitere.
           </li>
           <li>
-            <strong>Sortarea emailurilor primite</strong> - AI-ul citește fiecare mesaj, îl etichetează (ofertă, reclamație, factură, colaborare) și îl direcționează către persoana potrivită. Nimic nu mai stă zile întregi într-o adresă comună.
+            <strong>Sortarea emailurilor primite</strong> - AI-ul citește fiecare mesaj, îl etichetează (ofertă, reclamație, factură, colaborare) și îl direcționează către persoana potrivită. Nimic nu mai stă zile întregi într-o adresă comună. Facturile găsite așa pot ajunge singure în contabilitate, ca în ghidul despre <a href="/blog/automatizare-documente">automatizare documente</a>.
           </li>
           <li>
             <strong>Remindere</strong> - facturi aproape de scadență, documente lipsă de la clienți, contracte care expiră. Exact mesajele pe care toată lumea uită să le trimită la timp.

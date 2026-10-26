@@ -151,7 +151,7 @@ export default function AutomatizareRapoarte() {
 
         <h2>De ce automatizarea rapoartelor este primul candidat logic</h2>
         <p>
-          Automatizarea rapoartelor înseamnă că un sistem software colectează datele necesare din sursele tale (Google Analytics, platforme de vânzări, foi de calcul, CRM, sisteme contabile), le procesează conform unui template predefinit și trimite raportul final pe email sau îl depune într-un folder partajat, la o oră și dată stabilite, fără intervenție umană.
+          Automatizarea rapoartelor înseamnă că un sistem software colectează datele necesare din sursele tale (Google Analytics, platforme de vânzări, foi de calcul, CRM, sisteme contabile), le procesează conform unui template predefinit și trimite raportul final pe email sau îl depune într-un folder partajat, la o oră și dată stabilite, fără intervenție umană. Colectarea și sincronizarea datelor între aplicații, pasul de dinaintea oricărui raport, sunt explicate în ghidul despre <a href="https://turbosnail.ro/blog/automatizare-date">automatizare date</a>.
         </p>
         <p>
           Prin <a href="https://turbosnail.ro/servicii/raportare-analytics">raportare și analytics</a> automatizată, firmele din România elimină nu doar timpul de execuție, ci și erorile de copy-paste, întârzierile cauzate de absența celui care face raportul și inconsistențele dintre versiuni diferite ale aceluiași document. De aceea, rapoartele sunt un punct de pornire bun pentru <a href="https://turbosnail.ro">automatizări AI</a>: procesul e clar, iar rezultatul se vede de la primul raport trimis automat.
