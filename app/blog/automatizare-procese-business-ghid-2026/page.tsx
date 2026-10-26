@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Automatizare Procese Business: 12 Fluxuri Concrete pentru Firme Românești în 2026 | TurboSnail",
@@ -25,6 +26,7 @@ const jsonLd = {
   "url": "https://turbosnail.ro/blog/automatizare-procese-business-ghid-2026",
   "datePublished": "2026-04-29",
   "dateModified": "2026-10-15",
+  "author": AUTHOR_LD,
   "publisher": {
     "@type": "Organization",
     "name": "TurboSnail",
@@ -301,6 +303,8 @@ export default function AutomatizareProceseBusiness() {
             <div className="faq-a">Depinde de instrumentele alese. Există soluții GDPR-compliant, cu date stocate în UE și contracte de procesare a datelor clare. Înainte de orice implementare care atinge date personale, verifică documentația de conformitate a furnizorului.</div>
           </div>
         </div>
+
+        <AuthorBox />
 
         {/* CTA */}
         <div style={{ marginTop: 64, padding: "44px 36px", background: "linear-gradient(160deg, #0f1119, #0c0e15)", border: "1px solid rgba(255,106,0,0.2)", borderRadius: 20, textAlign: "center" }}>

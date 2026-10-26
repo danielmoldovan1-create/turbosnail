@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Ce este inteligența artificială? Explicat simplu | TurboSnail",
@@ -25,6 +26,7 @@ const jsonLd = {
   "url": "https://turbosnail.ro/blog/ce-este-inteligenta-artificiala",
   "datePublished": "2026-04-13",
   "dateModified": "2026-10-10",
+  "author": AUTHOR_LD,
   "publisher": {
     "@type": "Organization",
     "name": "TurboSnail",
@@ -130,7 +132,7 @@ export default function BlogPost2() {
             <span className="ac">Cum Transformă Afacerile în 2026</span>
           </h1>
           <div style={{ display: "flex", alignItems: "center", gap: 16, color: "#555566", fontSize: 14 }}>
-            <span>TurboSnail</span>
+            <span>Daniel Moldovan</span>
             <span>·</span>
             <span>13 aprilie 2026, actualizat 10 octombrie 2026</span>
             <span>·</span>
@@ -224,6 +226,8 @@ export default function BlogPost2() {
             <div className="faq-a">Orice proces pe care îl faci manual, repetat, după același algoritm este un candidat. Dacă poți descrie pașii într-o listă, fără ambiguități, se poate automatiza. Un audit de 30 de minute îți arată exact unde e cel mai mare câștig.</div>
           </div>
         </div>
+
+        <AuthorBox />
 
         {/* CTA */}
         <div style={{ marginTop: 56, padding: 36, borderRadius: 20, border: "1px solid rgba(255,106,0,0.25)", background: "linear-gradient(180deg, rgba(255,106,0,0.06), rgba(255,106,0,0.02))", textAlign: "center" }}>

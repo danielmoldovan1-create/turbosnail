@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Cum să automatizezi emailurile firmei: ghid practic | TurboSnail",
@@ -25,6 +26,7 @@ const articleLd = {
   url: "https://turbosnail.ro/blog/cum-sa-automatizezi-emailurile-firmei",
   datePublished: "2026-10-07",
   dateModified: "2026-10-07",
+  author: AUTHOR_LD,
   publisher: {
     "@type": "Organization",
     name: "TurboSnail",
@@ -273,6 +275,10 @@ export default function CumSaAutomatizeziEmailurileFirmei() {
           </div>
         ))}
       </section>
+
+      <div className="mx" style={{ paddingBottom: 56 }}>
+        <AuthorBox />
+      </div>
 
       <div style={{ height: 1, background: "linear-gradient(90deg, transparent, rgba(255,106,0,0.12), transparent)", maxWidth: 760, margin: "0 auto" }} />
 

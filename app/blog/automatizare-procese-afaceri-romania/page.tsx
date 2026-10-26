@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Automatizare Procese Afaceri România: Ghid Practic 2026 | TurboSnail",
@@ -25,6 +26,7 @@ const jsonLd = {
   "url": "https://turbosnail.ro/blog/automatizare-procese-afaceri-romania",
   "datePublished": "2026-04-19",
   "dateModified": "2026-10-23",
+  "author": AUTHOR_LD,
   "publisher": {
     "@type": "Organization",
     "name": "TurboSnail",
@@ -242,6 +244,8 @@ export default function AutomatizareProcese() {
             <div className="faq-a">Procesele simple le poți automatiza singur cu tutoriale gratuite. Când ai nevoie să conectezi sisteme mai complexe, să integrezi AI sau să automatizezi procese critice pentru business, un specialist economisește timp și evită erori costisitoare.</div>
           </div>
         </div>
+
+        <AuthorBox />
 
         {/* CTA */}
         <div style={{ marginTop: 64, padding: "44px 36px", background: "linear-gradient(160deg, #0f1119, #0c0e15)", border: "1px solid rgba(255,106,0,0.2)", borderRadius: 20, textAlign: "center" }}>

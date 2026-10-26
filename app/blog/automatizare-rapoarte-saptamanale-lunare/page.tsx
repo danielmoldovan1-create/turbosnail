@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Automatizare rapoarte: gata luni dimineață, fără Excel",
@@ -25,6 +26,7 @@ const jsonLd = {
   "url": "https://turbosnail.ro/blog/automatizare-rapoarte-saptamanale-lunare",
   "datePublished": "2026-04-29",
   "dateModified": "2026-10-07",
+  "author": AUTHOR_LD,
   "publisher": {
     "@type": "Organization",
     "name": "TurboSnail",
@@ -274,6 +276,8 @@ export default function AutomatizareRapoarte() {
             <div className="faq-a">Poate face amândouă, cu o limitare importantă: AI-ul poate identifica variații față de perioadele anterioare și le poate descrie în text, dar nu poate înlocui judecata unui manager care cunoaște contextul de business. Interpretarea AI este utilă ca punct de plecare, nu ca decizie finală.</div>
           </div>
         </div>
+
+        <AuthorBox />
 
         {/* CTA */}
         <div style={{ marginTop: 64, padding: "44px 36px", background: "linear-gradient(160deg, #0f1119, #0c0e15)", border: "1px solid rgba(255,106,0,0.2)", borderRadius: 20, textAlign: "center" }}>

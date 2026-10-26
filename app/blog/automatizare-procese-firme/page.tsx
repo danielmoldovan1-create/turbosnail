@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Automatizare Procese Firme: Ghid pentru IMM-uri din România 2026 | TurboSnail",
@@ -25,6 +26,7 @@ const jsonLd = {
   "url": "https://turbosnail.ro/blog/automatizare-procese-firme",
   "datePublished": "2026-04-22",
   "dateModified": "2026-10-23",
+  "author": AUTHOR_LD,
   "publisher": {
     "@type": "Organization",
     "name": "TurboSnail",
@@ -249,6 +251,8 @@ export default function AutomatizareProceseFireme() {
             <div className="faq-a">Fluxurile bine construite au mecanisme de alertare: dacă ceva eșuează, responsabilul primește o notificare imediată. Procesul nu &quot;dispare&quot;, el este ținut în coadă sau marcat ca eșuat până la rezolvare. Automatizările robuste au întotdeauna o cale de fallback către procesul manual.</div>
           </div>
         </div>
+
+        <AuthorBox />
 
         {/* CTA */}
         <div style={{ marginTop: 64, padding: "44px 36px", background: "linear-gradient(160deg, #0f1119, #0c0e15)", border: "1px solid rgba(255,106,0,0.2)", borderRadius: 20, textAlign: "center" }}>

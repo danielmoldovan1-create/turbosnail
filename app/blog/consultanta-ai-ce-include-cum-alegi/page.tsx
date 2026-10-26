@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Consultanță AI: ce include și cum alegi | TurboSnail",
@@ -25,6 +26,7 @@ const jsonLd = {
   "url": "https://turbosnail.ro/blog/consultanta-ai-ce-include-cum-alegi",
   "datePublished": "2026-04-29",
   "dateModified": "2026-10-15",
+  "author": AUTHOR_LD,
   "publisher": {
     "@type": "Organization",
     "name": "TurboSnail",
@@ -289,6 +291,8 @@ export default function ConsultantaAI() {
             <div className="faq-a">Consultanța IT clasică se focusează pe infrastructură, sisteme și software de business. Consultanța AI se focusează specific pe unde modelele de limbaj, automatizarea și analiza de date pot înlocui sau augmenta munca manuală repetitivă. Există suprapunere, dar abilitățile și toolset-ul sunt diferite.</div>
           </div>
         </div>
+
+        <AuthorBox />
 
         {/* CTA */}
         <div style={{ marginTop: 64, padding: "44px 36px", background: "linear-gradient(160deg, #0f1119, #0c0e15)", border: "1px solid rgba(255,106,0,0.2)", borderRadius: 20, textAlign: "center" }}>

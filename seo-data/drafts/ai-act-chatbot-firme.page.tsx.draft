@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 const EUR_LEX = "https://eur-lex.europa.eu/legal-content/RO/TXT/?uri=CELEX:32024R1689";
 const GIBSON_DUNN = "https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/";
@@ -29,6 +30,7 @@ const articleLd = {
   url: "https://turbosnail.ro/blog/ai-act-chatbot-firme",
   datePublished: "2026-10-27",
   dateModified: "2026-10-27",
+  author: AUTHOR_LD,
   publisher: {
     "@type": "Organization",
     name: "TurboSnail",
@@ -223,6 +225,10 @@ export default function AiActChatbotFirme() {
           </div>
         ))}
       </section>
+
+      <div className="mx" style={{ paddingBottom: 56 }}>
+        <AuthorBox />
+      </div>
 
       <div style={{ height: 1, background: "linear-gradient(90deg, transparent, rgba(255,106,0,0.12), transparent)", maxWidth: 760, margin: "0 auto" }} />
 
