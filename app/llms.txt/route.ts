@@ -42,6 +42,7 @@ const AFTER = `## Blog
 - [Ce este un agent AI](https://turbosnail.ro/blog/ce-este-un-agent-ai): explicat simplu, diferența față de chatbot și automatizare, când merită.
 - [Automatizare documente](https://turbosnail.ro/blog/automatizare-documente): ce documente automatizezi primele, cum le citește AI-ul și unde rămâne verificarea umană.
 - [Agenți AI în firmă: reguli de siguranță](https://turbosnail.ro/blog/agenti-ai-reguli-siguranta): aprobare umană, plafoane, jurnal, test pe date de probă și oprire de urgență pentru agenții AI dintr-o firmă mică.
+- [AI Act și chatbotul firmei](https://turbosnail.ro/blog/ai-act-chatbot-firme): ce cere articolul 50 de la 2 august 2026, cine răspunde când chatbotul e făcut de altcineva și ce pași faci.
 
 ## Contact
 
