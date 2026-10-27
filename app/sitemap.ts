@@ -190,5 +190,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://turbosnail.ro/blog/ai-act-chatbot-firme',
+      lastModified: '2026-10-27',
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ]
 }

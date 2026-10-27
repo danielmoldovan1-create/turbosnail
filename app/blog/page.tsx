@@ -16,6 +16,13 @@ export const metadata: Metadata = {
 
 const ARTICLES = [
   {
+    slug: "ai-act-chatbot-firme",
+    title: "AI Act: ce trebuie să facă firma ta dacă are chatbot",
+    date: "27 octombrie 2026",
+    excerpt: "De la 2 august 2026, oamenii trebuie să afle că vorbesc cu un AI. Cine răspunde când chatbotul e făcut de altcineva, ce s-a amânat și ce pași faci.",
+    tag: "AI",
+  },
+  {
     slug: "agenti-ai-reguli-siguranta",
     title: "Agenți AI în firmă: reguli ca să nu-ți scape de sub control",
     date: "22 octombrie 2026",
