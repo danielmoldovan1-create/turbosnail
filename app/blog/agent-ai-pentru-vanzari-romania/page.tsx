@@ -227,7 +227,7 @@ export default function AgentAIPentruVanzariRomania() {
             <strong>Alege o singură sarcină cu risc mic</strong> - de exemplu completarea CRM-ului după apeluri sau lista de priorități de dimineață. Nu începe cu emailuri trimise automat clienților.
           </li>
           <li>
-            <strong>Pune un om în buclă</strong> - agentul propune, vânzătorul aprobă. Păstrează regula cel puțin în primele săptămâni.
+            <strong>Pune un om în buclă</strong> - agentul propune, vânzătorul aprobă. Păstrează regula cel puțin în primele săptămâni. Celelalte reguli de siguranță, de la plafoane la oprirea de urgență, sunt în ghidul despre <a href="/blog/agenti-ai-reguli-siguranta">agenți AI în firmă</a>.
           </li>
           <li>
             <strong>Măsoară</strong> - viteza de răspuns la leadurile noi, numărul de follow-up-uri ratate și timpul pe care vânzătorii spun că l-au recuperat.

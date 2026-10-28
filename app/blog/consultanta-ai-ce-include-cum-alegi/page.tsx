@@ -157,7 +157,7 @@ export default function ConsultantaAI() {
           Ce nu este: o prezentare despre viitorul AI, un abonament la ChatGPT instalat pe calculatoarele angajaților sau o promisiune că „vei economisi 80% din timp&quot; fără o analiză concretă a proceselor tale. Din nefericire, o parte semnificativă din ce se vinde drept <a href="https://turbosnail.ro/servicii/consultanta-ai">consultanță AI</a> în România astăzi se oprește la nivelul teoriei.
         </p>
         <p>
-          Un angajament de consultanță AI serios produce la final un lucru: cel puțin un proces automatizat sau îmbunătățit cu AI, cu rezultate măsurabile, operațional în firma ta.
+          Un angajament de consultanță AI serios produce la final un lucru: cel puțin un proces automatizat sau îmbunătățit cu AI, cu rezultate măsurabile, operațional în firma ta. Ce procese se pretează la asta găsești în ghidul despre <a href="https://turbosnail.ro/blog/automatizari-ai-pentru-afaceri-romania">soluții AI pentru firme</a>.
         </p>
 
         <blockquote>

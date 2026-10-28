@@ -235,6 +235,9 @@ export default function CeEsteUnAgentAI() {
           <li><strong>Nu își asumă responsabilitatea.</strong> Pentru fiecare acțiune automată trebuie să existe un om care răspunde de rezultat.</li>
           <li><strong>Are nevoie de limite clare.</strong> Fără permisiuni stabilite atent, un agent poate trimite un email sau poate modifica o înregistrare pe care n-ar fi trebuit să o atingă.</li>
         </ul>
+        <p>
+          Cum pui aceste limite în practică, cu aprobare umană, plafoane și jurnal, am arătat în ghidul despre <a href="/blog/agenti-ai-reguli-siguranta">agenți AI în firmă</a>.
+        </p>
 
         <h2>Ai nevoie de un agent AI? Un test simplu</h2>
         <p>Un agent AI are sens atunci când procesul îndeplinește toate condițiile de mai jos:</p>
