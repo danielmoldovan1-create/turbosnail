@@ -178,6 +178,7 @@ export default function BlogPost2() {
 
           <h3>4. Analiză și raportare</h3>
           <p>AI-ul poate analiza datele din vânzări, trafic web și campanii de marketing pentru a identifica tendințe, anomalii și oportunități pe care un om le-ar rata sau ar dura ore să le găsească.</p>
+          <p>Exemple concrete de procese pe care le poți automatiza găsești în ghidul despre <a href="/blog/automatizari-ai-pentru-afaceri-romania">AI pentru companii</a>.</p>
 
           <blockquote>
             <p>&quot;Suntem în avangarda integrării AI-ului nu doar ca să lucrăm mai repede, ci ca să lucrăm mai inteligent.&quot;</p>
@@ -196,6 +197,7 @@ export default function BlogPost2() {
             <li><strong>Automatizează un singur proces,</strong> nu tot deodată. Un workflow funcțional îți demonstrează valoarea mai repede decât un plan mare neterminat</li>
             <li><strong>Măsoară impactul:</strong> câte ore ai economisit, câte erori ai eliminat, câți bani ai salvat</li>
           </ul>
+          <p>Dacă vrei să faci primii pași împreună cu cineva din afară, asta este o <Link href="/servicii/consultanta-ai">consultanță în inteligență artificială</Link>: harta proceselor, prioritățile și primul flux de testat.</p>
 
           <h2>Inteligența Artificială Nu Este Magie. Dar Este Puternică.</h2>
           <p>AI-ul face greșeli. Are limitări. Nu înlocuiește judecata umană în decizii complexe. Dar pentru sarcinile repetitive, procesarea datelor și comunicarea de volum mare, este cel mai eficient instrument pe care îl are la dispoziție un antreprenor în 2026.</p>

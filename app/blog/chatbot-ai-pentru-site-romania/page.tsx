@@ -221,6 +221,9 @@ export default function ChatbotAIPentruSiteRomania() {
             <strong>Ce date colectează și unde sunt stocate?</strong> Relevant pentru GDPR. Datele clienților tăi nu ar trebui să ajungă pe servere fără o bază legală clară.
           </li>
           <li>
+            <strong>Cum anunță chatbotul că e un AI?</strong> Regulamentul european AI Act cere ca vizitatorul să afle că vorbește cu un sistem de inteligență artificială. Ce înseamnă asta concret și cine răspunde am explicat în ghidul despre <a href="/blog/ai-act-chatbot-firme">AI Act și chatbotul firmei</a>.
+          </li>
+          <li>
             <strong>Cum se integrează cu CRM-ul sau cu emailul tău?</strong> Un chatbot izolat care nu trimite leadurile undeva util nu rezolvă nimic. Verifică integrările disponibile din prima.
           </li>
         </ul>
