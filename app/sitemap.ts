@@ -33,6 +33,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: '2026-10-15',
       changeFrequency: 'monthly',
       priority: 0.8,
+      alternates: {
+        languages: {
+          'ro-RO': 'https://turbosnail.ro/servicii/consultanta-ai',
+          en: 'https://turbosnail.ro/en/ai-consulting-romania',
+        },
+      },
+    },
+    {
+      url: 'https://turbosnail.ro/en/ai-consulting-romania',
+      lastModified: '2026-10-28',
+      changeFrequency: 'monthly',
+      priority: 0.7,
+      alternates: {
+        languages: {
+          'ro-RO': 'https://turbosnail.ro/servicii/consultanta-ai',
+          en: 'https://turbosnail.ro/en/ai-consulting-romania',
+        },
+      },
     },
     {
       url: 'https://turbosnail.ro/servicii/chatbot-ai-romania',
