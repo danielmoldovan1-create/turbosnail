@@ -44,6 +44,10 @@ const AFTER = `## Blog
 - [Agenți AI în firmă: reguli de siguranță](https://turbosnail.ro/blog/agenti-ai-reguli-siguranta): aprobare umană, plafoane, jurnal, test pe date de probă și oprire de urgență pentru agenții AI dintr-o firmă mică.
 - [AI Act și chatbotul firmei](https://turbosnail.ro/blog/ai-act-chatbot-firme): ce cere articolul 50 de la 2 august 2026, cine răspunde când chatbotul e făcut de altcineva și ce pași faci.
 
+## English
+
+- [AI consulting in Romania](https://turbosnail.ro/en/ai-consulting-romania): AI consultancy in English for companies in Romania: process audit, prioritised plan, automations and conversational AI.
+
 ## Contact
 
 - Sediu: Timișoara, România
