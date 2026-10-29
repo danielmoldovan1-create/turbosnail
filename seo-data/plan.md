@@ -79,6 +79,7 @@ Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul a
   - /blog/automatizari-ai-pentru-afaceri-romania: „Automatizări AI pentru companii și afaceri din România | TurboSnail”;
   - /servicii/consultanta-ai: „Consultanță AI (inteligență artificială) pentru firme | TurboSnail”;
   - /servicii/automatizari-ai: title diferit de homepage, plus ancorele spre ea schimbate în „servicii de automatizare AI”.
+  - într-un PR separat, cele trei title-uri prea lungi raportate de Semrush (aprobate pe 29 oct.): /blog/automatizare-procese-business-ghid-2026, /blog/automatizare-procese-firme și /blog/chatbot-ai-pentru-site-romania. Se schimbă doar title-ul (sub 65 de caractere), ca efectul să se poată măsura separat.
 - 28 oct.: pagina în engleză /en/ai-consulting-romania (decizia lui Daniel din 28 oct.), pereche hreflang cu /servicii/consultanta-ai. O singură pagină deocamdată: 12 căutări în engleză, 138 de afișări în 28 de zile. A doua pagină (conversational AI) doar dacă secțiunea ei aduce afișări separat.
 
 ## Repere (nu promisiuni)
@@ -91,4 +92,5 @@ Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul a
 
 ## Blocaje cunoscute
 - Unele surse răspund cu 403 din mediul de lucru: forbes.com, gartner.com, bcg.com, ec.europa.eu, eur-lex.europa.eu. Au mers în octombrie: microsoft.com, computerworld.com, pymnts.com, publications.europa.eu, gibsondunn.com, joneswalker.com. Pentru restul se poate cere acces în setările de rețea ale mediului.
+- insse.ro nu se poate deschide deloc din mediul de lucru (domeniul nu e permis în setările de rețea). Linkul INS de pe /domenii/clinici-stomatologice se verifică de pe telefon.
 - Canibalizare pe „automatizări AI”: homepage-ul, /servicii/automatizari-ai și /blog/automatizari-ai-pentru-afaceri-romania au aproape același title. Se rezolvă pe 5 noiembrie (title-uri și ancore).
