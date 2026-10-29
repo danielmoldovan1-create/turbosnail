@@ -53,6 +53,7 @@ const AFTER = `## Blog
 
 - Sediu: Timișoara, România
 - Email: hello@turbosnail.ro
+- LinkedIn: https://www.linkedin.com/company/turbo-snail/
 - Lista de așteptare (audit gratuit): https://turbosnail.ro/#contact
 - Sitemap: https://turbosnail.ro/sitemap.xml
 `;
