@@ -238,7 +238,7 @@ export default function AutomatizareRapoarte() {
           <li><strong>Power BI sau Tableau</strong> pentru firme cu volume mari de date și nevoi complexe de vizualizare. Acestea cer mai multă configurare și uneori un specialist dedicat.</li>
         </ul>
         <p>
-          Pentru multe dintre rapoartele periodice ale firmelor mici și mijlocii din România, combinația Make + Google Sheets + email este suficientă și poate fi implementată fără cunoștințe de programare. Citește mai multe despre ce instrumente de automatizare există și cum se compară pe <a href="https://zapier.com/blog/best-workflow-automation-software/" target="_blank" rel="noopener noreferrer">Zapier Blog, ghid comparativ instrumente de automatizare</a>.
+          Pentru multe dintre rapoartele periodice ale firmelor mici și mijlocii din România, combinația Make + Google Sheets + email este suficientă și poate fi implementată fără cunoștințe de programare. Citește mai multe despre ce instrumente de automatizare există și cum se compară pe <a href="https://zapier.com/blog/workflow-automation-software/" target="_blank" rel="noopener noreferrer">Zapier Blog, ghid comparativ instrumente de automatizare</a>.
         </p>
 
         <h2>Greșelile frecvente când automatizezi raportarea</h2>
