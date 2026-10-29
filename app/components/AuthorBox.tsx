@@ -7,7 +7,13 @@ export const AUTHOR_LD = {
   name: "Daniel Moldovan",
   jobTitle: "Fondator TurboSnail",
   description: AUTHOR_BIO,
-  worksFor: { "@type": "Organization", name: "TurboSnail", url: "https://turbosnail.ro" },
+  worksFor: {
+    "@type": "Organization",
+    "@id": "https://turbosnail.ro/#organization",
+    name: "TurboSnail",
+    url: "https://turbosnail.ro",
+    sameAs: ["https://www.linkedin.com/company/turbo-snail/"],
+  },
 };
 
 export default function AuthorBox() {

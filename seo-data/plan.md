@@ -20,13 +20,14 @@ Mai multe pagini pe prima pagină Google pentru căutările unde avem deja afiș
 ## Lunar (în afara site-ului, făcut de Daniel)
 - Google Business Profile pentru Timișoara.
 - Bing Webmaster Tools (import din GSC).
-- Pagina de LinkedIn a firmei, cu câte o postare pe săptămână despre articolul nou.
+- Pagina de LinkedIn a firmei (https://www.linkedin.com/company/turbo-snail/, legată de site pe 29 oct.: footer și schema Organization), cu câte o postare pe săptămână despre articolul nou.
 - 2-3 linkuri reale pe lună: Camera de Comerț Timiș, un articol invitat într-o publicație de business, directoare relevante. Fără linkuri cumpărate.
 
 ## Cum alegem articolele
 1. Query-uri din GSC care au afișări, dar nu au o pagină dedicată.
 2. Capturi Google Trends (Rising) pe România.
 3. keywords.json, sărind peste keyword-urile care canibalizează pagini existente sau care cer prețuri.
+4. Semrush (Keyword Gap, Keyword Magic), cu aceleași reguli, după ce verificăm ce apare în Google pentru căutarea respectivă.
 
 Primele propuneri: automatizare facturi, AI pentru antreprenori, cum economisești timp cu AI în business, GDPR și AI în firmă.
 
@@ -63,6 +64,7 @@ Reguli:
 | cold email și outbound (serviciu) | /servicii/cold-email-outbound | „cold email și outbound” |
 | AI Act și chatbotul firmei | /blog/ai-act-chatbot-firme (din 27 oct.) | „AI Act” |
 | GDPR și AI în firmă | /blog/gdpr-ai-firma (din 29 oct.) | „GDPR și AI” |
+| ce înseamnă CRM | /blog/ce-inseamna-crm (din 3 nov.) | „ce înseamnă CRM”, „sistem CRM” |
 | AI consulting Romania (în engleză) | /en/ai-consulting-romania (din 28 oct.) | „AI consulting in Romania” (din paginile în engleză); din paginile în română, doar linkul de limbă „English version” |
 
 Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul altor pagini (automatizare documente, agenți AI în firmă, automatizări AI pentru afaceri și cele 5 articole despre automatizarea proceselor), iar ancora „automatizări AI” trimitea și la homepage (21 de pagini), și la /servicii/automatizari-ai (9 pagini plus meniul).
@@ -73,7 +75,8 @@ Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul a
 - 28 oct. (miercuri): evaluarea schimbărilor din 7 octombrie (export GSC 7-27 oct.). Tranșa B: linkuri spre articolul AI Act (din articolul despre chatbot), spre „agenți AI în firmă” (din articolele despre agentul AI și agentul AI pentru vânzări), spre „AI pentru companii” și spre consultanță cu ancora „consultanță în inteligență artificială” (din articolele despre inteligența artificială și despre consultanța AI).
 - 29 oct. (joi): articolul „GDPR și AI în firmă” (/blog/gdpr-ai-firma), cu linkuri spre AI Act, automatizare documente și agenți AI în firmă.
 - 30 oct. (vineri), tranșa C: cele 5 articole despre automatizarea proceselor legate între ele, fiecare cu ancora lui, cu automatizare-procese-afaceri-romania ca articol central. În automatizare-procese-firme: link spre automatizare documente și o frază că sortarea CV-urilor cu AI e „risc ridicat” în AI Act, cu link spre articolul de marți.
-- 2 nov. (luni): export GSC și alegerea articolelor săptămânii.
+- 2 nov. (luni): export GSC și alegerea articolului de joi. „Indicatori de performanță” (Keyword Gap, 260 de căutări) nu intră: rezultatele de căutare sunt documente de administrație publică și întrebări despre evaluarea angajaților, nu firme care vor să automatizeze.
+- 3 nov. (marți): articolul „Ce înseamnă CRM” (/blog/ce-inseamna-crm), din Keyword Gap Semrush: 480 de căutări pe lună, dificultate 10. În aceeași zi, într-un PR separat, linkuri spre el din articolele despre agentul AI pentru vânzări, automatizarea emailurilor și automatizare date.
 - 4 nov. (miercuri), tranșa D: secțiunea „Rapoarte financiare automatizate” în articolul despre rapoarte (query cu afișări, poziția 79); pe /servicii/consultanta-ai fraza „Lucrăm de la distanță cu firme din toată țara, inclusiv din București”; linkuri spre articolul GDPR din articolele despre documente, date și agenți AI.
 - 5 nov. (joi): evaluarea schimbărilor din 15 octombrie. Apoi, cu acordul lui Daniel, title-urile:
   - /blog/automatizari-ai-pentru-afaceri-romania: „Automatizări AI pentru companii și afaceri din România | TurboSnail”;
