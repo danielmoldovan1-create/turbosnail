@@ -214,5 +214,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://turbosnail.ro/blog/gdpr-ai-firma',
+      lastModified: '2026-10-29',
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ]
 }
