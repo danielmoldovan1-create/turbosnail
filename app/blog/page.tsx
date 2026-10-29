@@ -16,6 +16,13 @@ export const metadata: Metadata = {
 
 const ARTICLES = [
   {
+    slug: "gdpr-ai-firma",
+    title: "GDPR și AI în firmă: ce ai voie să faci cu datele clienților",
+    date: "29 octombrie 2026",
+    excerpt: "Ce date poți pune într-un instrument AI, pe ce bază legală, ce contract îți trebuie cu furnizorul, ce scrii în politica internă și când ai nevoie de avocat sau de DPO.",
+    tag: "AI",
+  },
+  {
     slug: "ai-act-chatbot-firme",
     title: "AI Act: ce trebuie să facă firma ta dacă are chatbot",
     date: "27 octombrie 2026",
