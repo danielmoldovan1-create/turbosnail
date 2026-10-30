@@ -156,7 +156,7 @@ export default function AutomatizareProceseBusiness() {
           Instrumentele moderne care permit <a href="https://turbosnail.ro/servicii/automatizari-ai">automatizări AI</a> sunt astăzi accesibile firmelor mici și mijlocii, fără departamente IT și fără investiții mari. Ceea ce conta odinioară ca proiect de transformare digitală de 12 luni se poate rezolva acum în câteva săptămâni cu instrumente vizuale precum Make, n8n sau Zapier, eventual augmentate cu AI pentru sarcinile care implică text sau decizie.
         </p>
         <p>
-          Mai jos sunt 12 procese concrete, grupate pe industrii, pe care firmele din România le automatizează activ în 2026. Fiecare exemplu include ce se automatizează, cum și ce economie de timp produce.
+          Mai jos sunt 12 procese concrete, grupate pe industrii, pe care firmele din România le automatizează activ în 2026. Fiecare exemplu include ce se automatizează, cum și ce economie de timp produce. Dacă vrei întâi imaginea de ansamblu, cu instrumentele și primii pași, citește ghidul despre <a href="https://turbosnail.ro/blog/automatizare-procese-afaceri-romania">automatizarea proceselor de afaceri</a> în România.
         </p>
 
         <blockquote>

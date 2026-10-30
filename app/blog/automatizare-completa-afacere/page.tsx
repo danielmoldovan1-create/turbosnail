@@ -144,7 +144,7 @@ export default function AutomatizareCompletaAfacere() {
           Automatizarea, în sensul ei practic, înseamnă că un software execută sarcini repetitive în locul unui om. Inteligența artificială este stratul care permite acestor sisteme să gestioneze și situații mai puțin structurate: să clasifice un email după intenție, să extragă date dintr-un document scanat sau să genereze un răspuns personalizat pe baza contextului unui client.
         </p>
         <p>
-          Automatizarea completă a unei afaceri nu este un proiect cu o dată de finalizare. Este o stare pe care o atingi treptat, adăugând fluxuri automatizate peste fluxuri, până când majoritatea sarcinilor repetitive se întâmplă fără intervenție umană. Cu <a href="https://turbosnail.ro">automatizări AI</a>, firmele mici pot atinge astăzi un nivel de eficiență operațională care altădată necesita departamente întregi.
+          Automatizarea completă a unei afaceri nu este un proiect cu o dată de finalizare. Este o stare pe care o atingi treptat, adăugând fluxuri automatizate peste fluxuri, până când majoritatea sarcinilor repetitive se întâmplă fără intervenție umană. Cu <a href="https://turbosnail.ro">automatizări AI</a>, firmele mici pot atinge astăzi un nivel de eficiență operațională care altădată necesita departamente întregi. Dacă abia începi, ghidul despre <Link href="/blog/automatizare-procese-afaceri-romania">automatizarea proceselor de afaceri</Link> arată primii pași, proces cu proces.
         </p>
         <p>
           Înainte de orice implementare, o sesiune de <Link href="/servicii/consultanta-ai">consultanță AI</Link> ajută la identificarea corectă a priorităților și la evitarea proiectelor care consumă timp fără ROI măsurabil.
