@@ -163,7 +163,7 @@ export default function AutomatizareProcese() {
           <li><strong>Onboarding clienți noi:</strong> trimitere documente, colectare date, creare cont</li>
         </ul>
         <p>
-          Fiecare dintre acestea poate fi parțial sau total automatizat cu instrumente disponibile azi, fără să scrii o singură linie de cod.
+          Fiecare dintre acestea poate fi parțial sau total automatizat cu instrumente disponibile azi, fără să scrii o singură linie de cod. Cum arată asta pe departamente, în contabilitate, HR și vânzări, găsești în ghidul de <a href="https://turbosnail.ro/blog/automatizare-procese-firme">automatizare procese firme</a>.
         </p>
 
         <blockquote>
@@ -198,7 +198,7 @@ export default function AutomatizareProcese() {
           Exemplu tipic: un magazin online pierde câteva ore în fiecare luni dimineața colectând date din Google Analytics, Meta Ads și platforma de comenzi, lipind totul într-un tabel Excel și trimițând un email către parteneri. Automatizat, același raport se generează la ora 8:00 în fiecare luni, se trimite singur și include un paragraf de interpretare generat de AI.
         </p>
         <p>
-          Rezultatul: orele de luni dimineața rămân pentru altceva, fără erori de copy-paste și cu date mereu actualizate.
+          Rezultatul: orele de luni dimineața rămân pentru altceva, fără erori de copy-paste și cu date mereu actualizate. Alte exemple, grupate pe industrii (servicii profesionale, comerț, imobiliare, clinici, producție), sunt în ghidul de <a href="https://turbosnail.ro/blog/automatizare-procese-business-ghid-2026">automatizare procese business</a>.
         </p>
 
         <h2>Ce nu se poate (încă) automatiza</h2>
@@ -206,7 +206,7 @@ export default function AutomatizareProcese() {
           Automatizarea nu rezolvă tot. Deciziile strategice, negocierile, relațiile cu clienții cheie, creația rămân în zona umană. Automatizarea proceselor nu înseamnă să înlocuiești oamenii, ci să îi eliberezi de sarcinile care nu necesită judecată, empatie sau creativitate.
         </p>
         <p>
-          O regulă simplă: dacă poți descrie procesul pas cu pas, într-o listă, fără ambiguități, poate fi automatizat. Dacă răspunsul depinde de context, situație și relații, nu poate.
+          O regulă simplă: dacă poți descrie procesul pas cu pas, într-o listă, fără ambiguități, poate fi automatizat. Dacă răspunsul depinde de context, situație și relații, nu poate. Procesele automatizate de care depind direct banii, cum sunt plățile sau contractele, au nevoie și de <a href="https://turbosnail.ro/blog/sisteme-control-procese-afaceri">sisteme de control pentru procesele critice</a>, ca o eroare să fie prinsă înainte să coste.
         </p>
 
         <h2>Cum să începi: pașii practici pentru o firmă din România</h2>
@@ -217,7 +217,7 @@ export default function AutomatizareProcese() {
           <li><strong>Luna 2:</strong> Măsoară rezultatul. Adaugă următorul proces.</li>
         </ul>
         <p>
-          O greșeală frecventă: firmele vor să automatizeze tot dintr-o dată și abandonează la prima complicație. Automatizarea procese afaceri România funcționează cel mai bine când se face incremental, cu măsurători clare la fiecare pas.
+          O greșeală frecventă: firmele vor să automatizeze tot dintr-o dată și abandonează la prima complicație. Automatizarea procese afaceri România funcționează cel mai bine când se face incremental, cu măsurători clare la fiecare pas. Chiar și <a href="https://turbosnail.ro/blog/automatizare-completa-afacere">automatizarea completă a afacerii</a> se construiește așa, proces cu proces, într-o ordine clară.
         </p>
 
         {/* FAQ */}

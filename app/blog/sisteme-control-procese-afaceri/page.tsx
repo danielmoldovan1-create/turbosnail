@@ -213,7 +213,7 @@ export default function SistemeControlProceseAfaceri() {
 
         <h2>Integrarea sistemelor de control cu automatizările existente</h2>
         <p>
-          Un sistem de control eficient nu funcționează izolat. El se integrează cu toate fluxurile automatizate existente și adaugă un strat de observabilitate peste acestea. Fiecare automatizare raportează starea către sistemul central: rulată cu succes, rulată cu avertisment, eșuat cu eroare specifică.
+          Un sistem de control eficient nu funcționează izolat. El se integrează cu toate fluxurile automatizate existente și adaugă un strat de observabilitate peste acestea. Fiecare automatizare raportează starea către sistemul central: rulată cu succes, rulată cu avertisment, eșuat cu eroare specifică. Dacă fluxurile acestea încă nu există, ghidul despre <Link href="/blog/automatizare-procese-afaceri-romania">automatizarea proceselor de afaceri</Link> arată de unde să începi.
         </p>
         <p>
           Serviciile de <Link href="/servicii/automatizari-ai">automatizări AI</Link> mature includ această componentă de observabilitate în mod nativ. Logarea, alertarea și auditul fac parte din arhitectura de bază, nu dintr-o fază ulterioară adăugată după probleme.

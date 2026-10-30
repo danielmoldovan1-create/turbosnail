@@ -144,7 +144,7 @@ export default function AutomatizareProceseFireme() {
 
         <h2>Ce înseamnă automatizarea proceselor pentru o firmă mică sau medie</h2>
         <p>
-          Automatizarea unui proces înseamnă că un software execută în locul tău o serie de acțiuni repetitive, fără să fie nevoie de intervenția unui angajat. Concret: un email primit declanșează o acțiune în CRM, o factură sosită pe inbox este procesată și înregistrată automat în contabilitate, un nou angajat primește contractul și toate documentele necesare fără ca cineva să le trimită manual.
+          Automatizarea unui proces înseamnă că un software execută în locul tău o serie de acțiuni repetitive, fără să fie nevoie de intervenția unui angajat. Concret: un email primit declanșează o acțiune în CRM, o factură sosită pe inbox este procesată și înregistrată automat în contabilitate, un nou angajat primește contractul și toate documentele necesare fără ca cineva să le trimită manual. Ghidul general despre <Link href="/blog/automatizare-procese-afaceri-romania">automatizarea proceselor de afaceri</Link> prezintă instrumentele și primii pași; aici le luăm pe departamente.
         </p>
         <p>
           Automatizarea nu presupune programare sau soluții IT complexe. Instrumentele disponibile astăzi permit oricărui antreprenor să construiască fluxuri funcționale într-un timp rezonabil. Diferența față de o simplă automatizare clasică o fac <a href="https://turbosnail.ro">automatizări AI</a> care pot gestiona și sarcini care nu sunt complet structurate: să clasifice un email după intenție, să extragă date dintr-un document scanat sau să genereze un prim draft de răspuns pe baza contextului.
@@ -158,7 +158,7 @@ export default function AutomatizareProceseFireme() {
           Contabilitatea este, în mod constant, cel mai aglomerat departament din punct de vedere al sarcinilor repetitive. Lista este lungă: colectare facturi de la furnizori, verificarea datelor, introducerea în programul de contabilitate, reconcilieri lunare, trimiterea balanței către management.
         </p>
         <p>
-          Fiecare dintre aceste sarcini conține o porțiune mare de muncă mecanică. Un flux automatizat de procesare facturi funcționează astfel: factura sosește pe un email dedicat, un instrument cu OCR extrage automat datele relevante (furnizor, suma, data, TVA), datele sunt verificate împotriva bazei de furnizori și introduse automat în sistemul contabil. Dacă ceva nu se potrivește, un angajat este notificat pentru verificare manuală. În caz contrar, procesul se încheie fără nicio intervenție.
+          Fiecare dintre aceste sarcini conține o porțiune mare de muncă mecanică. Un flux automatizat de procesare facturi funcționează astfel: factura sosește pe un email dedicat, un instrument cu OCR extrage automat datele relevante (furnizor, suma, data, TVA), datele sunt verificate împotriva bazei de furnizori și introduse automat în sistemul contabil. Dacă ceva nu se potrivește, un angajat este notificat pentru verificare manuală. În caz contrar, procesul se încheie fără nicio intervenție. Pentru contracte, extrase și facturile din e-Factura, pașii sunt în ghidul despre <Link href="/blog/automatizare-documente">automatizare documente</Link>.
         </p>
         <p>
           Efectul se vede în fișa postului: contabilul nu mai introduce date de pe facturi, ci verifică excepțiile marcate de sistem și se ocupă de analiza financiară.
@@ -171,7 +171,7 @@ export default function AutomatizareProceseFireme() {
 
         <h3>Recrutare automată</h3>
         <p>
-          Anunțul de job generează zeci de aplicații. Un sistem automatizat poate sorta CV-urile după criterii definite de tine, poate trimite automat un email de confirmare candidaților, poate programa interviurile în Google Calendar fără schimburi de emailuri și poate notifica recruterul cu un rezumat structurat al fiecărui candidat. Decizia rămâne la recruter. Sistemul preia doar partea mecanică.
+          Anunțul de job generează zeci de aplicații. Un sistem automatizat poate sorta CV-urile după criterii definite de tine, poate trimite automat un email de confirmare candidaților, poate programa interviurile în Google Calendar fără schimburi de emailuri și poate notifica recruterul cu un rezumat structurat al fiecărui candidat. Decizia rămâne la recruter. Sistemul preia doar partea mecanică. Dacă sortarea CV-urilor o face un sistem AI, <Link href="/blog/ai-act-chatbot-firme">AI Act</Link> îl încadrează de regulă la risc ridicat (<a href="https://eur-lex.europa.eu/legal-content/RO/TXT/?uri=CELEX:32024R1689" target="_blank" rel="noopener noreferrer">anexa III, punctul 4</a>), cu reguli mai stricte pentru firma care îl folosește.
         </p>
 
         <h3>Onboarding structurat</h3>
