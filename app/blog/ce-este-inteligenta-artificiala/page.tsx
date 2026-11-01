@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Ce este inteligența artificială? Explicat simplu | TurboSnail",
@@ -23,8 +24,9 @@ const jsonLd = {
   "headline": "Ce este Inteligența Artificială și Cum Transformă Afacerile în 2026",
   "description": "Ghid complet despre inteligența artificială pentru antreprenori din România. Cum funcționează AI-ul și ce poate face pentru afacerea ta.",
   "url": "https://turbosnail.ro/blog/ce-este-inteligenta-artificiala",
-  "datePublished": "2026-04-10",
+  "datePublished": "2026-04-13",
   "dateModified": "2026-10-10",
+  "author": AUTHOR_LD,
   "publisher": {
     "@type": "Organization",
     "name": "TurboSnail",
@@ -130,9 +132,9 @@ export default function BlogPost2() {
             <span className="ac">Cum Transformă Afacerile în 2026</span>
           </h1>
           <div style={{ display: "flex", alignItems: "center", gap: 16, color: "#555566", fontSize: 14 }}>
-            <span>TurboSnail</span>
+            <span>Daniel Moldovan</span>
             <span>·</span>
-            <span>10 aprilie 2026, actualizat 10 octombrie 2026</span>
+            <span>13 aprilie 2026, actualizat 10 octombrie 2026</span>
             <span>·</span>
             <span>9 min citire</span>
           </div>
@@ -176,6 +178,7 @@ export default function BlogPost2() {
 
           <h3>4. Analiză și raportare</h3>
           <p>AI-ul poate analiza datele din vânzări, trafic web și campanii de marketing pentru a identifica tendințe, anomalii și oportunități pe care un om le-ar rata sau ar dura ore să le găsească.</p>
+          <p>Exemple concrete de procese pe care le poți automatiza găsești în ghidul despre <a href="/blog/automatizari-ai-pentru-afaceri-romania">AI pentru companii</a>.</p>
 
           <blockquote>
             <p>&quot;Suntem în avangarda integrării AI-ului nu doar ca să lucrăm mai repede, ci ca să lucrăm mai inteligent.&quot;</p>
@@ -194,6 +197,7 @@ export default function BlogPost2() {
             <li><strong>Automatizează un singur proces,</strong> nu tot deodată. Un workflow funcțional îți demonstrează valoarea mai repede decât un plan mare neterminat</li>
             <li><strong>Măsoară impactul:</strong> câte ore ai economisit, câte erori ai eliminat, câți bani ai salvat</li>
           </ul>
+          <p>Dacă vrei să faci primii pași împreună cu cineva din afară, asta este o <Link href="/servicii/consultanta-ai">consultanță în inteligență artificială</Link>: harta proceselor, prioritățile și primul flux de testat.</p>
 
           <h2>Inteligența Artificială Nu Este Magie. Dar Este Puternică.</h2>
           <p>AI-ul face greșeli. Are limitări. Nu înlocuiește judecata umană în decizii complexe. Dar pentru sarcinile repetitive, procesarea datelor și comunicarea de volum mare, este cel mai eficient instrument pe care îl are la dispoziție un antreprenor în 2026.</p>
@@ -224,6 +228,8 @@ export default function BlogPost2() {
             <div className="faq-a">Orice proces pe care îl faci manual, repetat, după același algoritm este un candidat. Dacă poți descrie pașii într-o listă, fără ambiguități, se poate automatiza. Un audit de 30 de minute îți arată exact unde e cel mai mare câștig.</div>
           </div>
         </div>
+
+        <AuthorBox />
 
         {/* CTA */}
         <div style={{ marginTop: 56, padding: 36, borderRadius: 20, border: "1px solid rgba(255,106,0,0.25)", background: "linear-gradient(180deg, rgba(255,106,0,0.06), rgba(255,106,0,0.02))", textAlign: "center" }}>

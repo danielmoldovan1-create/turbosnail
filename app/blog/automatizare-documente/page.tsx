@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Automatizare documente: facturi și contracte | TurboSnail",
@@ -25,6 +26,7 @@ const articleLd = {
   url: "https://turbosnail.ro/blog/automatizare-documente",
   datePublished: "2026-10-19",
   dateModified: "2026-10-19",
+  author: AUTHOR_LD,
   publisher: {
     "@type": "Organization",
     name: "TurboSnail",
@@ -138,6 +140,7 @@ export default function AutomatizareDocumente() {
           <div style={{ display: "inline-block", background: "rgba(255,106,0,0.1)", border: "1px solid rgba(255,106,0,0.25)", borderRadius: 100, padding: "6px 16px", fontSize: 11, fontWeight: 700, color: "#ff6a00", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 24, fontFamily: "'Outfit', sans-serif" }}>
             DOCUMENTE · AUTOMATIZARE
           </div>
+          <span style={{ marginLeft: 12, fontSize: 13, color: "#555566" }}>19 octombrie 2026</span>
           <h1 className="hd" style={{ fontSize: 40, fontWeight: 900, lineHeight: 1.12, letterSpacing: -1, marginBottom: 24 }}>
             Automatizare documente: facturi, contracte și acte citite automat
           </h1>
@@ -163,7 +166,7 @@ export default function AutomatizareDocumente() {
           <li><strong>Recunoașterea</strong> - sistemul stabilește tipul documentului: factură, bon, extras, contract, comandă.</li>
           <li><strong>Extragerea</strong> - câmpurile importante sunt citite și trecute într-un format structurat.</li>
           <li><strong>Validarea</strong> - reguli simple verifică datele: codul fiscal are formatul corect, totalul se potrivește cu suma liniilor, data are sens.</li>
-          <li><strong>Livrarea</strong> - datele ajung în programul de contabilitate, în CRM sau într-un tabel, iar documentul se arhivează cu un nume standard.</li>
+          <li><strong>Livrarea</strong> - datele ajung în programul de contabilitate, în CRM sau într-un tabel, iar documentul se arhivează cu un nume standard. Cum circulă apoi datele între aplicații am explicat în ghidul despre <a href="/blog/automatizare-date">automatizare date</a>.</li>
         </ol>
 
         <h2>Ce documente merită automatizate primele</h2>
@@ -266,6 +269,10 @@ export default function AutomatizareDocumente() {
           </div>
         ))}
       </section>
+
+      <div className="mx" style={{ paddingBottom: 56 }}>
+        <AuthorBox />
+      </div>
 
       <div style={{ height: 1, background: "linear-gradient(90deg, transparent, rgba(255,106,0,0.12), transparent)", maxWidth: 760, margin: "0 auto" }} />
 

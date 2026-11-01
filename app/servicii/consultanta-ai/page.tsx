@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   description: "Consultanță AI și consultanță în inteligență artificială pentru firme din România: audit al proceselor, plan concret și implementare fără jargon.",
   alternates: {
     canonical: "https://turbosnail.ro/servicii/consultanta-ai",
+    languages: {
+      "ro-RO": "https://turbosnail.ro/servicii/consultanta-ai",
+      en: "https://turbosnail.ro/en/ai-consulting-romania",
+      "x-default": "https://turbosnail.ro/servicii/consultanta-ai",
+    },
   },
   openGraph: {
     title: "Consultanță AI pentru firme din România | TurboSnail",
@@ -139,6 +144,9 @@ export default function ConsultantaAIPage() {
           <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
             Înscrie-te pe lista de așteptare →
           </Link>
+          <p style={{ marginTop: 20, fontSize: 14 }}>
+            <Link href="/en/ai-consulting-romania" hrefLang="en" lang="en" style={{ color: "#888899", textDecoration: "none" }}>English version: AI consulting in Romania →</Link>
+          </p>
         </div>
       </section>
 

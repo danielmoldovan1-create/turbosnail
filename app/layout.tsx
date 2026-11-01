@@ -45,6 +45,7 @@ const siteJsonLd = {
       url: "https://turbosnail.ro",
       logo: { "@type": "ImageObject", url: "https://turbosnail.ro/turbosnail-logo.png" },
       description: "Agenție de automatizări AI și consultanță pentru afaceri din România.",
+      sameAs: ["https://www.linkedin.com/company/turbo-snail/"],
     },
     {
       "@type": "ProfessionalService",
@@ -87,6 +88,7 @@ export default function RootLayout({
                 <p style={{ fontSize: 13, color: "#555566", lineHeight: 1.6, maxWidth: 200 }}>
                   Agenție de automatizări AI din Timișoara.
                 </p>
+                <a href="https://www.linkedin.com/company/turbo-snail/" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", marginTop: 12, fontSize: 13, color: "#888899", textDecoration: "none" }}>LinkedIn</a>
               </div>
               <div>
                 <p style={{ fontSize: 11, fontWeight: 700, color: "#ff6a00", letterSpacing: 2, textTransform: "uppercase", marginBottom: 16, fontFamily: "'Outfit', sans-serif" }}>Servicii</p>

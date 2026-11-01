@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Cum să automatizezi emailurile firmei: ghid practic | TurboSnail",
@@ -25,6 +26,7 @@ const articleLd = {
   url: "https://turbosnail.ro/blog/cum-sa-automatizezi-emailurile-firmei",
   datePublished: "2026-10-07",
   dateModified: "2026-10-07",
+  author: AUTHOR_LD,
   publisher: {
     "@type": "Organization",
     name: "TurboSnail",
@@ -138,6 +140,7 @@ export default function CumSaAutomatizeziEmailurileFirmei() {
           <div style={{ display: "inline-block", background: "rgba(255,106,0,0.1)", border: "1px solid rgba(255,106,0,0.25)", borderRadius: 100, padding: "6px 16px", fontSize: 11, fontWeight: 700, color: "#ff6a00", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 24, fontFamily: "'Outfit', sans-serif" }}>
             EMAIL · AUTOMATIZARE
           </div>
+          <span style={{ marginLeft: 12, fontSize: 13, color: "#555566" }}>7 octombrie 2026</span>
           <h1 className="hd" style={{ fontSize: 40, fontWeight: 900, lineHeight: 1.12, letterSpacing: -1, marginBottom: 24 }}>
             Cum să automatizezi emailurile firmei: ce preiei automat și ce rămâne personal
           </h1>
@@ -194,7 +197,7 @@ export default function CumSaAutomatizeziEmailurileFirmei() {
             <strong>Răspunsuri la întrebări frecvente</strong> - program, documente necesare, termene, pașii colaborării. AI-ul propune o ciornă pe baza răspunsurilor validate de tine, iar un om o verifică înainte de trimitere.
           </li>
           <li>
-            <strong>Sortarea emailurilor primite</strong> - AI-ul citește fiecare mesaj, îl etichetează (ofertă, reclamație, factură, colaborare) și îl direcționează către persoana potrivită. Nimic nu mai stă zile întregi într-o adresă comună.
+            <strong>Sortarea emailurilor primite</strong> - AI-ul citește fiecare mesaj, îl etichetează (ofertă, reclamație, factură, colaborare) și îl direcționează către persoana potrivită. Nimic nu mai stă zile întregi într-o adresă comună. Facturile găsite așa pot ajunge singure în contabilitate, ca în ghidul despre <a href="/blog/automatizare-documente">automatizare documente</a>.
           </li>
           <li>
             <strong>Remindere</strong> - facturi aproape de scadență, documente lipsă de la clienți, contracte care expiră. Exact mesajele pe care toată lumea uită să le trimită la timp.
@@ -272,6 +275,10 @@ export default function CumSaAutomatizeziEmailurileFirmei() {
           </div>
         ))}
       </section>
+
+      <div className="mx" style={{ paddingBottom: 56 }}>
+        <AuthorBox />
+      </div>
 
       <div style={{ height: 1, background: "linear-gradient(90deg, transparent, rgba(255,106,0,0.12), transparent)", maxWidth: 760, margin: "0 auto" }} />
 

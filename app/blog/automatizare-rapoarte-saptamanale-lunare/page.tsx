@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Automatizare rapoarte: gata luni dimineață, fără Excel",
@@ -25,6 +26,7 @@ const jsonLd = {
   "url": "https://turbosnail.ro/blog/automatizare-rapoarte-saptamanale-lunare",
   "datePublished": "2026-04-29",
   "dateModified": "2026-10-07",
+  "author": AUTHOR_LD,
   "publisher": {
     "@type": "Organization",
     "name": "TurboSnail",
@@ -151,7 +153,7 @@ export default function AutomatizareRapoarte() {
 
         <h2>De ce automatizarea rapoartelor este primul candidat logic</h2>
         <p>
-          Automatizarea rapoartelor înseamnă că un sistem software colectează datele necesare din sursele tale (Google Analytics, platforme de vânzări, foi de calcul, CRM, sisteme contabile), le procesează conform unui template predefinit și trimite raportul final pe email sau îl depune într-un folder partajat, la o oră și dată stabilite, fără intervenție umană.
+          Automatizarea rapoartelor înseamnă că un sistem software colectează datele necesare din sursele tale (Google Analytics, platforme de vânzări, foi de calcul, CRM, sisteme contabile), le procesează conform unui template predefinit și trimite raportul final pe email sau îl depune într-un folder partajat, la o oră și dată stabilite, fără intervenție umană. Colectarea și sincronizarea datelor între aplicații, pasul de dinaintea oricărui raport, sunt explicate în ghidul despre <a href="https://turbosnail.ro/blog/automatizare-date">automatizare date</a>.
         </p>
         <p>
           Prin <a href="https://turbosnail.ro/servicii/raportare-analytics">raportare și analytics</a> automatizată, firmele din România elimină nu doar timpul de execuție, ci și erorile de copy-paste, întârzierile cauzate de absența celui care face raportul și inconsistențele dintre versiuni diferite ale aceluiași document. De aceea, rapoartele sunt un punct de pornire bun pentru <a href="https://turbosnail.ro">automatizări AI</a>: procesul e clar, iar rezultatul se vede de la primul raport trimis automat.
@@ -236,7 +238,7 @@ export default function AutomatizareRapoarte() {
           <li><strong>Power BI sau Tableau</strong> pentru firme cu volume mari de date și nevoi complexe de vizualizare. Acestea cer mai multă configurare și uneori un specialist dedicat.</li>
         </ul>
         <p>
-          Pentru multe dintre rapoartele periodice ale firmelor mici și mijlocii din România, combinația Make + Google Sheets + email este suficientă și poate fi implementată fără cunoștințe de programare. Citește mai multe despre ce instrumente de automatizare există și cum se compară pe <a href="https://zapier.com/blog/best-workflow-automation-software/" target="_blank" rel="noopener noreferrer">Zapier Blog, ghid comparativ instrumente de automatizare</a>.
+          Pentru multe dintre rapoartele periodice ale firmelor mici și mijlocii din România, combinația Make + Google Sheets + email este suficientă și poate fi implementată fără cunoștințe de programare. Citește mai multe despre ce instrumente de automatizare există și cum se compară pe <a href="https://zapier.com/blog/workflow-automation-software/" target="_blank" rel="noopener noreferrer">Zapier Blog, ghid comparativ instrumente de automatizare</a>.
         </p>
 
         <h2>Greșelile frecvente când automatizezi raportarea</h2>
@@ -274,6 +276,8 @@ export default function AutomatizareRapoarte() {
             <div className="faq-a">Poate face amândouă, cu o limitare importantă: AI-ul poate identifica variații față de perioadele anterioare și le poate descrie în text, dar nu poate înlocui judecata unui manager care cunoaște contextul de business. Interpretarea AI este utilă ca punct de plecare, nu ca decizie finală.</div>
           </div>
         </div>
+
+        <AuthorBox />
 
         {/* CTA */}
         <div style={{ marginTop: 64, padding: "44px 36px", background: "linear-gradient(160deg, #0f1119, #0c0e15)", border: "1px solid rgba(255,106,0,0.2)", borderRadius: 20, textAlign: "center" }}>

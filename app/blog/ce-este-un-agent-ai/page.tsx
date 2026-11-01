@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Ce este un agent AI și când îți folosește | TurboSnail",
@@ -25,6 +26,7 @@ const articleLd = {
   url: "https://turbosnail.ro/blog/ce-este-un-agent-ai",
   datePublished: "2026-10-15",
   dateModified: "2026-10-15",
+  author: AUTHOR_LD,
   publisher: {
     "@type": "Organization",
     name: "TurboSnail",
@@ -138,6 +140,7 @@ export default function CeEsteUnAgentAI() {
           <div style={{ display: "inline-block", background: "rgba(255,106,0,0.1)", border: "1px solid rgba(255,106,0,0.25)", borderRadius: 100, padding: "6px 16px", fontSize: 11, fontWeight: 700, color: "#ff6a00", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 24, fontFamily: "'Outfit', sans-serif" }}>
             AGENȚI AI · GHID
           </div>
+          <span style={{ marginLeft: 12, fontSize: 13, color: "#555566" }}>15 octombrie 2026</span>
           <h1 className="hd" style={{ fontSize: 40, fontWeight: 900, lineHeight: 1.12, letterSpacing: -1, marginBottom: 24 }}>
             Ce este un agent AI și prin ce diferă de un chatbot sau de o automatizare
           </h1>
@@ -232,6 +235,9 @@ export default function CeEsteUnAgentAI() {
           <li><strong>Nu își asumă responsabilitatea.</strong> Pentru fiecare acțiune automată trebuie să existe un om care răspunde de rezultat.</li>
           <li><strong>Are nevoie de limite clare.</strong> Fără permisiuni stabilite atent, un agent poate trimite un email sau poate modifica o înregistrare pe care n-ar fi trebuit să o atingă.</li>
         </ul>
+        <p>
+          Cum pui aceste limite în practică, cu aprobare umană, plafoane și jurnal, am arătat în ghidul despre <a href="/blog/agenti-ai-reguli-siguranta">agenți AI în firmă</a>.
+        </p>
 
         <h2>Ai nevoie de un agent AI? Un test simplu</h2>
         <p>Un agent AI are sens atunci când procesul îndeplinește toate condițiile de mai jos:</p>
@@ -259,6 +265,10 @@ export default function CeEsteUnAgentAI() {
           </div>
         ))}
       </section>
+
+      <div className="mx" style={{ paddingBottom: 56 }}>
+        <AuthorBox />
+      </div>
 
       <div style={{ height: 1, background: "linear-gradient(90deg, transparent, rgba(255,106,0,0.12), transparent)", maxWidth: 760, margin: "0 auto" }} />
 

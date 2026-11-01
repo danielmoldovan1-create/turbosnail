@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Agent AI pentru vânzări în România: ghid practic | TurboSnail",
@@ -25,6 +26,7 @@ const articleLd = {
   url: "https://turbosnail.ro/blog/agent-ai-pentru-vanzari-romania",
   datePublished: "2026-10-07",
   dateModified: "2026-10-07",
+  author: AUTHOR_LD,
   publisher: {
     "@type": "Organization",
     name: "TurboSnail",
@@ -138,6 +140,7 @@ export default function AgentAIPentruVanzariRomania() {
           <div style={{ display: "inline-block", background: "rgba(255,106,0,0.1)", border: "1px solid rgba(255,106,0,0.25)", borderRadius: 100, padding: "6px 16px", fontSize: 11, fontWeight: 700, color: "#ff6a00", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 24, fontFamily: "'Outfit', sans-serif" }}>
             VÂNZĂRI · AGENȚI AI
           </div>
+          <span style={{ marginLeft: 12, fontSize: 13, color: "#555566" }}>7 octombrie 2026</span>
           <h1 className="hd" style={{ fontSize: 40, fontWeight: 900, lineHeight: 1.12, letterSpacing: -1, marginBottom: 24 }}>
             Agent AI pentru vânzări în România: ce face concret și când merită
           </h1>
@@ -224,7 +227,7 @@ export default function AgentAIPentruVanzariRomania() {
             <strong>Alege o singură sarcină cu risc mic</strong> - de exemplu completarea CRM-ului după apeluri sau lista de priorități de dimineață. Nu începe cu emailuri trimise automat clienților.
           </li>
           <li>
-            <strong>Pune un om în buclă</strong> - agentul propune, vânzătorul aprobă. Păstrează regula cel puțin în primele săptămâni.
+            <strong>Pune un om în buclă</strong> - agentul propune, vânzătorul aprobă. Păstrează regula cel puțin în primele săptămâni. Celelalte reguli de siguranță, de la plafoane la oprirea de urgență, sunt în ghidul despre <a href="/blog/agenti-ai-reguli-siguranta">agenți AI în firmă</a>.
           </li>
           <li>
             <strong>Măsoară</strong> - viteza de răspuns la leadurile noi, numărul de follow-up-uri ratate și timpul pe care vânzătorii spun că l-au recuperat.
@@ -280,6 +283,10 @@ export default function AgentAIPentruVanzariRomania() {
           </div>
         ))}
       </section>
+
+      <div className="mx" style={{ paddingBottom: 56 }}>
+        <AuthorBox />
+      </div>
 
       <div style={{ height: 1, background: "linear-gradient(90deg, transparent, rgba(255,106,0,0.12), transparent)", maxWidth: 760, margin: "0 auto" }} />
 

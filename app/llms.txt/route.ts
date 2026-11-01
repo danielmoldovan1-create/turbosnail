@@ -41,11 +41,19 @@ const AFTER = `## Blog
 - [Automatizare date](https://turbosnail.ro/blog/automatizare-date): cum scapi de introducerea manuală, ce fluxuri automatizezi primele și ce pregătești înainte.
 - [Ce este un agent AI](https://turbosnail.ro/blog/ce-este-un-agent-ai): explicat simplu, diferența față de chatbot și automatizare, când merită.
 - [Automatizare documente](https://turbosnail.ro/blog/automatizare-documente): ce documente automatizezi primele, cum le citește AI-ul și unde rămâne verificarea umană.
+- [Agenți AI în firmă: reguli de siguranță](https://turbosnail.ro/blog/agenti-ai-reguli-siguranta): aprobare umană, plafoane, jurnal, test pe date de probă și oprire de urgență pentru agenții AI dintr-o firmă mică.
+- [AI Act și chatbotul firmei](https://turbosnail.ro/blog/ai-act-chatbot-firme): ce cere articolul 50 de la 2 august 2026, cine răspunde când chatbotul e făcut de altcineva și ce pași faci.
+- [GDPR și AI în firmă](https://turbosnail.ro/blog/gdpr-ai-firma): ce date pui într-un instrument AI, baza legală, contractul cu furnizorul, transferurile în afara UE și politica internă pentru echipă.
+
+## English
+
+- [AI consulting in Romania](https://turbosnail.ro/en/ai-consulting-romania): AI consultancy in English for companies in Romania: process audit, prioritised plan, automations and conversational AI.
 
 ## Contact
 
 - Sediu: Timișoara, România
 - Email: hello@turbosnail.ro
+- LinkedIn: https://www.linkedin.com/company/turbo-snail/
 - Lista de așteptare (audit gratuit): https://turbosnail.ro/#contact
 - Sitemap: https://turbosnail.ro/sitemap.xml
 `;

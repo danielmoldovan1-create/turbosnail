@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Automatizări AI pentru Afaceri: Ghid Complet România 2026 | TurboSnail",
@@ -23,8 +24,9 @@ const jsonLd = {
   "headline": "Automatizări AI pentru Afaceri: Ghid Complet România 2026",
   "description": "Ghid practic despre automatizările AI pentru afaceri din România, cu exemple concrete și pași de implementare.",
   "url": "https://turbosnail.ro/blog/automatizari-ai-pentru-afaceri-romania",
-  "datePublished": "2026-04-15",
+  "datePublished": "2026-04-13",
   "dateModified": "2026-10-15",
+  "author": AUTHOR_LD,
   "publisher": {
     "@type": "Organization",
     "name": "TurboSnail",
@@ -132,7 +134,7 @@ export default function BlogPost() {
           <div style={{ display: "flex", alignItems: "center", gap: 16, color: "#555566", fontSize: 14 }}>
             <span>TurboSnail</span>
             <span>·</span>
-            <span>15 aprilie 2026</span>
+            <span>13 aprilie 2026</span>
             <span>·</span>
             <span>8 min citire</span>
           </div>
@@ -230,6 +232,8 @@ export default function BlogPost() {
             <div className="faq-a">Măsoară înainte și după: câte ore pe săptămână durează procesul manual, câte erori apar, câte zile durează un ciclu complet. După automatizare, aceleași metrici îți arată exact impactul.</div>
           </div>
         </div>
+
+        <AuthorBox />
 
         {/* CTA */}
         <div style={{ marginTop: 56, padding: 36, borderRadius: 20, border: "1px solid rgba(255,106,0,0.25)", background: "linear-gradient(180deg, rgba(255,106,0,0.06), rgba(255,106,0,0.02))", textAlign: "center" }}>

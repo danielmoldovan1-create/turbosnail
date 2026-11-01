@@ -33,6 +33,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: '2026-10-15',
       changeFrequency: 'monthly',
       priority: 0.8,
+      alternates: {
+        languages: {
+          'ro-RO': 'https://turbosnail.ro/servicii/consultanta-ai',
+          en: 'https://turbosnail.ro/en/ai-consulting-romania',
+        },
+      },
+    },
+    {
+      url: 'https://turbosnail.ro/en/ai-consulting-romania',
+      lastModified: '2026-10-28',
+      changeFrequency: 'monthly',
+      priority: 0.7,
+      alternates: {
+        languages: {
+          'ro-RO': 'https://turbosnail.ro/servicii/consultanta-ai',
+          en: 'https://turbosnail.ro/en/ai-consulting-romania',
+        },
+      },
     },
     {
       url: 'https://turbosnail.ro/servicii/chatbot-ai-romania',
@@ -96,25 +114,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://turbosnail.ro/blog/automatizare-procese-afaceri-romania',
-      lastModified: '2026-10-15',
+      lastModified: '2026-10-23',
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: 'https://turbosnail.ro/blog/automatizare-procese-firme',
-      lastModified: '2026-10-15',
+      lastModified: '2026-10-23',
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: 'https://turbosnail.ro/blog/sisteme-control-procese-afaceri',
-      lastModified: '2026-10-15',
+      lastModified: '2026-10-23',
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: 'https://turbosnail.ro/blog/automatizare-completa-afacere',
-      lastModified: '2026-10-15',
+      lastModified: '2026-10-23',
       changeFrequency: 'monthly',
       priority: 0.7,
     },
@@ -181,6 +199,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: 'https://turbosnail.ro/blog/automatizare-documente',
       lastModified: '2026-10-19',
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://turbosnail.ro/blog/agenti-ai-reguli-siguranta',
+      lastModified: '2026-10-22',
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://turbosnail.ro/blog/ai-act-chatbot-firme',
+      lastModified: '2026-10-27',
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://turbosnail.ro/blog/gdpr-ai-firma',
+      lastModified: '2026-10-29',
       changeFrequency: 'monthly',
       priority: 0.7,
     },

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Chatbot AI pentru Site România: Ce Face, Cât Economisești și Cum Alegi | TurboSnail",
@@ -23,8 +24,9 @@ const articleLd = {
   headline: "Chatbot AI pentru Site România: Ce Face, Cât Economisești și Cum Alegi",
   description: "Ghid practic despre chatbot AI pentru site România: cum funcționează, ce procese automatizează și cum măsori rezultatele reale.",
   url: "https://turbosnail.ro/blog/chatbot-ai-pentru-site-romania",
-  datePublished: "2026-04-19",
+  datePublished: "2026-04-23",
   dateModified: "2026-08-12",
+  author: AUTHOR_LD,
   publisher: {
     "@type": "Organization",
     name: "TurboSnail",
@@ -138,6 +140,7 @@ export default function ChatbotAIPentruSiteRomania() {
           <div style={{ display: "inline-block", background: "rgba(255,106,0,0.1)", border: "1px solid rgba(255,106,0,0.25)", borderRadius: 100, padding: "6px 16px", fontSize: 11, fontWeight: 700, color: "#ff6a00", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 24, fontFamily: "'Outfit', sans-serif" }}>
             CHATBOT AI · GHID PRACTIC
           </div>
+          <span style={{ marginLeft: 12, fontSize: 13, color: "#555566" }}>23 aprilie 2026</span>
           <h1 className="hd" style={{ fontSize: 40, fontWeight: 900, lineHeight: 1.12, letterSpacing: -1, marginBottom: 24 }}>
             Chatbot AI pentru site România: ce face concret, cât economisești și cum alegi unul care funcționează
           </h1>
@@ -218,6 +221,9 @@ export default function ChatbotAIPentruSiteRomania() {
             <strong>Ce date colectează și unde sunt stocate?</strong> Relevant pentru GDPR. Datele clienților tăi nu ar trebui să ajungă pe servere fără o bază legală clară.
           </li>
           <li>
+            <strong>Cum anunță chatbotul că e un AI?</strong> Regulamentul european AI Act cere ca vizitatorul să afle că vorbește cu un sistem de inteligență artificială. Ce înseamnă asta concret și cine răspunde am explicat în ghidul despre <a href="/blog/ai-act-chatbot-firme">AI Act și chatbotul firmei</a>.
+          </li>
+          <li>
             <strong>Cum se integrează cu CRM-ul sau cu emailul tău?</strong> Un chatbot izolat care nu trimite leadurile undeva util nu rezolvă nimic. Verifică integrările disponibile din prima.
           </li>
         </ul>
@@ -280,6 +286,10 @@ export default function ChatbotAIPentruSiteRomania() {
           </div>
         ))}
       </section>
+
+      <div className="mx" style={{ paddingBottom: 56 }}>
+        <AuthorBox />
+      </div>
 
       <div style={{ height: 1, background: "linear-gradient(90deg, transparent, rgba(255,106,0,0.12), transparent)", maxWidth: 760, margin: "0 auto" }} />
 
