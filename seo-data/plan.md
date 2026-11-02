@@ -65,11 +65,12 @@ Reguli:
 | AI Act și chatbotul firmei | /blog/ai-act-chatbot-firme (din 27 oct.) | „AI Act” |
 | GDPR și AI în firmă | /blog/gdpr-ai-firma (din 29 oct.) | „GDPR și AI” |
 | ce înseamnă CRM | /blog/ce-inseamna-crm (din 3 nov.) | „ce înseamnă CRM”, „sistem CRM” |
+| platforme de automatizare | /blog/platforme-de-automatizare (din 5 nov.) | „platforme de automatizare” |
 | AI consulting Romania (în engleză) | /en/ai-consulting-romania (din 28 oct.) | „AI consulting in Romania” (din paginile în engleză); din paginile în română, doar linkul de limbă „English version” |
 
 Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul altor pagini (automatizare documente, agenți AI în firmă, automatizări AI pentru afaceri și cele 5 articole despre automatizarea proceselor), iar ancora „automatizări AI” trimitea și la homepage (21 de pagini), și la /servicii/automatizari-ai (9 pagini plus meniul).
 
-## Săptămâna 26 octombrie - 5 noiembrie
+## Săptămâna 26 octombrie - 6 noiembrie
 - 26 oct. (luni), tranșa A de linkuri: automatizare documente (0 linkuri din text, poziția 16) și automatizare date (poziția 4), din articolele despre date, documente, rapoarte, emailuri și din pagina pentru firme de contabilitate.
 - 27 oct. (marți): articolul AI Act (programat).
 - 28 oct. (miercuri): evaluarea schimbărilor din 7 octombrie (export GSC 7-27 oct.). Tranșa B: linkuri spre articolul AI Act (din articolul despre chatbot), spre „agenți AI în firmă” (din articolele despre agentul AI și agentul AI pentru vânzări), spre „AI pentru companii” și spre consultanță cu ancora „consultanță în inteligență artificială” (din articolele despre inteligența artificială și despre consultanța AI).
@@ -77,12 +78,14 @@ Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul a
 - 30 oct. (vineri), tranșa C: cele 5 articole despre automatizarea proceselor legate între ele, fiecare cu ancora lui, cu automatizare-procese-afaceri-romania ca articol central. În automatizare-procese-firme: link spre automatizare documente și o frază că sortarea CV-urilor cu AI e „risc ridicat” în AI Act, cu link spre articolul de marți.
 - 2 nov. (luni): export GSC și alegerea articolului de joi. „Indicatori de performanță” (Keyword Gap, 260 de căutări) nu intră: rezultatele de căutare sunt documente de administrație publică și întrebări despre evaluarea angajaților, nu firme care vor să automatizeze.
 - 3 nov. (marți): articolul „Ce înseamnă CRM” (/blog/ce-inseamna-crm), din Keyword Gap Semrush: 480 de căutări pe lună, dificultate 10. În aceeași zi, într-un PR separat, linkuri spre el din articolele despre agentul AI pentru vânzări, automatizarea emailurilor și automatizare date.
-- 4 nov. (miercuri), tranșa D: secțiunea „Rapoarte financiare automatizate” în articolul despre rapoarte (query cu afișări, poziția 79); pe /servicii/consultanta-ai fraza „Lucrăm de la distanță cu firme din toată țara, inclusiv din București”; linkuri spre articolul GDPR din articolele despre documente, date și agenți AI.
+- 4 nov. (miercuri), tranșa D: secțiunea „Rapoarte financiare automatizate” în articolul despre rapoarte (query cu afișări: poziția 79 pe 28 oct., 8,8 pe 2 nov.); pe /servicii/consultanta-ai fraza „Lucrăm de la distanță cu firme din toată țara, inclusiv din București”; linkuri spre articolul GDPR din articolele despre documente, date și agenți AI. În changelog, rezultatele verificărilor scadente pe 2 și 4 nov. (din exportul pe 7 zile din 2 nov.).
 - 5 nov. (joi): evaluarea schimbărilor din 15 octombrie. Apoi, cu acordul lui Daniel, title-urile:
   - /blog/automatizari-ai-pentru-afaceri-romania: „Automatizări AI pentru companii și afaceri din România | TurboSnail”;
   - /servicii/consultanta-ai: „Consultanță AI (inteligență artificială) pentru firme | TurboSnail”;
   - /servicii/automatizari-ai: title diferit de homepage, plus ancorele spre ea schimbate în „servicii de automatizare AI”.
   - într-un PR separat, cele trei title-uri prea lungi raportate de Semrush (aprobate pe 29 oct.): /blog/automatizare-procese-business-ghid-2026, /blog/automatizare-procese-firme și /blog/chatbot-ai-pentru-site-romania. Se schimbă doar title-ul (sub 65 de caractere), ca efectul să se poată măsura separat.
+- 5 nov. (joi), după evaluare: articolul „Platforme de automatizare: cum alegi între Make, n8n, Zapier și Power Automate” (/blog/platforme-de-automatizare). În exportul din 2 nov., „platforme de automatizare” are 7 afișări pe poziția 12,7 și nicio pagină dedicată; mai acoperă „soft automatizare” și „automatizare flux de lucru”. Fără prețuri. Într-un PR separat, linkuri spre el din articolele despre date, automatizarea proceselor (articolul central) și rapoarte.
+- 6 nov. (vineri): title nou la /blog/intreaba-inteligenta-artificiala, „Întreabă inteligența artificială în română | TurboSnail” (145 de afișări pe poziția 6,7 și 0 clickuri în 7 zile; prima schimbare de SEO de la publicare). Schimbări sigure: în FAQ-ul articolului despre emailuri, întrebarea „Cât de des trimiți emailuri clienților?” (query cu 4 afișări, poziția 44); în /blog/ce-este-inteligenta-artificiala, H2 nou „Exemple de inteligență artificială pe care le folosești deja” (query cu 5 afișări, poziția 36).
 - 28 oct.: pagina în engleză /en/ai-consulting-romania (decizia lui Daniel din 28 oct.), pereche hreflang cu /servicii/consultanta-ai. O singură pagină deocamdată: 12 căutări în engleză, 138 de afișări în 28 de zile. A doua pagină (conversational AI) doar dacă secțiunea ei aduce afișări separat.
 
 ## Repere (nu promisiuni)
@@ -92,6 +95,14 @@ Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul a
 ## Evaluări fixe
 - 28 octombrie: modificările din 7 octombrie (canonical, titluri, homepage, primele 2 articole).
 - 5 noiembrie: modificările din 15 octombrie (citate verificate, estimări, articolele "automatizare date" și "ce este un agent AI").
+- 16 noiembrie: modificările din 26-30 octombrie (tranșele A, B și C de linkuri, articolele AI Act și GDPR, pagina în engleză, LinkedIn). Export GSC 26 oct. - 14 nov. față de 6-25 oct.
+
+## Ce îmi trimite Daniel (cu reminder de la Claude)
+- În fiecare luni: exportul GSC pe ultimele 7 zile, comparat cu perioada anterioară.
+- Până pe 4 nov.: din GSC, tabul Pages pentru query-urile „ai pentru companii” și „automatizare documente” (ce URL primește fiecare); Inspectează URL pentru /en/ai-consulting-romania și pentru cele 3 articole despre procese fără afișări.
+- 5 nov.: exportul GSC 15 oct. - 4 nov., comparat cu 24 sep. - 14 oct.
+- 16 nov.: exportul GSC 26 oct. - 14 nov., comparat cu 6-25 oct.
+- Când are timp: linkul de LinkedIn personal și numele exact al certificării Anthropic (caseta de autor), confirmarea cifrei INS de pe /domenii/clinici-stomatologice, rapoartele Semrush (Keyword Gap cu concurenții reali, Keyword Magic, Backlink Gap).
 
 ## Blocaje cunoscute
 - Unele surse răspund cu 403 din mediul de lucru: forbes.com, gartner.com, bcg.com, ec.europa.eu, eur-lex.europa.eu. Au mers în octombrie: microsoft.com, computerworld.com, pymnts.com, publications.europa.eu, gibsondunn.com, joneswalker.com. Pentru restul se poate cere acces în setările de rețea ale mediului.
