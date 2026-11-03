@@ -211,7 +211,7 @@ export default function AgentAIPentruVanzariRomania() {
           <li><strong>Nu construiește relații.</strong> Încrederea unui client se câștigă în conversații reale, nu în emailuri generate.</li>
           <li><strong>Nu negociază condițiile comerciale</strong> și nu ia decizii care angajează firma.</li>
           <li><strong>Nu citește contextul nespus:</strong> tonul unui client nemulțumit, o tăcere la telefon, o ezitare.</li>
-          <li><strong>Nu repară un CRM gol.</strong> Agentul lucrează cu datele pe care le găsește. Date proaste înseamnă recomandări proaste.</li>
+          <li><strong>Nu repară un CRM gol.</strong> Agentul lucrează cu datele pe care le găsește. Date proaste înseamnă recomandări proaste. Dacă firma nu are încă un <a href="/blog/ce-inseamna-crm">sistem CRM</a>, începe cu el, înainte de agent.</li>
           <li><strong>Nu își asumă responsabilitatea.</strong> Pentru fiecare acțiune automată trebuie să existe un om care răspunde de rezultat.</li>
         </ul>
 
