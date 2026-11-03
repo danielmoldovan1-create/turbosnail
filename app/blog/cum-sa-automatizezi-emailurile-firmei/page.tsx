@@ -227,7 +227,7 @@ export default function CumSaAutomatizeziEmailurileFirmei() {
             <strong>Alege un singur flux</strong> - pe cel mai repetitiv și cu cel mai mic risc. De obicei, confirmările sau reminderele de plată.
           </li>
           <li>
-            <strong>Construiește și testează intern</strong> - Gmail și Outlook au reguli și șabloane incluse. Pentru fluxuri care leagă mai multe aplicații (formular, CRM, facturare) se folosesc platforme ca Make, n8n sau Zapier. Testează pe adresele echipei înainte ca mesajele să ajungă la clienți.
+            <strong>Construiește și testează intern</strong> - Gmail și Outlook au reguli și șabloane incluse. Pentru fluxuri care leagă mai multe aplicații (formular, CRM, facturare) se folosesc platforme ca Make, n8n sau Zapier. Ce rol are CRM-ul în aceste fluxuri am explicat în ghidul despre <a href="/blog/ce-inseamna-crm">ce înseamnă CRM</a>. Testează pe adresele echipei înainte ca mesajele să ajungă la clienți.
           </li>
           <li>
             <strong>Măsoară și extinde</strong> - urmărește câte emailuri pleacă automat, câte erori apar și cât timp spune echipa că a recuperat. Abia apoi treci la următorul flux.
