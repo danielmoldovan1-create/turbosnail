@@ -16,6 +16,13 @@ export const metadata: Metadata = {
 
 const ARTICLES = [
   {
+    slug: "ce-inseamna-crm",
+    title: "Ce înseamnă CRM și ce poți automatiza în el",
+    date: "3 noiembrie 2026",
+    excerpt: "Ce face un CRM, semnele că firma ta are nevoie de unul, de ce eșuează multe proiecte CRM și ce poți automatiza în el ca să nu mai introduci date de mână.",
+    tag: "Vânzări",
+  },
+  {
     slug: "gdpr-ai-firma",
     title: "GDPR și AI în firmă: ce ai voie să faci cu datele clienților",
     date: "29 octombrie 2026",
