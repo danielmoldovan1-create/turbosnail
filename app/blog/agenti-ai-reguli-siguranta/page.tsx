@@ -167,7 +167,7 @@ export default function AgentiAiReguliSiguranta() {
           </p>
         </blockquote>
         <p>
-          Pentru o firmă mică, concluzia e simplă: agentul nu are nevoie de un nume de coleg, ci de un responsabil. Cineva din firmă trebuie să știe ce face agentul, la ce are acces și cum îl oprește.
+          Pentru o firmă mică, concluzia e simplă: agentul nu are nevoie de un nume de coleg, ci de un responsabil. Cineva din firmă trebuie să știe ce face agentul, la ce are acces și cum îl oprește. Dacă agentul are acces la datele clienților, același om verifică și regulile din ghidul despre <Link href="/blog/gdpr-ai-firma">GDPR și AI</Link>.
         </p>
 
         <h2>5 reguli de siguranță pentru agenți AI în firmă</h2>

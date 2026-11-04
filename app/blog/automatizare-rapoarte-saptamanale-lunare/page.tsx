@@ -4,13 +4,13 @@ import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
   title: "Automatizare rapoarte: gata luni dimineață, fără Excel",
-  description: "Automatizare rapoarte financiare, de vânzări și de marketing: datele se adună singure din CRM, Excel și contabilitate, iar raportul vine pe email la timp.",
+  description: "Automatizare rapoarte: raportul săptămânal se face singur, din datele firmei, fără Excel și copy-paste. Ce automatizezi primul și cum.",
   alternates: {
     canonical: "https://turbosnail.ro/blog/automatizare-rapoarte-saptamanale-lunare",
   },
   openGraph: {
     title: "Automatizare rapoarte: gata luni dimineață, fără Excel",
-    description: "Automatizare rapoarte financiare, de vânzări și de marketing: datele se adună singure din CRM, Excel și contabilitate, iar raportul vine pe email la timp.",
+    description: "Automatizare rapoarte: raportul săptămânal se face singur, din datele firmei, fără Excel și copy-paste. Ce automatizezi primul și cum.",
     url: "https://turbosnail.ro/blog/automatizare-rapoarte-saptamanale-lunare",
     siteName: "TurboSnail",
     locale: "ro_RO",
@@ -213,6 +213,17 @@ export default function AutomatizareRapoarte() {
           <p>Soluția: flux automatizat care preia datele din sistemul WMS și ERP la 6:30 dimineața, generează raportul și îl trimite pe email la 7:00, cu alertele critice (stocuri sub prag minim, livrări cu întârziere mai mare de 24h) marcate vizual. Directorul are informația înainte să ajungă la birou.</p>
           <div className="result">Economie estimată: 1-1.5 ore zilnic, decizie mai rapidă, fără așteptare după raport</div>
         </div>
+
+        <h2>Rapoarte financiare automatizate: încasări, cheltuieli, cash-flow</h2>
+        <p>
+          La rapoartele financiare, problema e de obicei că datele stau în trei locuri diferite: extrasele de cont, programul de contabilitate și facturile emise sau primite. Un raport financiar automatizat le adună la o oră fixă și răspunde la trei întrebări: câți bani au intrat, câți au ieșit și ce încasări sau plăți urmează în săptămânile următoare.
+        </p>
+        <p>
+          Fluxul tipic arată așa: tranzacțiile din extrasul de cont sunt preluate zilnic sau săptămânal și potrivite cu facturile emise și primite, iar ce nu se potrivește ajunge într-o listă separată pentru verificare. Facturile primite prin e-Factura vin deja structurate, deci pot intra direct în flux; cum le preiei fără tastare am explicat în ghidul despre <a href="https://turbosnail.ro/blog/automatizare-documente">automatizare documente</a>. La final, raportul de cash-flow pleacă singur pe email, cu facturile neîncasate și plățile scadente marcate.
+        </p>
+        <p>
+          Ce rămâne la om: interpretarea și deciziile. Automatizarea adună cifrele, contabilul validează închiderea de lună, iar tu decizi ce faci cu un client care plătește constant cu întârziere.
+        </p>
 
         <h2>Cum automatizezi rapoartele: pașii practici</h2>
         <p>

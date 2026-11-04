@@ -81,6 +81,14 @@ const faqLd = {
         text: "Da. Firmele mici și medii beneficiază cel mai mult de pe urma consultanței AI, pentru că fiecare oră economisită contează mai mult și bugetele sunt mai limitate. Recomandăm soluții accesibile, fără sisteme care creează dependență față de un furnizor.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Lucrați și cu firme din București?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Da. Lucrăm de la distanță cu firme din toată țara, inclusiv din București. Sediul nostru e în Timișoara, iar discuțiile și analiza proceselor se fac online.",
+      },
+    },
   ],
 };
 
