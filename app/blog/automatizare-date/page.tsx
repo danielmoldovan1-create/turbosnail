@@ -190,7 +190,7 @@ export default function AutomatizareDate() {
             <strong>Formular, CRM și notificare</strong> - cererea de pe site intră direct în CRM, cu toate câmpurile completate, iar persoana responsabilă primește o notificare. Nimeni nu mai copiază nimic. Ce face un CRM și ce mai poți automatiza în el găsești în ghidul despre <a href="/blog/ce-inseamna-crm">ce înseamnă CRM</a>.
           </li>
           <li>
-            <strong>Facturi primite pe email</strong> - un flux preia atașamentul, AI-ul extrage furnizorul, suma și data, iar datele ajung în tabelul sau în programul contabil. Facturile neclare ajung la un om pentru verificare. Fluxul complet, de la email la arhivă, e descris în ghidul despre <a href="/blog/automatizare-documente">automatizare documente</a>.
+            <strong>Facturi primite pe email</strong> - un flux preia atașamentul, AI-ul extrage furnizorul, suma și data, iar datele ajung în tabelul sau în programul contabil. Facturile neclare ajung la un om pentru verificare. Fluxul complet, de la email la arhivă, e descris în ghidul despre <a href="/blog/automatizare-documente">automatizarea documentelor</a>.
           </li>
           <li>
             <strong>Comenzi și stoc</strong> - fiecare comandă nouă actualizează stocul, iar când un produs scade sub pragul stabilit, primești automat o alertă.
@@ -223,7 +223,7 @@ export default function AutomatizareDate() {
 
         <h2>Datele firmei și AI-ul: cum automatizezi fără riscuri inutile</h2>
         <p>
-          Când datele circulă automat între aplicații, crește și responsabilitatea. Datele personale ale clienților intră sub GDPR, iar pentru fiecare aplicație din flux ai nevoie de o bază legală pentru prelucrare și de un acord de prelucrare a datelor cu furnizorul.
+          Când datele circulă automat între aplicații, crește și responsabilitatea. Datele personale ale clienților intră sub GDPR, iar pentru fiecare aplicație din flux ai nevoie de o bază legală pentru prelucrare și de un acord de prelucrare a datelor cu furnizorul. Ce înseamnă asta concret, de la baza legală la contractul cu furnizorul, găsești în ghidul despre <a href="/blog/gdpr-ai-firma">GDPR și AI</a>.
         </p>
         <blockquote>
           <p style={{ fontStyle: "italic", fontSize: 17, color: "#c8c6c1", marginBottom: 12 }}>

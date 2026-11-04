@@ -232,7 +232,7 @@ export default function AutomatizareDocumente() {
 
         <h2>Automatizare documente și GDPR</h2>
         <p>
-          Documentele unei firme conțin aproape mereu date personale: nume, adrese, coduri numerice personale pe unele facturi, date de contact. Prelucrarea lor automată e permisă, cu aceleași reguli ca prelucrarea manuală: o bază legală, acorduri de prelucrare a datelor cu furnizorii instrumentelor folosite și acces minim. Fiecare flux vede doar folderele de care are nevoie, iar documentele se păstrează cât cere legea, nu la nesfârșit.
+          Documentele unei firme conțin aproape mereu date personale: nume, adrese, coduri numerice personale pe unele facturi, date de contact. Prelucrarea lor automată e permisă, cu aceleași reguli ca prelucrarea manuală: o bază legală, acorduri de prelucrare a datelor cu furnizorii instrumentelor folosite și acces minim. Fiecare flux vede doar folderele de care are nevoie, iar documentele se păstrează cât cere legea, nu la nesfârșit. Ce verifici înainte să pui documente cu date personale într-un instrument AI am explicat pas cu pas în ghidul despre <a href="/blog/gdpr-ai-firma">GDPR și AI</a>.
         </p>
 
         <h2>Cum începi automatizarea documentelor în firma ta</h2>
