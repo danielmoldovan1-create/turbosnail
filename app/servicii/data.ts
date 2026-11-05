@@ -21,7 +21,7 @@ export const SERVICES: ServiceData[] = [
     slug: "automatizari-ai",
     keyword: "automatizari AI pentru firme Romania",
     title: "Automatizări AI",
-    metaTitle: "Automatizări AI pentru Firme din România | TurboSnail",
+    metaTitle: "Servicii de automatizare AI pentru firme | TurboSnail",
     metaDescription: "Automatizări AI pentru firme din România: identificăm procesele repetitive și le automatizăm. Date, emailuri, rapoarte: rezolvate fără intervenție umană.",
     h1: "Automatizări AI pentru firme din România",
     tag: "AUTOMATIZĂRI",
