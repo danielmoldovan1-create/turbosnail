@@ -3,13 +3,13 @@ import Link from "next/link";
 import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
-  title: "Automatizare Procese Business: 12 Fluxuri Concrete pentru Firme Românești în 2026 | TurboSnail",
+  title: "Automatizare procese business: 12 fluxuri concrete | TurboSnail",
   description: "Automatizare procese business: 12 exemple concrete organizate pe industrii. Ce flux automatizezi primul, ce instrumente folosești și cât timp economisești efectiv.",
   alternates: {
     canonical: "https://turbosnail.ro/blog/automatizare-procese-business-ghid-2026",
   },
   openGraph: {
-    title: "Automatizare Procese Business: 12 Fluxuri Concrete pentru Firme Românești în 2026 | TurboSnail",
+    title: "Automatizare procese business: 12 fluxuri concrete | TurboSnail",
     description: "Automatizare procese business: 12 exemple concrete organizate pe industrii. Ce flux automatizezi primul, ce instrumente folosești și cât timp economisești efectiv.",
     url: "https://turbosnail.ro/blog/automatizare-procese-business-ghid-2026",
     siteName: "TurboSnail",
