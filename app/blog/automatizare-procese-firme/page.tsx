@@ -211,7 +211,7 @@ export default function AutomatizareProceseFireme() {
           Managerul de vânzări primește în fiecare luni dimineața un raport automat: număr de leaduri noi, rata de conversie, pipeline valoric, performanța per agent. Datele vin direct din CRM, nu din tabele Excel completate manual.
         </p>
         <p>
-          Implementarea unui ecosistem complet de automatizare pentru vânzări este posibilă prin servicii dedicate de <Link href="/servicii/automatizari-ai">automatizări AI</Link> care integrează toate componentele într-un sistem coerent.
+          Implementarea unui ecosistem complet de automatizare pentru vânzări este posibilă prin <Link href="/servicii/automatizari-ai">servicii de automatizare AI</Link> care integrează toate componentele într-un sistem coerent.
         </p>
 
         <h2>De unde începi: prioritizarea proceselor pentru automatizare</h2>
