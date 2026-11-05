@@ -338,7 +338,7 @@ export default function ConsultantaAIPage() {
             </blockquote>
 
             <p>
-              Conform <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part" target="_blank" rel="noopener noreferrer">Work Trend Index 2024 publicat de Microsoft</a>, realizat pe baza unui sondaj cu 31.000 de oameni din 31 de țări, 60% dintre lideri se tem că firma lor nu are un plan și o viziune pentru implementarea AI. Un audit structurat al proceselor, făcut înainte de orice investiție, răspunde exact acestei probleme. Consultanța AI nu este un cost suplimentar, ci o investiție care reduce risipa de resurse în proiecte greșite. Serviciile noastre de <Link href="/servicii/automatizari-ai">automatizări AI</Link> sunt construite exact pe baza recomandărilor din audit.
+              Conform <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part" target="_blank" rel="noopener noreferrer">Work Trend Index 2024 publicat de Microsoft</a>, realizat pe baza unui sondaj cu 31.000 de oameni din 31 de țări, 60% dintre lideri se tem că firma lor nu are un plan și o viziune pentru implementarea AI. Un audit structurat al proceselor, făcut înainte de orice investiție, răspunde exact acestei probleme. Consultanța AI nu este un cost suplimentar, ci o investiție care reduce risipa de resurse în proiecte greșite. <Link href="/servicii/automatizari-ai">Serviciile noastre de automatizare AI</Link> sunt construite exact pe baza recomandărilor din audit.
             </p>
           </article>
         </div>

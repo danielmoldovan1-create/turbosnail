@@ -40,7 +40,7 @@ Reguli:
 | Cuvânt cheie | Pagina | Ancore |
 |---|---|---|
 | automatizări AI | / | „automatizări AI” (exact, cerut de CLAUDE.md) |
-| servicii de automatizare AI | /servicii/automatizari-ai | „servicii de automatizare AI” (azi primește tot „automatizări AI”, se schimbă pe 5 nov.) |
+| servicii de automatizare AI | /servicii/automatizari-ai | „servicii de automatizare AI” (din 5 nov.; „automatizări AI” trimite doar spre homepage) |
 | AI pentru companii, soluții AI pentru firme | /blog/automatizari-ai-pentru-afaceri-romania | „AI pentru companii”, „soluții AI pentru firme” |
 | consultanță AI, consultanță inteligență artificială | /servicii/consultanta-ai | „consultanță AI”, „consultanță în inteligență artificială” |
 | ce include consultanța AI | /blog/consultanta-ai-ce-include-cum-alegi | „ce include consultanța AI”, „cum alegi un consultant AI” |
@@ -84,6 +84,7 @@ Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul a
   - /servicii/consultanta-ai: „Consultanță AI (inteligență artificială) pentru firme | TurboSnail”;
   - /servicii/automatizari-ai: title diferit de homepage, plus ancorele spre ea schimbate în „servicii de automatizare AI”.
   - într-un PR separat, cele trei title-uri prea lungi raportate de Semrush (aprobate pe 29 oct.): /blog/automatizare-procese-business-ghid-2026, /blog/automatizare-procese-firme și /blog/chatbot-ai-pentru-site-romania. Se schimbă doar title-ul (sub 65 de caractere), ca efectul să se poată măsura separat.
+  - Rezultat (5 nov., seo-data/reports/2026-11-05.md): /servicii/automatizari-ai are title nou și ancorele spre ea s-au schimbat în două tranșe; cele trei title-uri Semrush s-au scurtat. Au rămas neschimbate title-ul articolului /blog/automatizari-ai-pentru-afaceri-romania (decizia din 3 nov.) și title-ul /servicii/consultanta-ai, pentru că pozițiile urcă deja (pagina de pe 41,6 pe 34,5, „consultanta inteligenta artificiala” de pe 33,3 pe 27,4, 4 clickuri față de 1), excepția prevăzută în plan.
 - 5 nov. (joi), după evaluare: articolul „Platforme de automatizare: cum alegi între Make, n8n, Zapier și Power Automate” (/blog/platforme-de-automatizare). În exportul din 2 nov., „platforme de automatizare” are 7 afișări pe poziția 12,7 și nicio pagină dedicată; mai acoperă „soft automatizare” și „automatizare flux de lucru”. Fără prețuri. Într-un PR separat, linkuri spre el din articolele despre date, automatizarea proceselor (articolul central) și rapoarte.
 - 6 nov. (vineri): title nou la /blog/intreaba-inteligenta-artificiala, „Întreabă inteligența artificială în română | TurboSnail” (145 de afișări pe poziția 6,7 și 0 clickuri în 7 zile; prima schimbare de SEO de la publicare). Schimbări sigure: în FAQ-ul articolului despre emailuri, întrebarea „Cât de des trimiți emailuri clienților?” (query cu 4 afișări, poziția 44); în /blog/ce-este-inteligenta-artificiala, H2 nou „Exemple de inteligență artificială pe care le folosești deja” (query cu 5 afișări, poziția 36).
 - 28 oct.: pagina în engleză /en/ai-consulting-romania (decizia lui Daniel din 28 oct.), pereche hreflang cu /servicii/consultanta-ai. O singură pagină deocamdată: 12 căutări în engleză, 138 de afișări în 28 de zile. A doua pagină (conversational AI) doar dacă secțiunea ei aduce afișări separat.
@@ -94,7 +95,7 @@ Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul a
 
 ## Evaluări fixe
 - 28 octombrie: modificările din 7 octombrie (canonical, titluri, homepage, primele 2 articole).
-- 5 noiembrie: modificările din 15 octombrie (citate verificate, estimări, articolele "automatizare date" și "ce este un agent AI").
+- 5 noiembrie: modificările din 15 octombrie (citate verificate, estimări, articolele "automatizare date" și "ce este un agent AI"). Făcută cu exportul pe perioada exactă (15 oct. - 4 nov. față de 24 sep. - 14 oct.): seo-data/reports/2026-11-05.md.
 - 16 noiembrie: modificările din 26-30 octombrie (tranșele A, B și C de linkuri, articolele AI Act și GDPR, pagina în engleză, LinkedIn). Export GSC 26 oct. - 14 nov. față de 6-25 oct.
 
 ## Ce îmi trimite Daniel (cu reminder de la Claude)

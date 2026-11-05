@@ -118,7 +118,7 @@ export const DOMAINS: DomainData[] = [
       "Urmărim lunar câte programări s-au confirmat, câte s-au reprogramat și câte goluri au rămas în program.",
     ],
     links: [
-      { pre: "Confirmările, recall-ul și cererile de recenzie se construiesc ca ", anchor: "automatizări AI", href: "/servicii/automatizari-ai", post: " legate de programul clinicii." },
+      { pre: "Confirmările, recall-ul și cererile de recenzie le legăm de programul clinicii prin ", anchor: "servicii de automatizare AI", href: "/servicii/automatizari-ai", post: "." },
       { pre: "Pentru mesajele de seară și de weekend folosim un ", anchor: "chatbot AI în limba română", href: "/servicii/chatbot-ai-romania", post: " care preia cererile de programare." },
       { pre: "Ca pacienții noi să găsească clinica în Google și în ChatGPT, lucrăm la ", anchor: "SEO bazat pe AI", href: "/servicii/seo-ai", post: ": pagini clare pentru fiecare tratament și un profil Google complet." },
       { pre: "Dacă nu știi încă ce flux merită pornit primul, o sesiune de ", anchor: "consultanță AI", href: "/servicii/consultanta-ai", post: " pornește de la cum lucrează azi recepția." },
@@ -220,7 +220,7 @@ export const DOMAINS: DomainData[] = [
       "Urmărim în cât timp primește clientul primul răspuns, câte cereri ajung la vizionare și din ce sursă vin cele bune.",
     ],
     links: [
-      { pre: "Strângerea cererilor, alocarea și follow-up-ul sunt ", anchor: "automatizări AI", href: "/servicii/automatizari-ai", post: " legate de CRM-ul agenției." },
+      { pre: "Strângerea cererilor, alocarea și follow-up-ul le legăm de CRM-ul agenției prin ", anchor: "servicii de automatizare AI", href: "/servicii/automatizari-ai", post: "." },
       { pre: "Răspunsurile de seară și de weekend le dă un ", anchor: "chatbot AI în română", href: "/servicii/chatbot-ai-romania", post: " care cunoaște proprietățile și regulile voastre." },
       { pre: "Despre cum lucrează un agent AI alături de oamenii de vânzări am scris în ghidul despre ", anchor: "agentul AI pentru vânzări", href: "/blog/agent-ai-pentru-vanzari-romania", post: "." },
       { pre: "Dacă vrei întâi o hartă a proceselor din agenție, începe cu o sesiune de ", anchor: "consultanță AI", href: "/servicii/consultanta-ai", post: "." },
@@ -323,7 +323,7 @@ export const DOMAINS: DomainData[] = [
       "Urmărim câte documente au fost sortate și citite automat, câte au avut nevoie de corecturi și cât a durat închiderea lunii.",
     ],
     links: [
-      { pre: "Colectarea, citirea documentelor și potrivirea plăților sunt ", anchor: "automatizări AI", href: "/servicii/automatizari-ai", post: " construite în jurul programului vostru de contabilitate." },
+      { pre: "Colectarea, citirea documentelor și potrivirea plăților le construim în jurul programului vostru de contabilitate, prin ", anchor: "servicii de automatizare AI", href: "/servicii/automatizari-ai", post: "." },
       { pre: "Rapoartele lunare pentru clienți folosesc același mecanism ca serviciul de ", anchor: "raportare și analytics", href: "/servicii/raportare-analytics", post: "." },
       { pre: "Cum elimini munca manuală din rapoartele periodice am explicat pas cu pas în ghidul despre ", anchor: "automatizarea rapoartelor", href: "/blog/automatizare-rapoarte-saptamanale-lunare", post: "." },
       { pre: "Cum se citesc automat facturile, bonurile și extrasele clienților am explicat în ghidul despre ", anchor: "automatizare documente", href: "/blog/automatizare-documente", post: "." },
@@ -517,7 +517,7 @@ export const DOMAINS: DomainData[] = [
     ],
     links: [
       { pre: "Asistentul de pe WhatsApp e un ", anchor: "chatbot AI în română", href: "/servicii/chatbot-ai-romania", post: " care pregătește cererea, nu vinde în locul vostru." },
-      { pre: "Ofertele, reminderele și mesajele de după reparație sunt ", anchor: "automatizări AI", href: "/servicii/automatizari-ai", post: " legate de fișa clientului." },
+      { pre: "Ofertele, reminderele și mesajele de după reparație le legăm de fișa clientului prin ", anchor: "servicii de automatizare AI", href: "/servicii/automatizari-ai", post: "." },
       { pre: "Cum lucrează un asistent AI alături de vânzători am descris în articolul despre ", anchor: "agentul AI pentru vânzări", href: "/blog/agent-ai-pentru-vanzari-romania", post: "." },
       { pre: "Nu știi de unde să pornești? O discuție de ", anchor: "consultanță AI", href: "/servicii/consultanta-ai", post: " lămurește asta înainte de orice investiție." },
     ],
