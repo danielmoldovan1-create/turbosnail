@@ -16,6 +16,13 @@ export const metadata: Metadata = {
 
 const ARTICLES = [
   {
+    slug: "platforme-de-automatizare",
+    title: "Platforme de automatizare: cum alegi între Make, n8n, Zapier și Power Automate",
+    date: "5 noiembrie 2026",
+    excerpt: "Ce face o platformă de automatizare, ce verifici înainte să alegi (aplicații, cine o întreține, unde stau datele) și când se potrivesc Make, n8n, Zapier sau Power Automate.",
+    tag: "Automatizare",
+  },
+  {
     slug: "ce-inseamna-crm",
     title: "Ce înseamnă CRM și ce poți automatiza în el",
     date: "3 noiembrie 2026",

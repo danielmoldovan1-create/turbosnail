@@ -45,6 +45,7 @@ const AFTER = `## Blog
 - [AI Act și chatbotul firmei](https://turbosnail.ro/blog/ai-act-chatbot-firme): ce cere articolul 50 de la 2 august 2026, cine răspunde când chatbotul e făcut de altcineva și ce pași faci.
 - [GDPR și AI în firmă](https://turbosnail.ro/blog/gdpr-ai-firma): ce date pui într-un instrument AI, baza legală, contractul cu furnizorul, transferurile în afara UE și politica internă pentru echipă.
 - [Ce înseamnă CRM](https://turbosnail.ro/blog/ce-inseamna-crm): ce face un CRM, de ce eșuează multe proiecte CRM și ce poți automatiza în el (cereri, date, follow-up, rapoarte).
+- [Platforme de automatizare](https://turbosnail.ro/blog/platforme-de-automatizare): cum alegi între Make, n8n, Zapier și Power Automate după aplicații, întreținere și locul în care stau datele.
 
 ## English
 
