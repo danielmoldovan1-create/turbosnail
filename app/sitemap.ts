@@ -226,5 +226,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://turbosnail.ro/blog/platforme-de-automatizare',
+      lastModified: '2026-11-05',
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ]
 }
