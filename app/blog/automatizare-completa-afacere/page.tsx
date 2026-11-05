@@ -189,7 +189,7 @@ export default function AutomatizareCompletaAfacere() {
           Ultima zonă, și adesea cea mai valoroasă pentru antreprenor, este raportarea automată. În loc să petreci luni dimineața colectând date din cinci surse diferite, primești un raport structurat care îți arată starea businessului: vânzări, leaduri, conversii, cheltuieli, cashflow. Datele vin direct din surse, fără intermediari și fără erori de copy-paste.
         </p>
         <p>
-          Serviciile de <Link href="/servicii/automatizari-ai">automatizări AI</Link> pot conecta toate aceste surse și livra rapoarte configurate exact pe metricile care contează pentru tine.
+          <Link href="/servicii/automatizari-ai">Serviciile de automatizare AI</Link> pot conecta toate aceste surse și livra rapoarte configurate exact pe metricile care contează pentru tine.
         </p>
 
         <blockquote>
