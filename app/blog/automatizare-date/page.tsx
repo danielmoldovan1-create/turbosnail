@@ -200,7 +200,7 @@ export default function AutomatizareDate() {
           </li>
         </ol>
         <p>
-          Toate patru se pot construi cu platforme de automatizare precum Make, n8n sau Zapier ori cu funcțiile de automatizare din aplicațiile pe care le folosești deja.
+          Toate patru se pot construi cu <a href="/blog/platforme-de-automatizare">platforme de automatizare</a> precum Make, n8n sau Zapier ori cu funcțiile de automatizare din aplicațiile pe care le folosești deja.
         </p>
 
         <h2>Ce trebuie pregătit înainte să automatizezi</h2>
