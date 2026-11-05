@@ -3,13 +3,13 @@ import Link from "next/link";
 import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
-  title: "Chatbot AI pentru Site România: Ce Face, Cât Economisești și Cum Alegi | TurboSnail",
+  title: "Chatbot AI pentru site în România: cum alegi | TurboSnail",
   description: "Ghid practic despre chatbot AI pentru site România: cum funcționează, ce procese automatizează, ce întrebări să pui unui furnizor și cum măsori rezultatele reale.",
   alternates: {
     canonical: "https://turbosnail.ro/blog/chatbot-ai-pentru-site-romania",
   },
   openGraph: {
-    title: "Chatbot AI pentru Site România: Ce Face, Cât Economisești și Cum Alegi | TurboSnail",
+    title: "Chatbot AI pentru site în România: cum alegi | TurboSnail",
     description: "Ghid practic despre chatbot AI pentru site România: cum funcționează, ce procese automatizează, ce întrebări să pui unui furnizor și cum măsori rezultatele reale.",
     url: "https://turbosnail.ro/blog/chatbot-ai-pentru-site-romania",
     type: "article",

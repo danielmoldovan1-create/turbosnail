@@ -3,13 +3,13 @@ import Link from "next/link";
 import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
-  title: "Automatizare Procese Firme: Ghid pentru IMM-uri din România 2026 | TurboSnail",
+  title: "Automatizare procese firme: ghid pentru IMM-uri | TurboSnail",
   description: "Cum implementezi automatizarea proceselor în firma ta: contabilitate, HR și vânzări. Ghid practic pentru IMM-uri din România cu exemple concrete și pași clari.",
   alternates: {
     canonical: "https://turbosnail.ro/blog/automatizare-procese-firme",
   },
   openGraph: {
-    title: "Automatizare Procese Firme: Ghid pentru IMM-uri din România 2026 | TurboSnail",
+    title: "Automatizare procese firme: ghid pentru IMM-uri | TurboSnail",
     description: "Cum implementezi automatizarea proceselor în firma ta: contabilitate, HR și vânzări. Ghid practic pentru IMM-uri din România cu exemple concrete și pași clari.",
     url: "https://turbosnail.ro/blog/automatizare-procese-firme",
     siteName: "TurboSnail",
