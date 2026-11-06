@@ -41,8 +41,8 @@ Reguli:
 |---|---|---|
 | automatizări AI | / | „automatizări AI” (exact, cerut de CLAUDE.md) |
 | servicii de automatizare AI | /servicii/automatizari-ai | „servicii de automatizare AI” (din 5 nov.; „automatizări AI” trimite doar spre homepage) |
-| AI pentru companii, soluții AI pentru firme | /blog/automatizari-ai-pentru-afaceri-romania | „AI pentru companii”, „soluții AI pentru firme” |
-| consultanță AI, consultanță inteligență artificială | /servicii/consultanta-ai | „consultanță AI”, „consultanță în inteligență artificială” |
+| soluții AI pentru firme | /blog/automatizari-ai-pentru-afaceri-romania | „soluții AI pentru firme” |
+| consultanță AI, consultanță inteligență artificială, AI pentru companii | /servicii/consultanta-ai | „consultanță AI”, „consultanță în inteligență artificială”, „AI pentru companii” (din 6 nov.: Google trimite deja căutarea aici, 64 de afișări în 3 luni) |
 | ce include consultanța AI | /blog/consultanta-ai-ce-include-cum-alegi | „ce include consultanța AI”, „cum alegi un consultant AI” |
 | automatizare procese afaceri România (articolul central al grupului) | /blog/automatizare-procese-afaceri-romania | „automatizarea proceselor de afaceri” |
 | automatizare procese business | /blog/automatizare-procese-business-ghid-2026 | „automatizare procese business”, „fluxuri automatizate concrete” |
@@ -100,8 +100,9 @@ Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul a
 
 ## Ce îmi trimite Daniel (cu reminder de la Claude)
 - În fiecare luni: exportul GSC pe ultimele 7 zile, comparat cu perioada anterioară.
-- Până pe 4 nov.: din GSC, tabul Pages pentru query-urile „ai pentru companii” și „automatizare documente” (ce URL primește fiecare); Inspectează URL pentru /en/ai-consulting-romania și pentru cele 3 articole despre procese fără afișări.
-- 5 nov.: exportul GSC 15 oct. - 4 nov., comparat cu 24 sep. - 14 oct.
+- Trimis pe 2 nov.: pagina pentru „ai pentru companii” (/servicii/consultanta-ai) și Inspectează URL pe cele 4 pagini (toate indexate).
+- Trimis pe 3 nov.: paginile pentru „automatizare documente” (în 3 luni: /blog/automatizare-date 43 de afișări, /blog/automatizare-documente 19) și cererea de indexare pentru /blog/ce-inseamna-crm și cele 3 articole cu linkuri spre el.
+- Trimis pe 5 nov.: exportul GSC 15 oct. - 4 nov., comparat cu 24 sep. - 14 oct.
 - 16 nov.: exportul GSC 26 oct. - 14 nov., comparat cu 6-25 oct.
 - Când are timp: linkul de LinkedIn personal și numele exact al certificării Anthropic (caseta de autor), confirmarea cifrei INS de pe /domenii/clinici-stomatologice, rapoartele Semrush (Keyword Gap cu concurenții reali, Keyword Magic, Backlink Gap).
 

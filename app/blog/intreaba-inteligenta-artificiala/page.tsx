@@ -3,13 +3,13 @@ import Link from "next/link";
 import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
-  title: "Întreabă inteligența artificială: ghid practic | TurboSnail",
+  title: "Întreabă inteligența artificială în română | TurboSnail",
   description: "Întreabă inteligența artificială corect: ce asistent folosești în română, cum formulezi întrebarea ca să primești un răspuns util și ce date nu-i dai niciodată.",
   alternates: {
     canonical: "https://turbosnail.ro/blog/intreaba-inteligenta-artificiala",
   },
   openGraph: {
-    title: "Întreabă inteligența artificială: ghid practic | TurboSnail",
+    title: "Întreabă inteligența artificială în română | TurboSnail",
     description: "Întreabă inteligența artificială corect: ce asistent folosești în română, cum formulezi întrebarea ca să primești un răspuns util și ce date nu-i dai niciodată.",
     url: "https://turbosnail.ro/blog/intreaba-inteligenta-artificiala",
     type: "article",
