@@ -231,6 +231,8 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
   const [phone, setPhone] = useState("");
   const [msg, setMsg] = useState("");
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [formError, setFormError] = useState("");
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [mobileMenu, setMobileMenu] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -254,19 +256,48 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
   }, []);
 
   async function handleSubmit() {
-    if (!email || !name) return;
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: { "Content-Type": "application/json", "Accept": "application/json" },
-      body: JSON.stringify({
-        access_key: "f2d92ef1-727d-47b9-bbe2-f30548f4c010",
-        subject: `[Listă de așteptare] ${name}`,
-        from_name: "Lista de așteptare turbosnail.ro",
-        formular: "Listă de așteptare",
-        name, email, phone, message: msg,
-      }),
-    });
-    if (res.ok) setSent(true);
+    if (!name.trim() || !email.trim()) {
+      setFormError("Completează numele și adresa de email.");
+      return;
+    }
+    if (!/^\S+@\S+\.\S+$/.test(email.trim())) {
+      setFormError("Adresa de email nu pare corectă. Verific-o, te rog.");
+      return;
+    }
+    setFormError("");
+    setSending(true);
+    // Paginile vizitei, salvate de VisitTracker: ne spun ce pagină a adus mesajul.
+    let visit = { pagina_intrare: "", sursa: "", pagina_anterioara: "" };
+    try {
+      const store = window.sessionStorage;
+      visit = {
+        pagina_intrare: store.getItem("ts_landing") || "",
+        sursa: store.getItem("ts_referrer") || "",
+        pagina_anterioara: store.getItem("ts_prev") || "",
+      };
+    } catch {
+      // Fără sessionStorage, mesajul pleacă fără paginile vizitei.
+    }
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({
+          access_key: "f2d92ef1-727d-47b9-bbe2-f30548f4c010",
+          subject: `[Listă de așteptare] ${name}`,
+          from_name: "Lista de așteptare turbosnail.ro",
+          formular: "Listă de așteptare",
+          name, email, phone, message: msg,
+          ...visit,
+        }),
+      });
+      if (res.ok) setSent(true);
+      else setFormError("Nu am putut trimite formularul. Încearcă din nou sau scrie-ne la hello@turbosnail.ro.");
+    } catch {
+      setFormError("Nu am putut trimite formularul. Încearcă din nou sau scrie-ne la hello@turbosnail.ro.");
+    } finally {
+      setSending(false);
+    }
   }
 
   return (
@@ -742,9 +773,10 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
                 <input className="field" type="email" placeholder="Email *" value={email} onChange={e => setEmail(e.target.value)} />
                 <input className="field" type="tel" placeholder="Telefon" value={phone} onChange={e => setPhone(e.target.value)} />
                 <textarea className="field" placeholder="Descrie businessul tău în 2 rânduri" rows={3} value={msg} onChange={e => setMsg(e.target.value)} style={{ resize: "vertical", fontFamily: "'Instrument Sans',sans-serif" }} />
-                <button className="btn-p" style={{ marginTop: 6, fontSize: 16, padding: "18px 30px", width: "100%" }} onClick={handleSubmit}>
-                  Înscrie-mă pe lista de așteptare →
+                <button className="btn-p" style={{ marginTop: 6, fontSize: 16, padding: "18px 30px", width: "100%" }} onClick={handleSubmit} disabled={sending}>
+                  {sending ? "Se trimite…" : "Înscrie-mă pe lista de așteptare →"}
                 </button>
+                {formError && <span role="alert" style={{ fontSize: 13, color: "#ff6a00" }}>{formError}</span>}
                 <span style={{ fontSize: 12, color: "#555566", marginTop: 4 }}>Îți scriem în cel mult 2 zile lucrătoare · Fără spam · Fără obligații</span>
                 <span style={{ fontSize: 12, color: "#555566" }}>Detalii despre datele tale în <a href="/politica-de-confidentialitate" target="_blank" rel="noopener" style={{ color: "#888899", textDecoration: "underline" }}>politica de confidențialitate</a>.</span>
               </div>

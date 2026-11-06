@@ -57,7 +57,7 @@ export default function PoliticaDeConfidentialitate() {
         <h1 className="hd" style={{ fontSize: 38, fontWeight: 900, lineHeight: 1.12, letterSpacing: -1, marginBottom: 12 }}>
           Politica de confidențialitate
         </h1>
-        <p className="updated">Ultima actualizare: 18 octombrie 2026</p>
+        <p className="updated">Ultima actualizare: 6 noiembrie 2026</p>
         <p>
           Aici afli ce date personale colectăm prin turbosnail.ro, de ce le colectăm, cui le transmitem, cât timp le păstrăm și ce drepturi ai conform Regulamentului (UE) 2016/679 privind protecția datelor (GDPR).
         </p>
@@ -78,6 +78,12 @@ export default function PoliticaDeConfidentialitate() {
         <ul>
           <li>Scop: să îți răspundem și să pregătim auditul sau oferta pe care ne-o ceri.</li>
           <li>Temei legal: demersurile făcute la cererea ta înainte de încheierea unui contract (art. 6 alin. (1) lit. b) din GDPR).</li>
+        </ul>
+        <p>
+          Odată cu mesajul primim și pagina pe care ai intrat pe site, site-ul care te-a trimis la noi (de exemplu Google) și pagina pe care ai fost înainte de formular. Le folosim ca să știm ce pagini îi ajută pe vizitatori să ne contacteze.
+        </p>
+        <ul>
+          <li>Temei legal: interesul nostru legitim de a ști ce conținut e util (art. 6 alin. (1) lit. f) din GDPR).</li>
         </ul>
 
         <h3>Testul de vizibilitate</h3>
@@ -109,12 +115,20 @@ export default function PoliticaDeConfidentialitate() {
           <li>Temei legal: interesul nostru legitim de a avea un site funcțional și sigur (art. 6 alin. (1) lit. f) din GDPR).</li>
         </ul>
 
+        <h3>Statistici de vizite</h3>
+        <p>
+          Folosim Vercel Web Analytics ca să vedem câte vizite are fiecare pagină. Pentru fiecare vizită se înregistrează pagina, site-ul de proveniență, țara, regiunea și orașul aproximativ, tipul de dispozitiv, sistemul de operare și browserul. Statisticile nu folosesc cookie-uri și nu te identifică: vizitatorii sunt deosebiți printr-un cod calculat din cererea browserului, care se șterge după 24 de ore, iar noi vedem doar totaluri.
+        </p>
+        <ul>
+          <li>Temei legal: interesul nostru legitim de a înțelege ce pagini sunt utile (art. 6 alin. (1) lit. f) din GDPR).</li>
+        </ul>
+
         <h2>3. Cui transmitem datele</h2>
         <p>
           Nu vindem datele tale. Le transmitem doar furnizorilor care ne ajută să facem site-ul să funcționeze și care le prelucrează în numele nostru:
         </p>
         <ul>
-          <li><strong>Vercel Inc.</strong> găzduiește site-ul (<a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">politica Vercel</a>).</li>
+          <li><strong>Vercel Inc.</strong> găzduiește site-ul și ne dă statisticile de vizite (<a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">politica Vercel</a>).</li>
           <li><strong>Web3Forms</strong> transmite mesajele din formulare către adresa noastră de email (<a href="https://web3forms.com" target="_blank" rel="noopener noreferrer">web3forms.com</a>).</li>
           <li><strong>Google</strong>: fonturile site-ului se încarcă de pe serverele Google Fonts, așa că browserul tău transmite adresa IP către Google (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">politica Google</a>).</li>
           <li>Furnizorul căsuței noastre de email, unde ajung mesajele din formulare.</li>
@@ -156,7 +170,10 @@ export default function PoliticaDeConfidentialitate() {
 
         <h2>7. Cookie-uri și stocare în browser</h2>
         <p>
-          Site-ul nu folosește cookie-uri de analiză sau de publicitate.
+          Site-ul nu folosește cookie-uri de analiză sau de publicitate. Statisticile de vizite (Vercel Web Analytics) funcționează fără cookie-uri.
+        </p>
+        <p>
+          Pentru formularul de contact, browserul tău ține minte, tot în sessionStorage, pagina pe care ai intrat, site-ul de proveniență și pagina vizitată anterior. Ele ajung la noi doar dacă trimiți formularul și se șterg când închizi tab-ul.
         </p>
         <p>
           Testul de vizibilitate salvează temporar rezultatul în browserul tău (sessionStorage), ca să îl poți vedea pe pagina de rezultat. Datele salvate acolo se șterg când închizi tab-ul.
