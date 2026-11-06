@@ -164,6 +164,18 @@ export default function BlogPost2() {
           <p>Când îi dai o sarcină, AI-ul nu &quot;gândește&quot; ca un om. El identifică tipare similare din datele pe care le-a procesat și generează cel mai probabil răspuns corect. Rezultatul poate părea remarcabil de inteligent, și pentru scopuri practice, chiar este.</p>
           <p>De aici vine și cea mai importantă limită: un model AI poate genera un răspuns care sună convingător, dar este greșit. În limbajul de specialitate, fenomenul se numește „halucinație”. Nu e o eroare rară care va dispărea mâine, ci o consecință a felului în care funcționează modelul: produce textul cel mai probabil, nu textul verificat. De aceea, orice cifră, dată sau afirmație importantă primită de la un AI se verifică înainte să ajungă într-o ofertă, într-un contract sau într-un raport pentru clienți.</p>
 
+          <h2>Exemple de Inteligență Artificială pe Care le Folosești Deja</h2>
+          <p>Probabil folosești inteligența artificială în fiecare zi, fără să-i spui așa. Câteva exemple pe care le întâlnești aproape sigur:</p>
+          <ul>
+            <li><strong>Filtrul de spam din email</strong>, care învață ce mesaje nu vrei să vezi</li>
+            <li><strong>Sugestiile și corectura automată</strong> de la tastatura telefonului</li>
+            <li><strong>Traducerea automată</strong> a unui site sau a unui email scris în altă limbă</li>
+            <li><strong>Recomandările</strong> din magazinele online, de pe YouTube sau din aplicațiile de muzică</li>
+            <li><strong>Navigația</strong> care estimează traficul și îți schimbă ruta</li>
+            <li><strong>Asistenții AI</strong>, ca ChatGPT, Claude sau Gemini, cărora le pui o întrebare în cuvintele tale</li>
+          </ul>
+          <p>În firme, aceleași tehnologii apar în locuri mai puțin vizibile: banca semnalează o plată suspectă, un program citește datele de pe o factură scanată, iar un chatbot de pe site răspunde la întrebările clienților. Diferența e că aici tu alegi ce sarcină îi dai.</p>
+
           <h2>Ce Poate Face Inteligența Artificială pentru Afacerea Ta din România</h2>
           <p>Aceasta este întrebarea care contează cu adevărat. Când proiectăm <a href="https://turbosnail.ro">automatizări AI</a> pentru afaceri din România, pornim de la patru zone în care impactul apare, de regulă, cel mai repede:</p>
 
@@ -178,7 +190,7 @@ export default function BlogPost2() {
 
           <h3>4. Analiză și raportare</h3>
           <p>AI-ul poate analiza datele din vânzări, trafic web și campanii de marketing pentru a identifica tendințe, anomalii și oportunități pe care un om le-ar rata sau ar dura ore să le găsească.</p>
-          <p>Exemple concrete de procese pe care le poți automatiza găsești în ghidul despre <a href="/blog/automatizari-ai-pentru-afaceri-romania">AI pentru companii</a>.</p>
+          <p>Care dintre aceste procese merită automatizat primul în firma ta se stabilește în consultanța de <Link href="/servicii/consultanta-ai">AI pentru companii</Link>.</p>
 
           <blockquote>
             <p>&quot;Suntem în avangarda integrării AI-ului nu doar ca să lucrăm mai repede, ci ca să lucrăm mai inteligent.&quot;</p>

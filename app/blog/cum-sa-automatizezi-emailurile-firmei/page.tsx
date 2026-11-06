@@ -84,6 +84,14 @@ const faqLd = {
         text: "Un flux simplu, cum ar fi confirmările sau reminderele de plată, poate funcționa în câteva zile. Rezultatul se vede din prima săptămână în timpul pe care echipa nu îl mai petrece scriind aceleași mesaje.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Cât de des trimiți emailuri clienților?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Depinde de tipul emailului. Cele tranzacționale, ca o confirmare de comandă sau un reminder de plată, pleacă atunci când se întâmplă ceva, nu după un calendar. Follow-up-urile după o ofertă se trimit la câteva zile distanță și se opresc când clientul răspunde. Newsletterul îl primesc doar cei care l-au cerut, în ritmul promis la abonare. Dacă după fiecare trimitere se dezabonează tot mai mulți oameni, e semn că scrii prea des.",
+      },
+    },
   ],
 };
 
