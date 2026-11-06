@@ -3,6 +3,7 @@ import "./globals.css";
 import { DOMAINS } from "./domenii/data";
 import Link from "next/link";
 import VisitTracker from "./components/VisitTracker";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: {
@@ -128,6 +129,7 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
