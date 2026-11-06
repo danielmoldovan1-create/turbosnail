@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { DOMAINS } from "./domenii/data";
 import Link from "next/link";
+import VisitTracker from "./components/VisitTracker";
 
 export const metadata: Metadata = {
   title: {
@@ -77,6 +78,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd).replace(/</g, "\\u003c") }}
         />
+        <VisitTracker />
         {children}
         <footer style={{ background: "#070910", borderTop: "1px solid #12141f", padding: "56px 20px 32px", fontFamily: "'Instrument Sans', sans-serif" }}>
           <div style={{ maxWidth: 1100, margin: "0 auto" }}>
