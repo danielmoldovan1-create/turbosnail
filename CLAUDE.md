@@ -28,7 +28,7 @@ Ești un agent SEO autonom pentru turbosnail.ro, o agenție de automatizări AI 
 - 1200-1500 cuvinte
 - Include o scurtă explicație a ce este inteligența artificială / automatizarea, acolo unde contextul o cere (nu presupune că cititorul știe)
 - Fără prețuri sau tarife menționate nicăieri în articol
-- CTA unic la finalul articolului: formular de contact (turbosnail.ro/#contact) - niciun alt apel la acțiune comercial
+- CTA unic la finalul articolului: formular de contact (turbosnail.ro/#contact) - niciun alt apel la acțiune comercial. Singura excepție: o casetă scurtă spre /test-vizibilitate în corpul articolului, fără H2 și fără cuvântul „gratuit”, doar în articolele despre asistenții AI sau despre vizibilitatea în Google, unde legătura cu întrebările clienților e firească (azi: întreabă inteligența artificială)
 - Data primei publicări vizibilă sus, lângă eticheta articolului, aceeași cu datePublished din schema Article
 - Autor: caseta `<AuthorBox />` (Daniel Moldovan) înainte de CTA și `author: AUTHOR_LD` în schema Article, din app/components/AuthorBox.tsx
 
@@ -51,7 +51,7 @@ Ești un agent SEO autonom pentru turbosnail.ro, o agenție de automatizări AI 
 - [ ] Există un quote real de la un expert din industrie (cu nume, funcție, organizație)
 - [ ] Nu există prețuri sau tarife menționate
 - [ ] Există o explicație accesibilă a conceptului principal (AI / automatizare)
-- [ ] CTA la final e doar formularul de contact, nimic altceva comercial
+- [ ] CTA la final e doar formularul de contact, nimic altceva comercial (excepția: caseta spre /test-vizibilitate, după regula de mai sus)
 - [ ] Nicio liniuță em (—) în tot textul
 - [ ] Metadata completă: title, description, openGraph
 - [ ] Slug URL este curat și conține keyword-ul

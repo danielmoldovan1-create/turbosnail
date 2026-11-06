@@ -173,6 +173,18 @@ export default function IntreabaInteligentaArtificiala() {
           Pe lângă acestea, multe aplicații de birou și CRM-uri au început să includă propriii asistenți AI. Pentru o firmă, contează mai puțin numele asistentului și mai mult unde ajung datele pe care i le dai. Revenim la asta mai jos.
         </p>
 
+        <aside style={{ margin: "8px 0 40px", padding: "22px 22px 24px", borderRadius: 14, border: "1px solid rgba(255,106,0,0.25)", background: "rgba(255,106,0,0.05)" }}>
+          <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: 11, fontWeight: 700, letterSpacing: 1.5, textTransform: "uppercase", color: "#ff6a00", marginBottom: 10 }}>
+            Test de vizibilitate · 2 minute
+          </p>
+          <p style={{ fontSize: 16, lineHeight: 1.65, color: "#eae8e3", marginBottom: 18 }}>
+            Aceiași asistenți primesc și întrebări ca „ce firmă îmi recomanzi pentru…”. Află cât de vizibilă e firma ta în Google și în răspunsurile AI: 10 întrebări, un scor și recomandări concrete.
+          </p>
+          <Link href="/test-vizibilitate" style={{ display: "inline-flex", alignItems: "center", color: "#ff6a00", border: "1px solid rgba(255,106,0,0.35)", background: "rgba(255,255,255,0.03)", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 600, padding: "12px 22px", fontSize: 15, textDecoration: "none" }}>
+            Fă testul de vizibilitate →
+          </Link>
+        </aside>
+
         <h2>Cum să întrebi inteligența artificială ca să primești un răspuns util</h2>
         <p>
           Cea mai frecventă greșeală este să scrii într-un chat cu AI la fel cum scrii în Google: trei-patru cuvinte și atât. Un asistent AI funcționează mult mai bine dacă îl tratezi ca pe un coleg nou, căruia îi explici sarcina.

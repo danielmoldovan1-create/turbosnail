@@ -3,6 +3,9 @@ import { notFound } from "next/navigation";
 import { SERVICES } from "../data";
 import Link from "next/link";
 
+// Serviciile pentru care testul de vizibilitate (Google și AI) e un prim pas firesc.
+const TEST_SLUGS = ["seo-ai", "paid-ads-ai"];
+
 export async function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
 }
@@ -118,6 +121,14 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
             Înscrie-te pe lista de așteptare →
           </Link>
+          {TEST_SLUGS.includes(service.slug) && (
+            <p style={{ marginTop: 18, fontSize: 14, color: "#888899", lineHeight: 1.6 }}>
+              Nu știi încă de unde să începi?{" "}
+              <Link href="/test-vizibilitate" style={{ color: "#ff6a00", textDecoration: "none", borderBottom: "1px solid rgba(255,106,0,0.3)" }}>
+                Fă testul gratuit de vizibilitate, 2 minute →
+              </Link>
+            </p>
+          )}
         </div>
       </section>
 
