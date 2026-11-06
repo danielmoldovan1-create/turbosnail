@@ -122,6 +122,18 @@ export default function VisibilityQuiz() {
     const cat = category(score);
     const recs = QUESTIONS.filter((q) => answers[q.id] !== "da").map((q) => q.rec);
     const answerLines = QUESTIONS.map((q, i) => `${i + 1}. ${q.label}: ${OPTIONS.find((o) => o.value === answers[q.id])?.label}`).join("\n");
+    // Paginile vizitei, salvate de VisitTracker: ne spun ce pagină a adus testul.
+    let visit = { pagina_intrare: "", sursa: "", pagina_anterioara: "" };
+    try {
+      const store = window.sessionStorage;
+      visit = {
+        pagina_intrare: store.getItem("ts_landing") || "",
+        sursa: store.getItem("ts_referrer") || "",
+        pagina_anterioara: store.getItem("ts_prev") || "",
+      };
+    } catch {
+      // Fără sessionStorage, răspunsurile pleacă fără paginile vizitei.
+    }
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -138,6 +150,7 @@ export default function VisibilityQuiz() {
           scor: `${score}/100 (${cat})`,
           acord_marketing: marketing ? "DA: poate primi emailuri de marketing" : "NU: doar contact legat de rezultat",
           raspunsuri: answerLines,
+          ...visit,
         }),
       });
       if (!res.ok) throw new Error("submit failed");

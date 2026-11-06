@@ -95,6 +95,9 @@ export default function PoliticaDeConfidentialitate() {
           <li>Temei legal: consimțământul tău, exprimat prin bifa din formular (art. 6 alin. (1) lit. a) din GDPR). Îl poți retrage oricând.</li>
         </ul>
         <p>
+          Odată cu răspunsurile primim și pagina pe care ai intrat pe site, site-ul care te-a trimis la noi (de exemplu Google) și pagina pe care ai fost înainte de test. Le folosim ca să știm ce pagini îi aduc pe vizitatori la test, pe baza interesului nostru legitim (art. 6 alin. (1) lit. f) din GDPR).
+        </p>
+        <p>
           Scorul se calculează automat din răspunsurile tale. Nu luăm pe baza lui nicio decizie automată care să aibă efecte juridice asupra ta.
         </p>
 
@@ -173,7 +176,7 @@ export default function PoliticaDeConfidentialitate() {
           Site-ul nu folosește cookie-uri de analiză sau de publicitate. Statisticile de vizite (Vercel Web Analytics) funcționează fără cookie-uri.
         </p>
         <p>
-          Pentru formularul de contact, browserul tău ține minte, tot în sessionStorage, pagina pe care ai intrat, site-ul de proveniență și pagina vizitată anterior. Ele ajung la noi doar dacă trimiți formularul și se șterg când închizi tab-ul.
+          Pentru formularul de contact și pentru testul de vizibilitate, browserul tău ține minte, tot în sessionStorage, pagina pe care ai intrat, site-ul de proveniență și pagina vizitată anterior. Ele ajung la noi doar dacă trimiți formularul sau testul și se șterg când închizi tab-ul.
         </p>
         <p>
           Testul de vizibilitate salvează temporar rezultatul în browserul tău (sessionStorage), ca să îl poți vedea pe pagina de rezultat. Datele salvate acolo se șterg când închizi tab-ul.
