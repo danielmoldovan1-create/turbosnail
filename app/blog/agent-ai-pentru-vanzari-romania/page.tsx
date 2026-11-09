@@ -25,7 +25,7 @@ const articleLd = {
   description: "Agent AI pentru vânzări în România: ce face concret pentru echipa ta, ce nu poate face încă și cum îl implementezi pas cu pas, fără să strici procesul actual.",
   url: "https://turbosnail.ro/blog/agent-ai-pentru-vanzari-romania",
   datePublished: "2026-10-07",
-  dateModified: "2026-10-07",
+  dateModified: "2026-11-09",
   author: AUTHOR_LD,
   publisher: {
     "@type": "Organization",
@@ -256,6 +256,22 @@ export default function AgentAIPentruVanzariRomania() {
         </ul>
         <p>
           Un furnizor care nu poate răspunde concret la aceste întrebări nu este pregătit să lucreze cu datele firmei tale, oricât de bine ar arăta demonstrația.
+        </p>
+
+        <h2>Ce soft folosesc agenții de vânzări și unde intră AI-ul</h2>
+        <p>
+          Un agent de vânzări, om sau AI, lucrează de obicei cu aceleași tipuri de soft: un CRM în care stau clienții, ofertele și etapele fiecărei oportunități; emailul și calendarul, unde se poartă discuțiile; și, la firmele cu agenți pe teren, o aplicație pe telefon din care se trimit comenzile și ofertele.
+        </p>
+        <p>
+          Agentul AI nu înlocuiește aceste programe. Se pune peste ele, în una din trei variante:
+        </p>
+        <ul>
+          <li><strong>Funcțiile AI din CRM-ul pe care îl ai deja.</strong> E varianta cea mai simplă, dacă echipa folosește CRM-ul zilnic. Limita: agentul vede doar ce e în CRM.</li>
+          <li><strong>Un agent construit pe o platformă de automatizare.</strong> Make, n8n, Zapier sau Power Automate leagă CRM-ul de email, de calendar și de formularele de pe site. Diferențele dintre ele sunt în ghidul despre <a href="/blog/platforme-de-automatizare">platforme de automatizare</a>.</li>
+          <li><strong>Un soft separat, făcut doar pentru prospectare.</strong> Are sens când vin multe leaduri și procesul de vânzare e deja stabil.</li>
+        </ul>
+        <p>
+          Oricare ar fi varianta, întrebările de mai sus rămân aceleași, iar rezultatul depinde mai mult de cât de curate sunt datele din CRM decât de softul ales.
         </p>
 
         <h2>Semne că firma ta e pregătită pentru un agent AI</h2>
