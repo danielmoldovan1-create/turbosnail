@@ -86,6 +86,30 @@ export default function EnglishLegal() {
         <ul>
           <li>Legal basis: our legitimate interest in knowing which content is useful (Article 6(1)(f) GDPR).</li>
         </ul>
+        <h3>The visibility test</h3>
+        <p>
+          When you complete the <Link href="/en/visibility-test">visibility test</Link>, we receive your name, your email address, your website or business name, your phone number (if you give it), your answers to the 10 questions and the calculated score.
+        </p>
+        <ul>
+          <li>Purpose: to show you the result and to contact you about it.</li>
+          <li>Legal basis: your consent, given with the tick box in the form (Article 6(1)(a) GDPR). You can withdraw it at any time.</li>
+        </ul>
+        <p>
+          With your answers we also receive the page where you entered the site, the site that sent you to us and the page you visited before the test, on the basis of our legitimate interest in knowing which pages bring visitors to the test (Article 6(1)(f) GDPR).
+        </p>
+        <p>
+          The score is calculated automatically from your answers. We do not use it to take any automated decision with legal effects for you.
+        </p>
+
+        <h3>Tips by email</h3>
+        <p>
+          Only if you tick the separate box for emails do we use your name and email address to send you tips on online visibility and AI automation.
+        </p>
+        <ul>
+          <li>Legal basis: your consent (Article 6(1)(a) GDPR).</li>
+          <li>You can unsubscribe at any time: email us at {EMAIL} or use the unsubscribe link in the email.</li>
+        </ul>
+
         <p>
           The Romanian-language pages of this site have their own forms. The <Link href="/politica-de-confidentialitate" hrefLang="ro">Romanian version of this policy</Link> describes how we process the data sent through them.
         </p>
@@ -124,6 +148,8 @@ export default function EnglishLegal() {
         <h2>5. How long we keep data</h2>
         <ul>
           <li>Messages from the contact form and emails: up to 2 years after our last contact, unless you become a client.</li>
+          <li>Visibility test data: up to 12 months after you complete the test, unless you agreed to receive emails or become a client.</li>
+          <li>Data for tips by email: until you unsubscribe or withdraw your consent. After you unsubscribe we keep only your email address on an exclusion list, so that we do not write to you again.</li>
           <li>If you become a client, contract and invoice data are kept for as long as tax and accounting law requires.</li>
         </ul>
 
@@ -151,6 +177,9 @@ export default function EnglishLegal() {
         </p>
         <p>
           Your browser keeps in sessionStorage the page you arrived on, the referring site and the page you visited before. This information reaches us only if you submit a form, and it is deleted when you close the tab.
+        </p>
+        <p>
+          The visibility test also stores your result in sessionStorage, so you can see it on the result page. It is deleted when you close the tab.
         </p>
 
         <h2>8. Security</h2>
