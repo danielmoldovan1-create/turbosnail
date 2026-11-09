@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EnglishContactForm from "./contact-form";
 
 const EN_URL = "https://turbosnail.ro/en";
 const EMAIL = "hello@turbosnail.ro";
@@ -46,7 +47,7 @@ const FAQ = [
   },
   {
     q: "How do we start?",
-    a: "Email us one process that takes your team too many hours. We reply within two business days with a few questions or a time for a call.",
+    a: "Tell us about one process that takes your team too many hours, through the form on this page or by email. We reply within two business days with a few questions or a time for a call.",
   },
 ];
 
@@ -98,7 +99,7 @@ export default function EnglishHome() {
           </Link>
           <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
             <Link href="/en/ai-automation-services" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Services</Link>
-            <a href={`mailto:${EMAIL}`} style={{ ...btn, padding: "10px 22px", fontSize: 13 }}>Contact →</a>
+            <a href="#contact" style={{ ...btn, padding: "10px 22px", fontSize: 13 }}>Contact →</a>
           </div>
         </div>
       </nav>
@@ -115,7 +116,7 @@ export default function EnglishHome() {
           <p style={{ fontSize: 18, color: "#a8a6a1", lineHeight: 1.65, maxWidth: 640, marginBottom: 36 }}>
             TurboSnail finds the repetitive work that fills your team&apos;s week and builds automations that take it over: answering enquiries, processing documents, preparing reports and keeping your CRM up to date. Everything connects to the tools you already use, and a person stays in charge of the decisions that matter.
           </p>
-          <a href={`mailto:${EMAIL}`} style={{ ...btn, padding: "15px 32px", fontSize: 15 }}>Tell us about one process →</a>
+          <a href="#contact" style={{ ...btn, padding: "15px 32px", fontSize: 15 }}>Tell us about one process →</a>
         </div>
       </section>
 
@@ -177,13 +178,13 @@ export default function EnglishHome() {
 
       <div style={{ height: 1, background: "linear-gradient(90deg, transparent, rgba(255,106,0,0.12), transparent)", maxWidth: 760, margin: "0 auto" }} />
 
-      {/* CTA */}
-      <section style={{ padding: "60px 20px 96px", textAlign: "center", maxWidth: 760, margin: "0 auto" }}>
+      {/* CONTACT */}
+      <section id="contact" style={{ padding: "60px 20px 96px", textAlign: "center", maxWidth: 620, margin: "0 auto", scrollMarginTop: 80 }}>
         <h2 className="hd" style={{ fontSize: 28, fontWeight: 900, letterSpacing: -0.6, marginBottom: 14 }}>Which process takes the most hours in your company?</h2>
         <p style={{ fontSize: 16, color: "#a8a6a1", marginBottom: 32, lineHeight: 1.65 }}>
-          Write to us at {EMAIL}. We reply within two business days.
+          Tell us in a few lines, or email us at <a href={`mailto:${EMAIL}`} style={{ color: "#ff6a00", textDecoration: "none" }}>{EMAIL}</a>.
         </p>
-        <a href={`mailto:${EMAIL}`} style={{ ...btn, padding: "15px 32px", fontSize: 15 }}>Email us →</a>
+        <EnglishContactForm />
       </section>
     </main>
   );

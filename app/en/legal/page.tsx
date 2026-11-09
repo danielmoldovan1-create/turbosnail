@@ -72,16 +72,22 @@ export default function EnglishLegal() {
         </p>
 
         <h2>2. What data we process and why</h2>
-        <h3>Emails you send us</h3>
+        <h3>The contact form and emails you send us</h3>
         <p>
-          When you write to us, we receive your name, your email address and whatever you include in the message.
+          When you write to us through the contact form or by email, we receive your name, your email address, your phone number (if you give it) and your message.
         </p>
         <ul>
           <li>Purpose: to reply and to prepare the proposal you ask for.</li>
           <li>Legal basis: steps taken at your request before entering into a contract (Article 6(1)(b) GDPR).</li>
         </ul>
         <p>
-          The Romanian-language pages of this site also have a contact form and a visibility test. The <Link href="/politica-de-confidentialitate" hrefLang="ro">Romanian version of this policy</Link> describes how we process the data sent through them.
+          With a form message we also receive the page where you entered the site, the site that sent you to us (for example Google) and the page you visited before the form. We use them to learn which pages help visitors get in touch.
+        </p>
+        <ul>
+          <li>Legal basis: our legitimate interest in knowing which content is useful (Article 6(1)(f) GDPR).</li>
+        </ul>
+        <p>
+          The Romanian-language pages of this site have their own forms. The <Link href="/politica-de-confidentialitate" hrefLang="ro">Romanian version of this policy</Link> describes how we process the data sent through them.
         </p>
 
         <h3>Technical data</h3>
@@ -105,7 +111,7 @@ export default function EnglishLegal() {
         <ul>
           <li><strong>Vercel Inc.</strong> hosts the site and provides the visit statistics (<a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Vercel privacy policy</a>).</li>
           <li><strong>Google</strong>: the site&apos;s fonts load from Google Fonts, so your browser sends your IP address to Google (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google privacy policy</a>).</li>
-          <li><strong>Web3Forms</strong> delivers the forms on the Romanian-language pages to our inbox.</li>
+          <li><strong>Web3Forms</strong> delivers the messages sent through the site&apos;s forms to our inbox (<a href="https://web3forms.com" target="_blank" rel="noopener noreferrer">web3forms.com</a>).</li>
           <li>The provider of our email inbox.</li>
         </ul>
         <p>We disclose data to public authorities only when the law requires it.</p>
@@ -117,7 +123,7 @@ export default function EnglishLegal() {
 
         <h2>5. How long we keep data</h2>
         <ul>
-          <li>Emails you send us: up to 2 years after our last contact, unless you become a client.</li>
+          <li>Messages from the contact form and emails: up to 2 years after our last contact, unless you become a client.</li>
           <li>If you become a client, contract and invoice data are kept for as long as tax and accounting law requires.</li>
         </ul>
 

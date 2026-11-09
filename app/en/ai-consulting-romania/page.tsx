@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EnglishContactForm from "../contact-form";
 
 const EN_URL = "https://turbosnail.ro/en/ai-consulting-romania";
 const RO_URL = "https://turbosnail.ro/servicii/consultanta-ai";
@@ -119,7 +120,7 @@ export default function AiConsultingRomania() {
           </Link>
           <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
             <Link href="/servicii/consultanta-ai" hrefLang="ro" lang="ro" style={{ fontSize: 14, color: "#888899", textDecoration: "none" }}>Română</Link>
-            <a href={`mailto:${EMAIL}`} style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
+            <a href="#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "10px 22px", fontSize: 13, textDecoration: "none" }}>
               Contact →
             </a>
           </div>
@@ -205,15 +206,13 @@ export default function AiConsultingRomania() {
 
       <div style={{ height: 1, background: "linear-gradient(90deg, transparent, rgba(255,106,0,0.12), transparent)", maxWidth: 760, margin: "0 auto" }} />
 
-      {/* CTA */}
-      <section style={{ padding: "60px 20px 96px", textAlign: "center", maxWidth: 760, margin: "0 auto" }}>
+      {/* CONTACT */}
+      <section id="contact" style={{ padding: "60px 20px 96px", textAlign: "center", maxWidth: 620, margin: "0 auto", scrollMarginTop: 80 }}>
         <h2 className="hd" style={{ fontSize: 28, fontWeight: 900, letterSpacing: -0.6, marginBottom: 14 }}>Which process takes the most hours in your company?</h2>
         <p style={{ fontSize: 16, color: "#a8a6a1", marginBottom: 32, lineHeight: 1.65 }}>
-          Write to us in English at {EMAIL}. We reply within two business days.
+          Tell us in a few lines, or email us at <a href={`mailto:${EMAIL}`} style={{ color: "#ff6a00", textDecoration: "none" }}>{EMAIL}</a>. We reply within two business days.
         </p>
-        <a href={`mailto:${EMAIL}`} style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "15px 32px", fontSize: 15, textDecoration: "none", display: "inline-block" }}>
-          Email us →
-        </a>
+        <EnglishContactForm />
       </section>
     </main>
   );
