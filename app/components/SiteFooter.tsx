@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const EMAIL = "hello@turbosnail.ro";
 const LINKEDIN = "https://www.linkedin.com/company/turbo-snail/";
 
 const colTitle = { fontSize: 11, fontWeight: 700, color: "#ff6a00", letterSpacing: 2, textTransform: "uppercase" as const, marginBottom: 16, fontFamily: "'Outfit', sans-serif" };
@@ -45,7 +44,8 @@ export default function SiteFooter({ domains }: { domains: { slug: string; name:
               <div>
                 <p style={colTitle}>Company</p>
                 <nav style={navCol}>
-                  <a href={`mailto:${EMAIL}`} style={navLink}>Contact</a>
+                  <Link href="/en#contact" style={navLink}>Contact</Link>
+                  <Link href="/en/visibility-test" style={navLink}>Visibility test</Link>
                   <Link href="/en/legal" style={navLink}>Legal notice and privacy</Link>
                 </nav>
               </div>
