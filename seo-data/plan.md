@@ -67,6 +67,11 @@ Reguli:
 | ce înseamnă CRM | /blog/ce-inseamna-crm (din 3 nov.) | „ce înseamnă CRM”, „sistem CRM” |
 | platforme de automatizare | /blog/platforme-de-automatizare (din 5 nov.) | „platforme de automatizare” |
 | AI consulting Romania (în engleză) | /en/ai-consulting-romania (din 28 oct.) | „AI consulting in Romania” (din paginile în engleză); din paginile în română, doar linkul de limbă „English version” |
+| automatizare CRM | /blog/automatizare-crm (din 10 nov.) | „automatizarea CRM-ului” |
+| vizibilitate AI | /blog/vizibilitate-ai (din 12 nov.) | „vizibilitatea în AI” |
+| SEO bazat pe AI (serviciu) | /servicii/seo-ai | „SEO bazat pe AI” |
+| AI automation agency (în engleză) | /en (din 9 nov.) | „AI automation agency”, doar din paginile în engleză |
+| AI automation services (în engleză) | /en/ai-automation-services (din 9 nov.) | „AI automation services”, doar din paginile în engleză |
 
 Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul altor pagini (automatizare documente, agenți AI în firmă, automatizări AI pentru afaceri și cele 5 articole despre automatizarea proceselor), iar ancora „automatizări AI” trimitea și la homepage (21 de pagini), și la /servicii/automatizari-ai (9 pagini plus meniul).
 
@@ -89,6 +94,15 @@ Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul a
 - 6 nov. (vineri): title nou la /blog/intreaba-inteligenta-artificiala, „Întreabă inteligența artificială în română | TurboSnail” (145 de afișări pe poziția 6,7 și 0 clickuri în 7 zile; prima schimbare de SEO de la publicare). Schimbări sigure: în FAQ-ul articolului despre emailuri, întrebarea „Cât de des trimiți emailuri clienților?” (query cu 4 afișări, poziția 44); în /blog/ce-este-inteligenta-artificiala, H2 nou „Exemple de inteligență artificială pe care le folosești deja” (query cu 5 afișări, poziția 36).
 - 28 oct.: pagina în engleză /en/ai-consulting-romania (decizia lui Daniel din 28 oct.), pereche hreflang cu /servicii/consultanta-ai. O singură pagină deocamdată: 12 căutări în engleză, 138 de afișări în 28 de zile. A doua pagină (conversational AI) doar dacă secțiunea ei aduce afișări separat.
 
+## Săptămâna 9-13 noiembrie
+- 9 nov. (luni): export GSC 2-8 nov. față de 26 oct. - 1 nov.: 7 clickuri față de 2, 898 de afișări față de 692. Daniel a aprobat toate propunerile.
+  - Paginile în engleză (decizia lui Daniel din 9 nov.): /en, /en/ai-automation-services și /en/legal, fără România în textul de vânzare, publicate pe turbosnail.ro/en. Dacă apare un domeniu separat, le mutăm cu redirect 301. /en/ai-consulting-romania rămâne pentru cei care caută explicit România.
+  - Schimbare sigură: secțiunea „Ce soft folosesc agenții de vânzări și unde intră AI-ul” în /blog/agent-ai-pentru-vanzari-romania, pentru „soft agenti de vanzari” (7 afișări, poziția 36,7). Era propusă ca întrebare în FAQ, dar FAQ-ul are deja 5 întrebări, maximul din CLAUDE.md.
+- 10 nov. (marți): articolul „Automatizare CRM” (/blog/automatizare-crm). „automatizare crm”: 8 afișări pe poziția 34, fără pagină dedicată. În aceeași zi, PR separat cu linkuri din /blog/ce-inseamna-crm, /blog/agent-ai-pentru-vanzari-romania și /blog/cum-sa-automatizezi-emailurile-firmei.
+- 12 nov. (joi): articolul „Vizibilitate AI” (/blog/vizibilitate-ai), cu caseta spre /test-vizibilitate. „vizibilitate ai”: 9 afișări, de pe 36,8 pe 21,6, azi doar pe pagina testului. În aceeași zi, PR separat cu linkuri din /blog/intreaba-inteligenta-artificiala, /blog/ce-este-inteligenta-artificiala și /domenii/producatori-distribuitori (pagina vorbește deja despre Google și ChatGPT; /servicii/seo-ai nu poate primi link în text fără schimbarea șablonului paginilor de servicii).
+- 13 nov. (vineri): niciun title nou. /servicii/consultanta-ai a scăzut de la 106 la 57 de afișări într-o săptămână; decidem pe 16 nov., cu exportul pe trei săptămâni.
+- De urmărit, fără modificări: /blog/chatbot-ai-pentru-site-romania, de la 39 la 7 afișări după title-ul din 5 nov. (verificare 19 nov.); „rapoarte financiare automatizate”, de pe 4,1 pe 11,3 după secțiunea din 4 nov. (verificare 18 nov.).
+
 ## Repere (nu promisiuni)
 - 30 noiembrie: toate paginile au afișări în GSC și 5 query-uri sunt în top 10.
 - 31 decembrie: peste 30 de clickuri pe lună.
@@ -103,8 +117,10 @@ Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul a
 - Trimis pe 2 nov.: pagina pentru „ai pentru companii” (/servicii/consultanta-ai) și Inspectează URL pe cele 4 pagini (toate indexate).
 - Trimis pe 3 nov.: paginile pentru „automatizare documente” (în 3 luni: /blog/automatizare-date 43 de afișări, /blog/automatizare-documente 19) și cererea de indexare pentru /blog/ce-inseamna-crm și cele 3 articole cu linkuri spre el.
 - Trimis pe 5 nov.: exportul GSC 15 oct. - 4 nov., comparat cu 24 sep. - 14 oct.
+- Trimis pe 9 nov.: exportul GSC 2-8 nov.; Keyword Gap Semrush cu consultant-ai, itfusion și cosmoconsult (nimic pentru noi, în afară de „soluții business intelligence”, lăsat deocamdată); decizia pentru engleză: turbosnail.ro/en.
 - 16 nov.: exportul GSC 26 oct. - 14 nov., comparat cu 6-25 oct.
-- Când are timp: linkul de LinkedIn personal și numele exact al certificării Anthropic (caseta de autor), confirmarea cifrei INS de pe /domenii/clinici-stomatologice, rapoartele Semrush (Keyword Gap cu concurenții reali, Keyword Magic, Backlink Gap).
+- De trimis: datele firmei pentru /en/legal și politica de confidențialitate (denumirea legală, adresa, Nr. Reg. Com., CUI), cerute de art. 5 din Directiva 2000/31/CE; acum pe site scrie doar „Timișoara, România”.
+- Când are timp: linkul de LinkedIn personal și numele exact al certificării Anthropic (caseta de autor), confirmarea cifrei INS de pe /domenii/clinici-stomatologice, din Semrush lista de concurenți din Organic Research → Competitors (pentru un Keyword Gap util), Keyword Magic pe „automatizare” și „ai pentru”, Backlink Gap.
 
 ## Blocaje cunoscute
 - Unele surse răspund cu 403 din mediul de lucru: forbes.com, gartner.com, bcg.com, ec.europa.eu, eur-lex.europa.eu. Au mers în octombrie: microsoft.com, computerworld.com, pymnts.com, publications.europa.eu, gibsondunn.com, joneswalker.com. Pentru restul se poate cere acces în setările de rețea ale mediului.

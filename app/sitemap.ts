@@ -53,6 +53,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     },
     {
+      url: 'https://turbosnail.ro/en',
+      lastModified: '2026-11-09',
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://turbosnail.ro/en/ai-automation-services',
+      lastModified: '2026-11-09',
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: 'https://turbosnail.ro/servicii/chatbot-ai-romania',
       lastModified: '2026-10-21',
       changeFrequency: 'monthly',
@@ -174,7 +186,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://turbosnail.ro/blog/agent-ai-pentru-vanzari-romania',
-      lastModified: '2026-10-21',
+      lastModified: '2026-11-09',
       changeFrequency: 'monthly',
       priority: 0.7,
     },
