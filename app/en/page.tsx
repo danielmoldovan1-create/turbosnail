@@ -117,6 +117,12 @@ export default function EnglishHome() {
             TurboSnail finds the repetitive work that fills your team&apos;s week and builds automations that take it over: answering enquiries, processing documents, preparing reports and keeping your CRM up to date. Everything connects to the tools you already use, and a person stays in charge of the decisions that matter.
           </p>
           <a href="#contact" style={{ ...btn, padding: "15px 32px", fontSize: 15 }}>Tell us about one process →</a>
+          <p style={{ marginTop: 18, fontSize: 14, color: "#888899", lineHeight: 1.6 }}>
+            Not sure where to start?{" "}
+            <Link href="/en/visibility-test" style={{ color: "#ff6a00", textDecoration: "none", borderBottom: "1px solid rgba(255,106,0,0.3)" }}>
+              Take the 2-minute visibility test →
+            </Link>
+          </p>
         </div>
       </section>
 
