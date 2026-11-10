@@ -41,7 +41,7 @@ Reguli:
 |---|---|---|
 | automatizări AI | / | „automatizări AI” (exact, cerut de CLAUDE.md) |
 | servicii de automatizare AI | /servicii/automatizari-ai | „servicii de automatizare AI” (din 5 nov.; „automatizări AI” trimite doar spre homepage) |
-| soluții AI pentru firme | /blog/automatizari-ai-pentru-afaceri-romania | „soluții AI pentru firme” |
+| soluții AI pentru firme | /servicii/consultanta-ai (din 10 nov.: în GSC, query-ul ajunge doar aici, 131 de afișări, 0 clickuri) | „soluții AI pentru firme”, „soluțiile AI pentru firme”; /blog/automatizari-ai-pentru-afaceri-romania păstrează title-ul, iar H2-ul și meta cu „soluții AI pentru firme” le revedem pe 16 nov. |
 | consultanță AI, consultanță inteligență artificială, AI pentru companii | /servicii/consultanta-ai | „consultanță AI”, „consultanță în inteligență artificială”, „AI pentru companii” (din 6 nov.: Google trimite deja căutarea aici, 64 de afișări în 3 luni) |
 | ce include consultanța AI | /blog/consultanta-ai-ce-include-cum-alegi | „ce include consultanța AI”, „cum alegi un consultant AI” |
 | automatizare procese afaceri România (articolul central al grupului) | /blog/automatizare-procese-afaceri-romania | „automatizarea proceselor de afaceri” |

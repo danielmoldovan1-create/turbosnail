@@ -346,6 +346,38 @@ export default function ConsultantaAIPage() {
 
       <div className="divider" />
 
+      {/* SOLUTII AI PE DEPARTAMENTE */}
+      <section style={{ paddingTop: 56, paddingBottom: 48 }}>
+        <div className="mx">
+          <h2 className="hd" style={{ fontSize: 28, fontWeight: 800, marginBottom: 20, letterSpacing: -0.5 }}>Soluții AI pentru firme, pe departamente</h2>
+          <article className="prose">
+            <p>
+              Când cauți soluții AI pentru firme, găsești de obicei liste de instrumente. Mai util e să pornești de la departament: unde se pierde timp și ce poate prelua AI-ul acolo. Acestea sunt cele cinci zone de la care pornim de obicei, fiecare cu ghidul ei.
+            </p>
+            <p>
+              <strong>Vânzări.</strong> Cererile intră singure în CRM, ajung la omul potrivit, iar follow-up-urile pleacă la timp. Un agent AI poate pregăti răspunsuri și oferte pe care le aprobă un om. Pașii sunt în ghidul despre <a href="/blog/automatizare-crm">automatizarea CRM-ului</a>.
+            </p>
+            <p>
+              <strong>Relația cu clienții.</strong> Un chatbot pe site răspunde din documentele firmei, în română, și predă discuția unui om când nu știe răspunsul. Vezi serviciul de <Link href="/servicii/chatbot-ai-romania">chatbot AI în română</Link>. Clientul trebuie să știe că vorbește cu un sistem AI, cum explicăm în articolul despre <a href="/blog/ai-act-chatbot-firme">AI Act</a>.
+            </p>
+            <p>
+              <strong>Documente și facturi.</strong> Datele din facturi, comenzi și contracte ajung în programul de contabilitate sau în ERP fără să le tasteze cineva, iar un om verifică excepțiile. Detaliile sunt în ghidul despre <a href="/blog/automatizare-documente">automatizare documente</a>.
+            </p>
+            <p>
+              <strong>Rapoarte.</strong> Cifrele din vânzări, marketing și contabilitate se adună singure într-un raport care pleacă la ora stabilită. Vezi ghidul despre <a href="/blog/automatizare-rapoarte-saptamanale-lunare">automatizarea rapoartelor</a>.
+            </p>
+            <p>
+              <strong>Emailuri.</strong> Mesajele se sortează pe tipuri, confirmările și reminderele pleacă singure, iar AI-ul pregătește ciorne pentru restul. Vezi ghidul despre <a href="/blog/cum-sa-automatizezi-emailurile-firmei">automatizarea emailurilor</a>.
+            </p>
+            <p>
+              Asistenții AI generali, ca ChatGPT, Claude, Gemini sau Copilot, ajută fiecare om în parte să scrie și să caute mai repede. Soluțiile de mai sus lucrează pe procesele firmei, cu datele ei, deci au nevoie de reguli clare despre ce date folosesc, cum am arătat în ghidul despre <a href="/blog/gdpr-ai-firma">GDPR și AI</a>. La consultanță alegem împreună zona în care se pierd cele mai multe ore și pornim de acolo.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <div className="divider" />
+
       {/* FAQ */}
       <section style={{ paddingTop: 56, paddingBottom: 56 }}>
         <div className="mx">

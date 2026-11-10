@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://turbosnail.ro/servicii/consultanta-ai',
-      lastModified: '2026-10-15',
+      lastModified: '2026-11-10',
       changeFrequency: 'monthly',
       priority: 0.8,
       alternates: {
