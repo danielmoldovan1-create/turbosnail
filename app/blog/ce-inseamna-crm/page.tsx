@@ -231,6 +231,9 @@ export default function CeInseamnaCrm() {
           <li><strong>Verifică după o lună.</strong> Câte cereri au intrat, câte au primit răspuns la timp, câte au ajuns oferte. Dacă cifrele nu se văd ușor, CRM-ul nu e încă folosit cum trebuie.</li>
         </ol>
         <p>
+          Cele șapte automatizări care merită pornite, în ordinea lor, sunt descrise pe larg în ghidul despre <Link href="/blog/automatizare-crm">automatizarea CRM-ului</Link>.
+        </p>
+        <p>
           Un CRM conține datele personale ale clienților, deci intră sub GDPR din prima zi. Dacă îl legi de un instrument AI, verifică întâi ce date ajung acolo și pe ce bază legală, cum am arătat în ghidul despre <Link href="/blog/gdpr-ai-firma">GDPR și AI</Link>.
         </p>
         <p>
