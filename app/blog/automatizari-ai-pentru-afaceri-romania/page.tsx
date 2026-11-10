@@ -185,6 +185,7 @@ export default function BlogPost() {
             <li><strong>Agenți AI:</strong> sisteme care primesc un obiectiv și execută singure mai mulți pași, de exemplu în <a href="/blog/agent-ai-pentru-vanzari-romania">vânzări</a>.</li>
           </ul>
           <p>Pentru majoritatea companiilor mici și mijlocii, ordinea sănătoasă este aceeași: întâi o automatizare simplă pe un proces repetitiv, apoi asistenți AI folosiți după reguli clare, iar agenții abia după ce procesele și datele sunt în ordine.</p>
+          <p>Pe departamente, de la vânzări la facturi, am adunat <Link href="/servicii/consultanta-ai">soluțiile AI pentru firme</Link> de la care pornim de obicei.</p>
 
           <h2>Cât durează implementarea automatizărilor AI</h2>
           <p>Răspunsul depinde de complexitate. Iată câteva repere orientative:</p>
