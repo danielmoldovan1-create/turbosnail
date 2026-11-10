@@ -273,6 +273,9 @@ export default function AgentAIPentruVanzariRomania() {
         <p>
           Oricare ar fi varianta, întrebările de mai sus rămân aceleași, iar rezultatul depinde mai mult de cât de curate sunt datele din CRM decât de softul ales.
         </p>
+        <p>
+          Dacă vrei să începi cu reguli simple, înainte de un agent AI, pașii sunt în ghidul despre <a href="/blog/automatizare-crm">automatizarea CRM-ului</a>.
+        </p>
 
         <h2>Semne că firma ta e pregătită pentru un agent AI</h2>
         <ul>
