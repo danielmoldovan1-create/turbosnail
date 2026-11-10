@@ -46,6 +46,7 @@ const AFTER = `## Blog
 - [GDPR și AI în firmă](https://turbosnail.ro/blog/gdpr-ai-firma): ce date pui într-un instrument AI, baza legală, contractul cu furnizorul, transferurile în afara UE și politica internă pentru echipă.
 - [Ce înseamnă CRM](https://turbosnail.ro/blog/ce-inseamna-crm): ce face un CRM, de ce eșuează multe proiecte CRM și ce poți automatiza în el (cereri, date, follow-up, rapoarte).
 - [Platforme de automatizare](https://turbosnail.ro/blog/platforme-de-automatizare): cum alegi între Make, n8n, Zapier și Power Automate după aplicații, întreținere și locul în care stau datele.
+- [Automatizare CRM](https://turbosnail.ro/blog/automatizare-crm): șapte automatizări CRM în ordinea în care merită făcute, rolul AI-ului, reguli în CRM sau platformă separată și cum măsori rezultatul.
 
 ## English
 
