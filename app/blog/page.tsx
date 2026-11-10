@@ -16,6 +16,13 @@ export const metadata: Metadata = {
 
 const ARTICLES = [
   {
+    slug: "automatizare-crm",
+    title: "Automatizare CRM: ce automatizezi în CRM-ul firmei și de unde începi",
+    date: "10 noiembrie 2026",
+    excerpt: "Șapte automatizări CRM în ordinea în care merită făcute, unde ajută AI-ul, reguli în CRM sau o platformă separată, greșelile care strică totul și cum măsori rezultatul.",
+    tag: "Automatizare",
+  },
+  {
     slug: "platforme-de-automatizare",
     title: "Platforme de automatizare: cum alegi între Make, n8n, Zapier și Power Automate",
     date: "5 noiembrie 2026",

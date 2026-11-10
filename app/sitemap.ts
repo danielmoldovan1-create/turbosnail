@@ -245,6 +245,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: 'https://turbosnail.ro/blog/automatizare-crm',
+      lastModified: '2026-11-10',
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: 'https://turbosnail.ro/blog/platforme-de-automatizare',
       lastModified: '2026-11-05',
       changeFrequency: 'monthly',
