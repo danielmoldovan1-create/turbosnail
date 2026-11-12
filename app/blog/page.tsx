@@ -16,6 +16,13 @@ export const metadata: Metadata = {
 
 const ARTICLES = [
   {
+    slug: "vizibilitate-ai",
+    title: "Vizibilitate AI: cum apare firma ta în răspunsurile ChatGPT, Gemini și Copilot",
+    date: "12 noiembrie 2026",
+    excerpt: "De unde își iau asistenții AI informațiile, ce poate face o firmă ca să apară în răspunsuri, cum îți verifici singur vizibilitatea și ce promisiuni să eviți.",
+    tag: "AI",
+  },
+  {
     slug: "automatizare-crm",
     title: "Automatizare CRM: ce automatizezi în CRM-ul firmei și de unde începi",
     date: "10 noiembrie 2026",

@@ -245,6 +245,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: 'https://turbosnail.ro/blog/vizibilitate-ai',
+      lastModified: '2026-11-12',
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: 'https://turbosnail.ro/blog/automatizare-crm',
       lastModified: '2026-11-10',
       changeFrequency: 'monthly',
