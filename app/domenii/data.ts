@@ -428,6 +428,7 @@ export const DOMAINS: DomainData[] = [
     ],
     links: [
       { pre: "Paginile, datele structurate și prezența în asistenții AI sunt partea de ", anchor: "SEO bazat pe AI", href: "/servicii/seo-ai", post: "." },
+      { pre: "Cum ajunge o firmă în răspunsurile ChatGPT și ale celorlalți asistenți am explicat în ghidul despre ", anchor: "vizibilitatea în AI", href: "/blog/vizibilitate-ai", post: "." },
       { pre: "Dacă vreți să și căutați activ cumpărători, nu doar să fiți găsiți, completăm cu ", anchor: "cold email B2B", href: "/servicii/cold-email-outbound", post: " către importatori și distribuitori din piețele țintă." },
       { pre: "Cum arată o campanie de email bine făcută în B2B găsiți în ", anchor: "ghidul de cold email B2B", href: "/blog/cold-email-b2b-romania-ghid-complet", post: "." },
       { pre: "Dacă nu știți încă pe ce piață să mergeți întâi, o sesiune de ", anchor: "consultanță AI", href: "/servicii/consultanta-ai", post: " pune ordinea înainte de orice investiție." },

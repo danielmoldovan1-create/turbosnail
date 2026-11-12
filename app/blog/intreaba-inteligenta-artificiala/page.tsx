@@ -185,6 +185,10 @@ export default function IntreabaInteligentaArtificiala() {
           </Link>
         </aside>
 
+        <p>
+          Ce poți face ca firma ta să apară în aceste răspunsuri am explicat în ghidul despre <a href="/blog/vizibilitate-ai">vizibilitatea în AI</a>.
+        </p>
+
         <h2>Cum să întrebi inteligența artificială ca să primești un răspuns util</h2>
         <p>
           Cea mai frecventă greșeală este să scrii într-un chat cu AI la fel cum scrii în Google: trei-patru cuvinte și atât. Un asistent AI funcționează mult mai bine dacă îl tratezi ca pe un coleg nou, căruia îi explici sarcina.
