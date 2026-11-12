@@ -176,6 +176,8 @@ export default function BlogPost2() {
           </ul>
           <p>În firme, aceleași tehnologii apar în locuri mai puțin vizibile: banca semnalează o plată suspectă, un program citește datele de pe o factură scanată, iar un chatbot de pe site răspunde la întrebările clienților. Diferența e că aici tu alegi ce sarcină îi dai.</p>
 
+          <p>Asistenții AI primesc și întrebări despre firme și servicii, așa că contează și cum apare firma ta în răspunsurile lor. Am explicat pe larg în ghidul despre <a href="/blog/vizibilitate-ai">vizibilitatea în AI</a>.</p>
+
           <h2>Ce Poate Face Inteligența Artificială pentru Afacerea Ta din România</h2>
           <p>Aceasta este întrebarea care contează cu adevărat. Când proiectăm <a href="https://turbosnail.ro">automatizări AI</a> pentru afaceri din România, pornim de la patru zone în care impactul apare, de regulă, cel mai repede:</p>
 
