@@ -110,7 +110,7 @@ Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul a
 ## Evaluări fixe
 - 28 octombrie: modificările din 7 octombrie (canonical, titluri, homepage, primele 2 articole).
 - 5 noiembrie: modificările din 15 octombrie (citate verificate, estimări, articolele "automatizare date" și "ce este un agent AI"). Făcută cu exportul pe perioada exactă (15 oct. - 4 nov. față de 24 sep. - 14 oct.): seo-data/reports/2026-11-05.md.
-- 16 noiembrie: modificările din 26-30 octombrie (tranșele A, B și C de linkuri, articolele AI Act și GDPR, pagina în engleză, LinkedIn). Export GSC 26 oct. - 14 nov. față de 6-25 oct.
+- 16 noiembrie: modificările din 26-30 octombrie (tranșele A, B și C de linkuri, articolele AI Act și GDPR, pagina în engleză, LinkedIn). Export GSC 26 oct. - 14 nov. față de 6-25 oct. Făcută pe 16 nov., cu exportul pe perioada exactă: seo-data/reports/2026-11-16.md.
 
 ## Ce îmi trimite Daniel (cu reminder de la Claude)
 - În fiecare luni: exportul GSC pe ultimele 7 zile, comparat cu perioada anterioară.
@@ -118,7 +118,7 @@ Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul a
 - Trimis pe 3 nov.: paginile pentru „automatizare documente” (în 3 luni: /blog/automatizare-date 43 de afișări, /blog/automatizare-documente 19) și cererea de indexare pentru /blog/ce-inseamna-crm și cele 3 articole cu linkuri spre el.
 - Trimis pe 5 nov.: exportul GSC 15 oct. - 4 nov., comparat cu 24 sep. - 14 oct.
 - Trimis pe 9 nov.: exportul GSC 2-8 nov.; Keyword Gap Semrush cu consultant-ai, itfusion și cosmoconsult (nimic pentru noi, în afară de „soluții business intelligence”, lăsat deocamdată); decizia pentru engleză: turbosnail.ro/en.
-- 16 nov.: exportul GSC 26 oct. - 14 nov., comparat cu 6-25 oct.
+- Trimis pe 16 nov.: exportul GSC 26 oct. - 14 nov., comparat cu 6-25 oct., și exportul 9-15 nov. (fără comparație).
 - De trimis: datele firmei pentru /en/legal și politica de confidențialitate (denumirea legală, adresa, Nr. Reg. Com., CUI), cerute de art. 5 din Directiva 2000/31/CE; acum pe site scrie doar „Timișoara, România”.
 - Când are timp: linkul de LinkedIn personal și numele exact al certificării Anthropic (caseta de autor), confirmarea cifrei INS de pe /domenii/clinici-stomatologice, din Semrush lista de concurenți din Organic Research → Competitors (pentru un Keyword Gap util), Keyword Magic pe „automatizare” și „ai pentru”, Backlink Gap.
 
