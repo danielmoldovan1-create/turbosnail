@@ -12,9 +12,9 @@ Mai multe pagini pe prima pagină Google pentru căutările unde avem deja afiș
 
 ## Ritm săptămânal
 - Luni: export GSC pe ultimele 7 zile. Primești lista de modificări (max 15 rânduri) și alegi ce facem.
-- Marți: articolul nou 1.
-- Joi: articolul nou 2.
-- Vineri: optimizarea a 1-2 pagini existente. Title, meta și H1 doar dacă pe pagina respectivă n-a fost nicio schimbare de SEO în ultimele 14 zile (21 pentru paginile cu peste 100 de afișări pe săptămână).
+- Marți: articolul nou al săptămânii. Din 16 nov., un singur articol pe săptămână (decizia lui Daniel): conținutul aduce afișări, dar pozițiile comerciale cer muncă pe paginile existente.
+- Joi: paginile de servicii (din 16 nov.). Propunere pe datele din GSC, modificări doar după aprobare.
+- Vineri: optimizarea a 1-2 pagini existente, inclusiv teste de title și meta pe paginile care sunt pe prima pagină fără clickuri. Title, meta și H1 doar dacă pe pagina respectivă n-a fost nicio schimbare de SEO în ultimele 14 zile (21 pentru paginile cu peste 100 de afișări pe săptămână).
 - Schimbările sigure din CLAUDE.md (linkuri interne, ancore, secțiuni noi pentru query-uri care au deja afișări) se fac în orice zi, în tranșe de maxim 6 fișiere.
 
 ## Lunar (în afara site-ului, făcut de Daniel)
@@ -70,6 +70,8 @@ Reguli:
 | automatizare CRM | /blog/automatizare-crm (din 10 nov.) | „automatizarea CRM-ului” |
 | vizibilitate AI | /blog/vizibilitate-ai (din 12 nov.) | „vizibilitatea în AI” |
 | SEO bazat pe AI (serviciu) | /servicii/seo-ai | „SEO bazat pe AI” |
+| automatizare procese contabile | /blog/automatizare-procese-contabile (din 17 nov.) | „automatizarea proceselor contabile” |
+| agenție AI | / (title din 20 nov.) | linkurile spre homepage rămân cu ancora exactă „automatizări AI” (CLAUDE.md) |
 | AI automation agency (în engleză) | /en (din 9 nov.) | „AI automation agency”, doar din paginile în engleză |
 | AI automation services (în engleză) | /en/ai-automation-services (din 9 nov.) | „AI automation services”, doar din paginile în engleză |
 
@@ -103,6 +105,14 @@ Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul a
 - 13 nov. (vineri): niciun title nou. /servicii/consultanta-ai a scăzut de la 106 la 57 de afișări într-o săptămână; decidem pe 16 nov., cu exportul pe trei săptămâni.
 - De urmărit, fără modificări: /blog/chatbot-ai-pentru-site-romania, de la 39 la 7 afișări după title-ul din 5 nov. (verificare 19 nov.); „rapoarte financiare automatizate”, de pe 4,1 pe 11,3 după secțiunea din 4 nov. (verificare 18 nov.).
 
+## Săptămâna 16-20 noiembrie
+- 16 nov. (luni): evaluarea din 16 nov. (seo-data/reports/2026-11-16.md). Daniel a aprobat: title nou pe homepage, un singur articol pe săptămână, teste de title și meta pe paginile de pe prima pagină fără clickuri. „agentie ai” ajunge doar la /blog/agent-ai-pentru-vanzari-romania (14 afișări în 3 luni), deci Google confundă „agenție” cu „agent”.
+- 17 nov. (marți): articolul „Automatizare procese contabile” (/blog/automatizare-procese-contabile). „automatizare procese contabile”: 12 afișări pe 36,1 și „automatizare procese financiare”: 9 pe 17,6 în 9-15 nov., fără pagină dedicată. În aceeași zi, PR separat cu linkuri din /blog/automatizare-documente, /blog/automatizare-rapoarte-saptamanale-lunare și /domenii/firme-contabilitate.
+- 18 nov. (miercuri): verificarea ancorei din 4 nov. pentru „automatizare documente” și testul de title și meta pe /blog/automatizare-documente (poziția 4,9, 61 de afișări și 0 clickuri în 9-15 nov.).
+- 19 nov. (joi): paginile de servicii, propunere pe date, plus verificările din 19 nov. (title-urile și ancorele din 5 nov.).
+- 20 nov. (vineri): title nou pe homepage, „Agenție de automatizări AI pentru firme din România | TurboSnail” (acum „Automatizări AI pentru Afaceri din România | TurboSnail”), pentru „agentie ai”.
+- Articolul „Integrare procese interne” (20 de afișări pe 43,5 în 9-15 nov.) rămâne pentru o săptămână următoare.
+
 ## Repere (nu promisiuni)
 - 30 noiembrie: toate paginile au afișări în GSC și 5 query-uri sunt în top 10.
 - 31 decembrie: peste 30 de clickuri pe lună.
@@ -119,6 +129,10 @@ Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul a
 - Trimis pe 5 nov.: exportul GSC 15 oct. - 4 nov., comparat cu 24 sep. - 14 oct.
 - Trimis pe 9 nov.: exportul GSC 2-8 nov.; Keyword Gap Semrush cu consultant-ai, itfusion și cosmoconsult (nimic pentru noi, în afară de „soluții business intelligence”, lăsat deocamdată); decizia pentru engleză: turbosnail.ro/en.
 - Trimis pe 16 nov.: exportul GSC 26 oct. - 14 nov., comparat cu 6-25 oct., și exportul 9-15 nov. (fără comparație).
+- De făcut de Daniel (to do, cu reminder lunea și din când în când în timpul săptămânii; aprobat ca listă pe 16 nov.):
+  - autoritate: profiluri pe Clutch și GoodFirms (directoare de agenții); Google Business Profile pentru TurboSnail, dacă nu există; Bing Webmaster Tools, importat din Search Console;
+  - Vercel → Analytics: confirmarea că apar vizitele;
+  - GSC → Inspectează URL pentru https://turbosnail.ro/blog/automatizare-procese-business-ghid-2026 și https://turbosnail.ro/blog/sisteme-control-procese-afaceri (0 afișări din 26 oct.); dacă scrie „URL is not on Google”, Solicită indexarea.
 - De trimis: datele firmei pentru /en/legal și politica de confidențialitate (denumirea legală, adresa, Nr. Reg. Com., CUI), cerute de art. 5 din Directiva 2000/31/CE; acum pe site scrie doar „Timișoara, România”.
 - Când are timp: linkul de LinkedIn personal și numele exact al certificării Anthropic (caseta de autor), confirmarea cifrei INS de pe /domenii/clinici-stomatologice, din Semrush lista de concurenți din Organic Research → Competitors (pentru un Keyword Gap util), Keyword Magic pe „automatizare” și „ai pentru”, Backlink Gap.
 
