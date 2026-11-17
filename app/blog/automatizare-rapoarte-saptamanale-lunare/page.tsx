@@ -222,7 +222,7 @@ export default function AutomatizareRapoarte() {
           Fluxul tipic arată așa: tranzacțiile din extrasul de cont sunt preluate zilnic sau săptămânal și potrivite cu facturile emise și primite, iar ce nu se potrivește ajunge într-o listă separată pentru verificare. Facturile primite prin e-Factura vin deja structurate, deci pot intra direct în flux; cum le preiei fără tastare am explicat în ghidul despre <a href="https://turbosnail.ro/blog/automatizare-documente">automatizare documente</a>. La final, raportul de cash-flow pleacă singur pe email, cu facturile neîncasate și plățile scadente marcate.
         </p>
         <p>
-          Ce rămâne la om: interpretarea și deciziile. Automatizarea adună cifrele, contabilul validează închiderea de lună, iar tu decizi ce faci cu un client care plătește constant cu întârziere.
+          Ce rămâne la om: interpretarea și deciziile. Automatizarea adună cifrele, contabilul validează închiderea de lună, iar tu decizi ce faci cu un client care plătește constant cu întârziere. Tot fluxul, de la facturile primite la pachetul lunar pentru contabil, e descris în ghidul despre <a href="https://turbosnail.ro/blog/automatizare-procese-contabile">automatizarea proceselor contabile</a>.
         </p>
 
         <h2>Cum automatizezi rapoartele: pașii practici</h2>

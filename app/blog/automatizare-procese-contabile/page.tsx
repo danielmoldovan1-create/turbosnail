@@ -62,7 +62,7 @@ const faqLd = {
       name: "Automatizarea înlocuiește contabilul?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nu. Scutește oamenii din firmă și pe contabil de strâns, copiat și căutat documente. Înregistrarea, declarațiile și sfatul fiscal rămân la contabil, care primește actele mai repede și mai complete.",
+        text: "Nu. Îi scutește pe oamenii din firmă și pe contabil de strâns, copiat și căutat documente. Înregistrarea, declarațiile și sfatul fiscal rămân la contabil, care primește actele mai repede și mai complete.",
       },
     },
     {

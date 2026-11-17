@@ -205,7 +205,7 @@ export default function AutomatizareDocumente() {
           O parte din facturi nu mai trebuie citite din PDF. Facturile transmise prin RO e-Factura ajung în Spațiul Privat Virtual ca fișiere XML, adică date deja structurate: furnizor, linii, sume, TVA. Pentru ele, automatizarea are alt rol: preluarea lor regulată din SPV, potrivirea cu plățile din extras și semnalarea celor care nu au pereche.
         </p>
         <p>
-          Combinația e cea mai utilă: facturile din SPV se preiau ca date, iar documentele care vin pe alte căi (bonuri, chitanțe, facturi externe, contracte) se citesc cu AI. Rezultatul ajunge în același loc, iar contabilul lucrează dintr-o singură listă. Detaliile pentru birourile de contabilitate sunt pe pagina despre <Link href="/domenii/firme-contabilitate">automatizări pentru firme de contabilitate</Link>.
+          Combinația e cea mai utilă: facturile din SPV se preiau ca date, iar documentele care vin pe alte căi (bonuri, chitanțe, facturi externe, contracte) se citesc cu AI. Rezultatul ajunge în același loc, iar contabilul lucrează dintr-o singură listă. Detaliile pentru birourile de contabilitate sunt pe pagina despre <Link href="/domenii/firme-contabilitate">automatizări pentru firme de contabilitate</Link>. Cum se leagă documentele de plăți, de încasări și de închiderea lunii am explicat în ghidul despre <Link href="/blog/automatizare-procese-contabile">automatizarea proceselor contabile</Link>.
         </p>
 
         <h2>Unde rămâne nevoie de om</h2>
