@@ -16,6 +16,13 @@ export const metadata: Metadata = {
 
 const ARTICLES = [
   {
+    slug: "automatizare-procese-contabile",
+    title: "Automatizare procese contabile: ce automatizezi în contabilitatea firmei",
+    date: "17 noiembrie 2026",
+    excerpt: "Facturile primite, plățile, încasările, extrasul de cont și actele pentru contabil: în ce ordine le automatizezi, cum ajută e-Factura și ce rămâne la contabil.",
+    tag: "Automatizare",
+  },
+  {
     slug: "vizibilitate-ai",
     title: "Vizibilitate AI: cum apare firma ta în răspunsurile ChatGPT, Gemini și Copilot",
     date: "12 noiembrie 2026",
