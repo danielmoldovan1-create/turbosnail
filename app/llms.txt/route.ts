@@ -48,6 +48,7 @@ const AFTER = `## Blog
 - [Platforme de automatizare](https://turbosnail.ro/blog/platforme-de-automatizare): cum alegi între Make, n8n, Zapier și Power Automate după aplicații, întreținere și locul în care stau datele.
 - [Automatizare CRM](https://turbosnail.ro/blog/automatizare-crm): șapte automatizări CRM în ordinea în care merită făcute, rolul AI-ului, reguli în CRM sau platformă separată și cum măsori rezultatul.
 - [Vizibilitate AI](https://turbosnail.ro/blog/vizibilitate-ai): de unde își iau ChatGPT, Gemini și Copilot informațiile, ce face o firmă ca să apară în răspunsuri și cum își verifică singură vizibilitatea.
+- [Automatizare procese contabile](https://turbosnail.ro/blog/automatizare-procese-contabile): șase procese contabile în ordinea în care merită automatizate (facturi primite, plăți, încasări, extras de cont, pachetul pentru contabil), rolul e-Factura și ce rămâne la contabil.
 
 ## English
 

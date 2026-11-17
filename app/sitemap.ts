@@ -245,6 +245,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: 'https://turbosnail.ro/blog/automatizare-procese-contabile',
+      lastModified: '2026-11-17',
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: 'https://turbosnail.ro/blog/vizibilitate-ai',
       lastModified: '2026-11-12',
       changeFrequency: 'monthly',
