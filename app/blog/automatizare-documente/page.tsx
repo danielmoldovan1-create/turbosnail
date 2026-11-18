@@ -3,14 +3,14 @@ import Link from "next/link";
 import AuthorBox, { AUTHOR_LD } from "../../components/AuthorBox";
 
 export const metadata: Metadata = {
-  title: "Automatizare documente: facturi și contracte | TurboSnail",
-  description: "Automatizare documente: cum citești automat facturi, bonuri, extrase și contracte, ce rămâne verificat de om și cum pornești cu un singur flux.",
+  title: "Automatizare documente: facturi citite automat | TurboSnail",
+  description: "Automatizare documente: datele din facturi, bonuri, extrase și contracte intră singure în contabilitate sau ERP. Ce automatizezi primul și ce verifică omul.",
   alternates: {
     canonical: "https://turbosnail.ro/blog/automatizare-documente",
   },
   openGraph: {
-    title: "Automatizare documente: facturi și contracte | TurboSnail",
-    description: "Automatizare documente: cum citești automat facturi, bonuri, extrase și contracte, ce rămâne verificat de om și cum pornești cu un singur flux.",
+    title: "Automatizare documente: facturi citite automat | TurboSnail",
+    description: "Automatizare documente: datele din facturi, bonuri, extrase și contracte intră singure în contabilitate sau ERP. Ce automatizezi primul și ce verifică omul.",
     url: "https://turbosnail.ro/blog/automatizare-documente",
     type: "article",
     locale: "ro_RO",
