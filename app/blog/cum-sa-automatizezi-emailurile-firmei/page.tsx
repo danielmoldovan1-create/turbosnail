@@ -267,7 +267,7 @@ export default function CumSaAutomatizeziEmailurileFirmei() {
           </li>
         </ul>
         <p>
-          Emailurile de prospectare către firme care nu te cunosc încă sunt un subiect separat, cu reguli proprii de livrabilitate. Le-am tratat în <a href="/blog/cold-email-b2b-romania-ghid-complet">ghidul de cold email B2B</a>.
+          Emailurile de prospectare către firme care nu te cunosc încă sunt un subiect separat, cu reguli proprii de livrabilitate. Le-am tratat în <a href="/blog/cold-email-b2b-romania-ghid-complet">ghidul de cold email B2B</a>. Ce presupune o campanie făcută de o echipă externă, de la liste la livrabilitate, am descris pe pagina despre <Link href="/servicii/cold-email-outbound">cold email și outbound</Link>.
         </p>
 
         <div className="divider" />

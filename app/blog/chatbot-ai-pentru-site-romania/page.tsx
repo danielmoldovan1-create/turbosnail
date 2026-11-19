@@ -259,7 +259,7 @@ export default function ChatbotAIPentruSiteRomania() {
           Implementarea corectă a unui chatbot AI pe un site cu trafic mediu durează între două și patru săptămâni, inclusiv testarea. O implementare mai rapidă de atât rareori produce rezultate bune.
         </p>
         <p>
-          Agențiile specializate în <a href="https://turbosnail.ro">automatizări AI</a> pot accelera procesul, mai ales pentru firme care nu au resurse interne pentru configurare și monitorizare.
+          Agențiile specializate în <a href="https://turbosnail.ro">automatizări AI</a> pot accelera procesul, mai ales pentru firme care nu au resurse interne pentru configurare și monitorizare. Cum arată concret un asistent care răspunde clienților în limba română, cu limitele lui, am descris pe pagina despre <Link href="/servicii/chatbot-ai-romania">chatbot AI în română</Link>.
         </p>
 
         <h2>Când un chatbot AI nu este soluția potrivită</h2>

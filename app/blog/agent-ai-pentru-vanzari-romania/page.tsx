@@ -240,7 +240,7 @@ export default function AgentAIPentruVanzariRomania() {
           Pentru firmele din România mai sunt două verificări specifice. Prima este limba: testează cum scrie agentul în română, cu diacritice și cu termenii din industria ta. Un follow-up cu ton de traducere automată face mai mult rău decât unul întârziat. A doua este GDPR: agentul prelucrează date personale ale clienților, deci ai nevoie de acorduri de prelucrare cu furnizorii și de claritate despre unde sunt stocate datele.
         </p>
         <p>
-          Agentul de vânzări aplică aceleași principii ca orice proiect de <a href="https://turbosnail.ro">automatizări AI</a>: întâi procesul, apoi tehnologia. Dacă îți construiești de la zero și fluxul de prospectare, vezi și <a href="/blog/cold-email-b2b-romania-ghid-complet">ghidul de cold email B2B</a>.
+          Agentul de vânzări aplică aceleași principii ca orice proiect de <a href="https://turbosnail.ro">automatizări AI</a>: întâi procesul, apoi tehnologia. Dacă îți construiești de la zero și fluxul de prospectare, vezi și <a href="/blog/cold-email-b2b-romania-ghid-complet">ghidul de cold email B2B</a>. Cum arată un sistem de prospectare construit și întreținut din afara firmei am descris pe pagina despre <Link href="/servicii/cold-email-outbound">cold email și outbound</Link>.
         </p>
 
         <h2>Ce întrebi înainte să alegi un instrument</h2>

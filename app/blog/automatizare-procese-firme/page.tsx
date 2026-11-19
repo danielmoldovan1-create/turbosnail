@@ -161,7 +161,7 @@ export default function AutomatizareProceseFireme() {
           Fiecare dintre aceste sarcini conține o porțiune mare de muncă mecanică. Un flux automatizat de procesare facturi funcționează astfel: factura sosește pe un email dedicat, un instrument cu OCR extrage automat datele relevante (furnizor, suma, data, TVA), datele sunt verificate împotriva bazei de furnizori și introduse automat în sistemul contabil. Dacă ceva nu se potrivește, un angajat este notificat pentru verificare manuală. În caz contrar, procesul se încheie fără nicio intervenție. Pentru contracte, extrase și facturile din e-Factura, pașii sunt în ghidul despre <Link href="/blog/automatizare-documente">automatizare documente</Link>.
         </p>
         <p>
-          Efectul se vede în fișa postului: contabilul nu mai introduce date de pe facturi, ci verifică excepțiile marcate de sistem și se ocupă de analiza financiară.
+          Efectul se vede în fișa postului: contabilul nu mai introduce date de pe facturi, ci verifică excepțiile marcate de sistem și se ocupă de analiza financiară. Tot fluxul, de la facturile primite la pachetul lunar pentru contabil, e descris pas cu pas în ghidul despre <Link href="/blog/automatizare-procese-contabile">automatizarea proceselor contabile</Link>.
         </p>
 
         <h2>Automatizare procese firme în HR: de la recrutare la onboarding</h2>
@@ -225,7 +225,7 @@ export default function AutomatizareProceseFireme() {
           <li><strong>Pasul 4:</strong> Construiește, testează, măsoară. Abia după ce primul flux funcționează stabil, treci la următorul.</li>
         </ul>
         <p>
-          Firmele care au succes cu automatizarea proceselor nu sunt cele cu cele mai mari bugete, ci cele care încep cu un obiectiv concret și măsurabil, confirmă că funcționează și extind treptat.
+          Firmele care au succes cu automatizarea proceselor nu sunt cele cu cele mai mari bugete, ci cele care încep cu un obiectiv concret și măsurabil, confirmă că funcționează și extind treptat. Pentru procesele de care depind direct banii sau clienții, gândește de la început și <Link href="/blog/sisteme-control-procese-afaceri">sisteme de control pentru procesele critice</Link>, ca o eroare să fie observată în aceeași zi.
         </p>
 
         <h2>Întrebări frecvente despre automatizarea proceselor în firme</h2>
