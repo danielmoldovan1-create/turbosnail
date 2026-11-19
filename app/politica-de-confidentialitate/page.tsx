@@ -57,7 +57,7 @@ export default function PoliticaDeConfidentialitate() {
         <h1 className="hd" style={{ fontSize: 38, fontWeight: 900, lineHeight: 1.12, letterSpacing: -1, marginBottom: 12 }}>
           Politica de confidențialitate
         </h1>
-        <p className="updated">Ultima actualizare: 6 noiembrie 2026</p>
+        <p className="updated">Ultima actualizare: 19 noiembrie 2026</p>
         <p>
           Aici afli ce date personale colectăm prin turbosnail.ro, de ce le colectăm, cui le transmitem, cât timp le păstrăm și ce drepturi ai conform Regulamentului (UE) 2016/679 privind protecția datelor (GDPR).
         </p>
@@ -73,7 +73,7 @@ export default function PoliticaDeConfidentialitate() {
         <h2>2. Ce date colectăm și de ce</h2>
         <h3>Formularul de contact</h3>
         <p>
-          Când ne scrii prin formularul de pe pagina principală, primim numele, adresa de email, telefonul (dacă îl completezi) și mesajul tău.
+          Când ne scrii prin formularul de contact, de pe pagina principală sau de pe <a href="/programare">pagina de programare</a>, primim numele, adresa de email, telefonul (dacă îl completezi) și mesajul tău.
         </p>
         <ul>
           <li>Scop: să îți răspundem și să pregătim auditul sau oferta pe care ne-o ceri.</li>
