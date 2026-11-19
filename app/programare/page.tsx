@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ContactForm from "../components/ContactForm";
 
-const TITLE = "Programează auditul de automatizare | TurboSnail";
-const DESCRIPTION = "Programează auditul inițial de 30 de minute: ne arăți un proces care îți ia timp, iar noi îți spunem ce poate rula singur și de unde începi.";
+const TITLE = "Listă de așteptare: auditul de automatizare | TurboSnail";
+const DESCRIPTION = "Înscrie-te pe lista de așteptare pentru auditul inițial de 30 de minute: preluăm un număr limitat de firme pe lună și îți scriem în cel mult 2 zile lucrătoare.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -61,18 +61,18 @@ export default function Programare() {
         <div className="mx grid">
           <div className="a-intro">
             <div style={{ display: "inline-block", background: "rgba(255,106,0,0.1)", border: "1px solid rgba(255,106,0,0.25)", borderRadius: 100, padding: "6px 16px", fontSize: 11, fontWeight: 700, color: "#ff6a00", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 24, fontFamily: "'Outfit', sans-serif" }}>
-              Audit · 30 de minute
+              Listă de așteptare · Audit de 30 de minute
             </div>
             <h1 className="hd" style={{ fontSize: 40, fontWeight: 900, lineHeight: 1.12, letterSpacing: -1, marginBottom: 20 }}>
-              Programează auditul inițial de 30 de minute
+              Înscrie-te pe lista de așteptare pentru auditul inițial
             </h1>
             <p style={{ fontSize: 18, color: "#a8a6a1", lineHeight: 1.65 }}>
-              Ne arăți un proces care îi ia echipei cel mai mult timp, iar noi îți spunem ce poate rula singur, în ce ordine și ce rămâne la oameni. Auditul inițial e gratuit.
+              Preluăm un număr limitat de firme în fiecare lună, ca fiecare proiect să primească atenție reală. Lasă-ne datele și îți scriem în cel mult 2 zile lucrătoare dacă putem prelua firma ta luna aceasta, pentru auditul gratuit de 30 de minute.
             </p>
           </div>
 
           <div className="a-steps">
-            <h2 className="hd" style={{ fontSize: 20, fontWeight: 800, marginBottom: 8 }}>Ce discutăm</h2>
+            <h2 className="hd" style={{ fontSize: 20, fontWeight: 800, marginBottom: 8 }}>Ce discutăm la audit</h2>
             <div>
               {STEPS.map((s, i) => (
                 <div key={s.t} className="step">
@@ -85,11 +85,11 @@ export default function Programare() {
           </div>
 
           <div className="a-form" style={{ background: "#0d0f18", border: "1px solid #1a1d2a", borderRadius: 20, padding: "28px 24px" }}>
-            <h2 className="hd" style={{ fontSize: 22, fontWeight: 800, marginBottom: 8 }}>Cere o oră pentru audit</h2>
+            <h2 className="hd" style={{ fontSize: 22, fontWeight: 800, marginBottom: 8 }}>Înscrie-te pe listă</h2>
             <p style={{ fontSize: 15, color: "#a8a6a1", lineHeight: 1.6, marginBottom: 20 }}>
-              Îți scriem cu 2-3 variante de oră. Discuția are loc online.
+              La audit ne arăți un proces, iar noi îți spunem ce poate rula singur și de unde începi.
             </p>
-            <ContactForm formular="Programare audit" buton="Cere o oră pentru audit →" />
+            <ContactForm formular="Listă de așteptare" />
           </div>
         </div>
       </section>

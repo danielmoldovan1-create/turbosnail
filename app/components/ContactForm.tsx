@@ -17,7 +17,7 @@ type Props = {
 // Formularul de contact în română, refolosit pe /programare și pe alte pagini.
 // Trimite prin Web3Forms, ca formularul de pe homepage, apoi duce vizitatorul pe /multumim:
 // o vizită pe /multumim e o cerere trimisă, deci se vede ca o conversie în Vercel Analytics.
-export default function ContactForm({ formular, serviciu = "", buton = "Trimite cererea →" }: Props) {
+export default function ContactForm({ formular, serviciu = "", buton = "Înscrie-te pe lista de așteptare →" }: Props) {
   const router = useRouter();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -61,6 +61,7 @@ export default function ContactForm({ formular, serviciu = "", buton = "Trimite 
           from_name: "turbosnail.ro",
           formular,
           ...(serviciu ? { serviciu } : {}),
+          pagina_formular: window.location.pathname,
           name: name.trim(),
           email: email.trim(),
           phone: phone.trim() || "-",
@@ -99,7 +100,7 @@ export default function ContactForm({ formular, serviciu = "", buton = "Trimite 
       </button>
       {error && <span role="alert" style={{ fontSize: 13, color: "#ff6a00" }}>{error}</span>}
       <span style={{ fontSize: 12, color: "#555566", lineHeight: 1.6 }}>
-        Îți răspundem în cel mult 2 zile lucrătoare. Cum folosim datele: <a href="/politica-de-confidentialitate" target="_blank" rel="noopener" style={{ color: "#888899", textDecoration: "underline" }}>politica de confidențialitate</a>.
+        Îți scriem în cel mult 2 zile lucrătoare dacă putem prelua firma ta luna aceasta. Cum folosim datele: <a href="/politica-de-confidentialitate" target="_blank" rel="noopener" style={{ color: "#888899", textDecoration: "underline" }}>politica de confidențialitate</a>.
       </span>
     </div>
   );
