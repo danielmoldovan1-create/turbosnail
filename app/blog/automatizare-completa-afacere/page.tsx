@@ -233,7 +233,7 @@ export default function AutomatizareCompletaAfacere() {
           Există trei semne clare că ai construit ceva care funcționează cu adevărat. În primul rând, poți pleca în vacanță două săptămâni fără să primești apeluri despre lucruri care nu merg. În al doilea rând, rapoartele tale sunt mai precise și mai rapide decât înainte, fără ca cineva să fi muncit mai mult pentru ele. În al treilea rând, echipa ta rezolvă probleme, nu sarcini mecanice.
         </p>
         <p>
-          Automatizarea completă a unei afaceri nu este un proiect de informatică. Este o schimbare în modul în care funcționează organizația ta. Instrumentele sunt mijlocul, nu scopul.
+          Automatizarea completă a unei afaceri nu este un proiect de informatică. Este o schimbare în modul în care funcționează organizația ta. Instrumentele sunt mijlocul, nu scopul. Ca să afli la timp când ceva nu merge, ai nevoie și de <Link href="/blog/sisteme-control-procese-afaceri">sisteme de control pentru procesele critice</Link>, nu doar de automatizări.
         </p>
 
         <h2>Întrebări frecvente despre automatizarea completă a afacerii</h2>
