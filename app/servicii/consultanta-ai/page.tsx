@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Consultanță AI pentru firme din România | TurboSnail",
-  description: "Consultanță AI și consultanță în inteligență artificială pentru firme din România: audit al proceselor, plan concret și implementare fără jargon.",
+  description: "Consultanță în inteligență artificială pentru firme: aflăm ce procese merită automatizate, în ce ordine și ce rămâne la oameni. Plan concret, fără jargon.",
   alternates: {
     canonical: "https://turbosnail.ro/servicii/consultanta-ai",
     languages: {
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Consultanță AI pentru firme din România | TurboSnail",
-    description: "Consultanță AI și consultanță în inteligență artificială pentru firme din România: audit al proceselor, plan concret și implementare fără jargon.",
+    description: "Consultanță în inteligență artificială pentru firme: aflăm ce procese merită automatizate, în ce ordine și ce rămâne la oameni. Plan concret, fără jargon.",
     url: "https://turbosnail.ro/servicii/consultanta-ai",
     siteName: "TurboSnail",
     locale: "ro_RO",
