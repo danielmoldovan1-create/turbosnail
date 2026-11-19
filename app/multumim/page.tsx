@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-// Pagina de după formular. O vizită aici înseamnă o cerere trimisă,
+// Pagina de după formular. O vizită aici înseamnă o înscriere pe lista de așteptare,
 // deci în Vercel Analytics numărul de vizite pe /multumim e numărul de conversii.
 export const metadata: Metadata = {
-  title: "Am primit cererea ta | TurboSnail",
-  description: "Confirmarea cererii trimise către TurboSnail.",
+  title: "Ești pe lista de așteptare | TurboSnail",
+  description: "Confirmarea înscrierii pe lista de așteptare TurboSnail.",
   robots: {
     index: false,
     follow: true,
@@ -39,16 +39,16 @@ export default function Multumim() {
       <section style={{ paddingTop: 140, paddingBottom: 110 }}>
         <div className="mx">
           <div style={{ display: "inline-block", background: "rgba(255,106,0,0.1)", border: "1px solid rgba(255,106,0,0.25)", borderRadius: 100, padding: "6px 16px", fontSize: 11, fontWeight: 700, color: "#ff6a00", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 24, fontFamily: "'Outfit', sans-serif" }}>
-            Cerere trimisă
+            Listă de așteptare
           </div>
           <h1 className="hd" style={{ fontSize: 38, fontWeight: 900, lineHeight: 1.15, letterSpacing: -1, marginBottom: 18 }}>
-            Am primit cererea ta
+            Te-am trecut pe lista de așteptare
           </h1>
           <p style={{ fontSize: 18, color: "#a8a6a1", lineHeight: 1.65, marginBottom: 36 }}>
-            Îți scriem în cel mult 2 zile lucrătoare, cu 2-3 variante de oră pentru audit.
+            Îți scriem în cel mult 2 zile lucrătoare dacă putem prelua firma ta luna aceasta, pentru auditul de 30 de minute.
           </p>
 
-          <h2 className="hd" style={{ fontSize: 20, fontWeight: 800, marginBottom: 14 }}>Ca discuția să fie utilă din prima</h2>
+          <h2 className="hd" style={{ fontSize: 20, fontWeight: 800, marginBottom: 14 }}>Ca auditul să fie util din prima</h2>
           <ul style={{ margin: "0 0 36px 22px" }}>
             <li className="li">Alege procesul care îi ia echipei cel mai mult timp în fiecare săptămână.</li>
             <li className="li">Notează programele în care lucrați: facturarea, CRM-ul, emailul, tabelele.</li>
