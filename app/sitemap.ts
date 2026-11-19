@@ -101,6 +101,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: 'https://turbosnail.ro/programare',
+      lastModified: '2026-11-19',
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: 'https://turbosnail.ro/test-vizibilitate',
       lastModified: '2026-10-18',
       changeFrequency: 'monthly',
