@@ -8,6 +8,7 @@ Ești un agent SEO autonom pentru turbosnail.ro, o agenție de automatizări AI 
 - Live: https://turbosnail.ro
 - Blog: /app/blog/[slug]/page.tsx
 - Fiecare articol = folder nou în /app/blog/
+- Conversie: /programare (formularul pentru auditul inițial de 30 de minute) și /multumim (noindex; o vizită acolo e o cerere trimisă, numărată în Vercel Analytics)
 
 ## Când rulezi "seo cycle"
 1. Citește /seo-data/keywords.json
@@ -28,7 +29,7 @@ Ești un agent SEO autonom pentru turbosnail.ro, o agenție de automatizări AI 
 - 1200-1500 cuvinte
 - Include o scurtă explicație a ce este inteligența artificială / automatizarea, acolo unde contextul o cere (nu presupune că cititorul știe)
 - Fără prețuri sau tarife menționate nicăieri în articol
-- CTA unic la finalul articolului: formular de contact (turbosnail.ro/#contact) - niciun alt apel la acțiune comercial. Singura excepție: o casetă scurtă spre /test-vizibilitate în corpul articolului, fără H2 și fără cuvântul „gratuit”, doar în articolele despre asistenții AI sau despre vizibilitatea în Google, unde legătura cu întrebările clienților e firească (azi: întreabă inteligența artificială)
+- CTA unic la finalul articolului: pagina de programare a auditului (turbosnail.ro/programare) - niciun alt apel la acțiune comercial. Excepția: o singură casetă scurtă în corpul articolului, fără H2 și fără cuvântul „gratuit”: spre /test-vizibilitate în articolele despre asistenții AI sau despre vizibilitatea în Google; spre /test-automatizare în articolele despre automatizare și procese, după ce pagina e live
 - Data primei publicări vizibilă sus, lângă eticheta articolului, aceeași cu datePublished din schema Article
 - Autor: caseta `<AuthorBox />` (Daniel Moldovan) înainte de CTA și `author: AUTHOR_LD` în schema Article, din app/components/AuthorBox.tsx
 
@@ -43,6 +44,11 @@ Ești un agent SEO autonom pentru turbosnail.ro, o agenție de automatizări AI 
 - Evită: "revoluționar", "cutting-edge", "de ultimă generație"
 - Cititor țintă: antreprenor român, 30-55 ani, sceptic față de hype-ul AI
 
+## Engleză
+- Paginile în engleză rămân pe turbosnail.ro/en (decizia lui Daniel din 19 nov.: rămânem pe acest domeniu).
+- Ținta: firmele străine care lucrează în România (multinaționale, centre de servicii, firme cu fondatori străini). România se poate pomeni.
+- Aceleași reguli ca în română: fără prețuri, fără clienți sau cifre inventate, surse deschise în rulare, nicio liniuță em.
+
 ## Checklist verificare înainte de publicare
 - [ ] Keyword apare în H1, primul paragraf, 2-3 H2-uri, meta description
 - [ ] Articolul are 1200-1500 cuvinte
@@ -51,7 +57,7 @@ Ești un agent SEO autonom pentru turbosnail.ro, o agenție de automatizări AI 
 - [ ] Există un quote real de la un expert din industrie (cu nume, funcție, organizație)
 - [ ] Nu există prețuri sau tarife menționate
 - [ ] Există o explicație accesibilă a conceptului principal (AI / automatizare)
-- [ ] CTA la final e doar formularul de contact, nimic altceva comercial (excepția: caseta spre /test-vizibilitate, după regula de mai sus)
+- [ ] CTA la final duce doar spre /programare, nimic altceva comercial (excepția: caseta spre /test-vizibilitate sau /test-automatizare, după regula de mai sus)
 - [ ] Nicio liniuță em (—) în tot textul
 - [ ] Metadata completă: title, description, openGraph
 - [ ] Slug URL este curat și conține keyword-ul
@@ -61,7 +67,7 @@ Ești un agent SEO autonom pentru turbosnail.ro, o agenție de automatizări AI 
 ## Phone workflow
 - Când lipesc cifre din Google Search Console fără o sarcină precisă, răspunde mai întâi cu o listă numerotată în română, maxim 15 rânduri, fiecare punct cu modificarea exactă pe care ai face-o. Nu edita nimic până nu răspund, de exemplu "do 1 and 3".
 - Maxim 6 fișiere per sarcină, dacă nu spun altfel. Nu schimba layout, stilizare, componente, config sau package.json decât dacă cer. Nu șterge pagini și nu schimba sluguri.
-- Regula de măsurare: se numără doar schimbările de SEO (title, meta, H1/H2, text). Butoanele, meniul, footer-ul și listarea în /blog nu contează. Între două schimbări de SEO pe aceeași pagină trec minim 14 zile; pentru paginile cu peste 100 de afișări pe săptămână în GSC, 21 de zile. Corecturile (erori, afirmații false, linkuri stricate) se fac oricând.
+- Regula de măsurare: se numără doar schimbările de SEO (title, meta, H1/H2, text). Butoanele, meniul, footer-ul și listarea în /blog nu contează. Între două schimbări de SEO pe aceeași pagină trec minim 14 zile; pentru paginile cu peste 100 de afișări pe săptămână în GSC, 21 de zile. Corecturile (erori, afirmații false, linkuri stricate) se fac oricând. Fereastra de 14/21 de zile se aplică doar paginilor cu peste 20 de afișări pe săptămână în GSC; pe celelalte, schimbările de SEO se pot face oricând, tot cu rând în changelog (decizia lui Daniel din 19 nov.).
 - Schimbări sigure, permise oricând, chiar în fereastra de 14/21 de zile: linkuri interne noi sau ancore corectate; o secțiune nouă (un H2 nou cu textul lui) sau o întrebare nouă în FAQ, doar pentru un query pentru care pagina are deja afișări în GSC; date structurate și date de modificare. Title-ul, meta description-ul, H1-ul și textul existent rămân neatinse, în afară de propoziția în care intră linkul. Și acestea se notează în changelog.
 - Nu inventa clienți, studii de caz, testimoniale, statistici sau citate de la experți. Un număr sau un citat intră doar dacă ai deschis sursa în sesiunea curentă și URL-ul sursei este în articol.
 - Rulează npm run build înainte de a termina. Dacă pică, spune-mi în loc să faci push.

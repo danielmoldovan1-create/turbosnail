@@ -10,12 +10,25 @@ Mai multe pagini pe prima pagină Google pentru căutările unde avem deja afiș
 - Regulile din CLAUDE.md (1200-1500 de cuvinte, surse verificate, fără cifre inventate) nu sunt compatibile cu un articol pe zi.
 - Cu un articol pe zi nu mai putem măsura ce funcționează (regula de măsurare din CLAUDE.md).
 
-## Ritm săptămânal
-- Luni: export GSC pe ultimele 7 zile. Primești lista de modificări (max 15 rânduri) și alegi ce facem.
-- Marți: articolul nou al săptămânii. Din 16 nov., un singur articol pe săptămână (decizia lui Daniel): conținutul aduce afișări, dar pozițiile comerciale cer muncă pe paginile existente.
-- Joi: paginile de servicii (din 16 nov.). Propunere pe datele din GSC, modificări doar după aprobare.
-- Vineri: optimizarea a 1-2 pagini existente, inclusiv teste de title și meta pe paginile care sunt pe prima pagină fără clickuri. Title, meta și H1 doar dacă pe pagina respectivă n-a fost nicio schimbare de SEO în ultimele 14 zile (21 pentru paginile cu peste 100 de afișări pe săptămână).
+## Ritm săptămânal (din 19 nov.)
+- Luni: export GSC pe ultimele 7 zile. Primești lista de modificări (max 15 rânduri) și propunerea articolului de marți.
+- Marți: articolul nou al săptămânii.
+- Miercuri: GEO pe 2-3 dintre primele 10 pagini după afișări: o cifră cu sursă, un citat de expert și o definiție clară la început, cu sursele deschise în rulare.
+- Joi: o pagină nouă cu intenție de cumpărare (integrări cu programe românești sau un domeniu nou). Cererea se verifică întâi (GSC, Semrush, ce apare în căutare).
+- Vineri: teste de title și meta pe paginile de pe prima pagină fără clickuri, plus o îmbunătățire de CRO (formulare, butoane, casete).
+- Fereastra de 14 zile (21 pentru paginile cu peste 100 de afișări pe săptămână) se aplică doar paginilor cu peste 20 de afișări pe săptămână.
 - Schimbările sigure din CLAUDE.md (linkuri interne, ancore, secțiuni noi pentru query-uri care au deja afișări) se fac în orice zi, în tranșe de maxim 6 fișiere.
+
+## Strategia din 19 noiembrie (aprobată de Daniel)
+- Diagnostic: 50 de pagini și 12 clickuri în 26 oct.-14 nov.; 3 pagini de servicii nu erau în Google („Discovered – currently not indexed”, indexare cerută pe 17 nov.); un singur formular, cu listă de așteptare; nicio conversie măsurată.
+- Funnel: articol → test (vizibilitate sau automatizare) → pagina de serviciu cu formular → /programare → /multumim → răspuns în cel mult 2 zile lucrătoare, cu 2-3 variante de oră → auditul inițial de 30 de minute.
+- CRO: /programare și /multumim sunt live din 19 nov. Urmează butoanele spre /programare pe tot site-ul, testul de automatizare (/test-automatizare), formular direct pe paginile de servicii și pagini de mulțumire pentru formularul de pe homepage și cel în engleză.
+- Pagini noi cu intenție de cumpărare, câte una joia: e-Factura și SPV, SmartBill, Oblio, SAGA, AWB-uri la curieri, eMAG Marketplace; domenii noi până la 10-12 (e-commerce, construcții, transport, HoReCa, avocatură, agenții de marketing). Fiecare cu conținut propriu: Google penalizează paginile făcute în serie, fără valoare pentru cititor („scaled content abuse”). Azi niciunul dintre aceste subiecte nu are afișări în GSC, deci cererea se verifică înainte de fiecare pagină.
+- GEO: primele 10 pagini după afișări (26 oct.-14 nov.: intreaba-inteligenta-artificiala 534, ce-este-inteligenta-artificiala 324, /servicii/consultanta-ai 241, automatizare-procese-afaceri-romania 221, automatizare-procese-firme 190, automatizare-date 189, consultanta-ai-ce-include-cum-alegi 158, ce-inseamna-crm 111, agent-ai-pentru-vanzari-romania 96, cum-sa-automatizezi-emailurile-firmei 81), în tranșe de miercuri. Studiul GEO (Princeton, KDD 2024): citarea surselor, citatele și statisticile au crescut vizibilitatea în răspunsurile AI cu 30-40%, umplerea cu cuvinte cheie a scăzut-o.
+- Studiu propriu: „ce firme recomandă ChatGPT, Gemini și Perplexity în 10 domenii din România”. Claude face lista de întrebări și analiza, Daniel rulează întrebările.
+- Comasare: /blog/automatizare-procese-business-ghid-2026 intră în /blog/automatizare-procese-afaceri-romania, cu redirect 301 (în 7 zile, pe „automatizare procese business”: articolul central 27 de afișări, procese firme 20, ghidul 3).
+- IndexNow, după ce Daniel configurează Bing Webmaster Tools.
+- Engleză: pe turbosnail.ro/en, pentru firmele străine din România (vezi CLAUDE.md).
 
 ## Lunar (în afara site-ului, făcut de Daniel)
 - Google Business Profile pentru Timișoara.
@@ -113,6 +126,16 @@ Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul a
 - 20 nov. (vineri): title nou pe homepage, „Agenție de automatizări AI pentru firme din România | TurboSnail” (acum „Automatizări AI pentru Afaceri din România | TurboSnail”), pentru „agentie ai”.
 - Articolul „Integrare procese interne” (20 de afișări pe 43,5 în 9-15 nov.) rămâne pentru o săptămână următoare.
 
+## Săptămâna 20-27 noiembrie
+- 20 nov. (vineri): title nou pe homepage (programat). Butoanele și CTA-urile spre /programare, după acordul lui Daniel pentru un singur PR de ~38 de fișiere.
+- 21 nov. (sâmbătă): testul de automatizare (/test-automatizare, cu pagina de rezultat), după ce politica de confidențialitate are secțiunea lui.
+- 22 nov. (duminică): formular direct pe paginile de servicii în română (ContactForm, cu serviciul paginii); formularul de pe homepage duce spre /multumim, iar cel în engleză spre o pagină de mulțumire în engleză.
+- 23 nov. (luni): raport săptămânal și propunerea articolului de marți; decizia despre title-ul articolului despre chatbot; caseta spre /test-automatizare în primele 5 articole despre automatizare.
+- 24 nov. (marți): articolul săptămânii.
+- 25 nov. (miercuri): GEO, tranșa 1 (3 pagini dintre primele 10); lista de întrebări pentru studiul despre asistenții AI; reminderul cu to-do-ul.
+- 26 nov. (joi): pagina nouă despre automatizarea e-Factura și SPV, după verificarea cererii.
+- 27 nov. (vineri): comasarea ghidului de procese business, cu redirect 301; teste de title și meta.
+
 ## Repere (nu promisiuni)
 - 30 noiembrie: toate paginile au afișări în GSC și 5 query-uri sunt în top 10.
 - 31 decembrie: peste 30 de clickuri pe lună.
@@ -134,6 +157,7 @@ Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul a
   - Vercel → Analytics: confirmarea că apar vizitele;
   - GSC → Inspectează URL pentru https://turbosnail.ro/blog/automatizare-procese-business-ghid-2026 și https://turbosnail.ro/blog/sisteme-control-procese-afaceri (0 afișări din 26 oct.); dacă scrie „URL is not on Google”, Solicită indexarea.
 - De trimis: datele firmei pentru /en/legal și politica de confidențialitate (denumirea legală, adresa, Nr. Reg. Com., CUI), cerute de art. 5 din Directiva 2000/31/CE; acum pe site scrie doar „Timișoara, România”.
+- De decis (din 19 nov.): excepție de la regula de 6 fișiere pentru butoanele spre /programare (~38 de fișiere, un singur PR); secțiunile de CTA și formularele tratate ca CRO, în afara regulii de 14 zile; termenul de răspuns promis (azi 2 zile lucrătoare); un link de programare (Cal.com sau Calendly), dacă vrea; numărul de formulare primite în ultimele 30 de zile.
 - Când are timp: linkul de LinkedIn personal și numele exact al certificării Anthropic (caseta de autor), confirmarea cifrei INS de pe /domenii/clinici-stomatologice, din Semrush lista de concurenți din Organic Research → Competitors (pentru un Keyword Gap util), Keyword Magic pe „automatizare” și „ai pentru”, Backlink Gap.
 
 ## Blocaje cunoscute
