@@ -4,13 +4,13 @@ import DomainCarousel from "./components/DomainCarousel";
 import { DOMAINS } from "./domenii/data";
 
 export const metadata: Metadata = {
-  title: "Automatizări AI pentru Afaceri din România | TurboSnail",
+  title: "Agenție de automatizări AI pentru firme din România | TurboSnail",
   description: "Agenție de automatizări AI din Timișoara. Recuperezi ore în fiecare săptămână prin automatizarea proceselor repetitive. Audit gratuit, fără obligații.",
   alternates: {
     canonical: "https://turbosnail.ro",
   },
   openGraph: {
-    title: "Automatizări AI pentru Afaceri din România | TurboSnail",
+    title: "Agenție de automatizări AI pentru firme din România | TurboSnail",
     description: "Agenție de automatizări AI din Timișoara. Recuperezi ore în fiecare săptămână prin automatizarea proceselor repetitive.",
     url: "https://turbosnail.ro",
     siteName: "TurboSnail",
