@@ -57,7 +57,7 @@ export default function PoliticaDeConfidentialitate() {
         <h1 className="hd" style={{ fontSize: 38, fontWeight: 900, lineHeight: 1.12, letterSpacing: -1, marginBottom: 12 }}>
           Politica de confidențialitate
         </h1>
-        <p className="updated">Ultima actualizare: 19 noiembrie 2026</p>
+        <p className="updated">Ultima actualizare: 21 noiembrie 2026</p>
         <p>
           Aici afli ce date personale colectăm prin turbosnail.ro, de ce le colectăm, cui le transmitem, cât timp le păstrăm și ce drepturi ai conform Regulamentului (UE) 2016/679 privind protecția datelor (GDPR).
         </p>
@@ -73,7 +73,7 @@ export default function PoliticaDeConfidentialitate() {
         <h2>2. Ce date colectăm și de ce</h2>
         <h3>Formularul de contact</h3>
         <p>
-          Când ne scrii prin formularul de contact, de pe pagina principală sau de pe <a href="/programare">pagina de programare</a>, primim numele, adresa de email, telefonul (dacă îl completezi) și mesajul tău.
+          Când ne scrii prin formularul de contact, de pe pagina principală, de pe <a href="/programare">pagina listei de așteptare</a> sau de pe paginile de servicii, primim numele, adresa de email, telefonul (dacă îl completezi) și mesajul tău.
         </p>
         <ul>
           <li>Scop: să îți răspundem și să pregătim auditul sau oferta pe care ne-o ceri.</li>
@@ -89,6 +89,21 @@ export default function PoliticaDeConfidentialitate() {
         <h3>Testul de vizibilitate</h3>
         <p>
           Când completezi <a href="/test-vizibilitate">testul de vizibilitate</a>, primim numele, adresa de email, site-ul sau numele firmei și telefonul (dacă îl completezi), împreună cu răspunsurile tale la cele 10 întrebări și scorul calculat.
+        </p>
+        <ul>
+          <li>Scop: să îți arătăm rezultatul și să te contactăm în legătură cu el.</li>
+          <li>Temei legal: consimțământul tău, exprimat prin bifa din formular (art. 6 alin. (1) lit. a) din GDPR). Îl poți retrage oricând.</li>
+        </ul>
+        <p>
+          Odată cu răspunsurile primim și pagina pe care ai intrat pe site, site-ul care te-a trimis la noi (de exemplu Google) și pagina pe care ai fost înainte de test. Le folosim ca să știm ce pagini îi aduc pe vizitatori la test, pe baza interesului nostru legitim (art. 6 alin. (1) lit. f) din GDPR).
+        </p>
+        <p>
+          Scorul se calculează automat din răspunsurile tale. Nu luăm pe baza lui nicio decizie automată care să aibă efecte juridice asupra ta.
+        </p>
+
+        <h3>Testul de automatizare</h3>
+        <p>
+          Când completezi <a href="/test-automatizare">testul de automatizare</a>, primim numele, adresa de email, numele firmei și telefonul (dacă îl completezi), împreună cu răspunsurile tale la întrebări și scorul calculat.
         </p>
         <ul>
           <li>Scop: să îți arătăm rezultatul și să te contactăm în legătură cu el.</li>
@@ -149,6 +164,7 @@ export default function PoliticaDeConfidentialitate() {
         <ul>
           <li>Mesajele din formularul de contact: cel mult 2 ani de la ultimul contact, dacă nu devii client.</li>
           <li>Datele din testul de vizibilitate: cel mult 12 luni de la completare, dacă nu ne-ai dat acordul pentru emailuri și nu devii client.</li>
+          <li>Datele din testul de automatizare: cel mult 12 luni de la completare, dacă nu ne-ai dat acordul pentru emailuri și nu devii client.</li>
           <li>Datele pentru emailurile cu sfaturi: până te dezabonezi sau îți retragi acordul. După dezabonare păstrăm doar adresa de email într-o listă de excludere, ca să nu îți mai scriem.</li>
           <li>Dacă devii client, datele din contract și din facturi se păstrează cât timp ne obligă legislația fiscală și contabilă.</li>
         </ul>
@@ -176,7 +192,7 @@ export default function PoliticaDeConfidentialitate() {
           Site-ul nu folosește cookie-uri de analiză sau de publicitate. Statisticile de vizite (Vercel Web Analytics) funcționează fără cookie-uri.
         </p>
         <p>
-          Pentru formularul de contact și pentru testul de vizibilitate, browserul tău ține minte, tot în sessionStorage, pagina pe care ai intrat, site-ul de proveniență și pagina vizitată anterior. Ele ajung la noi doar dacă trimiți formularul sau testul și se șterg când închizi tab-ul.
+          Pentru formularul de contact și pentru teste (de vizibilitate și de automatizare), browserul tău ține minte, tot în sessionStorage, pagina pe care ai intrat, site-ul de proveniență și pagina vizitată anterior. Ele ajung la noi doar dacă trimiți formularul sau testul și se șterg când închizi tab-ul.
         </p>
         <p>
           Testul de vizibilitate salvează temporar rezultatul în browserul tău (sessionStorage), ca să îl poți vedea pe pagina de rezultat. Datele salvate acolo se șterg când închizi tab-ul.
