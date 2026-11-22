@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 function useVisible() {
   const ref = useRef<HTMLDivElement>(null);
@@ -231,6 +232,7 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
   const [phone, setPhone] = useState("");
   const [msg, setMsg] = useState("");
   const [sent, setSent] = useState(false);
+  const router = useRouter();
   const [sending, setSending] = useState(false);
   const [formError, setFormError] = useState("");
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -291,7 +293,11 @@ export default function HomeClient({ domains, domainCards }: { domains: { slug: 
           ...visit,
         }),
       });
-      if (res.ok) setSent(true);
+      if (res.ok) {
+        setSent(true);
+        // Ca toate formularele: după înscriere, /multumim (o vizită acolo = o înscriere în Vercel Analytics).
+        router.push("/multumim");
+      }
       else setFormError("Nu am putut trimite formularul. Încearcă din nou sau scrie-ne la hello@turbosnail.ro.");
     } catch {
       setFormError("Nu am putut trimite formularul. Încearcă din nou sau scrie-ne la hello@turbosnail.ro.");

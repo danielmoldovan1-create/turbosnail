@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ContactForm from "../../components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Consultanță AI pentru firme din România | TurboSnail",
@@ -402,9 +403,9 @@ export default function ConsultantaAIPage() {
           <p style={{ fontSize: 17, color: "#a8a6a1", marginBottom: 36, lineHeight: 1.65 }}>
             Preluăm un număr limitat de firme în fiecare lună. Înscrie-te pe lista de așteptare și îți scriem în cel mult 2 zile lucrătoare pentru auditul gratuit de consultanță AI, fără obligații.
           </p>
-          <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "17px 40px", fontSize: 16, textDecoration: "none", display: "inline-block" }}>
-            Înscrie-te pe lista de așteptare →
-          </Link>
+          <div style={{ maxWidth: 520, margin: "0 auto" }}>
+            <ContactForm formular="Listă de așteptare" serviciu="Consultanță AI" />
+          </div>
         </div>
       </section>
     </main>

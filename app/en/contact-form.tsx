@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const EMAIL = "hello@turbosnail.ro";
 const SEND_ERROR = `We could not send the form. Please try again or email us at ${EMAIL}.`;
@@ -8,6 +9,7 @@ const SEND_ERROR = `We could not send the form. Please try again or email us at 
 // Formularul de contact al paginilor în engleză. Trimite prin Web3Forms, ca formularul de pe homepage,
 // cu subiectul „[EN contact]”, ca mesajele în engleză să se vadă din prima în inbox.
 export default function EnglishContactForm() {
+  const router = useRouter();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -57,7 +59,11 @@ export default function EnglishContactForm() {
           ...visit,
         }),
       });
-      if (res.ok) setSent(true);
+      if (res.ok) {
+        setSent(true);
+        // After sending, /en/thank-you: each visit there is one request in Vercel Analytics.
+        router.push("/en/thank-you");
+      }
       else setError(SEND_ERROR);
     } catch {
       setError(SEND_ERROR);
