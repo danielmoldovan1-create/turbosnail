@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SERVICES } from "../data";
 import Link from "next/link";
+import ContactForm from "../../components/ContactForm";
 
 // Serviciile pentru care testul de vizibilitate (Google și AI) e un prim pas firesc.
 const TEST_SLUGS = ["seo-ai", "paid-ads-ai"];
@@ -232,9 +233,9 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <p style={{ fontSize: 17, color: "#a8a6a1", marginBottom: 36, lineHeight: 1.65 }}>
             Preluăm un număr limitat de firme în fiecare lună. Înscrie-te pe lista de așteptare și îți scriem în cel mult 2 zile lucrătoare pentru auditul gratuit, fără obligații.
           </p>
-          <Link href="/#contact" style={{ background: "linear-gradient(135deg, #ff8c33, #ff6a00)", color: "#fff", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 700, padding: "17px 40px", fontSize: 16, textDecoration: "none", display: "inline-block" }}>
-            Înscrie-te pe lista de așteptare →
-          </Link>
+          <div style={{ maxWidth: 520, margin: "0 auto" }}>
+            <ContactForm formular="Listă de așteptare" serviciu={service.title} />
+          </div>
         </div>
       </section>
     </main>
