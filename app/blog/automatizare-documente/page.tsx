@@ -235,6 +235,18 @@ export default function AutomatizareDocumente() {
           Documentele unei firme conțin aproape mereu date personale: nume, adrese, coduri numerice personale pe unele facturi, date de contact. Prelucrarea lor automată e permisă, cu aceleași reguli ca prelucrarea manuală: o bază legală, acorduri de prelucrare a datelor cu furnizorii instrumentelor folosite și acces minim. Fiecare flux vede doar folderele de care are nevoie, iar documentele se păstrează cât cere legea, nu la nesfârșit. Ce verifici înainte să pui documente cu date personale într-un instrument AI am explicat pas cu pas în ghidul despre <a href="/blog/gdpr-ai-firma">GDPR și AI</a>.
         </p>
 
+        <aside style={{ margin: "8px 0 40px", padding: "22px 22px 24px", borderRadius: 14, border: "1px solid rgba(255,106,0,0.25)", background: "rgba(255,106,0,0.05)" }}>
+          <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: 11, fontWeight: 700, letterSpacing: 1.5, textTransform: "uppercase", color: "#ff6a00", marginBottom: 10 }}>
+            Test de automatizare · 3 minute
+          </p>
+          <p style={{ fontSize: 16, lineHeight: 1.65, color: "#eae8e3", marginBottom: 18 }}>
+            Vrei să vezi cât timp pierde firma ta pe muncă repetitivă? Răspunde la 9 întrebări despre facturi, cereri, emailuri și rapoarte și afli de unde merită să începi.
+          </p>
+          <Link href="/test-automatizare" style={{ display: "inline-flex", alignItems: "center", color: "#ff6a00", border: "1px solid rgba(255,106,0,0.35)", background: "rgba(255,255,255,0.03)", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 600, padding: "12px 22px", fontSize: 15, textDecoration: "none" }}>
+            Fă testul de automatizare →
+          </Link>
+        </aside>
+
         <h2>Cum începi automatizarea documentelor în firma ta</h2>
         <blockquote>
           <p style={{ fontStyle: "italic", fontSize: 17, color: "#c8c6c1", marginBottom: 12 }}>

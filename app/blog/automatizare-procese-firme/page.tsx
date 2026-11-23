@@ -214,6 +214,18 @@ export default function AutomatizareProceseFireme() {
           Implementarea unui ecosistem complet de automatizare pentru vânzări este posibilă prin <Link href="/servicii/automatizari-ai">servicii de automatizare AI</Link> care integrează toate componentele într-un sistem coerent.
         </p>
 
+        <aside style={{ margin: "8px 0 40px", padding: "22px 22px 24px", borderRadius: 14, border: "1px solid rgba(255,106,0,0.25)", background: "rgba(255,106,0,0.05)" }}>
+          <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: 11, fontWeight: 700, letterSpacing: 1.5, textTransform: "uppercase", color: "#ff6a00", marginBottom: 10 }}>
+            Test de automatizare · 3 minute
+          </p>
+          <p style={{ fontSize: 16, lineHeight: 1.65, color: "#eae8e3", marginBottom: 18 }}>
+            Vrei să vezi cât timp pierde firma ta pe muncă repetitivă? Răspunde la 9 întrebări despre facturi, cereri, emailuri și rapoarte și afli de unde merită să începi.
+          </p>
+          <Link href="/test-automatizare" style={{ display: "inline-flex", alignItems: "center", color: "#ff6a00", border: "1px solid rgba(255,106,0,0.35)", background: "rgba(255,255,255,0.03)", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 600, padding: "12px 22px", fontSize: 15, textDecoration: "none" }}>
+            Fă testul de automatizare →
+          </Link>
+        </aside>
+
         <h2>De unde începi: prioritizarea proceselor pentru automatizare</h2>
         <p>
           Cel mai frecvent punct de blocaj nu este tehnologia, ci alegerea cu ce să începi. Regula simplă: începe cu procesul care îți consumă cel mai mult timp și care este cel mai predictibil. Nu cel mai important, ci cel mai repetitiv și mai ușor de descris în pași clari.
