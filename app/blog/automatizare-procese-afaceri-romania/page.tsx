@@ -212,6 +212,18 @@ export default function AutomatizareProcese() {
           O regulă simplă: dacă poți descrie procesul pas cu pas, într-o listă, fără ambiguități, poate fi automatizat. Dacă răspunsul depinde de context, situație și relații, nu poate. Procesele automatizate de care depind direct banii, cum sunt plățile sau contractele, au nevoie și de <a href="https://turbosnail.ro/blog/sisteme-control-procese-afaceri">sisteme de control pentru procesele critice</a>, ca o eroare să fie prinsă înainte să coste.
         </p>
 
+        <aside style={{ margin: "8px 0 40px", padding: "22px 22px 24px", borderRadius: 14, border: "1px solid rgba(255,106,0,0.25)", background: "rgba(255,106,0,0.05)" }}>
+          <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: 11, fontWeight: 700, letterSpacing: 1.5, textTransform: "uppercase", color: "#ff6a00", marginBottom: 10 }}>
+            Test de automatizare · 3 minute
+          </p>
+          <p style={{ fontSize: 16, lineHeight: 1.65, color: "#eae8e3", marginBottom: 18 }}>
+            Vrei să vezi cât timp pierde firma ta pe muncă repetitivă? Răspunde la 9 întrebări despre facturi, cereri, emailuri și rapoarte și afli de unde merită să începi.
+          </p>
+          <Link href="/test-automatizare" style={{ display: "inline-flex", alignItems: "center", color: "#ff6a00", border: "1px solid rgba(255,106,0,0.35)", background: "rgba(255,255,255,0.03)", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 600, padding: "12px 22px", fontSize: 15, textDecoration: "none" }}>
+            Fă testul de automatizare →
+          </Link>
+        </aside>
+
         <h2>Cum să începi: pașii practici pentru o firmă din România</h2>
         <ul>
           <li><strong>Săptămâna 1:</strong> Fă o listă cu tot ce faci manual și repetat. Notează cât timp ia fiecare.</li>

@@ -226,6 +226,18 @@ export default function CumSaAutomatizeziEmailurileFirmei() {
           Regula de lucru: dacă o greșeală într-un email te poate costa un client, acel email nu pleacă automat. AI-ul poate pregăti ciorna, dar decizia rămâne la tine.
         </p>
 
+        <aside style={{ margin: "8px 0 40px", padding: "22px 22px 24px", borderRadius: 14, border: "1px solid rgba(255,106,0,0.25)", background: "rgba(255,106,0,0.05)" }}>
+          <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: 11, fontWeight: 700, letterSpacing: 1.5, textTransform: "uppercase", color: "#ff6a00", marginBottom: 10 }}>
+            Test de automatizare · 3 minute
+          </p>
+          <p style={{ fontSize: 16, lineHeight: 1.65, color: "#eae8e3", marginBottom: 18 }}>
+            Vrei să vezi cât timp pierde firma ta pe muncă repetitivă? Răspunde la 9 întrebări despre facturi, cereri, emailuri și rapoarte și afli de unde merită să începi.
+          </p>
+          <Link href="/test-automatizare" style={{ display: "inline-flex", alignItems: "center", color: "#ff6a00", border: "1px solid rgba(255,106,0,0.35)", background: "rgba(255,255,255,0.03)", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 600, padding: "12px 22px", fontSize: 15, textDecoration: "none" }}>
+            Fă testul de automatizare →
+          </Link>
+        </aside>
+
         <h2>Cum să automatizezi emailurile firmei în 4 pași</h2>
         <ol>
           <li>

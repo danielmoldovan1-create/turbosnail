@@ -237,6 +237,18 @@ export default function AutomatizareDate() {
           Regulile practice sunt simple: fiecare aplicație primește acces doar la datele de care are nevoie, fiecare flux păstrează un jurnal al operațiilor, iar datele personale nu ajung în asistenți AI publici. Despre ultimul punct am scris separat în ghidul despre cum să <a href="/blog/intreaba-inteligenta-artificiala">întrebi inteligența artificială</a> fără să expui datele firmei. Un control simplu al accesului, făcut o dată pe trimestru, arată rapid dacă vreo aplicație vede mai mult decât ar trebui.
         </p>
 
+        <aside style={{ margin: "8px 0 40px", padding: "22px 22px 24px", borderRadius: 14, border: "1px solid rgba(255,106,0,0.25)", background: "rgba(255,106,0,0.05)" }}>
+          <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: 11, fontWeight: 700, letterSpacing: 1.5, textTransform: "uppercase", color: "#ff6a00", marginBottom: 10 }}>
+            Test de automatizare · 3 minute
+          </p>
+          <p style={{ fontSize: 16, lineHeight: 1.65, color: "#eae8e3", marginBottom: 18 }}>
+            Vrei să vezi cât timp pierde firma ta pe muncă repetitivă? Răspunde la 9 întrebări despre facturi, cereri, emailuri și rapoarte și afli de unde merită să începi.
+          </p>
+          <Link href="/test-automatizare" style={{ display: "inline-flex", alignItems: "center", color: "#ff6a00", border: "1px solid rgba(255,106,0,0.35)", background: "rgba(255,255,255,0.03)", borderRadius: 10, fontFamily: "'Outfit', sans-serif", fontWeight: 600, padding: "12px 22px", fontSize: 15, textDecoration: "none" }}>
+            Fă testul de automatizare →
+          </Link>
+        </aside>
+
         <h2>Cum începi automatizare date în firma ta, pas cu pas</h2>
         <ol>
           <li>
