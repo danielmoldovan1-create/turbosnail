@@ -146,6 +146,7 @@ export default function BlogPost() {
 
           <h2>Ce sunt automatizările AI și de ce contează pentru afacerea ta</h2>
           <p>Automatizările AI sunt sisteme care preiau sarcini repetitive din businessul tău și le execută singure, fără intervenție umană. Nu vorbim despre inteligență artificială din filme. Vorbim despre lucruri concrete: un email de follow-up care se trimite automat după ce un client completează un formular, un raport care se generează singur în fiecare luni dimineață, sau date care se mută automat din facturi în contabilitate.</p>
+          <p>De ce contează: în aplicațiile Microsoft 365, angajatul obișnuit petrece 57% din timp comunicând, în ședințe, pe email și în chat, și 43% creând documente, tabele și prezentări, potrivit <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/will-ai-fix-work" target="_blank" rel="noopener noreferrer">Work Trend Index 2023</a> al Microsoft. O parte din comunicarea asta (confirmări, remindere, răspunsuri la aceleași întrebări) e exact munca repetitivă pe care o poate prelua o automatizare.</p>
           <p>Diferența dintre o automatizare clasică și una cu AI este că <a href="https://turbosnail.ro">automatizări AI</a> bine construite pot lua și decizii. De exemplu: poate clasifica un lead ca &quot;cald&quot; sau &quot;rece&quot; pe baza mesajului pe care l-a trimis, poate genera un răspuns personalizat pentru fiecare client, sau poate analiza datele de vânzări și semnala anomalii.</p>
 
           <h2>5 procese pe care orice firmă din România le poate automatiza azi</h2>
