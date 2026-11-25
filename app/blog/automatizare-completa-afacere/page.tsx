@@ -147,6 +147,9 @@ export default function AutomatizareCompletaAfacere() {
           Automatizarea completă a unei afaceri nu este un proiect cu o dată de finalizare. Este o stare pe care o atingi treptat, adăugând fluxuri automatizate peste fluxuri, până când majoritatea sarcinilor repetitive se întâmplă fără intervenție umană. Cu <a href="https://turbosnail.ro">automatizări AI</a>, firmele mici pot atinge astăzi un nivel de eficiență operațională care altădată necesita departamente întregi. Dacă abia începi, ghidul despre <Link href="/blog/automatizare-procese-afaceri-romania">automatizarea proceselor de afaceri</Link> arată primii pași, proces cu proces.
         </p>
         <p>
+          Miza e timpul oamenilor. În <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/will-ai-fix-work" target="_blank" rel="noopener noreferrer">Work Trend Index 2023</a> al Microsoft, un sondaj pe 31.000 de angajați din 31 de țări, aproape 2 din 3 oameni (64%) spun că le e greu să găsească timpul și energia pentru munca lor, iar 68% spun că nu au destul timp de lucru neîntrerupt în timpul zilei.
+        </p>
+        <p>
           Înainte de orice implementare, o sesiune de <Link href="/servicii/consultanta-ai">consultanță AI</Link> ajută la identificarea corectă a priorităților și la evitarea proiectelor care consumă timp fără ROI măsurabil.
         </p>
 
