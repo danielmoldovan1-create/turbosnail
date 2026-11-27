@@ -121,13 +121,6 @@ const ARTICLES = [
     tag: "Outbound",
   },
   {
-    slug: "automatizare-procese-business-ghid-2026",
-    title: "Automatizare procese business: 12 fluxuri concrete pentru firme românești",
-    date: "29 aprilie 2026",
-    excerpt: "Fluxuri automatizate organizate pe industrii: ce automatizezi primul, ce instrumente folosești și cum măsori rezultatul.",
-    tag: "Automatizare",
-  },
-  {
     slug: "automatizare-rapoarte-saptamanale-lunare",
     title: "Cum automatizezi rapoartele săptămânale și lunare ale firmei",
     date: "29 aprilie 2026",

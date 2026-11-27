@@ -25,7 +25,7 @@ const jsonLd = {
   "description": "Cum automatizezi procesele repetitive din firma ta în România. Exemple concrete, instrumente folosite și cât timp economisești efectiv.",
   "url": "https://turbosnail.ro/blog/automatizare-procese-afaceri-romania",
   "datePublished": "2026-04-19",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-11-27",
   "author": AUTHOR_LD,
   "publisher": {
     "@type": "Organization",
@@ -201,7 +201,22 @@ export default function AutomatizareProcese() {
           Exemplu tipic: un magazin online pierde câteva ore în fiecare luni dimineața colectând date din Google Analytics, Meta Ads și platforma de comenzi, lipind totul într-un tabel Excel și trimițând un email către parteneri. Automatizat, același raport se generează la ora 8:00 în fiecare luni, se trimite singur și include un paragraf de interpretare generat de AI.
         </p>
         <p>
-          Rezultatul: orele de luni dimineața rămân pentru altceva, fără erori de copy-paste și cu date mereu actualizate. Alte exemple, grupate pe industrii (servicii profesionale, comerț, imobiliare, clinici, producție), sunt în ghidul de <a href="https://turbosnail.ro/blog/automatizare-procese-business-ghid-2026">automatizare procese business</a>.
+          Rezultatul: orele de luni dimineața rămân pentru altceva, fără erori de copy-paste și cu date mereu actualizate. Alte exemple, grupate pe domenii (servicii profesionale, comerț, imobiliare, clinici, producție), sunt în secțiunea despre <a href="#exemple-pe-domenii">automatizare procese business</a> de mai jos.
+        </p>
+
+        <h2 id="exemple-pe-domenii">Automatizare procese business: exemple pe domenii</h2>
+        <p>
+          Aceleași principii arată diferit de la un domeniu la altul. Acestea sunt fluxurile pe care le întâlnim cel mai des, grupate pe tipuri de firme:
+        </p>
+        <ul>
+          <li><strong>Servicii profesionale (consultanță, avocatură, contabilitate):</strong> la semnarea contractului, clientul nou primește lista documentelor, dosarul lui se creează singur, iar echipa primește sarcina; rapoartele periodice pentru clienți pleacă la o dată fixă; termenele și scadențele declanșează remindere către client și către omul responsabil.</li>
+          <li><strong>Comerț și e-commerce:</strong> o comandă nouă trimite confirmarea către client, actualizează stocul și creează sarcina pentru depozit; facturile neîncasate primesc remindere la intervale stabilite; stocul rămâne la fel pe site, pe marketplace și în magazin.</li>
+          <li><strong>Imobiliare și construcții:</strong> cererea de pe site primește confirmare pe loc și ajunge la agentul potrivit; vizionările se programează din calendar, cu confirmare și reminder.</li>
+          <li><strong>Clinici private:</strong> programările online primesc confirmare și reminder, iar un loc eliberat de o anulare e oferit automat următorului pacient de pe listă; rezultatele pleacă pe email când sunt gata.</li>
+          <li><strong>Producție și logistică:</strong> când un material scade sub prag, pleacă o alertă sau o comandă de reaprovizionare; raportul zilnic de producție se adună singur din ERP și din pontaje.</li>
+        </ul>
+        <p>
+          Indiferent de domeniu, regula de început rămâne aceeași: un singur flux, cu timpul măsurat înainte și după.
         </p>
 
         <h2>Ce nu se poate (încă) automatiza</h2>

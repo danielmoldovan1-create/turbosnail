@@ -144,7 +144,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://turbosnail.ro/blog/automatizare-procese-afaceri-romania',
-      lastModified: '2026-10-23',
+      lastModified: '2026-11-27',
       changeFrequency: 'monthly',
       priority: 0.7,
     },
@@ -186,12 +186,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://turbosnail.ro/blog/automatizare-rapoarte-saptamanale-lunare',
-      lastModified: '2026-10-21',
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: 'https://turbosnail.ro/blog/automatizare-procese-business-ghid-2026',
       lastModified: '2026-10-21',
       changeFrequency: 'monthly',
       priority: 0.7,
