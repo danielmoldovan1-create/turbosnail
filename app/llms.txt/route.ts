@@ -33,7 +33,6 @@ const AFTER = `## Blog
 - [Chatbot AI pentru site](https://turbosnail.ro/blog/chatbot-ai-pentru-site-romania): ce automatizează, cum alegi un furnizor și cum măsori rezultatele.
 - [Consultanță AI pentru firme](https://turbosnail.ro/blog/consultanta-ai-ce-include-cum-alegi): ce include un angajament, cum alegi consultantul și ce să eviți.
 - [Automatizare rapoarte](https://turbosnail.ro/blog/automatizare-rapoarte-saptamanale-lunare): cum elimini munca manuală din rapoartele săptămânale și lunare.
-- [Automatizare procese business](https://turbosnail.ro/blog/automatizare-procese-business-ghid-2026): 12 fluxuri concrete, pe industrii.
 - [Cold email B2B în România](https://turbosnail.ro/blog/cold-email-b2b-romania-ghid-complet): deliverability, secvențe și tool-uri.
 - [Cum să automatizezi emailurile firmei](https://turbosnail.ro/blog/cum-sa-automatizezi-emailurile-firmei): ce emailuri preiei automat, ce rămâne personal și pașii de început.
 - [Agent AI pentru vânzări în România](https://turbosnail.ro/blog/agent-ai-pentru-vanzari-romania): ce face un agent AI pentru echipa de vânzări și cum îl implementezi.
