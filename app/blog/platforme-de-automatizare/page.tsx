@@ -9,13 +9,13 @@ const POWER_AUTOMATE = "https://learn.microsoft.com/en-us/power-automate/getting
 const TECHTARGET = "https://www.techtarget.com/news/Low-code-tool-n8n-bridges-gap-between-AI-models-and-business/857503/";
 
 export const metadata: Metadata = {
-  title: "Platforme de automatizare: ce alegi pentru firmă | TurboSnail",
+  title: "Platforme de automatizare: Make, n8n sau Zapier? | TurboSnail",
   description: "Platforme de automatizare pentru firme mici: când se potrivesc Make, n8n, Zapier sau Power Automate, unde stau datele și ce verifici înainte să alegi.",
   alternates: {
     canonical: "https://turbosnail.ro/blog/platforme-de-automatizare",
   },
   openGraph: {
-    title: "Platforme de automatizare: ce alegi pentru firmă | TurboSnail",
+    title: "Platforme de automatizare: Make, n8n sau Zapier? | TurboSnail",
     description: "Platforme de automatizare pentru firme mici: când se potrivesc Make, n8n, Zapier sau Power Automate, unde stau datele și ce verifici înainte să alegi.",
     url: "https://turbosnail.ro/blog/platforme-de-automatizare",
     type: "article",

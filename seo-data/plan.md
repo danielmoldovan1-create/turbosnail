@@ -154,9 +154,10 @@ Situația pe 26 octombrie: 8 din 18 articole nu primeau niciun link din textul a
 - Trimis pe 16 nov.: exportul GSC 26 oct. - 14 nov., comparat cu 6-25 oct., și exportul 9-15 nov. (fără comparație).
 - De făcut de Daniel (to do, cu reminder lunea și din când în când în timpul săptămânii; aprobat ca listă pe 16 nov.):
   - autoritate: profiluri pe Clutch și GoodFirms (directoare de agenții); Google Business Profile pentru TurboSnail, dacă nu există; Bing Webmaster Tools, importat din Search Console;
-  - Vercel → Analytics: era oprit (cardul „Enable Analytics” din captura din 23 nov.); Daniel l-a pornit pe 23 nov., măsurarea începe cu publicarea din aceeași zi. De verificat pe 24 nov. că apar vizitele;
+  - Vercel → Analytics: confirmat pe 27 nov. (pornit pe 23 nov.; în ultimele 7 zile 21 de vizitatori, 30 de afișări de pagină, 6 vizitatori din Google). De citit pe Production, nu pe All Environments.
   - GSC → Inspectează URL pentru https://turbosnail.ro/blog/automatizare-procese-business-ghid-2026 și https://turbosnail.ro/blog/sisteme-control-procese-afaceri (0 afișări din 26 oct.); dacă scrie „URL is not on Google”, Solicită indexarea.
 - De trimis: datele firmei pentru /en/legal și politica de confidențialitate (denumirea legală, adresa, Nr. Reg. Com., CUI), cerute de art. 5 din Directiva 2000/31/CE; acum pe site scrie doar „Timișoara, România”.
+- Decis pe 27 nov. (Daniel: „1 decizii good to go”): title-ul vechi la articolul despre chatbot, articolul „Integrare procese interne”, pagina „Consultanță AI București”, testele de title pe platforme și pe procese firme.
 - Decis pe 19 nov.: rămâne lista de așteptare, cu răspuns în cel mult 2 zile lucrătoare; butoanele existente nu se schimbă. Primit: aproximativ 2 formulare în ultimele 30 de zile.
 - Când are timp: linkul de LinkedIn personal și numele exact al certificării Anthropic (caseta de autor), confirmarea cifrei INS de pe /domenii/clinici-stomatologice, din Semrush lista de concurenți din Organic Research → Competitors (pentru un Keyword Gap util), Keyword Magic pe „automatizare” și „ai pentru”, Backlink Gap.
 
