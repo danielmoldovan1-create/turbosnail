@@ -193,7 +193,7 @@ export default function AutomatizareProcese() {
           Modelele mari de limbaj pot fi integrate în fluxurile tale de automatizare pentru sarcini care necesită înțelegerea textului: clasificare emailuri, extragere informații, generare răspunsuri standard, rezumare documente. Nu înlocuiesc judecata umană în decizii complexe, dar elimină munca de procesare mecanică a textului.
         </p>
         <p>
-          Criteriile după care alegi între Make, n8n, Zapier și Power Automate sunt în ghidul despre <a href="https://turbosnail.ro/blog/platforme-de-automatizare">platforme de automatizare</a>.
+          Criteriile după care alegi între Make, n8n, Zapier și Power Automate sunt în ghidul despre <a href="https://turbosnail.ro/blog/platforme-de-automatizare">platforme de automatizare</a>. Cum legi între ele vânzările, facturarea, stocurile și HR-ul, ca datele să circule singure, e în ghidul despre <a href="https://turbosnail.ro/blog/integrare-procese-interne">integrarea proceselor interne</a>.
         </p>
 
         <h2>Un exemplu concret: automatizarea rapoartelor săptămânale</h2>
