@@ -193,7 +193,7 @@ export default function AutomatizareDate() {
             <strong>Facturi primite pe email</strong> - un flux preia atașamentul, AI-ul extrage furnizorul, suma și data, iar datele ajung în tabelul sau în programul contabil. Facturile neclare ajung la un om pentru verificare. Fluxul complet, de la email la arhivă, e descris în ghidul despre <a href="/blog/automatizare-documente">automatizarea documentelor</a>.
           </li>
           <li>
-            <strong>Comenzi și stoc</strong> - fiecare comandă nouă actualizează stocul, iar când un produs scade sub pragul stabilit, primești automat o alertă.
+            <strong>Comenzi și stoc</strong> - fiecare comandă nouă actualizează stocul, iar când un produs scade sub pragul stabilit, primești automat o alertă. Cum legi vânzările, facturarea și stocul, și în ce ordine, e descris în ghidul despre <Link href="/blog/integrare-procese-interne">integrarea proceselor interne</Link>.
           </li>
           <li>
             <strong>Date din mai multe aplicații într-un singur loc</strong> - vânzările, campaniile și încasările se adună automat într-un tabel comun, din care se poate genera raportul săptămânal. Pașii sunt descriși în ghidul despre <a href="/blog/automatizare-rapoarte-saptamanale-lunare">automatizarea rapoartelor</a>.

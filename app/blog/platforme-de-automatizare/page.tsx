@@ -176,7 +176,7 @@ export default function PlatformeDeAutomatizare() {
           Comparațiile de pe internet pornesc de obicei de la funcții. Pentru o firmă mică, cinci întrebări contează mai mult:
         </p>
         <ol>
-          <li><strong>Se leagă de aplicațiile tale?</strong> Fă lista aplicațiilor pe care le folosești zilnic (email, CRM, facturare, tabele) și verifică dacă platforma are conector pentru fiecare. Un conector lipsă înseamnă muncă tehnică în plus.</li>
+          <li><strong>Se leagă de aplicațiile tale?</strong> Fă lista aplicațiilor pe care le folosești zilnic (email, CRM, facturare, tabele) și verifică dacă platforma are conector pentru fiecare. Un conector lipsă înseamnă muncă tehnică în plus. Ce legături merită făcute primele și în ce ordine am explicat în ghidul despre <Link href="/blog/integrare-procese-interne">integrarea proceselor interne</Link>.</li>
           <li><strong>Cine construiește și cine repară?</strong> Unele platforme pot fi folosite de oricine din echipă, altele cer pe cineva care înțelege fluxurile și legăturile dintre aplicații. Contează mai ales cine intervine când ceva se strică.</li>
           <li><strong>Unde stau datele?</strong> Dacă prin flux trec date ale clienților, intri sub GDPR: ai nevoie de o bază legală și de un contract de prelucrare a datelor cu furnizorul platformei. Pașii sunt în ghidul despre <Link href="/blog/gdpr-ai-firma">GDPR și AI</Link>.</li>
           <li><strong>Ce se întâmplă când un flux se oprește?</strong> Verifică dacă platforma te anunță pe email când un pas eșuează și dacă vezi istoricul fiecărei rulări. Un flux care se oprește fără să anunțe pe nimeni e mai periculos decât munca manuală.</li>
