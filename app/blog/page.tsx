@@ -16,6 +16,13 @@ export const metadata: Metadata = {
 
 const ARTICLES = [
   {
+    slug: "integrare-procese-interne",
+    title: "Integrare procese interne: cum faci ca datele să circule singure prin firmă",
+    date: "28 noiembrie 2026",
+    excerpt: "Cum legi vânzările, facturarea, stocurile și HR-ul ca datele să circule singure, în ce ordine faci legăturile, ce verifici înainte și cum măsori dacă a meritat.",
+    tag: "Automatizare",
+  },
+  {
     slug: "automatizare-procese-contabile",
     title: "Automatizare procese contabile: ce automatizezi în contabilitatea firmei",
     date: "17 noiembrie 2026",
